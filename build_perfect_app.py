@@ -740,6 +740,7 @@ html_content = """<!DOCTYPE html>
     var clozeMode = false;
     var fcStudyMode = 'schedule'; // 'schedule' | 'mixed' | 'sequential' | 'hard'
     var shuffleSeed = Date.now();
+    var trailPinnedId = null; // card aberto pela Trilha, exibido mesmo se agendado para depois
     var fcSpecialty = 'todas';
     var fcSubtopic = 'todos';
     var srsData = {};
@@ -1070,18 +1071,22 @@ html_content = """<!DOCTYPE html>
         if (!buckets[k]) { buckets[k] = []; keys.push(k); }
         buckets[k].push(list[i]);
       }
+      // Ordem estável: cada card/especialidade recebe uma chave fixa derivada da semente,
+      // assim tirar um card da fila (ex.: avaliado como Fácil) não embaralha os demais.
       var s = shuffleSeed || 1;
+      function keyHash(str) {
+        var h = 0;
+        for (var c = 0; c < str.length; c++) h = (h * 31 + str.charCodeAt(c)) | 0;
+        return h;
+      }
       for (var ki = 0; ki < keys.length; ki++) {
-        var arr = buckets[keys[ki]];
-        for (var j = arr.length - 1; j > 0; j--) {
-          var r = Math.floor(seededRand(s++) * (j + 1));
-          var tmp = arr[j]; arr[j] = arr[r]; arr[r] = tmp;
-        }
+        buckets[keys[ki]].sort(function(a, b) {
+          return seededRand(s + a.id * 7919) - seededRand(s + b.id * 7919);
+        });
       }
-      for (var m = keys.length - 1; m > 0; m--) {
-        var rk = Math.floor(seededRand(s++) * (m + 1));
-        var tk = keys[m]; keys[m] = keys[rk]; keys[rk] = tk;
-      }
+      keys.sort(function(a, b) {
+        return seededRand(s + keyHash(a)) - seededRand(s + keyHash(b));
+      });
       var result = [];
       var added = true;
       while (added) {
@@ -1106,9 +1111,17 @@ html_content = """<!DOCTYPE html>
     }
 
     function getStudyQueue() {
-      var base = getBaseFilteredFlashcards();
+      var allBase = getBaseFilteredFlashcards();
       var now = Date.now();
       var endOfToday = getStartOfDay(1) - 1;
+
+      // Card já avaliado e agendado para um dia futuro (ex.: Fácil -> 3 dias) não aparece
+      // em nenhum modo até a data dele. Exceção: o card aberto pela Trilha (trailPinnedId).
+      var base = allBase.filter(function(fc) {
+        if (fc.id === trailPinnedId) return true;
+        var s = getCardSRS(fc.id);
+        return s.state === 'new' || s.due <= endOfToday;
+      });
 
       if (fcStudyMode === 'mixed') {
         return interleaveBySpecialty(base);
@@ -1292,6 +1305,7 @@ html_content = """<!DOCTYPE html>
 
     function setFCStudyMode(mode) {
       fcStudyMode = mode;
+      trailPinnedId = null;
       currentFlashcardIndex = 0;
       isFlipped = false;
       showHint = false;
@@ -1375,9 +1389,13 @@ html_content = """<!DOCTYPE html>
       if (filtered.length === 0) {
         if (counter) counter.innerText = "0 de 0";
         var emptyTitle = (fcStudyMode === 'schedule') ? '🎉 Meta de Hoje Concluída!' : (fcStudyMode === 'hard' ? '✨ Nenhum ponto fraco pendente!' : 'Nenhum flashcard neste filtro');
+        var allScheduled = baseCards.length > 0;
+        if (fcStudyMode !== 'schedule' && fcStudyMode !== 'hard' && allScheduled) emptyTitle = '🎉 Tudo em dia neste filtro!';
         var emptyDesc = (fcStudyMode === 'schedule')
           ? 'Você zerou todas as revisões programadas para hoje neste módulo!'
-          : 'Mude o filtro ou volte para o modo Sequencial para revisar toda a trilha.';
+          : (allScheduled
+            ? 'Todos os cards deste filtro já estão agendados para os próximos dias. Eles voltam sozinhos na data certa (veja a Trilha).'
+            : 'Mude o filtro ou volte para o modo Sequencial para revisar toda a trilha.');
         section.innerHTML = '<div class="glass-card p-6 text-center space-y-3 border border-pink-200">' +
           '<div class="text-3xl">' + (fcStudyMode === 'schedule' ? '🏆' : '🗂️') + '</div>' +
           '<h3 class="font-bold text-sm text-slate-800">' + emptyTitle + '</h3>' +
@@ -1588,26 +1606,21 @@ html_content = """<!DOCTYPE html>
       showHint = false;
       delete fcDraftAnswers[cardId];
 
-      if (fcStudyMode === 'schedule') {
-        // No modo Cronograma, o card avaliado sai da posição atual (vai para o fim se Errei, ou para amanhã+ se acertou)
-        var q = getStudyQueue();
+      if (trailPinnedId === cardId) trailPinnedId = null;
+
+      // Em todos os modos: se o card saiu da fila (agendado para outro dia), o próximo
+      // ocupa a mesma posição; se continua (ex.: Errei -> 5 min), avança para o seguinte.
+      var q = getStudyQueue();
+      var pos = -1;
+      for (var qi = 0; qi < q.length; qi++) { if (q[qi].id === cardId) { pos = qi; break; } }
+      if (pos === -1) {
         if (currentFlashcardIndex >= q.length) currentFlashcardIndex = 0;
-        if (q.length > 1 && q[currentFlashcardIndex] && q[currentFlashcardIndex].id === cardId) {
-          currentFlashcardIndex = (currentFlashcardIndex + 1) % q.length;
-        }
-        renderFlashcards();
-      } else if (fcStudyMode === 'hard') {
-        var hq = getStudyQueue();
-        nextFlashcard(hq.length);
-        var hqAfter = getStudyQueue();
-        if (hqAfter.length > 1 && hqAfter[currentFlashcardIndex] && hqAfter[currentFlashcardIndex].id === cardId) {
-          currentFlashcardIndex = (currentFlashcardIndex + 1) % hqAfter.length;
-          renderFlashcards();
-        }
+      } else if (q.length > 1) {
+        currentFlashcardIndex = (pos + 1) % q.length;
       } else {
-        var seqQ = getStudyQueue();
-        nextFlashcard(seqQ.length);
+        currentFlashcardIndex = 0;
       }
+      renderFlashcards();
     }
 
     function markCard(correct, total) {
@@ -1644,8 +1657,13 @@ html_content = """<!DOCTYPE html>
     }
 
     function jumpToTrailCard(seqIndex) {
+      var trailList = getBaseFilteredFlashcards().slice().sort(function(a, b) { return a.id - b.id; });
+      var target = trailList[seqIndex];
       fcStudyMode = 'sequential';
-      currentFlashcardIndex = seqIndex;
+      trailPinnedId = target ? target.id : null;
+      var sq = getStudyQueue();
+      currentFlashcardIndex = 0;
+      for (var ti = 0; ti < sq.length; ti++) { if (target && sq[ti].id === target.id) { currentFlashcardIndex = ti; break; } }
       isFlipped = false;
       showHint = false;
       closeModal('trailModal');
