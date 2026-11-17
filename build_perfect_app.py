@@ -7,23 +7,24 @@ html_content = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>MedFlashcards ✨ • Residência Médica</title>
-  
-  <!-- Google Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Flashcards com repetição espaçada, tabelas de revisão e pegadinhas de banca para a prova de residência médica.">
+  <title>MedFlashcards · Residência médica</title>
+
+  <!-- Fonte: Figtree (interface e texto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   <!-- Firebase (login Google + Firestore para salvar o progresso na nuvem) -->
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 
-  <!-- FontAwesome -->
+  <!-- FontAwesome (ícones) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Tailwind CSS CDN (opcional, com fallback inline robusto) -->
+
+  <!-- Tailwind CDN: só utilitários de layout; todas as cores e fontes saem dos tokens em :root -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     if (typeof tailwind !== 'undefined') {
@@ -31,16 +32,24 @@ html_content = """<!DOCTYPE html>
         theme: {
           extend: {
             colors: {
-              rosewater: {
-                50: '#fff5f7',
-                100: '#ffe4e8',
-                200: '#fecdd6',
-                300: '#fda4b4',
-                400: '#fb718b',
-                500: '#f43f68',
-                600: '#e11d48',
-                900: '#881337'
-              }
+              paper: 'var(--color-paper)',
+              paper2: 'var(--color-paper-2)',
+              paper3: 'var(--color-paper-3)',
+              ink: 'var(--color-ink)',
+              ink2: 'var(--color-ink-2)',
+              muted: 'var(--color-muted)',
+              rule: 'var(--color-rule)',
+              inkrule: 'var(--color-ink-rule)',
+              accent: 'var(--color-accent)',
+              accentink: 'var(--color-accent-ink)',
+              amber: 'var(--color-accent-2)'
+            },
+            fontFamily: {
+              display: 'var(--font-display)',
+              sans: 'var(--font-body)'
+            },
+            boxShadow: {
+              card: 'var(--shadow-card)'
             }
           }
         }
@@ -48,293 +57,453 @@ html_content = """<!DOCTYPE html>
     }
   </script>
 
-  <!-- CSS COMPLETO E AUTÔNOMO (Garante visual perfeito em qualquer celular/tablet) -->
+  <script>document.documentElement.classList.add('js');</script>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      -webkit-tap-highlight-color: rgba(244, 63, 104, 0.15);
+/* Hallmark · shape: app screen · genre: modern-minimal · theme: custom, warm paper (from Wayfind, by request) · redesign: full
+ * nav: kept (three tabs) · signature: the study card with its four-way grade row · states: empty queue, all scheduled, offline, signed out
+ * axes: light/sans/warm · posture: quiet · contrast: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V3 · weakest: V, the user found Wayfind cold and the mono harsh; warm paper, one humanist sans and fewer controls on screen answer it */
+    :root {
+      color-scheme: light;
+      --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px;
+      --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem;
+      --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);  /* movimento na tela (virar o card, indicador das abas) */
+      --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);   /* folha que sobe, curva do iOS */
+      /* Papel creme, tinta marrom-escura, terracota para a ação principal, mel para os números */
+      --color-paper: oklch(96.6% 0.012 82); --color-paper-2: oklch(93% 0.017 80); --color-paper-3: oklch(99.2% 0.006 85);
+      --color-ink: oklch(25% 0.02 55); --color-ink-2: oklch(36% 0.02 55); --color-muted: oklch(49% 0.022 62);
+      --color-rule: oklch(86% 0.02 78); --color-ink-rule: oklch(40% 0.02 55);
+      --color-accent: oklch(52% 0.14 42); --color-accent-2: oklch(82% 0.13 78); --color-accent-ink: oklch(99% 0.006 85); --color-focus: oklch(52% 0.14 42);
+      --color-accent-soft: oklch(93.5% 0.035 55);
+      --color-dog: oklch(56% 0.115 52); --color-dog-dark: oklch(40% 0.09 45); --color-dog-belly: oklch(66% 0.1 60);
+      --color-sock: oklch(97% 0.012 85); --color-sock-stripe: oklch(52% 0.14 42);
+      --color-scrim: oklch(25% 0.02 55 / 0.45);
+      --font-display: "Figtree", system-ui, sans-serif;
+      --font-body: "Figtree", system-ui, sans-serif;
+      --radius-card: 14px; --radius-control: 10px; --radius-pill: 999px; --rule-hair: 1px; --rule-bar: 1px;
+      --shadow-tab: 0 1px 2px oklch(25% 0.02 55 / 0.12);
+      --shadow-card: 0 1px 2px oklch(25% 0.02 55 / 0.06), 0 8px 24px -12px oklch(25% 0.02 55 / 0.18);
+      --tracking-display: -0.015em;
     }
-    
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { overflow-x: clip; }
+    html { scrollbar-color: var(--color-rule) var(--color-paper); scroll-padding-top: 120px; }
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(135deg, #fff5f8 0%, #fff9fb 50%, #fdf2f8 100%);
-      color: #374151;
-      min-height: 100vh;
-      line-height: 1.5;
-      padding-bottom: 90px; /* espaço para o bottom player e créditos */
+      font-family: var(--font-body);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100dvh;
+      line-height: 1.55;
+      padding-bottom: var(--space-xl);
       touch-action: manipulation;
+      -webkit-font-smoothing: antialiased;
+      font-variant-numeric: tabular-nums;
+      caret-color: var(--color-accent);
     }
+    body.player-open { padding-bottom: 96px; }
+    ::selection { background: var(--color-accent-2); color: var(--color-ink); }
+    :focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+    button, input, select, textarea { font: inherit; color: inherit; touch-action: manipulation; }
+    button:disabled, [aria-disabled="true"] { opacity: 0.55; cursor: not-allowed; }
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 700; letter-spacing: var(--tracking-display); line-height: 1.2; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
+    .text-xs { font-size: var(--text-xs) !important; line-height: 1.4; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
-    button, input, select, textarea {
-      font-family: inherit;
-      touch-action: manipulation;
-    }
+    .hidden, [hidden] { display: none !important; }
 
-    /* Utilitários base */
-    .hidden { display: none !important; }
+    /* Cantos suaves e bordas finas em tudo que o Tailwind marca com borda */
+    .border, .border-2 { border-width: var(--rule-hair) !important; }
+    .border-ink { border-color: var(--color-rule) !important; }
+    button.border, button.border-2, label.border, textarea, input, select { border-radius: var(--radius-control); }
 
-    /* Modal Overlay (Garantido 100% fechado por padrão) */
+    /* Modais */
     .modal-overlay {
       display: none;
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: rgba(15, 23, 42, 0.45);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      background: var(--color-scrim);
       align-items: center;
       justify-content: center;
-      padding: 16px;
+      padding: var(--space-md);
     }
-    .modal-overlay.active {
-      display: flex !important;
-    }
+    .modal-overlay.active { display: flex !important; }
+    .modal-overlay > div { border: var(--rule-hair) solid var(--color-rule) !important; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
 
-    /* Glassmorphism Rosinha */
+    /* Superfícies */
     .glass-card {
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(254, 205, 214, 0.7);
-      box-shadow: 0 8px 24px -4px rgba(244, 114, 182, 0.08);
-      border-radius: 20px;
+      background: var(--color-paper-3);
+      border: var(--rule-hair) solid var(--color-rule);
+      border-radius: var(--radius-card);
+      overflow: hidden;
     }
-
     .glass-header {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(254, 205, 214, 0.8);
+      background: var(--color-paper);
+      border-bottom: var(--rule-hair) solid var(--color-rule);
     }
 
-    /* Abas Principais Grandes e Toque Amigável */
+    /* Abas principais: trilho creme, a escolhida em papel claro */
+    .tab-track { background: var(--color-paper-2); border-radius: 12px; padding: var(--space-2xs); display: flex; gap: var(--space-2xs); }
     .main-tab-btn {
       flex: 1;
-      min-height: 42px;
-      padding: 6px 8px;
-      border-radius: 12px;
-      font-size: 11px;
-      font-weight: 700;
+      min-height: 40px;
+      padding: var(--space-xs) var(--space-sm);
+      font-size: var(--text-sm);
+      font-weight: 600;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 5px;
+      gap: var(--space-xs);
       cursor: pointer;
-      transition: all 0.2s ease;
-      border: 1px solid transparent;
+      border-radius: 9px;
+      white-space: nowrap;
       user-select: none;
       -webkit-user-select: none;
-      white-space: nowrap;
+      transition: background-color var(--dur-micro) ease, color var(--dur-micro) ease;
     }
+    .main-tab-btn.active { background: var(--color-paper-3); color: var(--color-ink); box-shadow: var(--shadow-tab); }
+    .main-tab-btn.active span[id^="badgeCount"] { background: var(--color-accent-soft) !important; color: var(--color-accent) !important; }
+    .main-tab-btn.inactive { color: var(--color-muted); }
+    .main-tab-btn.inactive:hover { color: var(--color-ink); }
+    .main-tab-btn span[id^="badgeCount"] { border-radius: var(--radius-pill); font-weight: 600; }
 
-    .main-tab-btn.active {
-      background: linear-gradient(135deg, #ffffff 0%, #fff1f4 100%);
-      color: #e11d48;
-      border-color: #fda4b4;
-      box-shadow: 0 4px 12px rgba(244, 63, 104, 0.12);
-    }
-
-    .main-tab-btn.inactive {
-      background: transparent;
-      color: #64748b;
-    }
-
-    .main-tab-btn.inactive:hover, .main-tab-btn.inactive:active {
-      background: rgba(255, 241, 244, 0.6);
-      color: #334155;
-    }
-
-    /* Pílulas de Filtro */
+    /* Filtros: pílulas; a escolhida é tinta cheia */
     .filter-pill {
-      min-height: 32px;
-      padding: 5px 12px;
-      border-radius: 9999px;
-      font-size: 11px;
-      font-weight: 700;
+      min-height: 34px;
+      padding: var(--space-2xs) var(--space-sm);
+      font-size: var(--text-sm);
+      font-weight: 500;
       white-space: nowrap;
       cursor: pointer;
-      transition: all 0.2s ease;
+      flex-shrink: 0;
+      border-radius: var(--radius-pill);
+      border: var(--rule-hair) solid var(--color-rule);
       user-select: none;
       -webkit-user-select: none;
-      flex-shrink: 0;
+      transition: background-color var(--dur-micro) ease, color var(--dur-micro) ease, border-color var(--dur-micro) ease;
     }
+    .filter-pill.active { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-paper-3); }
+    .filter-pill.inactive { background: var(--color-paper-3); color: var(--color-ink-2); }
+    .filter-pill.inactive:hover { border-color: var(--color-muted); color: var(--color-ink); }
+    .seg { gap: var(--space-xs); }
 
-    .filter-pill.active {
-      background: #e11d48;
-      color: #ffffff;
-      box-shadow: 0 3px 8px rgba(225, 29, 72, 0.25);
-    }
-
-    .filter-pill.inactive {
-      background: #ffffff;
-      color: #475569;
-      border: 1px solid #fecdd6;
-    }
-
-    .filter-pill.inactive:active {
-      background: #ffe4e8;
-    }
-
-    /* FLASHCARD 3D E SUPORTE SAFARI / WEBKIT */
+    /* Flashcard */
     .flashcard-wrapper {
-      perspective: 1200px;
-      -webkit-perspective: 1200px;
+      perspective: 1400px;
+      -webkit-perspective: 1400px;
       width: 100%;
-      min-height: 410px;
+      min-height: 380px;
       cursor: pointer;
       user-select: none;
       -webkit-user-select: none;
       position: relative;
     }
-
     .flashcard-inner {
       position: relative;
       width: 100%;
-      min-height: 410px;
-      border-radius: 24px;
-      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      min-height: 380px;
+      transition: transform 300ms var(--ease-in-out);
       transform-style: preserve-3d;
       -webkit-transform-style: preserve-3d;
-      box-shadow: 0 12px 32px -6px rgba(244, 63, 104, 0.12);
     }
-
-    .flashcard-inner.is-flipped {
-      transform: rotateY(180deg);
-      -webkit-transform: rotateY(180deg);
-    }
-
+    .flashcard-inner.is-flipped { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); }
     .card-face {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
-      border-radius: 24px;
-      padding: 20px;
+      padding: var(--space-lg);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-      background: #ffffff;
-      border: 1.5px solid #fecdd6;
+      background: var(--color-paper-3);
+      border: var(--rule-hair) solid var(--color-rule);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
       overflow-y: auto;
     }
+    .card-front { z-index: 2; transform: rotateY(0deg); -webkit-transform: rotateY(0deg); }
+    .card-back { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); border-top: 4px solid var(--color-accent); }
+    .flashcard-inner.is-flipped .card-front { pointer-events: none; }
+    .flashcard-inner:not(.is-flipped) .card-back button, .flashcard-inner.is-flipped .card-front button { visibility: hidden; }
 
-    .card-front {
-      z-index: 2;
-      transform: rotateY(0deg);
-      -webkit-transform: rotateY(0deg);
-    }
-
-    .card-back {
-      transform: rotateY(180deg);
-      -webkit-transform: rotateY(180deg);
-      background: linear-gradient(145deg, #fff5f7 0%, #ffffff 50%, #fff1f4 100%);
-      border-color: #fda4b4;
-    }
-
-    /* Fallback extra de visibilidade se 3D estiver desativado no celular */
-    .flashcard-inner.is-flipped .card-front {
-      pointer-events: none;
-    }
-
-    /* Botões de Ação do Flashcard */
     .fc-action-btn {
       min-height: 44px;
-      padding: 10px 16px;
-      border-radius: 16px;
-      font-size: 12px;
-      font-weight: 700;
+      padding: var(--space-xs) var(--space-md);
+      font-size: var(--text-sm);
+      font-weight: 600;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
+      gap: var(--space-xs);
       cursor: pointer;
-      transition: all 0.15s ease;
-      user-select: none;
-      -webkit-user-select: none;
+      border-radius: var(--radius-control);
+      transition: background-color var(--dur-micro) ease, color var(--dur-micro) ease;
     }
 
-    .fc-action-btn:active {
-      transform: scale(0.97);
+    /* Avaliação: quatro botões lado a lado */
+    .grade-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-xs); }
+    .grade-btn {
+      min-height: 58px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3xs);
+      border: var(--rule-hair) solid var(--color-rule);
+      border-radius: var(--radius-control);
+      background: var(--color-paper-3);
+      color: var(--color-ink);
+      cursor: pointer;
+      transition: background-color var(--dur-micro) ease, color var(--dur-micro) ease, border-color var(--dur-micro) ease;
+    }
+    .grade-btn .grade-name { font-size: var(--text-md); font-weight: 600; }
+    .grade-btn .grade-when { font-size: var(--text-xs); color: var(--color-muted); }
+    .grade-btn:hover { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-paper-3); }
+    .grade-btn:hover .grade-when { color: var(--color-accent-2); }
+    .grade-btn:active { background: var(--color-ink-2); color: var(--color-paper-3); }
+
+    /* Resumo do dia e números */
+    .summary { background: var(--color-paper-3); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); }
+    .figure { font-weight: 700; color: var(--color-ink); }
+    .figure--accent { color: var(--color-accent); }
+    .stat-grid { display: grid; gap: var(--space-xs); }
+    .stat-cell { background: var(--color-paper-3); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-control); }
+    .forecast-cell { border-radius: 8px; background: var(--color-paper-3); border: var(--rule-hair) solid var(--color-rule); }
+    .forecast-cell.is-today { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-paper-3); }
+
+    /* Selo de estado do card */
+    .tag { display: inline-flex; align-items: center; font-size: var(--text-xs); font-weight: 600; padding: var(--space-3xs) var(--space-sm); border-radius: var(--radius-pill); background: var(--color-paper-2); color: var(--color-ink-2); white-space: nowrap; }
+    .tag--new { background: var(--color-accent-soft); color: var(--color-accent); }
+    .tag--due { background: var(--color-accent-2); color: var(--color-ink); }
+    .tag--done { background: var(--color-ink); color: var(--color-paper-3); }
+
+    /* Link discreto em forma de texto */
+    .text-btn { font-size: var(--text-sm); font-weight: 600; color: var(--color-ink); text-decoration: underline; text-underline-offset: 0.2em; text-decoration-color: var(--color-rule); min-height: 32px; padding: var(--space-2xs) var(--space-3xs); }
+    .text-btn:hover { text-decoration-color: var(--color-ink); }
+
+    .custom-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: var(--color-rule); border-radius: 999px; }
+    .no-scrollbar { scrollbar-width: none; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+
+    @keyframes pulse-wave { 0%, 100% { transform: scaleY(0.35); } 50% { transform: scaleY(1); } }
+    .wave-bar { height: 16px; transform-origin: bottom; animation: pulse-wave 1s ease-in-out infinite; background: var(--color-accent-2); border-radius: 2px; }
+
+
+
+    /* ===== Movimento (receitas de Emil Kowalski): só transform e opacity, curto, com propósito ===== */
+
+    /* Indicador das abas: um fundo que desliza até a aba escolhida */
+    .tab-track { position: relative; }
+    .tab-indicator {
+      position: absolute;
+      top: var(--space-2xs);
+      bottom: var(--space-2xs);
+      left: 0;
+      width: 0;
+      border-radius: 9px;
+      background: var(--color-paper-3);
+      box-shadow: var(--shadow-tab);
+      pointer-events: none;
+    }
+    .tab-indicator.is-ready { transition: transform 250ms var(--ease-in-out); }
+    .tab-track.has-indicator .main-tab-btn.active { background: transparent; box-shadow: none; }
+    .main-tab-btn { position: relative; z-index: 1; }
+
+    /* Toque: o botão afunda um pouco */
+    .grade-btn, .filter-pill, .main-tab-btn { transition-property: background-color, color, border-color, transform; transition-duration: var(--dur-micro), var(--dur-micro), var(--dur-micro), 160ms; transition-timing-function: ease, ease, ease, var(--ease-out); }
+    .grade-btn:active, .filter-pill:active, .main-tab-btn:active { transform: scale(0.97); }
+
+    /* Troca de card: o avaliado sai pela esquerda, o próximo entra pela direita */
+    .flashcard-wrapper.card-leave { animation: card-leave 150ms var(--ease-out) forwards; pointer-events: none; }
+    .flashcard-wrapper.card-enter-next { animation: card-enter-next 220ms var(--ease-out); }
+    .flashcard-wrapper.card-enter-prev { animation: card-enter-prev 220ms var(--ease-out); }
+    @keyframes card-leave { to { opacity: 0; transform: translateX(-24px); } }
+    @keyframes card-enter-next { from { opacity: 0; transform: translateX(24px); } }
+    @keyframes card-enter-prev { from { opacity: 0; transform: translateX(-24px); } }
+
+    /* Painel de progresso: abre com um esmaecer curto */
+    .reveal { animation: reveal 200ms var(--ease-out); }
+    @keyframes reveal { from { opacity: 0; transform: translateY(-4px); } }
+
+    /* Modais: tela escurece junto; painel cresce de 96% no computador e sobe como folha no celular */
+    .modal-overlay { opacity: 0; transition: opacity 250ms var(--ease-out); }
+    .modal-overlay.is-open { opacity: 1; }
+    .modal-overlay > div { transform: scale(0.96); transition: transform 250ms var(--ease-out); }
+    .modal-overlay.is-open > div { transform: none; }
+    @media (max-width: 40rem) {
+      .modal-overlay { align-items: flex-end; padding: 0; }
+      .modal-overlay > div { width: 100%; max-width: none !important; border-radius: var(--radius-card) var(--radius-card) 0 0 !important; transform: translateY(100%); transition: transform 450ms var(--ease-drawer); }
+      .modal-overlay.is-open > div { transform: none; }
     }
 
-    /* Scrollbar Suave */
-    .custom-scroll::-webkit-scrollbar {
-      width: 5px;
-      height: 5px;
-    }
-    .custom-scroll::-webkit-scrollbar-thumb {
-      background: #fbcfe8;
-      border-radius: 9999px;
+    /* Hover só onde existe mouse (no toque o hover "gruda" depois do toque) */
+    @media (hover: none) {
+      .grade-btn:hover { background: var(--color-paper-3); border-color: var(--color-rule); color: var(--color-ink); }
+      .grade-btn:hover .grade-when { color: var(--color-muted); }
+      .filter-pill.inactive:hover { border-color: var(--color-rule); color: var(--color-ink-2); }
     }
 
-    /* Animação do Mini Player */
-    @keyframes pulse-wave {
-      0%, 100% { height: 6px; }
-      50% { height: 18px; }
+    /* Tela de abertura: só aparece com JavaScript ligado (sem JS o conteúdo fica visível).
+       O salsicha corre por baixo da palavra; as letras aparecem atrás dele. */
+    .splash { display: none; }
+    html.js .splash {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-paper);
+      transition: opacity var(--dur-long) var(--ease-out);
+      cursor: pointer;
+      overflow: hidden;
     }
-    .wave-bar {
-      animation: pulse-wave 1s ease-in-out infinite;
+    .splash--out { opacity: 0; pointer-events: none; }
+    .splash__stage { position: relative; padding-bottom: clamp(84px, 16vw, 124px); }
+    .splash__word {
+      font-size: clamp(2.5rem, 9vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--color-ink);
+      clip-path: inset(0 100% 0 0);
+      animation: splash-reveal 1200ms linear 400ms forwards;
     }
+    .splash__word span { color: var(--color-accent); }
+    @keyframes splash-reveal { to { clip-path: inset(0 0 0 0); } }
+
+    /* O corredor tem a largura da palavra: ir de -100% a 0 leva o focinho do começo ao fim dela */
+    .splash__runner {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: clamp(84px, 16vw, 124px);
+      transform: translateX(calc(-100% - 160px));
+      animation: splash-run 1600ms linear forwards;
+    }
+    @keyframes splash-run {
+      25% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+    .splash__dog {
+      position: absolute;
+      right: calc(clamp(150px, 30vw, 230px) * -0.1);
+      bottom: 0;
+      width: clamp(150px, 30vw, 230px);
+      height: auto;
+      overflow: visible;
+      animation: splash-exit 600ms linear 1600ms forwards;
+    }
+    @keyframes splash-exit { to { transform: translateX(70vw); opacity: 0; } }
+
+    /* Corrida: o corpo quica, as patas vão e voltam em pares, a orelha balança, o rabo abana */
+    .dog-body { animation: dog-bob 260ms ease-in-out infinite alternate; }
+    @keyframes dog-bob { to { transform: translateY(-2.5px); } }
+    .dog-leg { transform-box: fill-box; transform-origin: 50% 0; animation: dog-leg 260ms ease-in-out infinite alternate; }
+    .dog-leg--b { animation-delay: -260ms; }
+    @keyframes dog-leg { from { transform: rotate(32deg); } to { transform: rotate(-32deg); } }
+    .dog-ear { transform-box: fill-box; transform-origin: 50% 10%; animation: dog-ear 260ms ease-in-out infinite alternate; }
+    @keyframes dog-ear { from { transform: rotate(-14deg); } to { transform: rotate(10deg); } }
+    .dog-tail { transform-box: fill-box; transform-origin: 100% 100%; animation: dog-tail 180ms ease-in-out infinite alternate; }
+    @keyframes dog-tail { from { transform: rotate(-12deg); } to { transform: rotate(14deg); } }
+    .dog-sock { transform-box: fill-box; transform-origin: 30% 0; animation: dog-sock 260ms ease-in-out infinite alternate; }
+    @keyframes dog-sock { from { transform: rotate(-8deg); } to { transform: rotate(12deg); } }
+    .dog-shadow { animation: dog-shadow 260ms ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+    @keyframes dog-shadow { to { transform: scaleX(0.9); opacity: 0.6; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+      .flashcard-inner, .tab-indicator.is-ready { transition: none; }
+      .flashcard-wrapper.card-leave { animation: fade-out 120ms ease forwards; }
+      .flashcard-wrapper.card-enter-next, .flashcard-wrapper.card-enter-prev, .reveal { animation: fade-in 160ms ease; }
+      .modal-overlay > div, .modal-overlay.is-open > div { transform: none !important; transition: none; }
+      .grade-btn:active, .filter-pill:active, .main-tab-btn:active { transform: none; }
+      .splash__word { clip-path: none; animation: fade-in 200ms ease forwards; }
+      .splash__runner { transform: none; animation: none; }
+      .splash__dog, .dog-body, .dog-leg, .dog-ear, .dog-tail, .dog-sock, .dog-shadow { animation: none; }
+      .wave-bar { animation: none; transform: scaleY(0.7); }
+    }
+    @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fade-out { to { opacity: 0; } }
   </style>
 </head>
-<body class="custom-scroll selection:bg-pink-200 selection:text-pink-900">
+<body class="custom-scroll">
+
+  <!-- TELA DE ABERTURA -->
+  <div id="splash" class="splash" aria-hidden="true" onclick="hideSplash()">
+    <div class="splash__stage">
+      <div class="splash__word">Flashcards<span>.</span></div>
+      <div class="splash__runner">
+        <svg class="splash__dog" viewBox="0 0 190 78" xmlns="http://www.w3.org/2000/svg">
+          <ellipse class="dog-shadow" cx="86" cy="71" rx="62" ry="3" fill="var(--color-dog-dark)" opacity="0.18"/>
+          <g class="dog-legs-back">
+            <rect class="dog-leg dog-leg--b" x="34" y="44" width="8" height="22" rx="4" fill="var(--color-dog-dark)"/>
+            <rect class="dog-leg dog-leg--b" x="104" y="44" width="8" height="22" rx="4" fill="var(--color-dog-dark)"/>
+          </g>
+          <g class="dog-body">
+            <path class="dog-tail" d="M24 34 C14 30 8 22 6 14 C10 20 16 25 26 28 Z" fill="var(--color-dog)"/>
+            <rect x="18" y="24" width="104" height="28" rx="14" fill="var(--color-dog)"/>
+            <rect x="30" y="42" width="82" height="10" rx="5" fill="var(--color-dog-belly)"/>
+            <path d="M108 30 C112 18 122 12 132 14 L136 30 C128 36 116 38 108 30 Z" fill="var(--color-dog)"/>
+            <ellipse cx="136" cy="22" rx="17" ry="13" fill="var(--color-dog)"/>
+            <ellipse cx="154" cy="27" rx="12" ry="7.5" fill="var(--color-dog)"/>
+            <circle cx="165" cy="24.5" r="3" fill="var(--color-ink)"/>
+            <circle cx="142" cy="18" r="2" fill="var(--color-ink)"/>
+            <ellipse class="dog-ear" cx="129" cy="24" rx="6.5" ry="12" fill="var(--color-dog-dark)"/>
+            <g class="dog-sock">
+              <path d="M152 28 L163 28 L163 52 C163 58 168 61 176 61 C182 61 186 64 186 68 C186 72 182 74 176 74 L160 74 C153 74 150 69 150 62 Z" fill="var(--color-sock)" stroke="var(--color-dog-dark)" stroke-width="1.2"/>
+              <rect x="151" y="28" width="13" height="5" rx="1.5" fill="var(--color-sock-stripe)"/>
+              <rect x="151" y="37" width="12" height="3.5" fill="var(--color-sock-stripe)"/>
+              <rect x="151" y="44" width="12" height="3.5" fill="var(--color-sock-stripe)"/>
+              <path d="M178 61 C183 61 186 64 186 68 C186 72 183 74 178 74 Z" fill="var(--color-sock-stripe)"/>
+              <path d="M150 64 C150 70 153 74 159 74 L161 74 C157 71 156 67 157 63 Z" fill="var(--color-sock-stripe)"/>
+            </g>
+          </g>
+          <g class="dog-legs-front">
+            <rect class="dog-leg" x="42" y="44" width="8" height="22" rx="4" fill="var(--color-dog)"/>
+            <rect class="dog-leg" x="112" y="44" width="8" height="22" rx="4" fill="var(--color-dog)"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
 
   <!-- ==========================================
        HEADER FIXO E COMPACTO (Foco Mobile/Tablet)
        ========================================== -->
-  <header class="glass-header sticky top-0 z-40 shadow-sm">
-    <div class="max-w-4xl mx-auto px-4 py-2.5 flex items-center justify-between">
-      <div class="flex items-center gap-2.5">
-        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-400 via-pink-400 to-rose-500 flex items-center justify-center text-white text-lg shadow-md shadow-pink-200">
-          <span>🩺</span>
-        </div>
-        <div>
-          <div class="flex items-center gap-1.5">
-            <h1 class="font-serif font-bold text-lg text-rose-800 leading-tight">
-              MedFlashcards <span class="text-xs font-sans font-bold text-pink-500">✨</span>
-            </h1>
-            <span class="px-2 py-0.5 text-[9px] font-extrabold uppercase bg-pink-100 text-rose-700 border border-pink-200 rounded-full">
-              Residência Médica
-            </span>
-          </div>
-          <p class="text-[11px] text-rose-500 font-medium">
-            Rumo à Residência dos Sonhos 🌸
-          </p>
-        </div>
-      </div>
+  <header class="glass-header sticky top-0 z-40">
+    <h1 class="visually-hidden">MedFlashcards</h1>
+    <div class="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center gap-3">
+      <!-- ABAS PRINCIPAIS -->
+      <nav class="tab-track flex-1 min-w-[260px]" id="tabTrack" aria-label="Seções">
+        <span class="tab-indicator" id="tabIndicator" aria-hidden="true"></span>
+        <button type="button" onclick="switchTab('tabelas')" id="tabBtn-tabelas" class="main-tab-btn active">
+          <span>Tabelas</span> <span class="text-xs bg-paper2 text-muted px-2" id="badgeCount-tabelas">169</span>
+        </button>
+        <button type="button" onclick="switchTab('flashcards')" id="tabBtn-flashcards" class="main-tab-btn inactive">
+          <span>Cards</span> <span class="text-xs bg-paper2 text-muted px-2" id="badgeCount-flashcards">204</span>
+        </button>
+        <button type="button" onclick="switchTab('geral')" id="tabBtn-geral" class="main-tab-btn inactive">
+          <span>Já caiu</span> <span class="text-xs bg-paper2 text-muted px-2" id="badgeCount-geral">8</span>
+        </button>
+      </nav>
 
-      <!-- Ações do Topo -->
-      <div class="flex items-center gap-2">
-        <button id="cloudBtn" onclick="cloudButtonClick()" class="hidden h-9 px-3 rounded-xl bg-white text-slate-700 border border-pink-200 flex items-center gap-1.5 text-xs font-bold hover:bg-pink-50 transition active:scale-95" title="Salvar progresso na nuvem">
-          <i id="cloudIcon" class="fa-brands fa-google text-[12px]"></i>
+      <!-- Ações -->
+      <div class="flex items-center gap-2 ml-auto">
+        <button type="button" id="cloudBtn" onclick="cloudButtonClick()" class="hidden h-10 px-3 bg-paper3 text-ink border border-rule flex items-center gap-2 text-sm font-semibold hover:border-muted transition-colors" title="Salvar progresso na nuvem">
+          <i id="cloudIcon" class="fa-brands fa-google text-xs" aria-hidden="true"></i>
           <span id="cloudLabel">Entrar</span>
         </button>
-        <button onclick="openModal('exportModal')" class="w-9 h-9 rounded-xl bg-pink-50 text-rose-600 border border-pink-200 flex items-center justify-center text-xs font-bold hover:bg-pink-100 transition active:scale-95" title="Backup">
-          <i class="fa-solid fa-cloud-arrow-down"></i>
-        </button>
-        <button onclick="openModal('addModal')" class="h-9 px-3.5 rounded-xl bg-gradient-to-r from-rose-500 to-pink-500 text-white flex items-center gap-1.5 text-xs font-bold shadow-md shadow-pink-200 hover:opacity-95 transition active:scale-95">
-          <i class="fa-solid fa-plus text-[11px]"></i>
-          <span>Adicionar</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- BARRA DE NAVEGAÇÃO DE ABAS PRINCIPAIS (Toque Fácil) -->
-    <div class="bg-rose-50/70 border-t border-rose-100 px-3 py-1.5">
-      <div class="max-w-4xl mx-auto flex items-center justify-between gap-1.5">
-        <button onclick="switchTab('tabelas')" id="tabBtn-tabelas" class="main-tab-btn active">
-          <span>📋 Tabelas</span> <span class="text-[10px] bg-rose-100 text-rose-700 font-extrabold px-1.5 py-0.5 rounded-full" id="badgeCount-tabelas">169</span>
-        </button>
-        <button onclick="switchTab('flashcards')" id="tabBtn-flashcards" class="main-tab-btn inactive">
-          <span>🗂️ Cards</span> <span class="text-[10px] bg-pink-100 text-rose-700 font-extrabold px-1.5 py-0.5 rounded-full" id="badgeCount-flashcards">204</span>
-        </button>
-        <button onclick="switchTab('geral')" id="tabBtn-geral" class="main-tab-btn inactive">
-          <span>🎯 Já Caiu</span> <span class="text-[10px] bg-pink-100 text-rose-700 font-extrabold px-1.5 py-0.5 rounded-full" id="badgeCount-geral">8</span>
-        </button>
+        <button type="button" onclick="openModal('exportModal')" class="h-10 px-3 bg-paper3 text-ink border border-rule text-sm font-semibold hover:border-muted transition-colors" title="Backup do progresso">Backup</button>
+        <button type="button" onclick="openModal('addModal')" class="h-10 px-4 bg-accent text-accentink border border-accent text-sm font-semibold hover:bg-ink hover:border-ink transition-colors">Adicionar</button>
       </div>
     </div>
   </header>
@@ -346,15 +515,12 @@ html_content = """<!DOCTYPE html>
 
     <!-- FILTRO DE GRANDES ÁREAS (Comum a todas as abas) -->
     <div class="mb-4">
-      <div class="flex items-center gap-1.5 overflow-x-auto custom-scroll pb-1">
-        <span class="text-rose-500 font-extrabold text-[11px] mr-1 shrink-0 flex items-center gap-1">
-          <i class="fa-solid fa-filter text-[10px]"></i> Área:
-        </span>
+      <div class="seg flex items-center overflow-x-auto no-scrollbar">
         <button onclick="setAreaFilter('todas')" class="filter-pill active" data-area="todas">Todas</button>
-        <button onclick="setAreaFilter('clinica')" class="filter-pill inactive" data-area="clinica">Clínica / Cardio</button>
-        <button onclick="setAreaFilter('cirurgia')" class="filter-pill inactive" data-area="cirurgia">Cirurgia Geral</button>
+        <button onclick="setAreaFilter('clinica')" class="filter-pill inactive" data-area="clinica">Clínica</button>
+        <button onclick="setAreaFilter('cirurgia')" class="filter-pill inactive" data-area="cirurgia">Cirurgia</button>
         <button onclick="setAreaFilter('pediatria')" class="filter-pill inactive" data-area="pediatria">Pediatria</button>
-        <button onclick="setAreaFilter('go')" class="filter-pill inactive" data-area="go">Ginecologia & Obstetrícia</button>
+        <button onclick="setAreaFilter('go')" class="filter-pill inactive" data-area="go">GO</button>
         <button onclick="setAreaFilter('preventiva')" class="filter-pill inactive" data-area="preventiva">Preventiva</button>
       </div>
     </div>
@@ -364,14 +530,14 @@ html_content = """<!DOCTYPE html>
          ========================================== -->
     <section id="view-tabelas" class="tab-view block space-y-4">
       <!-- Subfiltro por tipo de tabela -->
-      <div class="flex items-center justify-between flex-wrap gap-2 pb-2 border-b border-rose-200">
-        <div class="flex items-center gap-1.5 overflow-x-auto custom-scroll pb-1">
-          <button onclick="setCategoryFilter('todas')" class="filter-pill active" data-cat="todas">Todas as Tabelas</button>
+      <div class="flex items-center justify-between flex-wrap gap-2 pb-2 border-b border-rule">
+        <div class="seg flex items-center overflow-x-auto no-scrollbar">
+          <button onclick="setCategoryFilter('todas')" class="filter-pill active" data-cat="todas">Todas</button>
           <button onclick="setCategoryFilter('eponimos')" class="filter-pill inactive" data-cat="eponimos">Epônimos</button>
-          <button onclick="setCategoryFilter('triades')" class="filter-pill inactive" data-cat="triades">Tríades & Pêntades</button>
-          <button onclick="setCategoryFilter('doencas')" class="filter-pill inactive" data-cat="doencas">Doenças (Epidemio + Tto)</button>
+          <button onclick="setCategoryFilter('triades')" class="filter-pill inactive" data-cat="triades">Tríades e pêntades</button>
+          <button onclick="setCategoryFilter('doencas')" class="filter-pill inactive" data-cat="doencas">Doenças</button>
         </div>
-        <div class="text-[11px] font-bold text-rose-500 shrink-0" id="tableItemCount">169 itens</div>
+        <div class="text-xs font-bold text-muted shrink-0" id="tableItemCount">169 itens</div>
       </div>
 
       <!-- Container dos Itens da Tabela -->
@@ -384,30 +550,26 @@ html_content = """<!DOCTYPE html>
          ABA 2: FLASHCARDS INTERATIVOS (MODO FIXAÇÃO)
          ========================================== -->
     <section id="view-flashcards" class="tab-view hidden space-y-3.5">
-      <div class="flex items-center justify-between flex-wrap gap-2 pb-2 border-b border-rose-200">
-        <div class="flex items-center gap-2">
-          <span class="text-sm">🗂️</span>
-          <div>
-            <h2 class="text-xs font-bold uppercase tracking-wider text-rose-800">Trilha & Cronograma SRS</h2>
-            <p class="text-[10px] text-rose-500">Revisão espaçada inteligente • Acerto aumenta o intervalo</p>
+      <div class="flex items-center justify-between flex-wrap gap-2 pb-2 border-b border-rule">
+        <h2 class="text-lg text-ink">Revisão espaçada</h2>
+        <div class="flex items-center gap-3">
+          <div class="text-right">
+            <div class="text-xs font-display font-medium text-ink" id="flashcardCounter">Card 1 de 133</div>
+            <div class="text-xs font-display text-muted" id="flashcardScore">0 revisados hoje</div>
           </div>
-        </div>
-        <div class="flex items-center gap-1.5">
-          <button onclick="openTrailModal()" class="px-2.5 py-1 rounded-xl bg-white hover:bg-rose-50 text-rose-700 border border-rose-200 text-[11px] font-bold flex items-center gap-1 shadow-xs transition active:scale-95">
-            <span>🗺️ Índice</span>
-          </button>
-          <button onclick="openModal('tipsModal')" class="px-2.5 py-1 rounded-xl bg-pink-50 hover:bg-pink-100 text-rose-700 border border-pink-200 text-[11px] font-bold flex items-center gap-1 transition active:scale-95">
-            <span>🧠 Técnicas</span>
-          </button>
-          <div class="text-right pl-1">
-            <div class="text-xs font-mono font-bold text-rose-600" id="flashcardCounter">Card 1 de 133</div>
-            <div class="text-[10px] text-slate-500 font-semibold" id="flashcardScore">🌸 0 hoje</div>
+          <div class="flex gap-2">
+            <button type="button" onclick="openTrailModal()" class="h-10 px-3 bg-paper3 hover:bg-paper2 text-ink border-2 border-ink text-xs font-medium flex items-center gap-2 transition-colors">
+              <span>Índice</span>
+            </button>
+            <button type="button" onclick="openModal('tipsModal')" class="h-10 px-3 bg-paper3 hover:bg-paper2 text-ink border-2 border-ink text-xs font-medium flex items-center gap-2 transition-colors">
+              <span>Técnicas</span>
+            </button>
           </div>
         </div>
       </div>
 
       <!-- Painel de Cronograma SRS e Previsão 7 Dias -->
-      <div id="srsDashboard" class="glass-card p-3 space-y-2.5">
+      <div id="srsDashboard" class="space-y-3">
         <!-- Renderizado dinamicamente via JS -->
       </div>
 
@@ -417,7 +579,7 @@ html_content = """<!DOCTYPE html>
       </div>
 
       <!-- Card Interativo e Controles -->
-      <div id="flashcardSection" class="w-full max-w-lg mx-auto">
+      <div id="flashcardSection" class="w-full max-w-2xl mx-auto pt-2">
         <!-- Renderizado dinamicamente via JS -->
       </div>
     </section>
@@ -426,15 +588,12 @@ html_content = """<!DOCTYPE html>
          ABA 3: JÁ CAIU NA MACKENZIE (Bancas)
          ========================================== -->
     <section id="view-geral" class="tab-view hidden space-y-4">
-      <div class="flex items-center justify-between pb-2 border-b border-rose-200">
-        <div class="flex items-center gap-2">
-          <span class="text-sm">🎯</span>
-          <div>
-            <h2 class="text-xs font-bold uppercase tracking-wider text-rose-800">Padrões & Pegadinhas da Bancas na Geral</h2>
-            <p class="text-[10px] text-rose-500">O que a banca repete e os detalhes decisivos de prova</p>
-          </div>
+      <div class="flex items-center justify-between pb-2 border-b border-rule">
+        <div>
+          <h2 class="text-lg text-ink">Pegadinhas de banca</h2>
+          <p class="text-sm text-muted">O que a banca repete e o detalhe que decide a questão.</p>
         </div>
-        <div class="text-[11px] font-bold text-rose-500" id="mackCount">8 tópicos</div>
+        <div class="font-display text-xs text-muted shrink-0" id="mackCount">8 tópicos</div>
       </div>
 
       <div id="mackContainer" class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
@@ -447,49 +606,44 @@ html_content = """<!DOCTYPE html>
   <!-- ==========================================
        BOTTOM MINI AUDIO PLAYER (Fixo no Rodapé)
        ========================================== -->
-  <div id="bottomAudioPlayer" class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-t border-rose-200 shadow-2xl px-4 py-2.5 transition-transform duration-300 translate-y-full">
+  <div id="bottomAudioPlayer" class="fixed bottom-0 left-0 right-0 z-50 bg-ink text-paper border-t-2 border-ink px-4 py-3 transition-transform duration-300 translate-y-full">
     <div class="max-w-4xl mx-auto flex items-center justify-between gap-3">
-      
+
       <!-- Info do Áudio -->
-      <div class="flex items-center gap-2.5 min-w-0 flex-1">
-        <div class="w-9 h-9 rounded-xl bg-pink-100 text-rose-600 flex items-center justify-center shrink-0 border border-pink-200">
+      <div class="flex items-center gap-3 min-w-0 flex-1">
+        <div class="w-10 h-10 text-amber flex items-center justify-center shrink-0 border-2 border-inkrule">
           <div id="playerWave" class="hidden flex items-end gap-0.5 h-4">
-            <span class="w-1 bg-pink-500 rounded-full wave-bar" style="animation-delay: 0.1s"></span>
-            <span class="w-1 bg-rose-500 rounded-full wave-bar" style="animation-delay: 0.3s"></span>
-            <span class="w-1 bg-purple-500 rounded-full wave-bar" style="animation-delay: 0.2s"></span>
+            <span class="w-1 wave-bar" style="animation-delay: 0.1s"></span>
+            <span class="w-1 wave-bar" style="animation-delay: 0.3s"></span>
+            <span class="w-1 wave-bar" style="animation-delay: 0.2s"></span>
           </div>
-          <i id="playerStaticIcon" class="fa-solid fa-headphones text-xs"></i>
+          <i id="playerStaticIcon" class="fa-solid fa-headphones text-xs" aria-hidden="true"></i>
         </div>
         <div class="min-w-0">
-          <p id="audioPlayerTitle" class="text-xs font-bold text-slate-800 truncate">Macete em Áudio</p>
-          <div class="flex items-center gap-2 text-[10px] text-rose-500">
-            <span id="audioCurrentTime" class="font-mono">1.7x</span>
-            <span>•</span>
-            <button onclick="openScriptModal()" class="text-rose-700 underline font-semibold">Ver Texto & Pular</button>
+          <p id="audioPlayerTitle" class="font-display text-sm font-medium text-paper truncate">Macete em áudio</p>
+          <div class="flex items-center gap-3 text-xs">
+            <span id="audioCurrentTime" class="font-display text-amber">1.7x</span>
+            <button type="button" onclick="openScriptModal()" class="text-paper underline min-h-6 py-1">Ver texto e pular</button>
           </div>
         </div>
       </div>
 
       <!-- Controles de Áudio -->
-      <div class="flex items-center gap-1.5">
-        <button onclick="audioSkip(-1)" class="w-8 h-8 rounded-xl bg-rose-50 hover:bg-pink-100 text-slate-600 flex items-center justify-center text-xs transition active:scale-95" title="Frase Anterior">
-          <i class="fa-solid fa-backward-step"></i>
+      <div class="flex items-center gap-1">
+        <button type="button" onclick="audioSkip(-1)" class="w-10 h-10 border-2 border-inkrule text-paper hover:bg-ink2 flex items-center justify-center text-xs transition-colors" title="Frase anterior" aria-label="Frase anterior">
+          <i class="fa-solid fa-backward-step" aria-hidden="true"></i>
         </button>
-
-        <button id="audioPlayBtn" onclick="toggleAudio()" class="w-10 h-10 rounded-2xl bg-gradient-to-r from-rose-500 to-pink-500 text-white flex items-center justify-center text-sm shadow-md shadow-pink-200 transition active:scale-95">
-          <i id="audioPlayIcon" class="fa-solid fa-play"></i>
+        <button type="button" id="audioPlayBtn" onclick="toggleAudio()" class="w-10 h-10 bg-accent border-2 border-accent text-accentink flex items-center justify-center text-sm transition-colors" aria-label="Tocar ou pausar">
+          <i id="audioPlayIcon" class="fa-solid fa-play" aria-hidden="true"></i>
         </button>
-
-        <button onclick="audioSkip(1)" class="w-8 h-8 rounded-xl bg-rose-50 hover:bg-pink-100 text-slate-600 flex items-center justify-center text-xs transition active:scale-95" title="Próxima Frase">
-          <i class="fa-solid fa-forward-step"></i>
+        <button type="button" onclick="audioSkip(1)" class="w-10 h-10 border-2 border-inkrule text-paper hover:bg-ink2 flex items-center justify-center text-xs transition-colors" title="Próxima frase" aria-label="Próxima frase">
+          <i class="fa-solid fa-forward-step" aria-hidden="true"></i>
         </button>
-
-        <button onclick="cycleSpeed()" id="speedBadge" class="px-2 py-1 rounded-xl bg-pink-100 text-pink-700 font-mono font-bold text-[11px] border border-pink-200">
-          1.7x ⭐
+        <button type="button" onclick="cycleSpeed()" id="speedBadge" class="h-10 px-2 border-2 border-inkrule text-amber font-display font-extrabold text-xs hover:bg-ink2 transition-colors" aria-label="Mudar velocidade">
+          1.7x
         </button>
-
-        <button onclick="closeAudioPlayer()" class="w-7 h-7 rounded-lg text-slate-400 hover:text-rose-600 flex items-center justify-center text-xs transition ml-0.5">
-          <i class="fa-solid fa-xmark"></i>
+        <button type="button" onclick="closeAudioPlayer()" class="w-10 h-10 ml-1 text-paper hover:text-amber flex items-center justify-center text-sm transition-colors" aria-label="Fechar player">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
       </div>
 
@@ -500,21 +654,20 @@ html_content = """<!DOCTYPE html>
        MODAL: VER TEXTO DO ÁUDIO
        ========================================== -->
   <div id="scriptModal" class="modal-overlay" style="display: none;">
-    <div class="bg-white border border-pink-200 rounded-3xl w-full max-w-lg max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
-      <div class="p-4 border-b border-rose-100 flex items-center justify-between bg-pink-50/60">
+    <div class="bg-paper3 border border-rule w-full max-w-lg max-h-[85vh] flex flex-col shadow-card overflow-hidden">
+      <div class="p-4 border-b border-rule flex items-center justify-between bg-paper2">
         <div class="flex items-center gap-2">
-          <span>🎙️</span>
-          <h3 class="text-sm font-bold text-slate-800">Roteiro do Áudio • Clique para pular</h3>
+          <h3 class="text-sm text-ink">Roteiro do áudio</h3>
         </div>
-        <button onclick="closeModal('scriptModal')" class="text-slate-400 hover:text-rose-600 p-1">
+        <button onclick="closeModal('scriptModal')" class="text-muted hover:text-ink2 p-1">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
       <div id="scriptParagraphsContainer" class="p-4 overflow-y-auto space-y-2 text-xs leading-relaxed custom-scroll flex-1">
         <!-- Preenchido via JS -->
       </div>
-      <div class="p-3 border-t border-rose-100 bg-rose-50/40 text-[11px] text-rose-600 text-center font-medium">
-        Toque em qualquer frase para o áudio começar dali ✨
+      <div class="p-3 border-t border-rule bg-paper2 text-xs text-ink2 text-center font-medium">
+        Toque numa frase para o áudio começar dali.
       </div>
     </div>
   </div>
@@ -523,31 +676,30 @@ html_content = """<!DOCTYPE html>
        MODAL: ADICIONAR NOVO ITEM
        ========================================== -->
   <div id="addModal" class="modal-overlay" style="display: none;">
-    <div class="bg-white border border-pink-200 rounded-3xl w-full max-w-lg max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
-      <div class="p-4 border-b border-rose-100 flex items-center justify-between bg-gradient-to-r from-pink-50 to-rose-50">
+    <div class="bg-paper3 border border-rule w-full max-w-lg max-h-[90vh] flex flex-col shadow-card overflow-hidden">
+      <div class="p-4 border-b border-rule flex items-center justify-between bg-paper2">
         <div class="flex items-center gap-2">
-          <span class="text-base">🎀</span>
-          <h3 class="text-sm font-bold text-slate-800">Adicionar ao MedFlashcards</h3>
+          <h3 class="text-sm text-ink">Adicionar ao MedFlashcards</h3>
         </div>
-        <button onclick="closeModal('addModal')" class="text-slate-400 hover:text-rose-600 p-1">
+        <button onclick="closeModal('addModal')" class="text-muted hover:text-ink2 p-1">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
 
       <!-- Abas de Tipo de Inserção -->
-      <div class="flex border-b border-rose-100 px-4 pt-2 gap-2 text-xs font-bold overflow-x-auto no-scrollbar">
-        <button onclick="setAddType('tabela')" id="addType-tabela" class="py-1.5 px-3 border-b-2 border-rose-500 text-rose-600">📋 Na Tabela</button>
-        <button onclick="setAddType('flashcard')" id="addType-flashcard" class="py-1.5 px-3 text-slate-400 hover:text-slate-700">🗂️ Flashcard</button>
-        <button onclick="setAddType('geral')" id="addType-geral" class="py-1.5 px-3 text-slate-400 hover:text-slate-700">🎯 Já Caiu Mack</button>
-        <button onclick="setAddType('raw')" id="addType-raw" class="py-1.5 px-3 text-slate-400 hover:text-slate-700">📝 Colar Texto Solto</button>
+      <div class="flex border-b border-rule px-4 pt-2 gap-2 text-xs font-bold overflow-x-auto no-scrollbar">
+        <button onclick="setAddType('tabela')" id="addType-tabela" class="py-1.5 px-3 border-b-2 border-ink text-ink2">Tabela</button>
+        <button onclick="setAddType('flashcard')" id="addType-flashcard" class="py-1.5 px-3 text-muted hover:text-ink">Flashcard</button>
+        <button onclick="setAddType('geral')" id="addType-geral" class="py-1.5 px-3 text-muted hover:text-ink">Já caiu</button>
+        <button onclick="setAddType('raw')" id="addType-raw" class="py-1.5 px-3 text-muted hover:text-ink">Texto solto</button>
       </div>
 
       <!-- Form Body -->
       <div class="p-4 overflow-y-auto space-y-3 text-xs flex-1 custom-scroll">
         <div class="grid grid-cols-2 gap-2.5" id="field-area-cat">
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Grande Área</label>
-            <select id="inputArea" class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300">
+            <label class="block font-bold text-ink mb-1">Grande Área</label>
+            <select id="inputArea" class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent">
               <option value="clinica">Clínica Médica / Cardio</option>
               <option value="cirurgia">Cirurgia Geral</option>
               <option value="pediatria">Pediatria</option>
@@ -556,8 +708,8 @@ html_content = """<!DOCTYPE html>
             </select>
           </div>
           <div id="field-cat-container">
-            <label class="block font-bold text-slate-700 mb-1">Tipo de Tabela</label>
-            <select id="inputCat" class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300">
+            <label class="block font-bold text-ink mb-1">Tipo de Tabela</label>
+            <select id="inputCat" class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent">
               <option value="eponimos">Epônimo</option>
               <option value="triades">Tríade / Pêntade</option>
               <option value="doencas">Doença (Epidemio + Tto)</option>
@@ -568,69 +720,69 @@ html_content = """<!DOCTYPE html>
         <!-- Form Tabela -->
         <div id="form-tabela" class="space-y-2.5">
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Nome do Epônimo / Doença / Tríade</label>
-            <input type="text" id="tabName" placeholder="Ex: Tríade de Beck ou Técnica de Lichtenstein..." class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300">
+            <label class="block font-bold text-ink mb-1">Nome do Epônimo / Doença / Tríade</label>
+            <input type="text" id="tabName" placeholder="Ex: Tríade de Beck ou Técnica de Lichtenstein..." class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent">
           </div>
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Definição / Achados / Epidemiologia</label>
-            <textarea id="tabCol1" rows="2" placeholder="Ex: Hipotensão + Bulhas hipofonéticas + Turgência jugular..." class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            <label class="block font-bold text-ink mb-1">Definição / Achados / Epidemiologia</label>
+            <textarea id="tabCol1" rows="2" placeholder="Ex: Hipotensão + Bulhas hipofonéticas + Turgência jugular..." class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
           </div>
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Diagnóstico & Conduta Terapêutica</label>
-            <textarea id="tabCol2" rows="2" placeholder="Ex: Pericardiocentese de alívio imediata..." class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            <label class="block font-bold text-ink mb-1">Diagnóstico & Conduta Terapêutica</label>
+            <textarea id="tabCol2" rows="2" placeholder="Ex: Pericardiocentese de alívio imediata..." class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
           </div>
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Macete em Áudio (Lido a 1.7x)</label>
-            <textarea id="tabAudio" rows="2" placeholder="Texto explicativo para ser lido em áudio..." class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            <label class="block font-bold text-ink mb-1">Macete em Áudio (Lido a 1.7x)</label>
+            <textarea id="tabAudio" rows="2" placeholder="Texto explicativo para ser lido em áudio..." class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
           </div>
         </div>
 
         <!-- Form Flashcard -->
         <div id="form-flashcard" class="space-y-2.5 hidden">
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Frente do Cartão (Pergunta)</label>
-            <textarea id="fcFront" rows="2" placeholder="Ex: Qual o antibiótico de escolha para celulite estreptocócica?" class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            <label class="block font-bold text-ink mb-1">Frente do Cartão (Pergunta)</label>
+            <textarea id="fcFront" rows="2" placeholder="Ex: Qual o antibiótico de escolha para celulite estreptocócica?" class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
           </div>
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Verso do Cartão (Resposta Direta)</label>
-            <textarea id="fcBack" rows="2" placeholder="Ex: Cefazolina ou Oxacilina IV; Cefalexina VO." class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            <label class="block font-bold text-ink mb-1">Verso do Cartão (Resposta Direta)</label>
+            <textarea id="fcBack" rows="2" placeholder="Ex: Cefazolina ou Oxacilina IV; Cefalexina VO." class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
           </div>
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Macete Falado em Áudio</label>
-            <textarea id="fcAudio" rows="2" placeholder="Explicação falada para fixação rápida..." class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            <label class="block font-bold text-ink mb-1">Macete Falado em Áudio</label>
+            <textarea id="fcAudio" rows="2" placeholder="Explicação falada para fixação rápida..." class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
           </div>
         </div>
 
         <!-- Form Já Caiu Geral -->
         <div id="form-geral" class="space-y-2.5 hidden">
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Tema / Assunto Cobrado</label>
-            <input type="text" id="mackTitle" placeholder="Ex: SHU pós-STEC" class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300">
+            <label class="block font-bold text-ink mb-1">Tema / Assunto Cobrado</label>
+            <input type="text" id="mackTitle" placeholder="Ex: SHU pós-STEC" class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent">
           </div>
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Pegadinha / Como a banca cobra</label>
-            <textarea id="mackTip" rows="3" placeholder="Ex: Antibiótico é contraindicado por risco de liberação maciça de toxina Shiga..." class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            <label class="block font-bold text-ink mb-1">Pegadinha / Como a banca cobra</label>
+            <textarea id="mackTip" rows="3" placeholder="Ex: Antibiótico é contraindicado por risco de liberação maciça de toxina Shiga..." class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
           </div>
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Ano / Prova (Ex: Geral 2024, ENARE 2025)</label>
-            <input type="text" id="mackYear" placeholder="Ex: Geral 2024 / Bancas" class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300">
+            <label class="block font-bold text-ink mb-1">Ano / Prova (Ex: Geral 2024, ENARE 2025)</label>
+            <input type="text" id="mackYear" placeholder="Ex: Geral 2024 / Bancas" class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent">
           </div>
         </div>
 
         <!-- Form Colar Texto Solto -->
         <div id="form-raw" class="space-y-2.5 hidden">
           <div>
-            <label class="block font-bold text-slate-700 mb-1">Cole aqui notas, tabelas ou resumos soltos</label>
-            <textarea id="rawText" rows="6" placeholder="Pode colar qualquer anotação bruta. O app salva e eu posso estruturar tudo para você aqui no chat!" class="w-full bg-rose-50/50 border border-rose-200 rounded-xl p-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300 custom-scroll"></textarea>
+            <label class="block font-bold text-ink mb-1">Cole aqui notas, tabelas ou resumos soltos</label>
+            <textarea id="rawText" rows="6" placeholder="Pode colar qualquer anotação bruta. O app salva e eu posso estruturar tudo para você aqui no chat!" class="w-full bg-paper2 border border-rule p-2 text-ink focus:outline-none focus:ring-2 focus:ring-accent custom-scroll"></textarea>
           </div>
         </div>
       </div>
 
       <!-- Form Footer -->
-      <div class="p-3 border-t border-rose-100 flex items-center justify-end gap-2 bg-white">
-        <button onclick="closeModal('addModal')" class="px-3.5 py-2 rounded-xl text-slate-400 hover:text-slate-600 text-xs font-bold">Cancelar</button>
-        <button onclick="submitNewItem()" class="px-5 py-2 rounded-xl bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold text-xs shadow-md shadow-pink-200 flex items-center gap-1.5 transition active:scale-95">
-          <i class="fa-solid fa-check"></i> Salvar no App
+      <div class="p-3 border-t border-rule flex items-center justify-end gap-2 bg-paper3">
+        <button onclick="closeModal('addModal')" class="px-3.5 py-2 text-muted hover:text-ink2 text-xs font-bold">Cancelar</button>
+        <button onclick="submitNewItem()" class="px-5 py-2 bg-accent text-accentink font-bold text-xs flex items-center gap-1.5 transition-colors">
+          <i class="fa-solid fa-check" aria-hidden="true"></i> Salvar
         </button>
       </div>
     </div>
@@ -640,35 +792,34 @@ html_content = """<!DOCTYPE html>
        MODAL: BACKUP E SINCRONIZAÇÃO
        ========================================== -->
   <div id="exportModal" class="modal-overlay" style="display: none;">
-    <div class="bg-white border border-pink-200 rounded-3xl w-full max-w-sm flex flex-col shadow-2xl overflow-hidden">
-      <div class="p-4 border-b border-rose-100 flex items-center justify-between bg-pink-50/60">
+    <div class="bg-paper3 border border-rule w-full max-w-sm flex flex-col shadow-card overflow-hidden">
+      <div class="p-4 border-b border-rule flex items-center justify-between bg-paper2">
         <div class="flex items-center gap-2">
-          <span>☁️</span>
-          <h3 class="text-xs font-bold text-slate-800">Sincronização & Backup</h3>
+          <h3 class="text-sm text-ink">Backup</h3>
         </div>
-        <button onclick="closeModal('exportModal')" class="text-slate-400 hover:text-rose-600 p-1">
+        <button onclick="closeModal('exportModal')" class="text-muted hover:text-ink2 p-1">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
 
       <div class="p-4 space-y-3 text-xs">
-        <p class="text-slate-600 leading-relaxed">
-          Para transferir entre o notebook, celular e tablet:
+        <p class="text-ink2 leading-relaxed">
+          Leve o progresso de um aparelho para outro sem login:
         </p>
 
         <div class="space-y-2">
-          <button onclick="exportData()" class="w-full py-2.5 px-4 rounded-xl bg-pink-100 text-pink-700 font-bold hover:bg-pink-200 transition flex items-center justify-center gap-2 active:scale-95">
-            <i class="fa-solid fa-download"></i> Baixar Arquivo JSON
+          <button onclick="exportData()" class="w-full py-2.5 px-4 bg-paper2 text-ink2 font-bold hover:bg-paper2 transition-colors flex items-center justify-center gap-2">
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar arquivo de backup
           </button>
           
-          <label class="w-full py-2.5 px-4 rounded-xl border border-dashed border-rose-300 text-rose-600 font-bold hover:bg-rose-50 transition flex items-center justify-center gap-2 cursor-pointer active:scale-95">
-            <i class="fa-solid fa-upload"></i> Restaurar no Celular
+          <label class="w-full py-2.5 px-4 border border-dashed border-rule text-ink2 font-bold hover:bg-paper2 transition-colors flex items-center justify-center gap-2 cursor-pointer">
+            <i class="fa-solid fa-upload" aria-hidden="true"></i> Restaurar de um arquivo
             <input type="file" id="importFileInput" onchange="importData(event)" class="hidden" accept=".json">
           </label>
         </div>
 
-        <p class="text-[11px] text-rose-400 text-center pt-1">
-          ✨ Se preferir, é só me mandar qualquer novo assunto aqui no chat que eu integro diretamente no código!
+        <p class="text-xs text-muted text-center pt-1">
+          Com login pelo Google o progresso já fica salvo na nuvem. O arquivo serve de cópia extra.
         </p>
       </div>
     </div>
@@ -678,20 +829,19 @@ html_content = """<!DOCTYPE html>
        MODAL: ÍNDICE SEQUENCIAL DA TRILHA
        ========================================== -->
   <div id="trailModal" class="modal-overlay" style="display: none;">
-    <div class="bg-white border border-pink-200 rounded-3xl w-full max-w-lg max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
-      <div class="p-4 border-b border-rose-100 flex items-center justify-between bg-pink-50/60">
+    <div class="bg-paper3 border border-rule w-full max-w-lg max-h-[85vh] flex flex-col shadow-card overflow-hidden">
+      <div class="p-4 border-b border-rule flex items-center justify-between bg-paper2">
         <div class="flex items-center gap-2">
-          <span>🗺️</span>
           <div>
-            <h3 class="text-xs font-bold text-slate-800">Índice Sequencial da Trilha</h3>
-            <p class="text-[10px] text-rose-500">Toque em qualquer card para ir direto para ele</p>
+            <h3 class="text-sm text-ink">Índice da trilha</h3>
+            <p class="text-xs text-muted">Toque num card para ir direto a ele.</p>
           </div>
         </div>
-        <button onclick="closeModal('trailModal')" class="text-slate-400 hover:text-rose-600 p-1">
+        <button onclick="closeModal('trailModal')" class="text-muted hover:text-ink2 p-1">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      <div id="trailModalList" class="p-3 overflow-y-auto custom-scroll space-y-1.5 text-xs">
+      <div id="trailModalList" class="px-3 pb-3 overflow-y-auto custom-scroll text-xs">
         <!-- Renderizado via JS -->
       </div>
     </div>
@@ -701,32 +851,31 @@ html_content = """<!DOCTYPE html>
        MODAL: TÉCNICAS DE MEMORIZAÇÃO ATIVA
        ========================================== -->
   <div id="tipsModal" class="modal-overlay" style="display: none;">
-    <div class="bg-white border border-pink-200 rounded-3xl w-full max-w-md max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
-      <div class="p-4 border-b border-rose-100 flex items-center justify-between bg-pink-50/60">
+    <div class="bg-paper3 border border-rule w-full max-w-md max-h-[85vh] flex flex-col shadow-card overflow-hidden">
+      <div class="p-4 border-b border-rule flex items-center justify-between bg-paper2">
         <div class="flex items-center gap-2">
-          <span>🧠</span>
-          <h3 class="text-xs font-bold text-slate-800">Como Decorar Tudo Mais Rápido</h3>
+          <h3 class="text-sm text-ink">Como fixar mais rápido</h3>
         </div>
-        <button onclick="closeModal('tipsModal')" class="text-slate-400 hover:text-rose-600 p-1">
+        <button onclick="closeModal('tipsModal')" class="text-muted hover:text-ink2 p-1">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      <div class="p-4 overflow-y-auto custom-scroll space-y-3 text-xs text-slate-700 leading-relaxed">
-        <div class="bg-rose-50/70 p-3 rounded-2xl border border-rose-100">
-          <div class="font-bold text-rose-800 mb-1">1. 📅 Repetição Espaçada (SRS)</div>
-          <p>Não revise tudo todo dia! Se você acertou fácil, o app empurra o card para <b>3, 7, 15, 30 dias</b>. Se errou, ele volta em <b>5 minutos</b> na mesma sessão e reaparece amanhã.</p>
+      <div class="p-4 overflow-y-auto custom-scroll space-y-3 text-xs text-ink leading-relaxed">
+        <div class="bg-paper2 p-3 border border-rule">
+          <div class="font-bold text-ink mb-1">1. Repetição espaçada</div>
+          <p>Não revise tudo todo dia! Se acertou fácil, o card volta em <b>3 dias</b>, depois em <b>7</b>, e o intervalo continua crescendo até a véspera da prova. Se errou, ele volta em <b>5 minutos</b> na mesma sessão e reaparece amanhã.</p>
         </div>
-        <div class="bg-pink-50/70 p-3 rounded-2xl border border-pink-100">
-          <div class="font-bold text-rose-800 mb-1">2. 💡 Pista Ativa (Antes de Virar)</div>
-          <p>Travou na pergunta? Não vire direto! Clique em <b>"💡 Quero uma dica"</b> na frente do card. Forçar o cérebro a lembrar com uma pista cria sinapses muito mais fortes do que apenas ler a resposta.</p>
+        <div class="bg-paper2 p-3 border border-rule">
+          <div class="font-bold text-ink mb-1">2. Pista antes de virar</div>
+          <p>Travou na pergunta? Não vire direto! Clique em <b>“Quero uma dica”</b> na frente do card. Forçar o cérebro a lembrar com uma pista cria sinapses muito mais fortes do que apenas ler a resposta.</p>
         </div>
-        <div class="bg-amber-50/70 p-3 rounded-2xl border border-amber-100">
-          <div class="font-bold text-amber-900 mb-1">3. 🔗 Ancoragem pelo "Porquê"</div>
-          <p>Sempre leia o bloco <b>💡 Por que? / Fisiopatologia</b> no verso. Quando você entende a lógica física (ex: a albumina é grande e fica presa na peneira), você deduz o número na prova mesmo se der branco.</p>
+        <div class="bg-paper2 p-3 border border-rule">
+          <div class="font-bold text-ink mb-1">3. Ancore no porquê</div>
+          <p>Sempre leia o bloco <b>Por que? / Fisiopatologia</b> no verso. Quando você entende a lógica física (ex: a albumina é grande e fica presa na peneira), você deduz o número na prova mesmo se der branco.</p>
         </div>
-        <div class="bg-emerald-50/70 p-3 rounded-2xl border border-emerald-100">
-          <div class="font-bold text-emerald-900 mb-1">4. 🗣️ Regra dos 15 Segundos + Áudio 1.7x</div>
-          <p>Responda <b>em voz alta</b> em até 15s antes de virar. Se errar, clique em <b>"🔊 Ouvir 1.7x"</b> no verso para fixar pela via auditiva também.</p>
+        <div class="bg-paper2 p-3 border border-rule">
+          <div class="font-bold text-ink mb-1">4. Quinze segundos e áudio a 1.7x</div>
+          <p>Responda <b>em voz alta</b> em até 15s antes de virar. Se errar, clique em <b>“Ouvir 1.7x”</b> no verso para fixar pela via auditiva também.</p>
         </div>
       </div>
     </div>
@@ -738,6 +887,8 @@ html_content = """<!DOCTYPE html>
   <script>
     // ESTADO INICIAL
     var appState = """ + json.dumps(app_data, ensure_ascii=False) + """;
+    // Os dados guardam as pegadinhas em "mackenzie"; a aba Já caiu lê "geral"
+    if (!appState.geral) appState.geral = appState.mackenzie || [];
 
     var activeTab = 'tabelas';
     var activeArea = 'todas';
@@ -752,6 +903,11 @@ html_content = """<!DOCTYPE html>
     var trailPinnedId = null; // card aberto pela Trilha, exibido mesmo se agendado para depois
     var fcSpecialty = 'todas';
     var fcSubtopic = 'todos';
+    var showProgress = false; // números e previsão de 7 dias recolhidos
+    var showFilters = false;  // especialidade e tema recolhidos
+    var cardEnterDir = '';    // 'next' | 'prev': de que lado o próximo card entra
+    var cardLeaving = false;  // trava enquanto o card avaliado sai
+    var progressJustOpened = false;
     var srsData = {};
     var srsStats = { reviewedToday: 0, newToday: 0, lastReviewDate: '', examDate: 0 };
     var addModalType = 'tabela';
@@ -774,6 +930,11 @@ html_content = """<!DOCTYPE html>
       try { initSpeech(); } catch(e) { console.warn('initSpeech err', e); }
       try { updateBadges(); } catch(e) {}
       try { renderCurrentTab(); } catch(e) { console.error('render err', e); }
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      setTimeout(hideSplash, reduceMotion ? 1200 : 2500);
+      moveTabIndicator();
+      window.addEventListener('resize', moveTabIndicator);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(moveTabIndicator);
     });
 
     function getTodayStr() {
@@ -821,6 +982,14 @@ html_content = """<!DOCTYPE html>
       } catch (e) {
         console.warn('Storage read restricted:', e);
       }
+    }
+
+    // Some com a tela de abertura (também ao tocar nela)
+    function hideSplash() {
+      var el = document.getElementById('splash');
+      if (!el || el.classList.contains('splash--out')) return;
+      el.classList.add('splash--out');
+      setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
     }
 
     function writeLocalSRS() {
@@ -977,19 +1146,19 @@ html_content = """<!DOCTYPE html>
       btn.classList.remove('hidden');
       var first = (cloud.user && (cloud.user.displayName || cloud.user.email) || '').split(' ')[0];
       if (status === 'off') {
-        icon.className = 'fa-brands fa-google text-[12px]';
+        icon.className = 'fa-brands fa-google text-xs';
         label.innerText = 'Entrar';
         btn.title = 'Entrar com Google para salvar o progresso na nuvem';
       } else if (status === 'syncing') {
-        icon.className = 'fa-solid fa-rotate fa-spin text-[12px] text-sky-500';
+        icon.className = 'fa-solid fa-rotate fa-spin text-xs text-muted';
         label.innerText = first || 'Salvando';
         btn.title = 'Sincronizando com a nuvem...';
       } else if (status === 'ok') {
-        icon.className = 'fa-solid fa-cloud text-[12px] text-emerald-500';
+        icon.className = 'fa-solid fa-cloud text-xs text-accent';
         label.innerText = first || 'Na nuvem';
         btn.title = 'Progresso salvo na nuvem' + (cloud.user && cloud.user.email ? ' (' + cloud.user.email + ')' : '');
       } else {
-        icon.className = 'fa-solid fa-triangle-exclamation text-[12px] text-amber-500';
+        icon.className = 'fa-solid fa-triangle-exclamation text-xs text-ink';
         label.innerText = 'Offline';
         btn.title = 'Sem conexão com a nuvem. O progresso fica salvo neste aparelho e sobe quando voltar.';
       }
@@ -1038,6 +1207,19 @@ html_content = """<!DOCTYPE html>
     // ==========================================
     // NAVEGAÇÃO DE ABAS (100% GARANTIDA POR STYLE.DISPLAY)
     // ==========================================
+    function moveTabIndicator() {
+      var track = document.getElementById('tabTrack');
+      var ind = document.getElementById('tabIndicator');
+      var active = track ? track.querySelector('.main-tab-btn.active') : null;
+      if (!track || !ind || !active) return;
+      ind.style.width = active.offsetWidth + 'px';
+      ind.style.transform = 'translateX(' + active.offsetLeft + 'px)';
+      if (!track.classList.contains('has-indicator')) {
+        track.classList.add('has-indicator');
+        requestAnimationFrame(function() { ind.classList.add('is-ready'); });
+      }
+    }
+
     function switchTab(tabId) {
       activeTab = tabId;
 
@@ -1061,6 +1243,7 @@ html_content = """<!DOCTYPE html>
         }
       }
 
+      moveTabIndicator();
       renderCurrentTab();
       try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch(e) {}
     }
@@ -1104,6 +1287,11 @@ html_content = """<!DOCTYPE html>
     // ==========================================
     // RENDER: TABELAS
     // ==========================================
+    // "• •" nos dados marca um subitem: mostra como "◦"
+    function tidyBullets(text) {
+      return String(text || '-').replace(/•\\s*•/g, '◦');
+    }
+
     function renderTables() {
       var container = document.getElementById('tablesContainer');
       var countEl = document.getElementById('tableItemCount');
@@ -1118,10 +1306,9 @@ html_content = """<!DOCTYPE html>
       if (countEl) countEl.innerText = filtered.length + " itens";
 
       if (filtered.length === 0) {
-        container.innerHTML = '<div class="glass-card p-6 text-center space-y-2 border border-pink-200">' +
-          '<div class="text-2xl">📋</div>' +
-          '<h3 class="font-bold text-sm text-slate-800">Nenhum item encontrado nesta área</h3>' +
-          '<p class="text-xs text-rose-500">Mude o filtro acima ou clique em "+ Adicionar".</p>' +
+        container.innerHTML = '<div class="glass-card p-6 space-y-2">' +
+          '<h3 class="text-base text-ink">Nada nesta área</h3>' +
+          '<p class="text-sm text-muted">Troque o filtro acima ou adicione um item pelo botão Adicionar.</p>' +
         '</div>';
         return;
       }
@@ -1131,34 +1318,33 @@ html_content = """<!DOCTYPE html>
         var item = filtered[i];
         var audioBtn = '';
         if (item.audioText) {
-          audioBtn = '<button onclick="playItemAudioByIndex(' + item.id + ', \\'table\\')" class="px-2.5 py-1 rounded-xl bg-pink-100 text-rose-700 hover:bg-pink-200 text-xs font-bold flex items-center gap-1.5 transition active:scale-95 shrink-0">' +
-            '<i class="fa-solid fa-volume-high text-[11px]"></i>' +
-            '<span>Ouvir 1.7x</span>' +
+          audioBtn = '<button type="button" onclick="playItemAudioByIndex(' + item.id + ', \\'table\\')" class="h-9 px-3 border-2 border-ink bg-paper3 text-ink hover:bg-ink hover:text-paper text-xs font-medium flex items-center gap-2 transition-colors shrink-0">' +
+                        '<span>Ouvir 1.7x</span>' +
           '</button>';
         }
 
-        html += '<div class="glass-card p-4 sm:p-5 space-y-2.5 transition">' +
-          '<div class="flex items-center justify-between gap-2">' +
-            '<div class="flex items-center gap-1.5 flex-wrap">' +
-              '<span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-pink-50 text-rose-700 border border-pink-200">' +
-                getAreaLabel(item.area) +
-              '</span>' +
-              '<span class="text-[10px] font-bold text-slate-400">• ' + getCatLabel(item.cat) + '</span>' +
+        html += '<article class="glass-card">' +
+          '<div class="flex items-start justify-between gap-3 p-4 border-b-2 border-ink">' +
+            '<div class="min-w-0 space-y-1">' +
+              '<div class="flex items-center gap-2 flex-wrap">' +
+                '<span class="tag">' + getAreaLabel(item.area) + '</span>' +
+                '<span class="font-display text-xs text-muted">' + getCatLabel(item.cat) + '</span>' +
+              '</div>' +
+              '<h3 class="text-base text-ink leading-snug">' + escapeText(item.name) + '</h3>' +
             '</div>' +
             audioBtn +
           '</div>' +
-          '<h3 class="font-bold text-sm sm:text-base text-slate-800 leading-snug">' + escapeText(item.name) + '</h3>' +
-          '<div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 text-xs pt-1">' +
-            '<div class="bg-rose-50/50 p-3 rounded-xl border border-rose-100/80">' +
-              '<span class="font-bold text-rose-600 block mb-1">Definição & Achados:</span>' +
-              '<p class="text-slate-600 leading-relaxed">' + (item.col1 || '-') + '</p>' +
+          '<div class="grid grid-cols-1 md:grid-cols-2 text-sm">' +
+            '<div class="p-4 md:border-r border-rule">' +
+              '<div class="font-display text-xs text-muted mb-2">Definição e achados</div>' +
+              '<p class="text-ink leading-relaxed whitespace-pre-line">' + tidyBullets(item.col1) + '</p>' +
             '</div>' +
-            '<div class="bg-pink-50/50 p-3 rounded-xl border border-pink-100/80">' +
-              '<span class="font-bold text-pink-700 block mb-1">Diagnóstico & Conduta:</span>' +
-              '<p class="text-slate-600 leading-relaxed">' + (item.col2 || '-') + '</p>' +
+            '<div class="p-4 border-t md:border-t-0 border-rule">' +
+              '<div class="font-display text-xs text-muted mb-2">Diagnóstico e conduta</div>' +
+              '<p class="text-ink leading-relaxed whitespace-pre-line">' + tidyBullets(item.col2) + '</p>' +
             '</div>' +
           '</div>' +
-        '</div>';
+        '</article>';
       }
       container.innerHTML = html;
     }
@@ -1384,13 +1570,13 @@ html_content = """<!DOCTYPE html>
         }
       }
 
-      var dayLabels = ['Hoje', 'Amanhã', '+2d', '+3d', '+4d', '+5d', '+6d'];
+      var dayLabels = ['Hoje', '+1 d', '+2 d', '+3 d', '+4 d', '+5 d', '+6 d'];
       var forecastHtml = '';
       for (var f = 0; f < 7; f++) {
         var isToday = (f === 0);
-        forecastHtml += '<div class="flex-1 text-center py-1 px-0.5 rounded-lg ' + (isToday ? 'bg-rose-100/80 border border-rose-200' : 'bg-white/70 border border-pink-100') + '">' +
-          '<div class="text-[9px] font-bold ' + (isToday ? 'text-rose-700' : 'text-slate-400') + '">' + dayLabels[f] + '</div>' +
-          '<div class="text-[11px] font-extrabold ' + (forecast[f] > 0 ? 'text-rose-600' : 'text-slate-300') + '">' + forecast[f] + '</div>' +
+        forecastHtml += '<div class="forecast-cell text-center py-2 px-1' + (isToday ? ' is-today' : '') + '">' +
+          '<div class="font-display text-xs ' + (isToday ? '' : 'text-muted') + '">' + dayLabels[f] + '</div>' +
+          '<div class="font-display text-base font-extrabold ' + (isToday ? 'text-amber' : (forecast[f] > 0 ? 'text-ink' : 'text-muted')) + '">' + forecast[f] + '</div>' +
         '</div>';
       }
 
@@ -1398,42 +1584,53 @@ html_content = """<!DOCTYPE html>
       var studyDaysLeft = Math.max(1, daysLeft - 4);
       var dailyNewGoal = newCount > 0 ? Math.max(5, Math.ceil(newCount / studyDaysLeft)) : 0;
 
-      dash.innerHTML =
-        '<div class="flex items-center justify-between bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-xl px-3 py-2 shadow-xs">' +
-          '<div class="flex items-center gap-2">' +
-            '<span class="text-sm">⏳</span>' +
+      function stat(label, value) {
+        return '<div class="stat-cell px-3 py-2">' +
+          '<div class="text-xs text-muted">' + label + '</div>' +
+          '<div class="figure text-xl leading-tight">' + value + '</div>' +
+        '</div>';
+      }
+
+      var progressHtml = showProgress
+        ? '<div class="px-4 pb-4 space-y-3 border-t border-rule pt-4' + (progressJustOpened ? ' reveal' : '') + '">' +
+            '<div class="stat-grid grid-cols-2 sm:grid-cols-4">' +
+              stat('Para hoje', dueToday + newCount) +
+              stat('Difíceis', hardCount) +
+              stat('Fixando', learningCount) +
+              stat('Dominados', masteredCount) +
+            '</div>' +
             '<div>' +
-              '<div class="text-[11px] font-extrabold leading-tight">Faltam ' + daysLeft + ' dias para a Prova</div>' +
-              '<div class="text-[10px] text-rose-100">Meta de hoje: ' + (dueToday + dailyNewGoal) + ' cards (' + dueToday + ' rev + ' + dailyNewGoal + ' novos) • Nenhum card passa do prazo!</div>' +
+              '<div class="flex items-center justify-between text-xs text-muted mb-2">' +
+                '<span>Revisões nos próximos 7 dias</span>' +
+                '<span>' + srsStats.reviewedToday + ' revisados hoje</span>' +
+              '</div>' +
+              '<div class="grid grid-cols-7 gap-1">' + forecastHtml + '</div>' +
+            '</div>' +
+          '</div>'
+        : '';
+
+      dash.innerHTML =
+        '<div class="summary">' +
+          '<div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3">' +
+            '<div class="flex items-baseline gap-2">' +
+              '<span class="figure figure--accent text-3xl leading-none">' + daysLeft + '</span>' +
+              '<span class="text-sm text-ink2">' + (daysLeft === 1 ? 'dia até a prova' : 'dias até a prova') + '</span>' +
+            '</div>' +
+            '<div class="text-sm text-ink2 flex-1 min-w-[180px]">Meta de hoje: <b class="text-ink">' + (dueToday + dailyNewGoal) + ' cards</b></div>' +
+            '<div class="flex items-center gap-3">' +
+              '<button type="button" onclick="toggleProgress()" class="text-btn" aria-expanded="' + (showProgress ? 'true' : 'false') + '">' + (showProgress ? 'Esconder progresso' : 'Ver progresso') + '</button>' +
+              '<button type="button" onclick="adjustExamDays()" class="text-btn">Mudar data</button>' +
             '</div>' +
           '</div>' +
-          '<button onclick="adjustExamDays()" class="px-2 py-1 rounded-lg bg-white/20 hover:bg-white/30 text-[10px] font-bold shrink-0 transition">⚙️ Prazo</button>' +
-        '</div>' +
-        '<div class="grid grid-cols-4 gap-1.5 text-center">' +
-          '<div class="bg-rose-50/80 border border-rose-100 rounded-xl py-1.5 px-1">' +
-            '<div class="text-[10px] font-bold text-rose-600">📅 P/ Hoje</div>' +
-            '<div class="text-sm font-extrabold text-rose-800">' + (dueToday + newCount) + '</div>' +
-          '</div>' +
-          '<div class="bg-amber-50/80 border border-amber-100 rounded-xl py-1.5 px-1">' +
-            '<div class="text-[10px] font-bold text-amber-700">🔥 Difíceis</div>' +
-            '<div class="text-sm font-extrabold text-amber-900">' + hardCount + '</div>' +
-          '</div>' +
-          '<div class="bg-pink-50/80 border border-pink-100 rounded-xl py-1.5 px-1">' +
-            '<div class="text-[10px] font-bold text-pink-600">🌱 Fixando</div>' +
-            '<div class="text-sm font-extrabold text-pink-800">' + learningCount + '</div>' +
-          '</div>' +
-          '<div class="bg-emerald-50/80 border border-emerald-100 rounded-xl py-1.5 px-1">' +
-            '<div class="text-[10px] font-bold text-emerald-700">🏆 Dominados</div>' +
-            '<div class="text-sm font-extrabold text-emerald-900">' + masteredCount + '</div>' +
-          '</div>' +
-        '</div>' +
-        '<div>' +
-          '<div class="flex items-center justify-between text-[10px] font-bold text-slate-500 mb-1">' +
-            '<span>📆 Previsão de Revisões (7 dias)</span>' +
-            '<span class="text-rose-500">✅ ' + srsStats.reviewedToday + ' revisados hoje</span>' +
-          '</div>' +
-          '<div class="flex items-center gap-1">' + forecastHtml + '</div>' +
+          progressHtml +
         '</div>';
+    }
+
+    function toggleProgress() {
+      showProgress = !showProgress;
+      progressJustOpened = showProgress;
+      renderFlashcards();
+      progressJustOpened = false;
     }
 
     function renderFCControls() {
@@ -1441,10 +1638,10 @@ html_content = """<!DOCTYPE html>
       if (!ctrl) return;
 
       var modes = [
-        { id: 'schedule', label: '📅 Cronograma (Hoje)' },
-        { id: 'mixed', label: '🎲 Misturado' },
-        { id: 'sequential', label: '📖 Sequencial (1→N)' },
-        { id: 'hard', label: '🔥 Pontos Fracos' }
+        { id: 'schedule', label: 'Cronograma de hoje' },
+        { id: 'mixed', label: 'Misturado' },
+        { id: 'sequential', label: 'Sequencial' },
+        { id: 'hard', label: 'Pontos fracos' }
       ];
       var modeHtml = '';
       for (var m = 0; m < modes.length; m++) {
@@ -1452,17 +1649,17 @@ html_content = """<!DOCTYPE html>
         modeHtml += '<button onclick="setFCStudyMode(\\'' + modes[m].id + '\\')" class="filter-pill ' + (active ? 'active' : 'inactive') + '">' + modes[m].label + '</button>';
       }
       if (fcStudyMode === 'mixed' || fcStudyMode === 'schedule') {
-        modeHtml += '<button onclick="reshuffleCards()" class="filter-pill bg-pink-50 text-rose-700 border border-pink-200 hover:bg-pink-100" title="Gerar nova mistura de especialidades">🔀 Misturar</button>';
+        modeHtml += '<button type="button" onclick="reshuffleCards()" class="filter-pill inactive" title="Gerar nova mistura de especialidades">Embaralhar</button>';
       }
 
       var specs = [
         { id: 'todas', label: 'Todas' },
-        { id: 'cardiologia', label: '❤️ Cardio' },
-        { id: 'pneumologia', label: '🫁 Pneumo' },
-        { id: 'gastroenterologia', label: '🩺 Gastro' },
-        { id: 'endocrinologia', label: '🦋 Endocrino' },
-        { id: 'reumatologia', label: '🦴 Reumato' },
-        { id: 'hematologia', label: '🩸 Hemato' }
+        { id: 'cardiologia', label: 'Cardio' },
+        { id: 'pneumologia', label: 'Pneumo' },
+        { id: 'gastroenterologia', label: 'Gastro' },
+        { id: 'endocrinologia', label: 'Endócrino' },
+        { id: 'reumatologia', label: 'Reumato' },
+        { id: 'hematologia', label: 'Hemato' }
       ];
       var specHtml = '';
       for (var s = 0; s < specs.length; s++) {
@@ -1481,17 +1678,36 @@ html_content = """<!DOCTYPE html>
       var subs = Object.keys(subMap);
       var subHtml = '';
       if (subs.length > 0) {
-        subHtml += '<button onclick="setFCSubtopic(\\'todos\\')" class="filter-pill ' + (fcSubtopic === 'todos' ? 'active' : 'inactive') + '">Todos os Temas</button>';
+        subHtml += '<button onclick="setFCSubtopic(\\'todos\\')" class="filter-pill ' + (fcSubtopic === 'todos' ? 'active' : 'inactive') + '">Todos</button>';
         for (var k = 0; k < subs.length; k++) {
           var subId = subs[k];
           subHtml += '<button onclick="setFCSubtopic(\\'' + subId + '\\')" class="filter-pill ' + (fcSubtopic === subId ? 'active' : 'inactive') + '">' + getCatLabel(subId) + '</button>';
         }
       }
 
+      var filterCount = (fcSpecialty !== 'todas' ? 1 : 0) + (fcSubtopic !== 'todos' ? 1 : 0);
+      var filtersOpen = showFilters || filterCount > 0;
       ctrl.innerHTML =
-        '<div class="flex items-center gap-1.5 overflow-x-auto custom-scroll pb-0.5">' + modeHtml + '</div>' +
-        '<div class="flex items-center gap-1.5 overflow-x-auto custom-scroll pb-0.5">' + specHtml + '</div>' +
-        (subHtml ? '<div class="flex items-center gap-1.5 overflow-x-auto custom-scroll pb-0.5">' + subHtml + '</div>' : '');
+        '<div class="flex items-center gap-2">' +
+          '<div class="seg flex overflow-x-auto no-scrollbar min-w-0">' + modeHtml + '</div>' +
+          '<button type="button" onclick="toggleFilters()" class="filter-pill ' + (filtersOpen ? 'active' : 'inactive') + ' shrink-0 ml-auto" aria-expanded="' + (filtersOpen ? 'true' : 'false') + '">Filtros' + (filterCount ? ' (' + filterCount + ')' : '') + '</button>' +
+        '</div>' +
+        (filtersOpen
+          ? '<div class="seg flex overflow-x-auto no-scrollbar">' + specHtml + '</div>' +
+            (subHtml ? '<div class="seg flex overflow-x-auto no-scrollbar">' + subHtml + '</div>' : '')
+          : '');
+    }
+
+    function toggleFilters() {
+      // Fechar com um filtro ativo limpa o filtro, para nada ficar escondido sem aviso
+      var active = fcSpecialty !== 'todas' || fcSubtopic !== 'todos';
+      if (showFilters || active) {
+        showFilters = false;
+        if (active) { fcSpecialty = 'todas'; fcSubtopic = 'todos'; currentFlashcardIndex = 0; }
+      } else {
+        showFilters = true;
+      }
+      renderFlashcards();
     }
 
     function setFCStudyMode(mode) {
@@ -1543,13 +1759,13 @@ html_content = """<!DOCTYPE html>
         if (!line) continue;
         var escaped = escapeText(line);
         if (line.indexOf('💡') === 0 || line.indexOf('🔗') === 0) {
-          out += '<div class="bg-amber-50/90 border border-amber-200 rounded-xl px-2.5 py-1.5 text-left text-xs text-amber-950 font-semibold leading-relaxed">' + escaped + '</div>';
+          out += '<div class="border-l-4 border-accent bg-paper2 px-3 py-2 text-sm text-ink leading-relaxed rounded-r-lg">' + escaped + '</div>';
         } else if (line.indexOf('⚠️') === 0) {
-          out += '<div class="bg-rose-100/80 border border-rose-200 rounded-xl px-2.5 py-1.5 text-left text-xs text-rose-900 font-semibold leading-relaxed">' + escaped + '</div>';
+          out += '<div class="bg-amber px-3 py-2 text-sm text-ink font-medium leading-relaxed rounded-lg">' + escaped + '</div>';
         } else if (line.indexOf('•') === 0 || line.indexOf('-') === 0 || /^\\d+\\./.test(line)) {
-          out += '<div class="text-left text-xs sm:text-sm text-slate-700 font-medium leading-relaxed pl-1">' + escaped + '</div>';
+          out += '<div class="text-sm text-ink leading-relaxed pl-1">' + escaped + '</div>';
         } else {
-          out += '<div class="text-sm sm:text-base font-bold text-rose-700 leading-snug">' + escaped + '</div>';
+          out += '<div class="text-base font-semibold text-ink leading-snug">' + escaped + '</div>';
         }
       }
       return out;
@@ -1574,24 +1790,23 @@ html_content = """<!DOCTYPE html>
       var filtered = getStudyQueue();
 
       if (scoreEl) {
-        scoreEl.innerText = "🌸 " + srsStats.reviewedToday + " revisados hoje";
+        scoreEl.innerText = srsStats.reviewedToday + " revisados hoje";
       }
 
       if (filtered.length === 0) {
         if (counter) counter.innerText = "0 de 0";
-        var emptyTitle = (fcStudyMode === 'schedule') ? '🎉 Meta de Hoje Concluída!' : (fcStudyMode === 'hard' ? '✨ Nenhum ponto fraco pendente!' : 'Nenhum flashcard neste filtro');
+        var emptyTitle = (fcStudyMode === 'schedule') ? 'Meta de hoje cumprida' : (fcStudyMode === 'hard' ? 'Nenhum ponto fraco pendente' : 'Nenhum card neste filtro');
         var allScheduled = baseCards.length > 0;
-        if (fcStudyMode !== 'schedule' && fcStudyMode !== 'hard' && allScheduled) emptyTitle = '🎉 Tudo em dia neste filtro!';
+        if (fcStudyMode !== 'schedule' && fcStudyMode !== 'hard' && allScheduled) emptyTitle = 'Tudo em dia neste filtro';
         var emptyDesc = (fcStudyMode === 'schedule')
-          ? 'Você zerou todas as revisões programadas para hoje neste módulo!'
+          ? 'Todas as revisões de hoje deste filtro estão feitas. As próximas aparecem no dia certo.'
           : (allScheduled
-            ? 'Todos os cards deste filtro já estão agendados para os próximos dias. Eles voltam sozinhos na data certa (veja a Trilha).'
-            : 'Mude o filtro ou volte para o modo Sequencial para revisar toda a trilha.');
-        section.innerHTML = '<div class="glass-card p-6 text-center space-y-3 border border-pink-200">' +
-          '<div class="text-3xl">' + (fcStudyMode === 'schedule' ? '🏆' : '🗂️') + '</div>' +
-          '<h3 class="font-bold text-sm text-slate-800">' + emptyTitle + '</h3>' +
-          '<p class="text-xs text-rose-500">' + emptyDesc + '</p>' +
-          '<button onclick="setFCStudyMode(\\'sequential\\')" class="px-4 py-2 rounded-xl bg-gradient-to-r from-rose-500 to-pink-500 text-white text-xs font-bold shadow-sm transition active:scale-95">📖 Estudar em Ordem Sequencial</button>' +
+            ? 'Todos os cards deste filtro já estão agendados para os próximos dias. Eles voltam sozinhos na data certa; o Índice mostra quando.'
+            : 'Mude o filtro ou estude em ordem para rever a trilha inteira.');
+        section.innerHTML = '<div class="glass-card p-6 space-y-4">' +
+          '<h3 class="text-lg text-ink">' + emptyTitle + '</h3>' +
+          '<p class="text-sm text-ink2">' + emptyDesc + '</p>' +
+          '<button type="button" onclick="setFCStudyMode(\\'sequential\\')" class="h-11 px-4 bg-accent text-accentink border-2 border-accent font-display text-sm font-extrabold hover:bg-ink hover:border-ink transition-colors">Estudar em ordem</button>' +
         '</div>';
         return;
       }
@@ -1602,116 +1817,93 @@ html_content = """<!DOCTYPE html>
       if (counter) counter.innerText = "Card " + (currentFlashcardIndex + 1) + " de " + filtered.length + " (#" + current.id + ")";
 
       var statusBadge = '';
-      if (srs.state === 'new') statusBadge = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200">🆕 Novo</span>';
-      else if (srs.lapses > 0 && srs.interval <= 1) statusBadge = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">🔥 Rever (' + srs.lapses + 'x)</span>';
-      else if (srs.interval >= 7) statusBadge = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">🏆 ' + srs.interval + 'd</span>';
-      else statusBadge = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-pink-50 text-rose-700 border border-pink-200">🌱 ' + srs.interval + 'd</span>';
+      if (srs.state === 'new') statusBadge = '<span class="tag tag--new">Novo</span>';
+      else if (srs.lapses > 0 && srs.interval <= 1) statusBadge = '<span class="tag tag--due">Rever, ' + srs.lapses + (srs.lapses === 1 ? ' erro' : ' erros') + '</span>';
+      else if (srs.interval >= 7) statusBadge = '<span class="tag tag--done">' + srs.interval + ' dias</span>';
+      else statusBadge = '<span class="tag">' + srs.interval + (srs.interval === 1 ? ' dia' : ' dias') + '</span>';
 
       var hintData = buildSmartHint(current);
       var hintBox = showHint
-        ? '<div onclick="event.stopPropagation()" class="mt-2 bg-amber-50/90 border border-amber-200 rounded-xl p-2.5 text-left space-y-0.5">' +
-            '<div class="text-[10px] font-extrabold text-amber-800 uppercase">' + escapeText(hintData.topic) + '</div>' +
-            '<div class="text-xs text-amber-900 font-medium">💡 Pista: ' + escapeText(hintData.clue) + '</div>' +
+        ? '<div onclick="event.stopPropagation()" class="mt-4 border-l-4 border-accent bg-paper2 px-3 py-2 text-left space-y-1 rounded-r-lg">' +
+            '<div class="font-display text-xs text-muted">' + escapeText(hintData.topic) + '</div>' +
+            '<div class="text-sm text-ink">Pista: ' + escapeText(hintData.clue) + '</div>' +
           '</div>'
         : '';
 
       var flippedClass = isFlipped ? " is-flipped" : "";
 
-      var html = '<div class="space-y-3">' +
+      var html = '<div class="space-y-4">' +
         '<!-- Cartão 3D Interativo -->' +
-        '<div class="flashcard-wrapper" onclick="flipFlashcard()">' +
+        '<div class="flashcard-wrapper' + (cardEnterDir ? ' card-enter-' + cardEnterDir : '') + '" onclick="flipFlashcard()">' +
           '<div id="flashcardInner" class="flashcard-inner' + flippedClass + '">' +
 
             '<!-- FRENTE -->' +
             '<div class="card-face card-front">' +
-              '<div class="flex items-center justify-between gap-1.5 flex-wrap">' +
-                '<div class="flex items-center gap-1.5">' +
-                  '<span class="text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-pink-50 text-rose-700 border border-pink-200">' +
-                    getAreaLabel(current.area) +
-                  '</span>' +
+              '<div class="flex items-center justify-between gap-2 flex-wrap">' +
+                '<div class="flex items-center gap-2">' +
+                  '<span class="font-display text-xs text-muted">' + getAreaLabel(current.area) + '</span>' +
                   statusBadge +
                 '</div>' +
-                '<button onclick="toggleHint(event)" class="px-2.5 py-1 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-[11px] font-bold transition active:scale-95">' +
-                  (showHint ? '🙈 Ocultar Dica' : '💡 Quero uma dica') +
+                '<button type="button" onclick="toggleHint(event)" class="h-9 px-3 border-2 border-ink bg-paper3 text-ink hover:bg-paper2 font-display text-xs font-medium transition-colors">' +
+                  (showHint ? 'Esconder dica' : 'Quero uma dica') +
                 '</button>' +
               '</div>' +
-              '<div class="text-center my-auto px-2 py-3">' +
-                '<p class="text-base sm:text-lg font-bold text-slate-800 leading-snug">' + escapeText(current.front) + '</p>' +
+              '<div class="my-auto py-4">' +
+                '<p class="text-lg sm:text-xl font-medium text-ink leading-snug">' + escapeText(current.front) + '</p>' +
                 hintBox +
               '</div>' +
-              '<div class="text-[11px] text-center text-rose-400 font-medium bg-rose-50/50 py-1.5 px-3 rounded-xl border border-rose-100">' +
-                'Toque no card para conferir a resposta e o porquê ✨' +
-              '</div>' +
+              '<div class="font-display text-xs text-muted">Toque no card para ver a resposta e o porquê.</div>' +
             '</div>' +
 
             '<!-- VERSO -->' +
             '<div class="card-face card-back">' +
-              '<div class="flex items-center justify-between gap-2 pb-1">' +
-                '<span class="text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-700">' +
-                  escapeText(current.name || 'Resposta & Macete') +
-                '</span>' +
+              '<div class="flex items-center justify-between gap-2 pb-2 border-b border-rule">' +
+                '<span class="font-display text-sm font-extrabold text-ink">' + escapeText(current.name || 'Resposta') + '</span>' +
                 (current.audioText ?
-                  '<button onclick="event.stopPropagation(); playCurrentFCAudio()" class="px-2.5 py-1 rounded-xl bg-rose-100 hover:bg-rose-200 text-rose-800 text-xs font-bold flex items-center gap-1.5 transition active:scale-95 shrink-0">' +
-                    '<i class="fa-solid fa-volume-high"></i> Ouvir 1.7x' +
+                  '<button type="button" onclick="event.stopPropagation(); playCurrentFCAudio()" class="h-9 px-3 border-2 border-ink bg-paper3 text-ink hover:bg-ink hover:text-paper font-display text-xs font-medium flex items-center gap-2 transition-colors shrink-0">' +
+                    'Ouvir 1.7x' +
                   '</button>' : '') +
               '</div>' +
-              '<div class="my-auto px-1 py-2 space-y-2">' +
+              '<div class="my-auto py-3 space-y-2">' +
                 formatCardBack(current.back) +
-                (current.audioText ? '<p class="text-[11px] text-slate-600 italic bg-white/80 p-2 rounded-xl border border-pink-100 leading-relaxed text-left">🎧 "' + escapeText(current.audioText) + '"</p>' : '') +
+                (current.audioText ? '<p class="text-sm text-ink2 italic border-l-4 border-rule pl-3 leading-relaxed">“' + escapeText(current.audioText) + '”</p>' : '') +
               '</div>' +
-              '<div class="text-[10px] text-center text-rose-400 font-medium pt-1">' +
-                'Avalie abaixo para agendar a próxima revisão 📅' +
-              '</div>' +
+              '<div class="font-display text-xs text-muted pt-2">Avalie abaixo para marcar a próxima revisão.</div>' +
             '</div>' +
 
           '</div>' +
         '</div>' +
 
-        '<!-- Rascunho Ativo (Active Recall) -->' +
-        '<div class="glass-card p-3 border border-pink-200/80 bg-white/95 space-y-1.5">' +
+        '<!-- Rascunho (recordação ativa) -->' +
+        '<div class="space-y-2">' +
           '<div class="flex items-center justify-between">' +
-            '<label for="fcScratchpad" class="text-[11px] font-extrabold text-rose-700 flex items-center gap-1.5">' +
-              '<span>✍️ Meu Rascunho</span>' +
-              '<span class="text-[10px] font-medium text-slate-400">(para raciocinar e conferir depois)</span>' +
-            '</label>' +
-            '<button type="button" onclick="clearFCDraft(' + current.id + ')" class="text-[10px] font-bold text-rose-400 hover:text-rose-600 px-1.5 py-0.5 rounded-lg hover:bg-rose-50 transition">Limpar</button>' +
+            '<label for="fcScratchpad" class="font-display text-xs text-muted">Rascunho: escreva o que lembra antes de virar</label>' +
+            '<button type="button" onclick="clearFCDraft(' + current.id + ')" class="font-display text-xs text-ink underline hover:text-accent px-1 py-1">Limpar</button>' +
           '</div>' +
-          '<textarea id="fcScratchpad" rows="2" oninput="saveFCDraft(' + current.id + ', this.value)" placeholder="Escreva aqui o que você lembra antes de virar o card..." class="w-full rounded-xl border border-pink-200 bg-rose-50/30 px-3 py-2 text-xs sm:text-sm text-slate-800 placeholder:text-rose-300 focus:outline-none focus:ring-2 focus:ring-rose-300 focus:bg-white resize-y leading-relaxed">' + escapeText(fcDraftAnswers[current.id] || '') + '</textarea>' +
+          '<textarea id="fcScratchpad" rows="3" oninput="saveFCDraft(' + current.id + ', this.value)" placeholder="O que você lembra?" class="w-full border-2 border-ink bg-paper3 px-3 py-2 text-base text-ink placeholder:text-muted resize-y leading-relaxed">' + escapeText(fcDraftAnswers[current.id] || '') + '</textarea>' +
         '</div>' +
 
-        '<!-- Botão Explícito de Virar -->' +
-        '<div class="flex items-center gap-2">' +
-          '<button onclick="prevFlashcard(' + filtered.length + ')" class="px-3 py-2.5 rounded-xl bg-white hover:bg-rose-50 text-slate-600 text-xs font-bold border border-rose-200 transition active:scale-95"><i class="fa-solid fa-arrow-left"></i></button>' +
-          '<button onclick="flipFlashcard()" class="flex-1 py-2.5 rounded-xl bg-pink-50 hover:bg-pink-100 text-rose-700 text-xs font-bold border border-pink-200 transition active:scale-98 flex items-center justify-center gap-2">' +
-            '<i class="fa-solid fa-arrows-rotate"></i>' +
-            '<span>' + (isFlipped ? 'Voltar para a Pergunta' : 'Mostrar Resposta & Macete') + '</span>' +
+        '<!-- Virar e navegar -->' +
+        '<div class="flex items-stretch gap-2">' +
+          '<button type="button" onclick="prevFlashcard(' + filtered.length + ')" class="w-12 h-11 bg-paper3 hover:bg-paper2 text-ink border-2 border-ink transition-colors" aria-label="Card anterior"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>' +
+          '<button type="button" onclick="flipFlashcard()" class="flex-1 h-11 bg-paper3 hover:bg-paper2 text-ink font-display text-sm font-medium border-2 border-ink transition-colors flex items-center justify-center gap-2">' +
+                        '<span id="flipLabel">' + (isFlipped ? 'Voltar à pergunta' : 'Mostrar resposta') + '</span>' +
           '</button>' +
-          '<button onclick="nextFlashcard(' + filtered.length + ')" class="px-3 py-2.5 rounded-xl bg-white hover:bg-rose-50 text-slate-600 text-xs font-bold border border-rose-200 transition active:scale-95"><i class="fa-solid fa-arrow-right"></i></button>' +
+          '<button type="button" onclick="nextFlashcard(' + filtered.length + ')" class="w-12 h-11 bg-paper3 hover:bg-paper2 text-ink border-2 border-ink transition-colors" aria-label="Próximo card"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>' +
         '</div>' +
 
-        '<!-- Botões de Repetição Espaçada (SRS) com Intervalo Dinâmico -->' +
-        '<div class="grid grid-cols-4 gap-1.5 pt-0.5">' +
-          '<button onclick="rateCard(' + current.id + ', 0)" class="fc-action-btn flex-col !gap-0.5 !py-2 !px-1 bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-200 shadow-xs">' +
-            '<span class="text-xs font-extrabold">❌ Errei</span>' +
-            '<span class="text-[10px] font-semibold text-rose-600">' + previewNextInterval(current.id, 0) + '</span>' +
-          '</button>' +
-          '<button onclick="rateCard(' + current.id + ', 1)" class="fc-action-btn flex-col !gap-0.5 !py-2 !px-1 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 shadow-xs">' +
-            '<span class="text-xs font-extrabold">😅 Difícil</span>' +
-            '<span class="text-[10px] font-semibold text-amber-600">' + previewNextInterval(current.id, 1) + '</span>' +
-          '</button>' +
-          '<button onclick="rateCard(' + current.id + ', 2)" class="fc-action-btn flex-col !gap-0.5 !py-2 !px-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 shadow-xs">' +
-            '<span class="text-xs font-extrabold">🌸 Acertei</span>' +
-            '<span class="text-[10px] font-semibold text-emerald-600">' + previewNextInterval(current.id, 2) + '</span>' +
-          '</button>' +
-          '<button onclick="rateCard(' + current.id + ', 3)" class="fc-action-btn flex-col !gap-0.5 !py-2 !px-1 bg-sky-50 hover:bg-sky-100 text-sky-800 border border-sky-200 shadow-xs">' +
-            '<span class="text-xs font-extrabold">⚡ Fácil</span>' +
-            '<span class="text-[10px] font-semibold text-sky-600">' + previewNextInterval(current.id, 3) + '</span>' +
-          '</button>' +
+        '<!-- Avaliação: quatro células coladas, como um quadro de horários -->' +
+        '<div class="grade-row" role="group" aria-label="Como foi">' +
+          '<button type="button" onclick="rateCard(' + current.id + ', 0)" class="grade-btn"><span class="grade-name">Errei</span><span class="grade-when">' + previewNextInterval(current.id, 0) + '</span></button>' +
+          '<button type="button" onclick="rateCard(' + current.id + ', 1)" class="grade-btn"><span class="grade-name">Difícil</span><span class="grade-when">' + previewNextInterval(current.id, 1) + '</span></button>' +
+          '<button type="button" onclick="rateCard(' + current.id + ', 2)" class="grade-btn"><span class="grade-name">Acertei</span><span class="grade-when">' + previewNextInterval(current.id, 2) + '</span></button>' +
+          '<button type="button" onclick="rateCard(' + current.id + ', 3)" class="grade-btn"><span class="grade-name">Fácil</span><span class="grade-when">' + previewNextInterval(current.id, 3) + '</span></button>' +
         '</div>' +
 
       '</div>';
 
       section.innerHTML = html;
+      cardEnterDir = '';
     }
 
     function saveFCDraft(cardId, val) {
@@ -1734,9 +1926,12 @@ html_content = """<!DOCTYPE html>
         if (isFlipped) inner.classList.add('is-flipped');
         else inner.classList.remove('is-flipped');
       }
+      var flipLabel = document.getElementById('flipLabel');
+      if (flipLabel) flipLabel.innerText = isFlipped ? 'Voltar à pergunta' : 'Mostrar resposta';
     }
 
     function nextFlashcard(total) {
+      cardEnterDir = 'next';
       isFlipped = false;
       showHint = false;
       if (currentFlashcardIndex < total - 1) currentFlashcardIndex++;
@@ -1745,6 +1940,7 @@ html_content = """<!DOCTYPE html>
     }
 
     function prevFlashcard(total) {
+      cardEnterDir = 'prev';
       isFlipped = false;
       showHint = false;
       if (currentFlashcardIndex > 0) currentFlashcardIndex--;
@@ -1753,6 +1949,7 @@ html_content = """<!DOCTYPE html>
     }
 
     function rateCard(cardId, quality) {
+      if (cardLeaving) return;
       var s = Object.assign({}, getCardSRS(cardId));
       var wasNew = (s.state === 'new');
       var now = Date.now();
@@ -1811,7 +2008,18 @@ html_content = """<!DOCTYPE html>
       } else {
         currentFlashcardIndex = 0;
       }
-      renderFlashcards();
+      var wrapper = document.querySelector('#flashcardSection .flashcard-wrapper');
+      if (wrapper) {
+        cardLeaving = true;
+        wrapper.classList.add('card-leave');
+        setTimeout(function() {
+          cardLeaving = false;
+          cardEnterDir = 'next';
+          renderFlashcards();
+        }, 150);
+      } else {
+        renderFlashcards();
+      }
     }
 
     function markCard(correct, total) {
@@ -1829,21 +2037,22 @@ html_content = """<!DOCTYPE html>
       for (var i = 0; i < base.length; i++) {
         var c = base[i];
         var s = getCardSRS(c.id);
-        var badge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 font-bold">🆕 Novo</span>';
+        var badge = '<span class="tag tag--new">Novo</span>';
         if (s.state !== 'new') {
-          if (s.due <= endOfToday) badge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 font-bold">🔥 Hoje</span>';
-          else if (s.interval >= 7) badge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-bold">🏆 ' + s.interval + 'd</span>';
-          else badge = '<span class="text-[10px] px-2 py-0.5 rounded-full bg-pink-50 text-rose-700 font-bold">🌱 ' + s.interval + 'd</span>';
+          if (s.due <= endOfToday) badge = '<span class="tag tag--due">Hoje</span>';
+          else if (s.interval >= 7) badge = '<span class="tag tag--done">' + s.interval + ' dias</span>';
+          else badge = '<span class="tag">' + s.interval + (s.interval === 1 ? ' dia' : ' dias') + '</span>';
         }
-        html += '<button onclick="jumpToTrailCard(' + i + ')" class="w-full text-left p-2.5 rounded-xl bg-rose-50/40 hover:bg-pink-50 border border-rose-100 flex items-center justify-between gap-2 transition">' +
-          '<div class="min-w-0">' +
-            '<div class="text-[10px] font-bold text-rose-400">#' + c.id + ' • ' + getAreaLabel(c.area) + (c.cat ? ' • ' + getCatLabel(c.cat) : '') + '</div>' +
-            '<div class="text-xs font-bold text-slate-800 truncate">' + escapeText(c.name || c.front) + '</div>' +
-          '</div>' +
+        html += '<button type="button" onclick="jumpToTrailCard(' + i + ')" class="w-full text-left px-2 py-3 hover:bg-paper2 border-b border-rule flex items-center justify-between gap-3 transition-colors">' +
+          '<span class="font-display text-xs text-muted w-10 shrink-0">' + c.id + '</span>' +
+          '<span class="min-w-0 flex-1">' +
+            '<span class="block text-sm font-medium text-ink truncate">' + escapeText(c.name || c.front) + '</span>' +
+            '<span class="block font-display text-xs text-muted truncate">' + getAreaLabel(c.area) + (c.cat ? ', ' + getCatLabel(c.cat) : '') + '</span>' +
+          '</span>' +
           badge +
         '</button>';
       }
-      listEl.innerHTML = html || '<div class="text-center text-slate-400 py-4">Nenhum card neste filtro.</div>';
+      listEl.innerHTML = html || '<div class="text-center text-muted py-4">Nenhum card neste filtro.</div>';
       openModal('trailModal');
     }
 
@@ -1884,10 +2093,9 @@ html_content = """<!DOCTYPE html>
       if (countEl) countEl.innerText = filtered.length + " tópicos";
 
       if (filtered.length === 0) {
-        container.innerHTML = '<div class="col-span-full glass-card p-6 text-center space-y-2 border border-pink-200">' +
-          '<div class="text-2xl">🎯</div>' +
-          '<h3 class="font-bold text-sm text-slate-800">Nenhum tópico nesta área</h3>' +
-          '<p class="text-xs text-rose-500">Mude o filtro acima para ver todos os tópicos da banca.</p>' +
+        container.innerHTML = '<div class="col-span-full glass-card p-6 space-y-2">' +
+          '<h3 class="text-base text-ink">Nenhum tópico nesta área</h3>' +
+          '<p class="text-sm text-muted">Troque o filtro acima para ver os tópicos de todas as áreas.</p>' +
         '</div>';
         return;
       }
@@ -1895,19 +2103,17 @@ html_content = """<!DOCTYPE html>
       var html = '';
       for (var i = 0; i < filtered.length; i++) {
         var item = filtered[i];
-        html += '<div class="glass-card p-4 space-y-2 border border-pink-100">' +
-          '<div class="flex items-center justify-between">' +
-            '<span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-pink-50 text-rose-700 border border-pink-200">' +
-              getAreaLabel(item.area) +
-            '</span>' +
-            '<span class="text-[10px] font-mono font-bold text-rose-400">' + (item.year || 'Bancas') + '</span>' +
+        html += '<article class="glass-card">' +
+          '<div class="flex items-center justify-between gap-2 px-4 py-2 border-b-2 border-ink">' +
+            '<span class="tag">' + getAreaLabel(item.area) + '</span>' +
+            '<span class="font-display text-xs text-muted text-right">' + escapeText(item.year || 'Bancas') + '</span>' +
           '</div>' +
-          '<h3 class="font-bold text-sm text-slate-800">' + escapeText(item.title) + '</h3>' +
-          '<p class="text-xs text-slate-600 leading-relaxed bg-rose-50/50 p-2.5 rounded-xl border border-rose-100">' +
-            '<strong class="text-rose-600 block mb-0.5">Pegadinha / Como a banca cobra:</strong>' +
-            escapeText(item.tip) +
-          '</p>' +
-        '</div>';
+          '<div class="p-4 space-y-2">' +
+            '<h3 class="text-base text-ink leading-snug">' + escapeText(item.title) + '</h3>' +
+            '<div class="font-display text-xs text-muted">Como a banca cobra</div>' +
+            '<p class="text-sm text-ink leading-relaxed">' + escapeText(item.tip) + '</p>' +
+          '</div>' +
+        '</article>';
       }
       container.innerHTML = html;
     }
@@ -1968,12 +2174,14 @@ html_content = """<!DOCTYPE html>
     function showAudioPlayer() {
       var player = document.getElementById('bottomAudioPlayer');
       if (player) player.classList.remove('translate-y-full');
+      document.body.classList.add('player-open');
     }
 
     function closeAudioPlayer() {
       stopAudioPlayback();
       var player = document.getElementById('bottomAudioPlayer');
       if (player) player.classList.add('translate-y-full');
+      document.body.classList.remove('player-open');
     }
 
     function toggleAudio() {
@@ -2062,7 +2270,7 @@ html_content = """<!DOCTYPE html>
       idx = (idx + 1) % speeds.length;
       currentSpeed = speeds[idx];
       var badge = document.getElementById('speedBadge');
-      if (badge) badge.innerText = currentSpeed + "x" + (currentSpeed === 1.7 ? " ⭐" : "");
+      if (badge) badge.innerText = currentSpeed + "x";
       if (isPlaying) speakChunk(currentChunkIndex);
     }
 
@@ -2087,9 +2295,9 @@ html_content = """<!DOCTYPE html>
       var html = '';
       for (var i = 0; i < speechChunks.length; i++) {
         var isCurrent = (i === currentChunkIndex);
-        var cls = isCurrent ? 'bg-pink-100 text-rose-800 font-bold border-l-4 border-rose-500 pl-3' : 'bg-white text-slate-700 hover:bg-pink-50';
-        html += '<div onclick="jumpToChunk(' + i + ')" class="p-2.5 rounded-xl border border-rose-100 cursor-pointer transition ' + cls + '">' +
-          '<span class="font-mono text-rose-400 mr-1.5 text-[10px]">' + (i + 1) + '.</span>' +
+        var cls = isCurrent ? 'bg-paper2 text-ink font-bold border-l-4 border-ink pl-3' : 'bg-paper3 text-ink hover:bg-paper2';
+        html += '<div onclick="jumpToChunk(' + i + ')" class="p-2.5 border border-rule cursor-pointer transition-colors ' + cls + '">' +
+          '<span class="font-display text-muted mr-1.5 text-xs">' + (i + 1) + '.</span>' +
           '<span>' + escapeText(speechChunks[i]) + '</span>' +
         '</div>';
       }
@@ -2114,18 +2322,25 @@ html_content = """<!DOCTYPE html>
     function openModal(id) {
       var el = document.getElementById(id);
       if (el) {
+        clearTimeout(el._closeTimer);
         el.style.display = 'flex';
         el.classList.add('active');
         el.classList.remove('hidden');
+        el.offsetWidth; // aplica o estado inicial antes de animar
+        el.classList.add('is-open');
       }
     }
 
     function closeModal(id) {
       var el = document.getElementById(id);
       if (el) {
-        el.style.display = 'none';
-        el.classList.remove('active');
-        el.classList.add('hidden');
+        el.classList.remove('is-open');
+        clearTimeout(el._closeTimer);
+        el._closeTimer = setTimeout(function() {
+          el.style.display = 'none';
+          el.classList.remove('active');
+          el.classList.add('hidden');
+        }, 260);
       }
     }
 
@@ -2142,8 +2357,8 @@ html_content = """<!DOCTYPE html>
           else form.classList.add('hidden');
         }
         if (btn) {
-          if (t === type) btn.className = "py-1.5 px-3 border-b-2 border-rose-500 text-rose-600 font-bold";
-          else btn.className = "py-1.5 px-3 text-slate-400 hover:text-slate-700";
+          if (t === type) btn.className = "py-1.5 px-3 border-b-2 border-ink text-ink2 font-bold";
+          else btn.className = "py-1.5 px-3 text-muted hover:text-ink";
         }
       }
       var areaCatRow = document.getElementById('field-area-cat');
@@ -2209,7 +2424,7 @@ html_content = """<!DOCTYPE html>
 
       saveState();
       closeModal('addModal');
-      alert("Item adicionado com sucesso! ✨🌸");
+      alert("Item adicionado.");
     }
 
     // ==========================================
@@ -2243,7 +2458,7 @@ html_content = """<!DOCTYPE html>
               if (srsStats.examDate) srsStats.examSetAt = Date.now(); // backup importado vale como a data mais recente
             }
             saveState();
-            alert("Backup e cronograma SRS restaurados com sucesso! ✨");
+            alert("Backup e cronograma SRS restaurados com sucesso!");
             closeModal('exportModal');
           } else {
             alert("Arquivo JSON inválido.");
@@ -2261,12 +2476,12 @@ html_content = """<!DOCTYPE html>
     function getAreaLabel(area) {
       var map = {
         'clinica': 'Clínica Médica',
-        'cardiologia': '❤️ Cardiologia',
-        'pneumologia': '🫁 Pneumologia',
-        'gastroenterologia': '🩺 Gastroenterologia',
-        'endocrinologia': '🦋 Endocrinologia',
-        'reumatologia': '🦴 Reumatologia',
-        'hematologia': '🩸 Hematologia',
+        'cardiologia': 'Cardiologia',
+        'pneumologia': 'Pneumologia',
+        'gastroenterologia': 'Gastroenterologia',
+        'endocrinologia': 'Endocrinologia',
+        'reumatologia': 'Reumatologia',
+        'hematologia': 'Hematologia',
         'cirurgia': 'Cirurgia Geral',
         'pediatria': 'Pediatria',
         'go': 'G.O.',
@@ -2364,6 +2579,9 @@ html_content = """<!DOCTYPE html>
     window.exportData = exportData;
     window.importData = importData;
     window.cloudButtonClick = cloudButtonClick;
+    window.toggleProgress = toggleProgress;
+    window.toggleFilters = toggleFilters;
+    window.hideSplash = hideSplash;
   </script>
 </body>
 </html>
