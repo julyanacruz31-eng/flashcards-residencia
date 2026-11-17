@@ -10,6 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
+  <!-- Firebase (login Google + Firestore para salvar o progresso na nuvem) -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
@@ -299,6 +304,10 @@
 
       <!-- Ações do Topo -->
       <div class="flex items-center gap-2">
+        <button id="cloudBtn" onclick="cloudButtonClick()" class="hidden h-9 px-3 rounded-xl bg-white text-slate-700 border border-pink-200 flex items-center gap-1.5 text-xs font-bold hover:bg-pink-50 transition active:scale-95" title="Salvar progresso na nuvem">
+          <i id="cloudIcon" class="fa-brands fa-google text-[12px]"></i>
+          <span id="cloudLabel">Entrar</span>
+        </button>
         <button onclick="openModal('exportModal')" class="w-9 h-9 rounded-xl bg-pink-50 text-rose-600 border border-pink-200 flex items-center justify-center text-xs font-bold hover:bg-pink-100 transition active:scale-95" title="Backup">
           <i class="fa-solid fa-cloud-arrow-down"></i>
         </button>
@@ -756,6 +765,7 @@
     // INICIALIZAÇÃO SEGURA
     window.addEventListener('DOMContentLoaded', function() {
       try { loadState(); } catch(e) { console.warn('loadState err', e); }
+      try { initCloud(); } catch(e) { console.warn('initCloud err', e); }
       try { initSpeech(); } catch(e) { console.warn('initSpeech err', e); }
       try { updateBadges(); } catch(e) {}
       try { renderCurrentTab(); } catch(e) { console.error('render err', e); }
@@ -808,7 +818,7 @@
       }
     }
 
-    function saveSRS() {
+    function writeLocalSRS() {
       try {
         srsStats.lastReviewDate = getTodayStr();
         localStorage.setItem('medflashcards_srs_v1', JSON.stringify({
@@ -817,6 +827,186 @@
         }));
       } catch (e) {
         console.warn('SRS write restricted:', e);
+      }
+    }
+
+    function saveSRS() {
+      writeLocalSRS();
+      scheduleCloudPush();
+    }
+
+    // ==========================================
+    // NUVEM: login Google + Firestore (users/{uid})
+    // O progresso continua salvo no navegador (funciona offline) e, com login,
+    // também na nuvem. Em cada card vale a avaliação mais recente (lastReview),
+    // então estudar em dois aparelhos não apaga nada.
+    // ==========================================
+    var firebaseConfig = {
+      apiKey: "AIzaSyB0kzjfZJ3VRHZXLnDB3NNyGWQ9CkU9lj0",
+      authDomain: "medflashcards.firebaseapp.com",
+      projectId: "medflashcards",
+      storageBucket: "medflashcards.firebasestorage.app",
+      messagingSenderId: "274560630804",
+      appId: "1:274560630804:web:a5566e360f6936ff86a701"
+    };
+    var cloud = { auth: null, db: null, user: null, unsub: null, pushTimer: null, status: 'off' };
+
+    function initCloud() {
+      if (typeof firebase === 'undefined') { setCloudStatus('unavailable'); return; }
+      try {
+        if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+        cloud.auth = firebase.auth();
+        cloud.db = firebase.firestore();
+        setCloudStatus('off');
+        cloud.auth.onAuthStateChanged(function(user) {
+          cloud.user = user;
+          if (cloud.unsub) { cloud.unsub(); cloud.unsub = null; }
+          if (user) {
+            setCloudStatus('syncing');
+            startCloudListener();
+          } else {
+            setCloudStatus('off');
+          }
+        });
+        document.addEventListener('visibilitychange', function() {
+          if (document.visibilityState === 'hidden') flushCloudPush();
+        });
+      } catch (e) {
+        console.warn('cloud init', e);
+        setCloudStatus('error');
+      }
+    }
+
+    function cloudDocRef() {
+      return cloud.db.collection('users').doc(cloud.user.uid);
+    }
+
+    // Junta o progresso da nuvem no local. Retorna true se algo local mudou.
+    function mergeRemoteSRS(remote) {
+      var changed = false;
+      var rData = (remote && remote.srsData) || {};
+      for (var id in rData) {
+        if (!rData.hasOwnProperty(id)) continue;
+        var r = rData[id], l = srsData[id];
+        if (!l || (r.lastReview || 0) > (l.lastReview || 0)) { srsData[id] = r; changed = true; }
+      }
+      var rs = remote && remote.srsStats;
+      if (rs) {
+        var rSet = rs.examSetAt || 0, lSet = srsStats.examSetAt || 0;
+        var takeExam = rs.examDate && (rSet > lSet || (rSet === lSet && !lSet && rs.examDate !== srsStats.examDate));
+        if (takeExam) { srsStats.examDate = rs.examDate; srsStats.examSetAt = rs.examSetAt || 0; changed = true; }
+        var today = getTodayStr();
+        if (rs.lastReviewDate === today) {
+          if (srsStats.lastReviewDate !== today) {
+            srsStats.reviewedToday = rs.reviewedToday || 0; srsStats.newToday = rs.newToday || 0; changed = true;
+          } else {
+            if ((rs.reviewedToday || 0) > (srsStats.reviewedToday || 0)) { srsStats.reviewedToday = rs.reviewedToday; changed = true; }
+            if ((rs.newToday || 0) > (srsStats.newToday || 0)) { srsStats.newToday = rs.newToday; changed = true; }
+          }
+        }
+      }
+      return changed;
+    }
+
+    // A nuvem está atrás do local? (card faltando/mais antigo ou estatística diferente)
+    function cloudNeedsPush(remote) {
+      if (!remote) return Object.keys(srsData).length > 0 || !!srsStats.examSetAt;
+      var rData = remote.srsData || {};
+      for (var id in srsData) {
+        if (!srsData.hasOwnProperty(id)) continue;
+        if (!rData[id] || (srsData[id].lastReview || 0) > (rData[id].lastReview || 0)) return true;
+      }
+      var rs = remote.srsStats || {};
+      return rs.examDate !== srsStats.examDate || (rs.reviewedToday || 0) !== (srsStats.reviewedToday || 0) || rs.lastReviewDate !== srsStats.lastReviewDate;
+    }
+
+    function startCloudListener() {
+      cloud.unsub = cloudDocRef().onSnapshot(function(snap) {
+        if (snap.metadata.hasPendingWrites) return;
+        var remote = snap.exists ? snap.data() : null;
+        if (mergeRemoteSRS(remote)) {
+          writeLocalSRS();
+          if (!(activeTab === 'flashcards' && isFlipped)) { try { renderCurrentTab(); } catch (e) {} }
+        }
+        if (cloudNeedsPush(remote)) pushCloudNow();
+        else setCloudStatus('ok');
+      }, function(err) {
+        console.warn('cloud listen', err);
+        setCloudStatus('error');
+      });
+    }
+
+    function scheduleCloudPush() {
+      if (!cloud.user || !cloud.db) return;
+      setCloudStatus('syncing');
+      if (cloud.pushTimer) clearTimeout(cloud.pushTimer);
+      cloud.pushTimer = setTimeout(pushCloudNow, 1200);
+    }
+
+    function flushCloudPush() {
+      if (cloud.pushTimer) pushCloudNow();
+    }
+
+    function pushCloudNow() {
+      if (cloud.pushTimer) { clearTimeout(cloud.pushTimer); cloud.pushTimer = null; }
+      if (!cloud.user || !cloud.db) return;
+      cloudDocRef().set({
+        srsData: srsData,
+        srsStats: srsStats,
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+      }).then(function() {
+        setCloudStatus('ok');
+      }).catch(function(err) {
+        console.warn('cloud push', err);
+        setCloudStatus('error');
+      });
+    }
+
+    function setCloudStatus(status) {
+      cloud.status = status;
+      var btn = document.getElementById('cloudBtn');
+      var icon = document.getElementById('cloudIcon');
+      var label = document.getElementById('cloudLabel');
+      if (!btn || !icon || !label) return;
+      if (status === 'unavailable') { btn.classList.add('hidden'); return; }
+      btn.classList.remove('hidden');
+      var first = (cloud.user && (cloud.user.displayName || cloud.user.email) || '').split(' ')[0];
+      if (status === 'off') {
+        icon.className = 'fa-brands fa-google text-[12px]';
+        label.innerText = 'Entrar';
+        btn.title = 'Entrar com Google para salvar o progresso na nuvem';
+      } else if (status === 'syncing') {
+        icon.className = 'fa-solid fa-rotate fa-spin text-[12px] text-sky-500';
+        label.innerText = first || 'Salvando';
+        btn.title = 'Sincronizando com a nuvem...';
+      } else if (status === 'ok') {
+        icon.className = 'fa-solid fa-cloud text-[12px] text-emerald-500';
+        label.innerText = first || 'Na nuvem';
+        btn.title = 'Progresso salvo na nuvem' + (cloud.user && cloud.user.email ? ' (' + cloud.user.email + ')' : '');
+      } else {
+        icon.className = 'fa-solid fa-triangle-exclamation text-[12px] text-amber-500';
+        label.innerText = 'Offline';
+        btn.title = 'Sem conexão com a nuvem. O progresso fica salvo neste aparelho e sobe quando voltar.';
+      }
+    }
+
+    function cloudButtonClick() {
+      if (!cloud.auth) return;
+      if (!cloud.user) {
+        var provider = new firebase.auth.GoogleAuthProvider();
+        provider.setCustomParameters({ prompt: 'select_account' });
+        cloud.auth.signInWithPopup(provider).catch(function(err) {
+          if (err && (err.code === 'auth/popup-closed-by-user' || err.code === 'auth/cancelled-popup-request')) return;
+          console.warn('login', err);
+          alert('Não foi possível entrar com Google' + (err && err.code ? ' (' + err.code + ')' : '') + '. Se o navegador bloqueou a janela, permita pop-ups para este site e tente de novo.');
+        });
+        return;
+      }
+      if (cloud.status === 'error') { setCloudStatus('syncing'); pushCloudNow(); return; }
+      var who = cloud.user.email || cloud.user.displayName || 'sua conta';
+      if (confirm('Progresso salvo na nuvem em ' + who + '.\n\nDeseja sair desta conta? (o progresso continua neste aparelho e na nuvem)')) {
+        flushCloudPush();
+        cloud.auth.signOut();
       }
     }
 
@@ -998,6 +1188,7 @@
       var num = parseInt(input, 10);
       if (!isNaN(num) && num >= 1 && num <= 365) {
         srsStats.examDate = getStartOfDay(num);
+        srsStats.examSetAt = Date.now();
         saveSRS();
         renderFlashcards();
       }
@@ -2042,7 +2233,10 @@
             if (imported.flashcards) appState.flashcards = imported.flashcards;
             if (imported.geral) appState.geral = imported.geral;
             if (imported.srsData) srsData = imported.srsData;
-            if (imported.srsStats) srsStats = imported.srsStats;
+            if (imported.srsStats) {
+              srsStats = imported.srsStats;
+              if (srsStats.examDate) srsStats.examSetAt = Date.now(); // backup importado vale como a data mais recente
+            }
             saveState();
             alert("Backup e cronograma SRS restaurados com sucesso! ✨");
             closeModal('exportModal');
@@ -2164,6 +2358,7 @@
     window.jumpToChunk = jumpToChunk;
     window.exportData = exportData;
     window.importData = importData;
+    window.cloudButtonClick = cloudButtonClick;
   </script>
 </body>
 </html>
