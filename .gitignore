@@ -1,0 +1,17 @@
+# Ignora arquivos binários grandes, PDFs, áudios e arquivos temporários
+*.pdf
+*.wav
+*.mp3
+*.tif
+*.tiff
+*.docx
+*.png
+*.jpg
+__pycache__/
+pdfs/
+material_publicacao_abd/
+downloaded_from_ship.html
+test_*
+check_*
+inspect_*
+*.ps1
