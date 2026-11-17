@@ -21,6 +21,12 @@ Aplicação web estática (`index.html`) com **189 flashcards** e **tabelas/resu
 
 ---
 
+## Site
+
+**https://julyanacruz31-eng.github.io/flashcards-residencia/** (GitHub Pages). Cada push no `main` publica sozinho em cerca de 1 minuto. O progresso fica salvo na nuvem (login Google, Firebase), então atualizar o site não apaga nada.
+
+---
+
 ## Arquivos Principais
 
 | Arquivo | Função |
@@ -28,7 +34,8 @@ Aplicação web estática (`index.html`) com **189 flashcards** e **tabelas/resu
 | `app_data_clean.json` | **Base de dados** com todas as tabelas e os 189 flashcards. |
 | `build_perfect_app.py` | **Gerador** que lê `app_data_clean.json` e gera o `index.html` completo. |
 | `index.html` | **Site final** (auto-contido, pronto para abrir localmente ou hospedar). |
-| `deploy_ship.py` | Script auxiliar para publicar `index.html` no `ship.page`. |
+| `GUIA_FLASHCARDS.md` | **Como escrever novos cards** para saírem bonitos (campos, formatação do verso, especialidades aceitas). |
+| `deploy_ship.py` | Gera um link **temporário** no `ship.page` (expira em 7 dias e começa sem progresso). Não é o site oficial. |
 
 ---
 
@@ -41,7 +48,7 @@ Aplicação web estática (`index.html`) com **189 flashcards** e **tabelas/resu
    git pull origin main
    ```
 2. **Edite a fonte**:
-   - Para adicionar/corrigir cards ou tabelas: edite `app_data_clean.json`.
+   - Para adicionar/corrigir cards ou tabelas: edite `app_data_clean.json` seguindo o [GUIA_FLASHCARDS.md](GUIA_FLASHCARDS.md).
    - Para alterar interface, SRS ou funcionalidades: edite `build_perfect_app.py`.
 3. **Regere o `index.html`**:
    ```bash
@@ -50,8 +57,8 @@ Aplicação web estática (`index.html`) com **189 flashcards** e **tabelas/resu
    *(Verifique se não há `SyntaxWarning` — lembre que `build_perfect_app.py` usa string Python `"""..."""`, então regexes JS devem usar barra dupla como `\\s`, `\\r`, `\\n`.)*
 4. **Publique / envie para o repositório**:
    ```bash
-   git add app_data_clean.json build_perfect_app.py index.html README.md
+   git add app_data_clean.json build_perfect_app.py index.html README.md GUIA_FLASHCARDS.md
    git commit -m "Descreva a alteração"
    git push origin main
    ```
-   *(Ou rode `python deploy_ship.py` para gerar um link temporário no `ship.place`.)*
+   *(O push já publica o site oficial. `python deploy_ship.py` só gera um link temporário de teste.)*
