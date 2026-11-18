@@ -3293,6 +3293,16 @@
       "front": "Na pneumonia comunitária (PAC), quais são as situações de risco que indicam cobertura empírica para Pseudomonas aeruginosa (e não apenas para MRSA)?",
       "back": "✅ Fatores de risco para Pseudomonas na PAC:\n• Hospitalização recente (últimos 90 dias / 3 meses) com uso de antibiótico IV.\n• Colonização ou infecção respiratória prévia por Pseudomonas.\n• Doença estrutural pulmonar grave (bronquiectasias, fibrose cística, DPOC grave com corticoterapia/ATB frequente).\n\n⚠️ Pegadinha FGV: hemodiálise, empiema, pneumonia cavitária/necrotizante e colonização por MRSA são fatores de risco para MRSA, NÃO para Pseudomonas!\n\n💡 Conduta empírica: associar beta-lactâmico antipseudomonas (piperacilina-tazobactam, cefepime, meropenem ou ceftazidima) ao esquema da PAC.",
       "audioText": "Na pneumonia comunitária, os principais fatores de risco para Pseudomonas aeruginosa são hospitalização nos últimos três meses com uso de antibiótico intravenoso, colonização respiratória prévia e doença pulmonar estrutural grave como bronquiectasias. Atenção à pegadinha da FGV: doença renal em hemodiálise, empiema e pneumonia cavitária ou necrotizante indicam risco de MRSA, e não de Pseudomonas."
+    },
+    {
+      "id": 1002,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Pneumotórax Espontâneo: Primário vs Secundário",
+      "front": "Como diferenciar o pneumotórax espontâneo primário (PEP) do secundário (PES) quanto ao perfil do paciente, idade, fatores de risco e principal causa?",
+      "back": "✅ Pneumotórax Primário (PEP):\n• Sem doença pulmonar prévia aparente (bolhas subpleurais / blebs apicais).\n• Perfil clássico: homem jovem (10–40 anos), alto e magro.\n• Fatores de risco: tabagismo e uso de cannabis.\n\n✅ Pneumotórax Secundário (PES):\n• Com doença pulmonar estrutural prévia; mais comum acima dos 55 anos.\n• Principal causa: DPOC (em áreas endêmicas, também tuberculose).\n\n⚠️ Pegadinha FGV: não inverter as idades (>55 é secundário), nem confundir DPOC com doença intersticial ou achar que 50% da fibrose cística faz pneumotórax (ocorre em ~3–10%).\n\n💡 Por quê? O tabagismo e a cannabis aumentam a inflamação das pequenas vias aéreas e favorecem a ruptura de blebs subpleurais apicais.",
+      "audioText": "Diferença entre pneumotórax espontâneo primário e secundário cobrada pela FGV. O primário ocorre sem doença pulmonar prévia, em homens jovens de dez a quarenta anos, altos e magros, tendo como principais fatores de risco o tabagismo e o uso de cannabis. Já o secundário ocorre principalmente acima dos cinquenta e cinco anos em pacientes com doença pulmonar estrutural, sendo a DPOC a principal causa."
     }
   ],
   "fgv_tables": [
@@ -3307,6 +3317,18 @@
       "col2Title": "Risco de MRSA (Pegadinha da FGV)",
       "col2": "• Colonização ou infecção prévia por MRSA\n• Doença renal terminal em hemodiálise\n• Pneumonia complicada com empiema\n• Pneumonia necrotizante ou com padrão cavitário\n• Pós-influenza / uso recente de ATB IV (90d)\n• • Conduta: Vancomicina ou Linezolida",
       "audioText": "Diferença cobrada pela FGV nos fatores de risco da pneumonia comunitária. Para Pseudomonas aeruginosa: hospitalização nos últimos três meses com antibiótico intravenoso, isolamento prévio e doença estrutural pulmonar como bronquiectasias. Para MRSA: colonização prévia por MRSA, hemodiálise, empiema e pneumonia cavitária ou necrotizante."
+    },
+    {
+      "id": 2002,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Pneumotórax Espontâneo: Primário vs Secundário (FGV 2024)",
+      "col1Title": "Primário (PEP)",
+      "col1": "• Pulmão previamente normal (blebs apicais)\n• Faixa etária: jovem (10 a 40 anos)\n• Biotipo clássico: homem alto e magro\n• Fatores de risco fortes:\n• • Tabagismo (aumenta risco em até 20x)\n• • Hábito de fumar cannabis",
+      "col2Title": "Secundário (PES) e Pegadinhas",
+      "col2": "• Doença pulmonar estrutural subjacente\n• Faixa etária: mais comum > 55 anos\n• Principal causa: DPOC (não intersticial!)\n• Outras causas: TB (áreas endêmicas), fibrose cística (~3–10% na vida, não 50%)\n• • Maior gravidade clínica pela baixa reserva pulmonar",
+      "audioText": "Tabela comparativa de pneumotórax espontâneo da FGV. No primário: jovem de dez a quarenta anos, homem alto e magro, tabagismo e cannabis. No secundário: acima de cinquenta e cinco anos, principal causa DPOC, e atenção à pegadinha de fibrose cística que não chega a cinquenta por cento."
     }
   ]
 }
