@@ -195,7 +195,9 @@ html_content = """<!DOCTYPE html>
       perspective: 1400px;
       -webkit-perspective: 1400px;
       width: 100%;
-      min-height: 380px;
+      /* sobra da tela tirando o cabeçalho fixo, as setas e as notas (cerca de 290px) */
+      height: clamp(260px, calc(100vh - 290px), 460px);
+      height: clamp(260px, calc(100svh - 290px), 460px);
       cursor: pointer;
       user-select: none;
       -webkit-user-select: none;
@@ -204,7 +206,7 @@ html_content = """<!DOCTYPE html>
     .flashcard-inner {
       position: relative;
       width: 100%;
-      min-height: 380px;
+      height: 100%;
       transition: transform 300ms var(--ease-in-out);
       transform-style: preserve-3d;
       -webkit-transform-style: preserve-3d;
@@ -1832,7 +1834,7 @@ html_content = """<!DOCTYPE html>
 
       var flippedClass = isFlipped ? " is-flipped" : "";
 
-      var html = '<div class="space-y-4">' +
+      var html = '<div class="space-y-3">' +
         '<!-- Cartão 3D Interativo -->' +
         '<div class="flashcard-wrapper' + (cardEnterDir ? ' card-enter-' + cardEnterDir : '') + '" onclick="flipFlashcard()">' +
           '<div id="flashcardInner" class="flashcard-inner' + flippedClass + '">' +
@@ -1874,15 +1876,6 @@ html_content = """<!DOCTYPE html>
           '</div>' +
         '</div>' +
 
-        '<!-- Rascunho (recordação ativa) -->' +
-        '<div class="space-y-2">' +
-          '<div class="flex items-center justify-between">' +
-            '<label for="fcScratchpad" class="font-display text-xs text-muted">Rascunho: escreva o que lembra antes de virar</label>' +
-            '<button type="button" onclick="clearFCDraft(' + current.id + ')" class="font-display text-xs text-ink underline hover:text-accent px-1 py-1">Limpar</button>' +
-          '</div>' +
-          '<textarea id="fcScratchpad" rows="3" oninput="saveFCDraft(' + current.id + ', this.value)" placeholder="O que você lembra?" class="w-full border-2 border-ink bg-paper3 px-3 py-2 text-base text-ink placeholder:text-muted resize-y leading-relaxed">' + escapeText(fcDraftAnswers[current.id] || '') + '</textarea>' +
-        '</div>' +
-
         '<!-- Virar e navegar -->' +
         '<div class="flex items-stretch gap-2">' +
           '<button type="button" onclick="prevFlashcard(' + filtered.length + ')" class="w-12 h-11 bg-paper3 hover:bg-paper2 text-ink border-2 border-ink transition-colors" aria-label="Card anterior"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>' +
@@ -1898,6 +1891,15 @@ html_content = """<!DOCTYPE html>
           '<button type="button" onclick="rateCard(' + current.id + ', 1)" class="grade-btn"><span class="grade-name">Difícil</span><span class="grade-when">' + previewNextInterval(current.id, 1) + '</span></button>' +
           '<button type="button" onclick="rateCard(' + current.id + ', 2)" class="grade-btn"><span class="grade-name">Acertei</span><span class="grade-when">' + previewNextInterval(current.id, 2) + '</span></button>' +
           '<button type="button" onclick="rateCard(' + current.id + ', 3)" class="grade-btn"><span class="grade-name">Fácil</span><span class="grade-when">' + previewNextInterval(current.id, 3) + '</span></button>' +
+        '</div>' +
+
+        '<!-- Rascunho (recordação ativa) -->' +
+        '<div class="space-y-2 pt-3">' +
+          '<div class="flex items-center justify-between">' +
+            '<label for="fcScratchpad" class="font-display text-xs text-muted">Rascunho: escreva o que lembra antes de virar</label>' +
+            '<button type="button" onclick="clearFCDraft(' + current.id + ')" class="font-display text-xs text-ink underline hover:text-accent px-1 py-1">Limpar</button>' +
+          '</div>' +
+          '<textarea id="fcScratchpad" rows="3" oninput="saveFCDraft(' + current.id + ', this.value)" placeholder="O que você lembra?" class="w-full border-2 border-ink bg-paper3 px-3 py-2 text-base text-ink placeholder:text-muted resize-y leading-relaxed">' + escapeText(fcDraftAnswers[current.id] || '') + '</textarea>' +
         '</div>' +
 
       '</div>';
@@ -1928,6 +1930,18 @@ html_content = """<!DOCTYPE html>
       }
       var flipLabel = document.getElementById('flipLabel');
       if (flipLabel) flipLabel.innerText = isFlipped ? 'Voltar à pergunta' : 'Mostrar resposta';
+      if (isFlipped) revealGradeRow();
+    }
+
+    // Deixa os botões de nota visíveis sem a pessoa precisar rolar
+    function revealGradeRow() {
+      var row = document.querySelector('#flashcardSection .grade-row');
+      if (!row) return;
+      var gap = 12;
+      var over = row.getBoundingClientRect().bottom + gap - window.innerHeight;
+      if (over <= 0) return;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      try { window.scrollBy({ top: over, behavior: reduce ? 'auto' : 'smooth' }); } catch (e) { window.scrollBy(0, over); }
     }
 
     function nextFlashcard(total) {
