@@ -3333,6 +3333,16 @@
       "front": "Paciente com cólica nefrética refratária à dipirona, Cr basal 1,7 mg/dL (atual 1,6), afebril, sem hidronefrose e cálculo de 3 mm em ureter distal. Qual a analgesia e o local de tratamento?",
       "back": "✅ Conduta FGV:\n• Tratamento AMBULATORIAL + analgesia com OPIÁCEO + hidratação + aguardar eliminação espontânea.\n\n⚠️ Pegadinha FGV (2 em 1):\n• Cetorolaco (AINE) é CONTRAINDICADO na disfunção renal (Cr 1,6 / basal 1,7)! Use opiáceo.\n• Cálculo < 5 mm sem febre, sem leucocitose, sem hidronefrose e sem piora renal aguda NÃO interna nem chama urologia de urgência.\n\n💡 Quando internar / chamar urologia de urgência? Infecção associada (febre/sepse — emergência urológica!), rim único, obstrução bilateral, IRA obstrutiva ou dor/vômitos refratários.",
       "audioText": "Na cólica nefrética cobrada pela FGV, atenção a duas pegadinhas. Primeiro, embora o cetorolaco seja primeira linha no rim normal, ele é contraindicado na disfunção renal, devendo-se usar opiáceo. Segundo, cálculo de três milímetros sem febre, sem infecção e sem hidronefrose tem tratamento ambulatorial aguardando eliminação espontânea."
+    },
+    {
+      "id": 1006,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV 2024",
+      "name": "IRA e Diálise de Urgência: Pericardite Urêmica",
+      "front": "Paciente com IRA (Cr 4,0, U 80, diurese 1,8 L, K 6,0, pH 7,25) apresenta ruído na borda esternal esquerda que piora ao inclinar para frente + supra difuso de ST. Qual a conduta e o motivo?",
+      "back": "✅ Conduta: INDICAR DIÁLISE DE URGÊNCIA devido ao ACHADO CARDÍACO (Pericardite Urêmica)!\n\n• Ruído que aumenta com pressão do diafragma e inclinação para frente = atrito pericárdico.\n• Supra difuso de ST = pericardite.\n\n⚠️ Pegadinha FGV: mesmo com diurese preservada (1,8 L), ureia de apenas 80, K 6,0 e pH 7,25 (ainda não refratários), a PERICARDITE URÊMICA é indicação ABSOLUTA de diálise imediata!\n\n💡 Por quê? A pericardite urêmica tem alto risco de evoluir para derrame pericárdico hemorrágico e tamponamento cardíaco se não dialisar (e lembre: não se usa anticoagulação na diálise inicial nesses casos).",
+      "audioText": "Atenção à pegadinha clássica da FGV na injúria renal aguda. Paciente com ureia de oitenta, potássio seis, pH sete vírgula vinte e cinco e diurese preservada, mas com atrito pericárdico que piora ao inclinar para frente e supra difuso de ST no eletrocardiograma, tem pericardite urêmica. A pericardite urêmica é indicação absoluta e imediata de diálise de urgência, pelo achado cardíaco."
     }
   ],
   "fgv_tables": [
@@ -3395,6 +3405,18 @@
       "col2Title": "Quando Internar / Urologia de Urgência",
       "col2": "• Cálculo obstrutivo + INFECÇÃO / febre (desobstrução imediata: duplo J ou nefrostomia!)\n• Injúria renal aguda (rim único ou obstrução bilateral)\n• Dor intratável ou vômitos incoercíveis\n• • Atenção: Cr 1,6 com basal 1,7 há 1 mês NÃO é IRA aguda!",
       "audioText": "Conduta na nefrolitíase aguda para a FGV. Sem disfunção renal, o AINE como cetorolaco é primeira escolha. Na disfunção renal crônica, AINE é contraindicado e usa-se opiáceo. Cálculo pequeno sem febre, sem hidronefrose e sem piora da creatinina basal é tratado ambulatorialmente."
+    },
+    {
+      "id": 2006,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV 2024",
+      "name": "Indicações de Diálise de Urgência na IRA (AEIOU - FGV 2024)",
+      "col1Title": "Quando Indicar (AEIOU)",
+      "col1": "• A - Acidose metabólica grave REFRATÁRIA (pH < 7,1–7,2)\n• E - Eletrólitos: Hipercalemia REFRATÁRIA ou com ECG alterado\n• I - Intoxicações dialisáveis (lítio, metanol, etilenoglicol, salicilato)\n• O - Overload (hipervolemia / EAP REFRATÁRIO a diurético)\n• U - Uremia sintomática (não depende do valor isolado!):\n• • Encefalopatia urêmica / sangramento urêmico\n• • PERICARDITE URÊMICA (indicação imediata!)",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Pericardite urêmica (atrito pericárdico + supra difuso de ST) = diálise IMEDIATA mesmo com U 80 e diurese 1,8 L\n• Ureia alta isolada (sem sintomas) NÃO indica diálise\n• K 6,0 ou pH 7,25 sem refratariedade ao tratamento clínico NÃO indicam diálise isoladamente\n• • Semiologia do atrito: piora ao inclinar para a frente e ao pressionar o diafragma",
+      "audioText": "Indicações de diálise de urgência pelo mnemônico AEIOU para a FGV. Acidose grave refratária, eletrólitos como hipercalemia refratária, intoxicações dialisáveis, overload refratário e uremia sintomática, especialmente encefalopatia e pericardite urêmica. Lembre que a pericardite urêmica indica diálise imediata mesmo com ureia baixa e diurese preservada."
     }
   ]
 }

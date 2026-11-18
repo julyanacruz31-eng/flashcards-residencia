@@ -2849,7 +2849,8 @@ html_content = """<!DOCTYPE html>
         'onco_hemato': 'Leucemias & Linfomas',
         'mieloma': 'Mieloma Múltiplo',
         'hemostasia': 'Plaquetas & Coagulação',
-        'nefrolitiase': 'Nefrolitíase'
+        'nefrolitiase': 'Nefrolitíase',
+        'ira_dialise': 'IRA & Diálise'
       };
       return map[cat] || cat || 'Geral';
     }
