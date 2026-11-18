@@ -2802,6 +2802,7 @@ html_content = """<!DOCTYPE html>
         'endocrinologia': 'Endocrinologia',
         'reumatologia': 'Reumatologia',
         'hematologia': 'Hematologia',
+        'nefrologia': 'Nefrologia',
         'cirurgia': 'Cirurgia Geral',
         'pediatria': 'Pediatria',
         'go': 'G.O.',
@@ -2847,7 +2848,8 @@ html_content = """<!DOCTYPE html>
         'anemias': 'Anemias',
         'onco_hemato': 'Leucemias & Linfomas',
         'mieloma': 'Mieloma Múltiplo',
-        'hemostasia': 'Plaquetas & Coagulação'
+        'hemostasia': 'Plaquetas & Coagulação',
+        'nefrolitiase': 'Nefrolitíase'
       };
       return map[cat] || cat || 'Geral';
     }

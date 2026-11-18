@@ -3323,6 +3323,16 @@
       "front": "Jovem com tosse, hemoptoico, emagrecimento, lesão em segmento 6 e derrame pleural amarelo-citrino (suspeita de TB pleural). Quais são os achados clássicos do líquido pleural?",
       "back": "✅ Perfil clássico do líquido na TB pleural:\n• Exsudato amarelo-citrino com predomínio de LINFÓCITOS (>80%).\n• Células mesoteliais < 5% (muito cobrado pela FGV!).\n• Adenosina deaminase (ADA) elevada: >= 40 U/L.\n• Glicose normal ou reduzida e pH < 7,40.\n\n⚠️ Pegadinha FGV: líquido amarelo-citrino NÃO significa transudato! A TB pleural é EXSUDATO amarelo-citrino; e eosinofilia > 10% fala CONTRA tuberculose.\n\n💡 Por quê? A inflamação granulomatosa recobre a pleura com fibrina e impede a descamação de células mesoteliais para o líquido (< 5%).",
       "audioText": "No derrame pleural tuberculoso, o líquido é classicamente um exsudato amarelo citrino com predomínio linfocítico, ADA maior ou igual a quarenta unidades por litro e células mesoteliais menores que cinco por cento. Atenção à pegadinha: amarelo citrino não significa transudato, e eosinofilia acima de dez por cento fala contra tuberculose."
+    },
+    {
+      "id": 1005,
+      "area": "nefrologia",
+      "cat": "nefrolitiase",
+      "year": "FGV 2024",
+      "name": "Nefrolitíase: Analgesia na DRC e Critérios de Internação",
+      "front": "Paciente com cólica nefrética refratária à dipirona, Cr basal 1,7 mg/dL (atual 1,6), afebril, sem hidronefrose e cálculo de 3 mm em ureter distal. Qual a analgesia e o local de tratamento?",
+      "back": "✅ Conduta FGV:\n• Tratamento AMBULATORIAL + analgesia com OPIÁCEO + hidratação + aguardar eliminação espontânea.\n\n⚠️ Pegadinha FGV (2 em 1):\n• Cetorolaco (AINE) é CONTRAINDICADO na disfunção renal (Cr 1,6 / basal 1,7)! Use opiáceo.\n• Cálculo < 5 mm sem febre, sem leucocitose, sem hidronefrose e sem piora renal aguda NÃO interna nem chama urologia de urgência.\n\n💡 Quando internar / chamar urologia de urgência? Infecção associada (febre/sepse — emergência urológica!), rim único, obstrução bilateral, IRA obstrutiva ou dor/vômitos refratários.",
+      "audioText": "Na cólica nefrética cobrada pela FGV, atenção a duas pegadinhas. Primeiro, embora o cetorolaco seja primeira linha no rim normal, ele é contraindicado na disfunção renal, devendo-se usar opiáceo. Segundo, cálculo de três milímetros sem febre, sem infecção e sem hidronefrose tem tratamento ambulatorial aguardando eliminação espontânea."
     }
   ],
   "fgv_tables": [
@@ -3373,6 +3383,18 @@
       "col2Title": "O que Fala CONTRA / Pegadinhas FGV",
       "col2": "• Amarelo-citrino NÃO é sinônimo de transudato\n• Eosinofilia > 10% fala CONTRA TB (pensar em ar/sangue na pleura)\n• Predomínio de neutrófilos: pensar em derrame parapneumônico\n• ADA < 40 U/L ou pH > 7,50: não compatível com TB\n• • Segmento 6 (apical do lobo inferior) + hemoptoico = clínica clássica de TB",
       "audioText": "Resumo de derrame pleural tuberculoso para a FGV. Achados típicos: exsudato amarelo citrino, predomínio linfocítico, células mesoteliais menores que cinco por cento e ADA maior ou igual a quarenta. Fala contra tuberculose: eosinofilia maior que dez por cento ou predomínio neutrofílico."
+    },
+    {
+      "id": 2005,
+      "area": "nefrologia",
+      "cat": "nefrolitiase",
+      "year": "FGV 2024",
+      "name": "Nefrolitíase Aguda: Analgesia e Quando Internar (FGV 2024)",
+      "col1Title": "Analgesia e Tratamento Ambulatorial",
+      "col1": "• Rim normal: AINE (cetorolaco / diclofenaco) é 1ª linha\n• Disfunção renal / DRC: PROIBIDO AINE → usar OPIÁCEO\n• Cálculo <= 5 mm sem complicações:\n• • Alta probabilidade de eliminação espontânea\n• • Tratamento ambulatorial (opcional: tansulosina se distal)",
+      "col2Title": "Quando Internar / Urologia de Urgência",
+      "col2": "• Cálculo obstrutivo + INFECÇÃO / febre (desobstrução imediata: duplo J ou nefrostomia!)\n• Injúria renal aguda (rim único ou obstrução bilateral)\n• Dor intratável ou vômitos incoercíveis\n• • Atenção: Cr 1,6 com basal 1,7 há 1 mês NÃO é IRA aguda!",
+      "audioText": "Conduta na nefrolitíase aguda para a FGV. Sem disfunção renal, o AINE como cetorolaco é primeira escolha. Na disfunção renal crônica, AINE é contraindicado e usa-se opiáceo. Cálculo pequeno sem febre, sem hidronefrose e sem piora da creatinina basal é tratado ambulatorialmente."
     }
   ]
 }
