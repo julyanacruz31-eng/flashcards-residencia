@@ -3313,6 +3313,16 @@
       "front": "Paciente com derrame pleural unilateral: proteína P/S = 0,1, LDH P/S = 0,1 e LDH pleural abaixo de 2/3 do LSN. Qual é o tipo de líquido e quais causas clássicas a FGV mistura (ex.: Atelectasia vs Uremia/Pancreatite)?",
       "back": "✅ Classificação: TRANSUDATO (nenhum critério de Light preenchido).\n\n✅ Causas clássicas de TRANSUDATO:\n• Insuficiência cardíaca (mais comum), cirrose (hidrotórax hepático), síndrome nefrótica.\n• Atelectasia, diálise peritoneal, urinotórax, hipoalbuminemia grave.\n\n⚠️ Pegadinha FGV: uremia, pancreatite, artrite reumatoide e neoplasia causam EXSUDATO — mesmo que pareçam doenças sistêmicas!\n\n💡 Critérios de Light (basta 1 para EXSUDATO): Proteína P/S > 0,5 | LDH P/S > 0,6 | LDH pleural > 2/3 do LSN sérico.",
       "audioText": "Nos critérios de Light para derrame pleural, basta um critério alterado para exsudato: relação proteína pleural sobre sérica maior que zero vírgula cinco, relação LDH maior que zero vírgula seis, ou LDH pleural maior que dois terços do limite superior da normalidade. Se nenhum critério fecha, é transudato. Atenção à pegadinha da FGV: atelectasia causa transudato, enquanto uremia, pancreatite, artrite reumatoide e neoplasia causam exsudato."
+    },
+    {
+      "id": 1004,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural Tuberculoso - Achados do Líquido",
+      "front": "Jovem com tosse, hemoptoico, emagrecimento, lesão em segmento 6 e derrame pleural amarelo-citrino (suspeita de TB pleural). Quais são os achados clássicos do líquido pleural?",
+      "back": "✅ Perfil clássico do líquido na TB pleural:\n• Exsudato amarelo-citrino com predomínio de LINFÓCITOS (>80%).\n• Células mesoteliais < 5% (muito cobrado pela FGV!).\n• Adenosina deaminase (ADA) elevada: >= 40 U/L.\n• Glicose normal ou reduzida e pH < 7,40.\n\n⚠️ Pegadinha FGV: líquido amarelo-citrino NÃO significa transudato! A TB pleural é EXSUDATO amarelo-citrino; e eosinofilia > 10% fala CONTRA tuberculose.\n\n💡 Por quê? A inflamação granulomatosa recobre a pleura com fibrina e impede a descamação de células mesoteliais para o líquido (< 5%).",
+      "audioText": "No derrame pleural tuberculoso, o líquido é classicamente um exsudato amarelo citrino com predomínio linfocítico, ADA maior ou igual a quarenta unidades por litro e células mesoteliais menores que cinco por cento. Atenção à pegadinha: amarelo citrino não significa transudato, e eosinofilia acima de dez por cento fala contra tuberculose."
     }
   ],
   "fgv_tables": [
@@ -3351,6 +3361,18 @@
       "col2Title": "Transudato vs Exsudato (Pegadinhas)",
       "col2": "• TRANSUDATO:\n• • IC, cirrose, síndrome nefrótica\n• • Atelectasia, diálise peritoneal, urinotórax\n• EXSUDATO (não confundir!):\n• • Uremia, pancreatite, AR, LES, neoplasia, TB, parapneumônico",
       "audioText": "Tabela dos critérios de Light cobrada pela FGV. Exsudato se proteína pleural sobre sérica maior que zero vírgula cinco, LDH maior que zero vírgula seis ou LDH pleural maior que dois terços do limite superior. Causas de transudato incluem insuficiência cardíaca, cirrose, síndrome nefrótica e atelectasia. Uremia, pancreatite, artrite reumatoide e neoplasia causam exsudato."
+    },
+    {
+      "id": 2004,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural Tuberculoso: Líquido Pleural (FGV 2024)",
+      "col1Title": "Achados Típicos da TB Pleural",
+      "col1": "• Aspecto: EXSUDATO amarelo-citrino\n• Celularidade: predomínio de linfócitos (mononucleares)\n• Células mesoteliais: < 5% (pleura recoberta por fibrina)\n• ADA: >= 40 U/L (alta sensibilidade e especificidade)\n• • Padrão-ouro diagnóstico: biópsia pleural (granuloma caseoso) + cultura",
+      "col2Title": "O que Fala CONTRA / Pegadinhas FGV",
+      "col2": "• Amarelo-citrino NÃO é sinônimo de transudato\n• Eosinofilia > 10% fala CONTRA TB (pensar em ar/sangue na pleura)\n• Predomínio de neutrófilos: pensar em derrame parapneumônico\n• ADA < 40 U/L ou pH > 7,50: não compatível com TB\n• • Segmento 6 (apical do lobo inferior) + hemoptoico = clínica clássica de TB",
+      "audioText": "Resumo de derrame pleural tuberculoso para a FGV. Achados típicos: exsudato amarelo citrino, predomínio linfocítico, células mesoteliais menores que cinco por cento e ADA maior ou igual a quarenta. Fala contra tuberculose: eosinofilia maior que dez por cento ou predomínio neutrofílico."
     }
   ]
 }
