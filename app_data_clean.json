@@ -3283,6 +3283,30 @@
       "year": "ENARE / FGV Pediatria"
     }
   ],
-  "fgv_flashcards": [],
-  "fgv_tables": []
+  "fgv_flashcards": [
+    {
+      "id": 1001,
+      "area": "pneumologia",
+      "cat": "infeccoes",
+      "year": "FGV 2024",
+      "name": "PAC - Risco de Pseudomonas vs MRSA",
+      "front": "Na pneumonia comunitária (PAC), quais são as situações de risco que indicam cobertura empírica para Pseudomonas aeruginosa (e não apenas para MRSA)?",
+      "back": "✅ Fatores de risco para Pseudomonas na PAC:\n• Hospitalização recente (últimos 90 dias / 3 meses) com uso de antibiótico IV.\n• Colonização ou infecção respiratória prévia por Pseudomonas.\n• Doença estrutural pulmonar grave (bronquiectasias, fibrose cística, DPOC grave com corticoterapia/ATB frequente).\n\n⚠️ Pegadinha FGV: hemodiálise, empiema, pneumonia cavitária/necrotizante e colonização por MRSA são fatores de risco para MRSA, NÃO para Pseudomonas!\n\n💡 Conduta empírica: associar beta-lactâmico antipseudomonas (piperacilina-tazobactam, cefepime, meropenem ou ceftazidima) ao esquema da PAC.",
+      "audioText": "Na pneumonia comunitária, os principais fatores de risco para Pseudomonas aeruginosa são hospitalização nos últimos três meses com uso de antibiótico intravenoso, colonização respiratória prévia e doença pulmonar estrutural grave como bronquiectasias. Atenção à pegadinha da FGV: doença renal em hemodiálise, empiema e pneumonia cavitária ou necrotizante indicam risco de MRSA, e não de Pseudomonas."
+    }
+  ],
+  "fgv_tables": [
+    {
+      "id": 2001,
+      "area": "pneumologia",
+      "cat": "infeccoes",
+      "year": "FGV 2024",
+      "name": "PAC Grave: Pseudomonas aeruginosa vs MRSA (Fatores de Risco)",
+      "col1Title": "Risco de Pseudomonas aeruginosa",
+      "col1": "• Hospitalização nos últimos 3 meses (90 dias) com uso de ATB IV\n• Isolamento/colonização respiratória prévia por Pseudomonas\n• Doença pulmonar estrutural grave:\n• • Bronquiectasias / Fibrose cística\n• • DPOC grave com uso frequente de corticoide ou ATB\n• • Conduta: Piperacilina-tazobactam, Cefepime ou Meropenem",
+      "col2Title": "Risco de MRSA (Pegadinha da FGV)",
+      "col2": "• Colonização ou infecção prévia por MRSA\n• Doença renal terminal em hemodiálise\n• Pneumonia complicada com empiema\n• Pneumonia necrotizante ou com padrão cavitário\n• Pós-influenza / uso recente de ATB IV (90d)\n• • Conduta: Vancomicina ou Linezolida",
+      "audioText": "Diferença cobrada pela FGV nos fatores de risco da pneumonia comunitária. Para Pseudomonas aeruginosa: hospitalização nos últimos três meses com antibiótico intravenoso, isolamento prévio e doença estrutural pulmonar como bronquiectasias. Para MRSA: colonização prévia por MRSA, hemodiálise, empiema e pneumonia cavitária ou necrotizante."
+    }
+  ]
 }
