@@ -92,3 +92,13 @@ git push origin main
 Confira que o build não mostrou nenhum `SyntaxWarning`. O site (GitHub Pages) atualiza sozinho em cerca de 1 minuto, e o progresso salvo na nuvem não é afetado.
 
 **Não mude o `id` de um card que já existe:** o progresso de estudo é guardado pelo `id`. Para corrigir um card, edite o texto e mantenha o número.
+
+
+---
+
+## 5. Aba FGV (`fgv_flashcards` e `fgv_tables`)
+
+A aba **FGV** usa listas próprias dentro de `app_data_clean.json` para não misturar com o baralho geral:
+
+- **`fgv_flashcards`**: mesmos campos da seção 1, mais `"year"` opcional (ex.: `"FGV 2024"`). Use **`id` a partir de `1001`** (`1001, 1002, ...`) para nunca colidir com os cards gerais no `srsData`.
+- **`fgv_tables`**: mesmos campos de `tables` (`id`, `area`, `cat`, `name`, `col1Title`, `col1`, `col2Title`, `col2`, `audioText`, e `"year"` opcional). Use **`id` a partir de `2001`** (`2001, 2002, ...`).
