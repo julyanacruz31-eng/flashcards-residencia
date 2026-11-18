@@ -3303,6 +3303,16 @@
       "front": "Como diferenciar o pneumotórax espontâneo primário (PEP) do secundário (PES) quanto ao perfil do paciente, idade, fatores de risco e principal causa?",
       "back": "✅ Pneumotórax Primário (PEP):\n• Sem doença pulmonar prévia aparente (bolhas subpleurais / blebs apicais).\n• Perfil clássico: homem jovem (10–40 anos), alto e magro.\n• Fatores de risco: tabagismo e uso de cannabis.\n\n✅ Pneumotórax Secundário (PES):\n• Com doença pulmonar estrutural prévia; mais comum acima dos 55 anos.\n• Principal causa: DPOC (em áreas endêmicas, também tuberculose).\n\n⚠️ Pegadinha FGV: não inverter as idades (>55 é secundário), nem confundir DPOC com doença intersticial ou achar que 50% da fibrose cística faz pneumotórax (ocorre em ~3–10%).\n\n💡 Por quê? O tabagismo e a cannabis aumentam a inflamação das pequenas vias aéreas e favorecem a ruptura de blebs subpleurais apicais.",
       "audioText": "Diferença entre pneumotórax espontâneo primário e secundário cobrada pela FGV. O primário ocorre sem doença pulmonar prévia, em homens jovens de dez a quarenta anos, altos e magros, tendo como principais fatores de risco o tabagismo e o uso de cannabis. Já o secundário ocorre principalmente acima dos cinquenta e cinco anos em pacientes com doença pulmonar estrutural, sendo a DPOC a principal causa."
+    },
+    {
+      "id": 1003,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural: Light e Causas de Transudato",
+      "front": "Paciente com derrame pleural unilateral: proteína P/S = 0,1, LDH P/S = 0,1 e LDH pleural abaixo de 2/3 do LSN. Qual é o tipo de líquido e quais causas clássicas a FGV mistura (ex.: Atelectasia vs Uremia/Pancreatite)?",
+      "back": "✅ Classificação: TRANSUDATO (nenhum critério de Light preenchido).\n\n✅ Causas clássicas de TRANSUDATO:\n• Insuficiência cardíaca (mais comum), cirrose (hidrotórax hepático), síndrome nefrótica.\n• Atelectasia, diálise peritoneal, urinotórax, hipoalbuminemia grave.\n\n⚠️ Pegadinha FGV: uremia, pancreatite, artrite reumatoide e neoplasia causam EXSUDATO — mesmo que pareçam doenças sistêmicas!\n\n💡 Critérios de Light (basta 1 para EXSUDATO): Proteína P/S > 0,5 | LDH P/S > 0,6 | LDH pleural > 2/3 do LSN sérico.",
+      "audioText": "Nos critérios de Light para derrame pleural, basta um critério alterado para exsudato: relação proteína pleural sobre sérica maior que zero vírgula cinco, relação LDH maior que zero vírgula seis, ou LDH pleural maior que dois terços do limite superior da normalidade. Se nenhum critério fecha, é transudato. Atenção à pegadinha da FGV: atelectasia causa transudato, enquanto uremia, pancreatite, artrite reumatoide e neoplasia causam exsudato."
     }
   ],
   "fgv_tables": [
@@ -3329,6 +3339,18 @@
       "col2Title": "Secundário (PES) e Pegadinhas",
       "col2": "• Doença pulmonar estrutural subjacente\n• Faixa etária: mais comum > 55 anos\n• Principal causa: DPOC (não intersticial!)\n• Outras causas: TB (áreas endêmicas), fibrose cística (~3–10% na vida, não 50%)\n• • Maior gravidade clínica pela baixa reserva pulmonar",
       "audioText": "Tabela comparativa de pneumotórax espontâneo da FGV. No primário: jovem de dez a quarenta anos, homem alto e magro, tabagismo e cannabis. No secundário: acima de cinquenta e cinco anos, principal causa DPOC, e atenção à pegadinha de fibrose cística que não chega a cinquenta por cento."
+    },
+    {
+      "id": 2003,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural: Critérios de Light e Causas (FGV 2024)",
+      "col1Title": "Critérios de Light (Exsudato se >= 1)",
+      "col1": "• Relação Proteína pleural / sérica > 0,5\n• Relação LDH pleural / sérico > 0,6\n• LDH pleural > 2/3 do LSN sérico\n• Se NENHUM critério fechado → TRANSUDATO\n• • Na questão FGV: prot 0,4/4,0 = 0,1 e LDH 20/200 = 0,1",
+      "col2Title": "Transudato vs Exsudato (Pegadinhas)",
+      "col2": "• TRANSUDATO:\n• • IC, cirrose, síndrome nefrótica\n• • Atelectasia, diálise peritoneal, urinotórax\n• EXSUDATO (não confundir!):\n• • Uremia, pancreatite, AR, LES, neoplasia, TB, parapneumônico",
+      "audioText": "Tabela dos critérios de Light cobrada pela FGV. Exsudato se proteína pleural sobre sérica maior que zero vírgula cinco, LDH maior que zero vírgula seis ou LDH pleural maior que dois terços do limite superior. Causas de transudato incluem insuficiência cardíaca, cirrose, síndrome nefrótica e atelectasia. Uremia, pancreatite, artrite reumatoide e neoplasia causam exsudato."
     }
   ]
 }
