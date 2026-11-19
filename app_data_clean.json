@@ -3413,6 +3413,16 @@
       "front": "Paciente com CAD melhora após 24h de tratamento, mas a cetonúria (teste urinário com nitroprussiato) AUMENTA. Por que isso acontece e o que fazer?",
       "back": "✅ Conduta: NÃO mudar insulina nem dar bicarbonato — a cetonúria deve ser usada APENAS para DIAGNÓSTICO (não para seguimento!).\n\n💡 Por quê? (Fisiopatologia clássica FGV):\n• Na CAD descompensada predomina o BETA-HIDROXIBUTIRATO, que NÃO é detectado pelo nitroprussiato (o nitroprussiato detecta apenas ACETOACETATO).\n• Com a melhora clínica, o beta-hidroxibutirato sérico CAI porque é oxidado/convertido em ACETOACETATO — que então aparece mais na urina, simulando 'piora' da cetonúria!\n\n⚠️ Pegadinha FGV: o aumento na fita urinária é por ACETOACETATO (e o beta-hidroxibutirato sérico estará DIMINUÍDO, não aumentado!). Para acompanhar resolução da CAD, olhe pH, HCO3 e ânion gap (ou beta-hidroxibutirato sérico).",
       "audioText": "Paradoxo da cetonúria na cetoacidose diabética cobrado pela FGV. O teste urinário com nitroprussiato detecta acetoacetato, mas não detecta beta-hidroxibutirato. Quando o paciente melhora com o tratamento, o beta-hidroxibutirato sérico cai e é convertido em acetoacetato, causando um falso aumento da cetonúria. Por isso, a cetonúria deve ser usada apenas para o diagnóstico, e nunca para acompanhar a resposta terapêutica."
+    },
+    {
+      "id": 1014,
+      "area": "neurologia",
+      "cat": "wernicke",
+      "year": "FGV",
+      "name": "Encefalopatia de Wernicke: Glicose Antes da Tiamina",
+      "front": "Etilista crônico chega com desorientação, nistagmo horizontal, paralisia bilateral do reto lateral e glicemia 70 mg/dL, recebendo glicose hipertônica IV sem tiamina prévia. Qual a evolução esperada?",
+      "back": "✅ Evolução esperada: AGRAVAMENTO DO QUADRO NEUROLÓGICO!\n\n• Diagnóstico: Encefalopatia de Wernicke (deficiência de Tiamina / Vitamina B1).\n• Tríade clássica: Encefalopatia/desorientação + Oftalmoplegia (nistagmo, paralisia do VI par/reto lateral) + Ataxia (não precisa ter os 3!).\n\n⚠️ Pegadinha FGV: nunca dar glicose sem tiamina antes em etilista/desnutrido! Mesmo quando não há hipoglicemia (70 mg/dL!), infundir glicose sem B1 piora agudamente a lesão neurológica.\n\n💡 Por quê? A glicose acelera o metabolismo celular e consome os últimos estoques de tiamina (cofator da piruvato desidrogenase), gerando acidose láctica neuronal e necrose aguda (corpos mamilares/tálamo).",
+      "audioText": "Na encefalopatia de Wernicke em etilista crônico, caracterizada por desorientação, nistagmo e paralisia do reto lateral por deficiência de vitamina B1, administrar glicose hipertônica intravenosa antes da tiamina provoca agravamento agudo do quadro neurológico, pois a glicose consome os últimos estoques de tiamina no metabolismo celular. Sempre administre tiamina antes da glicose."
     }
   ],
   "fgv_tables": [
@@ -3571,6 +3581,18 @@
       "col2Title": "Uso Clínico e Pegadinhas FGV",
       "col2": "• Cetonúria (nitroprussiato): usar APENAS para DIAGNÓSTICO!\n• Como acompanhar melhora da CAD:\n• • pH (> 7,3), Bicarbonato (>= 15–18) e fechamento do Ânion Gap\n• • Dosagem sérica direta de beta-hidroxibutirato (se disponível)\n• • NÃO aumentar insulina nem dar bicarbonato por cetonúria positiva em paciente melhorando!",
       "audioText": "Corpos cetônicos na cetoacidose diabética para a FGV. O nitroprussiato na urina detecta apenas acetoacetato e não detecta beta-hidroxibutirato. Durante o tratamento, com a melhora clínica, o beta-hidroxibutirato sérico diminui ao ser convertido em acetoacetato, fazendo a cetonúria subir paradoxalmente. Portanto, cetonúria serve apenas para diagnóstico."
+    },
+    {
+      "id": 2014,
+      "area": "neurologia",
+      "cat": "wernicke",
+      "year": "FGV",
+      "name": "Encefalopatia de Wernicke vs Psicose de Korsakoff (FGV)",
+      "col1Title": "Wernicke (Aguda / Reversível)",
+      "col1": "• Causa: deficiência de Tiamina (Vitamina B1) — etilistas, desnutridos, pós-bariátrica, hiperêmese gravídica\n• Tríade clínica (nem sempre completa!):\n• • Confusão mental / desorientação\n• • Oftalmopatia (nistagmo, paralisia VI par / reto lateral)\n• • Ataxia de marcha\n• Conduta: TIAMINA IV em alta dose ANTES da glicose!",
+      "col2Title": "Pegadinha da Glicose e Korsakoff",
+      "col2": "• Glicose sem tiamina prévia → AGRAVA o quadro neurológico (esgota B1 residual)\n• Sem tratamento precoce → evolui para Síndrome de Korsakoff:\n• • Amnésia anterógrada e retrógrada + confabulação\n• • Geralmente IRREVERSÍVEL!\n• • Ordem dos fatores altera o prognóstico: B1 primeiro!",
+      "audioText": "Encefalopatia de Wernicke para a FGV. Causada por deficiência de tiamina, manifesta-se com confusão mental, alteração ocular como nistagmo e paralisia do sexto par, além de ataxia. A conduta obrigatória é administrar tiamina intravenosa antes da glicose, pois a glicose isolada esgota a tiamina restante e agrava o quadro neurológico."
     }
   ]
 }

@@ -2803,6 +2803,7 @@ html_content = """<!DOCTYPE html>
         'reumatologia': 'Reumatologia',
         'hematologia': 'Hematologia',
         'nefrologia': 'Nefrologia',
+        'neurologia': 'Neurologia',
         'cirurgia': 'Cirurgia Geral',
         'pediatria': 'Pediatria',
         'go': 'G.O.',
@@ -2851,7 +2852,8 @@ html_content = """<!DOCTYPE html>
         'mieloma': 'Mieloma Múltiplo',
         'hemostasia': 'Plaquetas & Coagulação',
         'nefrolitiase': 'Nefrolitíase',
-        'ira_dialise': 'IRA & Diálise'
+        'ira_dialise': 'IRA & Diálise',
+        'wernicke': 'Wernicke & Carências'
       };
       return map[cat] || cat || 'Geral';
     }
