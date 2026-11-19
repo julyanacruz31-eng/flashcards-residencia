@@ -3473,6 +3473,16 @@
       "front": "Paciente estável com diverticulite de sigmoide complicada com abscesso de 1 cm na TC (sem peritonite). Deve-se drenar por TC, operar ou fazer apenas antibiótico? Qual esquema?",
       "back": "✅ Conduta: APENAS ANTIBIOTICOTERAPIA (Ceftriaxona + Metronidazol) — SEM drenagem!\n\n• Regra do tamanho do abscesso:\n• • < 4 cm (aqui: 1 cm): apenas ATB (cobrindo Gram-negativos + anaeróbios).\n• • >= 4 cm: ATB + Drenagem percutânea guiada por TC.\n• • Hinchey III / IV (peritonite purulenta/fecal) ou falha: Cirurgia.\n\n⚠️ Pegadinha FGV: não drenar abscesso pequeno (< 4 cm), e lembrar de SEMPRE cobrir anaeróbios (metronidazol) junto da ceftriaxona!\n\n💡 E depois que resolver? Colonoscopia após 6 a 8 semanas para excluir neoplasia de cólon (se não tiver feito recentemente).",
       "audioText": "Na diverticulite aguda complicada com abscesso pequeno de um centímetro em paciente estável e sem peritonite, a conduta é apenas antibioticoterapia cobrindo Gram negativos e anaeróbios, como ceftriaxona associada a metronidazol, sem drenagem percutânea nem cirurgia. A drenagem guiada por tomografia só é indicada para abscessos maiores ou iguais a quatro centímetros."
+    },
+    {
+      "id": 1020,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "FA no Hipertireoidismo (> 48h): Anticoagular Antes de Cardioverter",
+      "front": "Paciente de 35 anos com hipertireoidismo sem tratamento e FA estável há 10 dias, já com betabloqueador e iniciando metimazol. Qual a conduta imediata: anticoagular, cardioverter (química ou elétrica) ou ambos?",
+      "back": "✅ Conduta imediata: APENAS ANTICOAGULAÇÃO (junto com controle da FC e tratamento do hipertireoidismo).\n\n• Regra da FA > 48 horas (ou tempo desconhecido) e estável:\n• • PROIBIDO cardioverter agora sem 3 semanas de anticoagulação plena (ou ETE sem trombo) — alto risco de AVC embólico!\n• • Além disso, na tireotoxicose ativa, a chance de recorrência após cardioversão é muito alta; muitas vezes reverte espontaneamente após atingir eutireoidismo.\n\n⚠️ Pegadinha FGV: não marcar cardioversão química nem elétrica antes de 3 semanas de anticoagulação (ou ETE) e controle do hipertireoidismo!",
+      "audioText": "Na fibrilação atrial estável com duração maior que quarenta e oito horas, como há dez dias, em paciente com hipertireoidismo sem tratamento que já recebeu betabloqueador e metimazol, a conduta imediata é apenas anticoagulação plena. É proibido cardioverter nesse momento antes de completar três semanas de anticoagulação ou excluir trombo por ecocardiograma transesofágico, além de a recorrência ser alta antes do eutireoidismo."
     }
   ],
   "fgv_tables": [
@@ -3703,6 +3713,18 @@
       "col2Title": "Peritonite (Hinchey III / IV) e Seguimento",
       "col2": "• Hinchey III (peritonite purulenta difusa) ou IV (fecal):\n• • Cirurgia de urgência (Hartmann ou ressecção + anastomose + ostomia protetora)\n• Pegadinhas FGV:\n• • Nunca dar ceftriaxona isolada (precisa de metronidazol para anaeróbios!)\n• • Colonoscopia de controle: após 6–8 semanas (nunca na fase aguda!)",
       "audioText": "Conduta na diverticulite aguda para a FGV. Abscesso menor que quatro centímetros trata apenas com antibiótico cobrindo Gram negativos e anaeróbios, como ceftriaxona e metronidazol, sem drenagem. Abscesso maior ou igual a quatro centímetros associa drenagem percutânea por tomografia. Hinchey três ou quatro, com peritonite difusa, exige cirurgia de urgência."
+    },
+    {
+      "id": 2020,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Fibrilação Atrial (> 48h e Hipertireoidismo): Quando Cardioverter (FGV)",
+      "col1Title": "FA Estável > 48h (ou Tempo Desconhecido)",
+      "col1": "• NÃO cardioverter imediatamente!\n• Conduta inicial:\n• • Controle de FC (betabloqueador — ótimo no hipertireoidismo!)\n• • Anticoagulação plena por >= 3 semanas antes da cardioversão (e manter >= 4 semanas após)\n• • Alternativa: Eco Transesofágico (ETE) — se sem trombo, pode cardioverter e manter anticoagulado >= 4 sem",
+      "col2Title": "Particularidades do Hipertireoidismo",
+      "col2": "• Tratar a causa base (Metimazol / Propiltiouracil)\n• Cardioverter durante tireotoxicose ativa tem altíssima taxa de recorrência\n• Muitos pacientes revertem para sinusal espontaneamente ao atingir o eutireoidismo\n• • FA INSTÁVEL (choque, EAP, angina, rebaixamento): Cardioversão ELÉTRICA sincronizada IMEDIATA (independe do tempo!)",
+      "audioText": "Conduta na fibrilação atrial maior que quarenta e oito horas e no hipertireoidismo para a FGV. Se estável, não cardioverter imediatamente: controlar frequência cardíaca com betabloqueador, tratar o hipertireoidismo com metimazol e anticoagular por pelo menos três semanas antes de cardioverter, ou fazer ecocardiograma transesofágico. Só cardioverte imediatamente sem esperar se houver instabilidade hemodinâmica."
     }
   ]
 }
