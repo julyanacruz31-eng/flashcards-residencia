@@ -661,7 +661,7 @@ html_content = """<!DOCTYPE html>
         <div class="flex items-center gap-2">
           <h3 class="text-sm text-ink">Roteiro do áudio</h3>
         </div>
-        <button onclick="closeModal('scriptModal')" class="text-muted hover:text-ink2 p-1">
+        <button type="button" onclick="closeModal('scriptModal')" class="text-muted hover:text-ink2 w-10 h-10 flex items-center justify-center -mr-2" aria-label="Fechar">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -683,7 +683,7 @@ html_content = """<!DOCTYPE html>
         <div class="flex items-center gap-2">
           <h3 class="text-sm text-ink">Adicionar ao MedFlashcards</h3>
         </div>
-        <button onclick="closeModal('addModal')" class="text-muted hover:text-ink2 p-1">
+        <button type="button" onclick="closeModal('addModal')" class="text-muted hover:text-ink2 w-10 h-10 flex items-center justify-center -mr-2" aria-label="Fechar">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -799,7 +799,7 @@ html_content = """<!DOCTYPE html>
         <div class="flex items-center gap-2">
           <h3 class="text-sm text-ink">Backup</h3>
         </div>
-        <button onclick="closeModal('exportModal')" class="text-muted hover:text-ink2 p-1">
+        <button type="button" onclick="closeModal('exportModal')" class="text-muted hover:text-ink2 w-10 h-10 flex items-center justify-center -mr-2" aria-label="Fechar">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -839,7 +839,7 @@ html_content = """<!DOCTYPE html>
             <p class="text-xs text-muted">Toque num card para ir direto a ele.</p>
           </div>
         </div>
-        <button onclick="closeModal('trailModal')" class="text-muted hover:text-ink2 p-1">
+        <button type="button" onclick="closeModal('trailModal')" class="text-muted hover:text-ink2 w-10 h-10 flex items-center justify-center -mr-2" aria-label="Fechar">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -858,7 +858,7 @@ html_content = """<!DOCTYPE html>
         <div class="flex items-center gap-2">
           <h3 class="text-sm text-ink">Como fixar mais rápido</h3>
         </div>
-        <button onclick="closeModal('tipsModal')" class="text-muted hover:text-ink2 p-1">
+        <button type="button" onclick="closeModal('tipsModal')" class="text-muted hover:text-ink2 w-10 h-10 flex items-center justify-center -mr-2" aria-label="Fechar">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -914,6 +914,8 @@ html_content = """<!DOCTYPE html>
     var srsStats = { reviewedToday: 0, newToday: 0, lastReviewDate: '', examDate: 0 };
     var addModalType = 'tabela';
     var flashcardScores = { correct: 0, review: 0 };
+    var lastRatedSnapshot = null;
+    var pendingCloudDeletes = {};
 
     // Player de Áudio
     var currentSpeed = 1.7;
@@ -922,6 +924,7 @@ html_content = """<!DOCTYPE html>
     var speechUtterance = null;
     var speechChunks = [];
     var currentChunkIndex = 0;
+    var speechToken = 0;
     var selectedVoice = null;
     var voicesList = [];
 
@@ -963,7 +966,13 @@ html_content = """<!DOCTYPE html>
               if (!existingTIds[parsed.tables[tj].id]) appState.tables.push(parsed.tables[tj]);
             }
           }
-          if (parsed.geral && parsed.geral.length > 0) appState.geral = parsed.geral;
+          if (parsed.geral && parsed.geral.length > 0) {
+            var existingGIds = {};
+            for (var gi = 0; gi < appState.geral.length; gi++) existingGIds[appState.geral[gi].id] = true;
+            for (var gj = 0; gj < parsed.geral.length; gj++) {
+              if (!existingGIds[parsed.geral[gj].id]) appState.geral.push(parsed.geral[gj]);
+            }
+          }
         }
         var srsRaw = localStorage.getItem('medflashcards_srs_v1');
         if (srsRaw) {
@@ -994,9 +1003,18 @@ html_content = """<!DOCTYPE html>
       setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
     }
 
+    function ensureTodayStats() {
+      var today = getTodayStr();
+      if (srsStats.lastReviewDate && srsStats.lastReviewDate !== today) {
+        srsStats.reviewedToday = 0;
+        srsStats.newToday = 0;
+      }
+      srsStats.lastReviewDate = today;
+    }
+
     function writeLocalSRS() {
       try {
-        srsStats.lastReviewDate = getTodayStr();
+        ensureTodayStats();
         localStorage.setItem('medflashcards_srs_v1', JSON.stringify({
           srsData: srsData,
           srsStats: srsStats
@@ -1025,7 +1043,7 @@ html_content = """<!DOCTYPE html>
       messagingSenderId: "274560630804",
       appId: "1:274560630804:web:a5566e360f6936ff86a701"
     };
-    var cloud = { auth: null, db: null, user: null, unsub: null, pushTimer: null, status: 'off' };
+    var cloud = { auth: null, db: null, user: null, unsub: null, pushTimer: null, status: 'off', hydrated: false };
 
     function initCloud() {
       if (typeof firebase === 'undefined') { setCloudStatus('unavailable'); return; }
@@ -1036,6 +1054,7 @@ html_content = """<!DOCTYPE html>
         setCloudStatus('off');
         cloud.auth.onAuthStateChanged(function(user) {
           cloud.user = user;
+          cloud.hydrated = false;
           if (cloud.unsub) { cloud.unsub(); cloud.unsub = null; }
           if (user) {
             setCloudStatus('syncing');
@@ -1099,6 +1118,7 @@ html_content = """<!DOCTYPE html>
     function startCloudListener() {
       cloud.unsub = cloudDocRef().onSnapshot(function(snap) {
         if (snap.metadata.hasPendingWrites) return;
+        cloud.hydrated = true;
         var remote = snap.exists ? snap.data() : null;
         if (mergeRemoteSRS(remote)) {
           writeLocalSRS();
@@ -1120,17 +1140,27 @@ html_content = """<!DOCTYPE html>
     }
 
     function flushCloudPush() {
-      if (cloud.pushTimer) pushCloudNow();
+      if (cloud.pushTimer && cloud.hydrated) pushCloudNow();
     }
 
     function pushCloudNow() {
       if (cloud.pushTimer) { clearTimeout(cloud.pushTimer); cloud.pushTimer = null; }
       if (!cloud.user || !cloud.db) return;
+      if (!cloud.hydrated) return;
+      var payloadSrsData = Object.assign({}, srsData);
+      var deletedIds = Object.keys(pendingCloudDeletes);
+      for (var di = 0; di < deletedIds.length; di++) {
+        var delId = deletedIds[di];
+        if (!payloadSrsData.hasOwnProperty(delId)) {
+          payloadSrsData[delId] = firebase.firestore.FieldValue.delete();
+        }
+      }
       cloudDocRef().set({
-        srsData: srsData,
+        srsData: payloadSrsData,
         srsStats: srsStats,
         updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-      }).then(function() {
+      }, { merge: true }).then(function() {
+        for (var dj = 0; dj < deletedIds.length; dj++) delete pendingCloudDeletes[deletedIds[dj]];
         setCloudStatus('ok');
       }).catch(function(err) {
         console.warn('cloud push', err);
@@ -1224,6 +1254,7 @@ html_content = """<!DOCTYPE html>
 
     function switchTab(tabId) {
       activeTab = tabId;
+      lastRatedSnapshot = null;
 
       // Esconde todas as abas
       var tabs = ['tabelas', 'flashcards', 'geral'];
@@ -1252,6 +1283,7 @@ html_content = """<!DOCTYPE html>
 
     function setAreaFilter(area) {
       activeArea = area;
+      lastRatedSnapshot = null;
       var btns = document.querySelectorAll('.filter-pill[data-area]');
       for (var i = 0; i < btns.length; i++) {
         var b = btns[i];
@@ -1339,11 +1371,11 @@ html_content = """<!DOCTYPE html>
           '<div class="grid grid-cols-1 md:grid-cols-2 text-sm">' +
             '<div class="p-4 md:border-r border-rule">' +
               '<div class="font-display text-xs text-muted mb-2">Definição e achados</div>' +
-              '<p class="text-ink leading-relaxed whitespace-pre-line">' + tidyBullets(item.col1) + '</p>' +
+              '<p class="text-ink leading-relaxed whitespace-pre-line">' + escapeText(tidyBullets(item.col1)) + '</p>' +
             '</div>' +
             '<div class="p-4 border-t md:border-t-0 border-rule">' +
               '<div class="font-display text-xs text-muted mb-2">Diagnóstico e conduta</div>' +
-              '<p class="text-ink leading-relaxed whitespace-pre-line">' + tidyBullets(item.col2) + '</p>' +
+              '<p class="text-ink leading-relaxed whitespace-pre-line">' + escapeText(tidyBullets(item.col2)) + '</p>' +
             '</div>' +
           '</div>' +
         '</article>';
@@ -1584,7 +1616,7 @@ html_content = """<!DOCTYPE html>
 
       var daysLeft = getDaysRemaining();
       var studyDaysLeft = Math.max(1, daysLeft - 4);
-      var dailyNewGoal = newCount > 0 ? Math.max(5, Math.ceil(newCount / studyDaysLeft)) : 0;
+      var dailyNewGoal = newCount > 0 ? Math.min(newCount, Math.max(5, Math.ceil(newCount / studyDaysLeft))) : 0;
 
       function stat(label, value) {
         return '<div class="stat-cell px-3 py-2">' +
@@ -1714,6 +1746,7 @@ html_content = """<!DOCTYPE html>
 
     function setFCStudyMode(mode) {
       fcStudyMode = mode;
+      lastRatedSnapshot = null;
       trailPinnedId = null;
       currentFlashcardIndex = 0;
       isFlipped = false;
@@ -1724,6 +1757,7 @@ html_content = """<!DOCTYPE html>
     function setFCSpecialty(spec) {
       fcSpecialty = spec;
       fcSubtopic = 'todos';
+      lastRatedSnapshot = null;
       currentFlashcardIndex = 0;
       isFlipped = false;
       showHint = false;
@@ -1732,6 +1766,7 @@ html_content = """<!DOCTYPE html>
 
     function setFCSubtopic(sub) {
       fcSubtopic = sub;
+      lastRatedSnapshot = null;
       currentFlashcardIndex = 0;
       isFlipped = false;
       showHint = false;
@@ -1785,6 +1820,7 @@ html_content = """<!DOCTYPE html>
       var scoreEl = document.getElementById('flashcardScore');
       if (!section) return;
 
+      ensureTodayStats();
       var baseCards = getBaseFilteredFlashcards();
       renderSRSDashboard(baseCards);
       renderFCControls();
@@ -1800,15 +1836,21 @@ html_content = """<!DOCTYPE html>
         var emptyTitle = (fcStudyMode === 'schedule') ? 'Meta de hoje cumprida' : (fcStudyMode === 'hard' ? 'Nenhum ponto fraco pendente' : 'Nenhum card neste filtro');
         var allScheduled = baseCards.length > 0;
         if (fcStudyMode !== 'schedule' && fcStudyMode !== 'hard' && allScheduled) emptyTitle = 'Tudo em dia neste filtro';
-        var emptyDesc = (fcStudyMode === 'schedule')
+        var emptyDesc = (fcStudyMode === 'schedule' && allScheduled)
           ? 'Todas as revisões de hoje deste filtro estão feitas. As próximas aparecem no dia certo.'
           : (allScheduled
             ? 'Todos os cards deste filtro já estão agendados para os próximos dias. Eles voltam sozinhos na data certa; o Índice mostra quando.'
-            : 'Mude o filtro ou estude em ordem para rever a trilha inteira.');
+            : 'Os flashcards atuais são de Clínica Médica. Limpe os filtros para estudar todas as áreas.');
+        var emptyAction = allScheduled
+          ? '<button type="button" onclick="openTrailModal()" class="h-11 px-4 bg-accent text-accentink border-2 border-accent font-display text-sm font-extrabold hover:bg-ink hover:border-ink transition-colors">Ver índice da trilha</button>'
+          : '<button type="button" onclick="resetFlashcardArea()" class="h-11 px-4 bg-accent text-accentink border-2 border-accent font-display text-sm font-extrabold hover:bg-ink hover:border-ink transition-colors">Ver todas as áreas</button>';
+        var undoBanner = lastRatedSnapshot
+          ? '<div class="pt-1"><button type="button" onclick="undoLastRating()" class="text-btn">Desfazer última avaliação</button></div>'
+          : '';
         section.innerHTML = '<div class="glass-card p-6 space-y-4">' +
           '<h3 class="text-lg text-ink">' + emptyTitle + '</h3>' +
           '<p class="text-sm text-ink2">' + emptyDesc + '</p>' +
-          '<button type="button" onclick="setFCStudyMode(\\'sequential\\')" class="h-11 px-4 bg-accent text-accentink border-2 border-accent font-display text-sm font-extrabold hover:bg-ink hover:border-ink transition-colors">Estudar em ordem</button>' +
+          '<div class="flex flex-wrap items-center gap-3">' + emptyAction + undoBanner + '</div>' +
         '</div>';
         return;
       }
@@ -1892,6 +1934,7 @@ html_content = """<!DOCTYPE html>
           '<button type="button" onclick="rateCard(' + current.id + ', 2)" class="grade-btn"><span class="grade-name">Acertei</span><span class="grade-when">' + previewNextInterval(current.id, 2) + '</span></button>' +
           '<button type="button" onclick="rateCard(' + current.id + ', 3)" class="grade-btn"><span class="grade-name">Fácil</span><span class="grade-when">' + previewNextInterval(current.id, 3) + '</span></button>' +
         '</div>' +
+        (lastRatedSnapshot ? '<div class="flex justify-end"><button type="button" onclick="undoLastRating()" class="text-btn">Desfazer última avaliação</button></div>' : '') +
 
         '<!-- Rascunho (recordação ativa) -->' +
         '<div class="space-y-2 pt-3">' +
@@ -1937,7 +1980,9 @@ html_content = """<!DOCTYPE html>
     function revealGradeRow() {
       var row = document.querySelector('#flashcardSection .grade-row');
       if (!row) return;
-      var gap = 12;
+      var player = document.getElementById('bottomAudioPlayer');
+      var playerH = (document.body.classList.contains('player-open') && player) ? player.offsetHeight : 0;
+      var gap = 12 + playerH;
       var over = row.getBoundingClientRect().bottom + gap - window.innerHeight;
       if (over <= 0) return;
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1964,6 +2009,16 @@ html_content = """<!DOCTYPE html>
 
     function rateCard(cardId, quality) {
       if (cardLeaving) return;
+      ensureTodayStats();
+      lastRatedSnapshot = {
+        cardId: cardId,
+        prevCardSRS: srsData.hasOwnProperty(cardId) ? Object.assign({}, srsData[cardId]) : null,
+        prevStats: Object.assign({}, srsStats),
+        prevScores: Object.assign({}, flashcardScores),
+        prevIndex: currentFlashcardIndex,
+        prevPinnedId: trailPinnedId
+      };
+      delete pendingCloudDeletes[cardId];
       var s = Object.assign({}, getCardSRS(cardId));
       var wasNew = (s.state === 'new');
       var now = Date.now();
@@ -2034,6 +2089,38 @@ html_content = """<!DOCTYPE html>
       } else {
         renderFlashcards();
       }
+    }
+
+    function undoLastRating() {
+      if (!lastRatedSnapshot || cardLeaving) return;
+      var snap = lastRatedSnapshot;
+      lastRatedSnapshot = null;
+      if (snap.prevCardSRS) {
+        snap.prevCardSRS.lastReview = Date.now();
+        srsData[snap.cardId] = snap.prevCardSRS;
+        delete pendingCloudDeletes[snap.cardId];
+      } else {
+        delete srsData[snap.cardId];
+        pendingCloudDeletes[snap.cardId] = true;
+      }
+      srsStats = snap.prevStats;
+      flashcardScores = snap.prevScores;
+      trailPinnedId = snap.prevPinnedId || null;
+      isFlipped = false;
+      showHint = false;
+      saveSRS();
+      var q = getStudyQueue();
+      currentFlashcardIndex = snap.prevIndex || 0;
+      for (var i = 0; i < q.length; i++) {
+        if (q[i].id === snap.cardId) { currentFlashcardIndex = i; break; }
+      }
+      renderFlashcards();
+    }
+
+    function resetFlashcardArea() {
+      fcSpecialty = 'todas';
+      fcSubtopic = 'todos';
+      setAreaFilter('todas');
     }
 
     function markCard(correct, total) {
@@ -2206,6 +2293,7 @@ html_content = """<!DOCTYPE html>
     function startAudioPlayback() {
       if (!('speechSynthesis' in window)) return;
       try {
+        speechToken++;
         window.speechSynthesis.cancel();
         isPlaying = true;
         updateAudioUI(true);
@@ -2218,6 +2306,7 @@ html_content = """<!DOCTYPE html>
     function pauseAudioPlayback() {
       if (!('speechSynthesis' in window)) return;
       try {
+        speechToken++;
         isPlaying = false;
         window.speechSynthesis.cancel();
         updateAudioUI(false);
@@ -2227,6 +2316,7 @@ html_content = """<!DOCTYPE html>
     function stopAudioPlayback() {
       if (!('speechSynthesis' in window)) return;
       try {
+        speechToken++;
         isPlaying = false;
         currentChunkIndex = 0;
         window.speechSynthesis.cancel();
@@ -2244,6 +2334,7 @@ html_content = """<!DOCTYPE html>
       updateScriptHighlight();
 
       var chunk = speechChunks[idx];
+      var myToken = speechToken;
       try {
         speechUtterance = new SpeechSynthesisUtterance(chunk);
         speechUtterance.rate = currentSpeed;
@@ -2251,17 +2342,18 @@ html_content = """<!DOCTYPE html>
         if (selectedVoice) speechUtterance.voice = selectedVoice;
 
         speechUtterance.onend = function() {
-          if (isPlaying) {
-            if (currentChunkIndex < speechChunks.length - 1) {
-              currentChunkIndex++;
-              speakChunk(currentChunkIndex);
-            } else {
-              stopAudioPlayback();
-            }
+          if (myToken !== speechToken || !isPlaying) return;
+          if (currentChunkIndex < speechChunks.length - 1) {
+            currentChunkIndex++;
+            speakChunk(currentChunkIndex);
+          } else {
+            stopAudioPlayback();
           }
         };
 
-        speechUtterance.onerror = function() {
+        speechUtterance.onerror = function(ev) {
+          if (myToken !== speechToken) return;
+          if (ev && (ev.error === 'canceled' || ev.error === 'interrupted')) return;
           stopAudioPlayback();
         };
 
@@ -2274,8 +2366,13 @@ html_content = """<!DOCTYPE html>
     function audioSkip(dir) {
       if (dir > 0 && currentChunkIndex < speechChunks.length - 1) currentChunkIndex++;
       else if (dir < 0 && currentChunkIndex > 0) currentChunkIndex--;
-      if (isPlaying) speakChunk(currentChunkIndex);
-      else updateScriptHighlight();
+      if (isPlaying) {
+        speechToken++;
+        try { window.speechSynthesis.cancel(); } catch(e) {}
+        speakChunk(currentChunkIndex);
+      } else {
+        updateScriptHighlight();
+      }
     }
 
     function cycleSpeed() {
@@ -2285,7 +2382,13 @@ html_content = """<!DOCTYPE html>
       currentSpeed = speeds[idx];
       var badge = document.getElementById('speedBadge');
       if (badge) badge.innerText = currentSpeed + "x";
-      if (isPlaying) speakChunk(currentChunkIndex);
+      if (isPlaying) {
+        speechToken++;
+        try { window.speechSynthesis.cancel(); } catch(e) {}
+        speakChunk(currentChunkIndex);
+      } else {
+        updateScriptHighlight();
+      }
     }
 
     function updateAudioUI(playing) {
@@ -2357,6 +2460,20 @@ html_content = """<!DOCTYPE html>
         }, 260);
       }
     }
+
+    document.addEventListener('click', function(ev) {
+      if (ev.target && ev.target.classList && ev.target.classList.contains('modal-overlay') && ev.target.id) {
+        closeModal(ev.target.id);
+      }
+    });
+    document.addEventListener('keydown', function(ev) {
+      if (ev.key === 'Escape') {
+        var openModals = document.querySelectorAll('.modal-overlay.active');
+        for (var i = 0; i < openModals.length; i++) {
+          if (openModals[i].id) closeModal(openModals[i].id);
+        }
+      }
+    });
 
     function setAddType(type) {
       addModalType = type;
@@ -2552,9 +2669,6 @@ html_content = """<!DOCTYPE html>
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
-        .replace(/\\$\\ge\\$/g, '≥')
-        .replace(/\\$\\le\\$/g, '≤')
-        .replace(/\\$\\rightarrow\\$/g, '→')
         .replace(/\\$/g, '');
     }
 
@@ -2596,6 +2710,8 @@ html_content = """<!DOCTYPE html>
     window.toggleProgress = toggleProgress;
     window.toggleFilters = toggleFilters;
     window.hideSplash = hideSplash;
+    window.undoLastRating = undoLastRating;
+    window.resetFlashcardArea = resetFlashcardArea;
   </script>
 </body>
 </html>
