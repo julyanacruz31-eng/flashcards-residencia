@@ -2971,7 +2971,8 @@ html_content = """<!DOCTYPE html>
         'nefrolitiase': 'Nefrolitíase',
         'ira_dialise': 'IRA & Diálise',
         'wernicke': 'Wernicke & Carências',
-        'anafilaxia': 'Anafilaxia & Alergia'
+        'anafilaxia': 'Anafilaxia & Alergia',
+        'intussuscepcao': 'Intussuscepção'
       };
       return map[cat] || cat || 'Geral';
     }

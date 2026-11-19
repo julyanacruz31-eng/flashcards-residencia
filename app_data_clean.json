@@ -3443,6 +3443,16 @@
       "front": "Paciente usando atenolol e anlodipina apresenta urticária generalizada, prurido e estridor (anafilaxia). Qual a medicação de escolha INICIAL e quando entra o glucagon?",
       "back": "✅ Escolha INICIAL obrigatória: EPINEFRINA (adrenalina) IM no vasto lateral da coxa (0,3 a 0,5 mg; repetir a cada 5–15 min se necessário).\n\n⚠️ Pegadinha FGV (Atenolol + Glucagon):\n• O uso de betabloqueador (atenolol) NÃO contraindica nem substitui a epinefrina IM como primeira droga!\n• O GLUCAGON IV (1–5 mg) só entra como RESGATE se o paciente ficar REFRATÁRIO à epinefrina IM!\n\n💡 Por quê? O glucagon ativa a adenilato ciclase por receptor próprio, aumentando AMPc independentemente dos receptores beta bloqueados pelo atenolol. Difenidramina e corticoide são apenas adjuvantes.",
       "audioText": "Na anafilaxia com urticária e estridor em paciente usando betabloqueador como atenolol, a medicação de escolha inicial continua sendo a epinefrina intramuscular no vasto lateral da coxa. Atenção à pegadinha da FGV: o glucagon intravenoso entra apenas como resgate se o quadro for refratário à epinefrina por causa do bloqueio beta."
+    },
+    {
+      "id": 1017,
+      "area": "pediatria",
+      "cat": "intussuscepcao",
+      "year": "FGV",
+      "name": "Intussuscepção Intestinal: Diagnóstico e Conduta",
+      "front": "Lactente de 1 ano com dor abdominal em cólica súbita (15/15 min), flexão das pernas sobre o abdome, vômitos e massa em forma de salsicha à direita. Qual o exame diagnóstico de escolha e o sinal clássico?",
+      "back": "✅ Exame de escolha para DIAGNÓSTICO: ULTRASSONOGRAFIA (USG) de abdome!\n\n• Sinal clássico na USG: Sinal do ALVO (ou 'rosquinha' / pseudo-rim).\n• Clínica típica (6 meses a 2 anos): dor intermitente com flexão das pernas, massa em salsicha em HCD/FID e fezes em 'geleia de framboesa' (tardio).\n\n⚠️ Pegadinha FGV: não confundir diagnóstico (USG) com tratamento! O enema (hidrostático com soro ou pneumático com ar) é usado para REDUÇÃO/TRATAMENTO (se não houver peritonite/perfuração), não como exame diagnóstico inicial.\n\n💡 Por quê? A USG tem ~98–100% de acurácia, é rápida, não tem radiação e não precisa de sedação.",
+      "audioText": "Na intussuscepção intestinal em lactente com dor em cólica intermitente, flexão das pernas, vômitos e massa em forma de salsicha à direita, o exame diagnóstico de escolha é a ultrassonografia de abdome, que mostra o sinal do alvo ou pseudo-rim. O enema hidrostático ou pneumático fica para o tratamento de redução quando não há sinais de perfuração."
     }
   ],
   "fgv_tables": [
@@ -3637,6 +3647,18 @@
       "col2Title": "Refratariedade / Uso de Betabloqueador",
       "col2": "• Paciente em uso de betabloqueador (ex.: atenolol):\n• • 1º passo: Epinefrina IM normalmente!\n• • Se REFRATÁRIO à epinefrina → GLUCAGON IV (1–5 mg, depois infusão)\n• • Mecanismo: ativa adenilato ciclase sem usar receptor beta\n• • Pegadinha FGV: não marcar Glucagon como escolha inicial!",
       "audioText": "Conduta na anafilaxia para a FGV. A primeira escolha inicial é sempre epinefrina intramuscular no vasto lateral da coxa. Anti-histamínicos como difenidramina e corticoides como metilprednisolona são apenas adjuvantes. Em pacientes usando betabloqueador como atenolol, inicia-se com epinefrina intramuscular normalmente e reserva-se o glucagon intravenoso para casos refratários."
+    },
+    {
+      "id": 2017,
+      "area": "pediatria",
+      "cat": "intussuscepcao",
+      "year": "FGV",
+      "name": "Intussuscepção (Invaginação) Intestinal na Pediatria (FGV)",
+      "col1Title": "Quadro Clínico e Diagnóstico",
+      "col1": "• Idade clássica: 3 meses a 2–3 anos (geralmente ileocólica)\n• Tríade clássica: dor abdominal intermitente (flexão das pernas) + vômitos + fezes em 'geleia de framboesa' (tardio)\n• Exame físico: massa em forma de salsicha em QSD/flanco direito\n• Exame de escolha: ULTRASSONOGRAFIA (sinal do alvo / pseudo-rim)",
+      "col2Title": "Tratamento e Pegadinhas FGV",
+      "col2": "• Sem peritonite / sem perfuração / estável:\n• • Redução não cirúrgica por enema (pneumático com ar ou hidrostático com soro, guiado por USG/fluoroscopia)\n• Com peritonite, choque ou pneumoperitônio:\n• • Cirurgia de urgência (laparotomia/laparoscopia)\n• • Pegadinha: TC, RNM e colonoscopia NÃO são exames iniciais!",
+      "audioText": "Resumo de intussuscepção intestinal para a FGV. Acomete principalmente crianças entre três meses e dois anos, com dor em cólica intermitente, flexão das pernas e massa em forma de salsicha à direita. O exame de escolha para diagnóstico é a ultrassonografia mostrando sinal do alvo. Sem peritonite, trata-se com redução por enema; com peritonite ou perfuração, cirurgia."
     }
   ]
 }
