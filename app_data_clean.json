@@ -3453,6 +3453,16 @@
       "front": "Lactente de 1 ano com dor abdominal em cólica súbita (15/15 min), flexão das pernas sobre o abdome, vômitos e massa em forma de salsicha à direita. Qual o exame diagnóstico de escolha e o sinal clássico?",
       "back": "✅ Exame de escolha para DIAGNÓSTICO: ULTRASSONOGRAFIA (USG) de abdome!\n\n• Sinal clássico na USG: Sinal do ALVO (ou 'rosquinha' / pseudo-rim).\n• Clínica típica (6 meses a 2 anos): dor intermitente com flexão das pernas, massa em salsicha em HCD/FID e fezes em 'geleia de framboesa' (tardio).\n\n⚠️ Pegadinha FGV: não confundir diagnóstico (USG) com tratamento! O enema (hidrostático com soro ou pneumático com ar) é usado para REDUÇÃO/TRATAMENTO (se não houver peritonite/perfuração), não como exame diagnóstico inicial.\n\n💡 Por quê? A USG tem ~98–100% de acurácia, é rápida, não tem radiação e não precisa de sedação.",
       "audioText": "Na intussuscepção intestinal em lactente com dor em cólica intermitente, flexão das pernas, vômitos e massa em forma de salsicha à direita, o exame diagnóstico de escolha é a ultrassonografia de abdome, que mostra o sinal do alvo ou pseudo-rim. O enema hidrostático ou pneumático fica para o tratamento de redução quando não há sinais de perfuração."
+    },
+    {
+      "id": 1018,
+      "area": "pediatria",
+      "cat": "intussuscepcao",
+      "year": "FGV",
+      "name": "Lactente: Estenose de Piloro (EHP) vs Intussuscepção",
+      "front": "Como diferenciar pela idade, dor, tipo de vômito e massa palpável a Estenose Hipertrófica de Piloro (EHP) da Intussuscepção Intestinal?",
+      "back": "✅ Estenose Hipertrófica de Piloro (EHP):\n• Idade: 2 a 8 semanas (< 3 meses).\n• Clínica: vômitos NÃO biliosos em jato pós-mamada, SEM dor (bebê continua com fome!).\n• Massa: OLIVA pilórica no epigástrio.\n• Lab: alcalose metabólica hipoclorêmica hipocalêmica.\n\n✅ Intussuscepção (Invaginação) Intestinal:\n• Idade: 3 meses a 2–3 anos (pico 6–18 meses).\n• Clínica: dor em cólica intermitente (15–20 min) + flexão das pernas + fezes em geleia de framboesa (tardio).\n• Massa: em forma de SALSICHA à direita.\n\n⚠️ Pegadinha de prova: ambos fazem USG de abdome como exame de escolha, mas na EHP vê espessamento do canal pilórico e na intussuscepção vê sinal do ALVO!",
+      "audioText": "Diferença entre estenose hipertrófica de piloro e intussuscepção intestinal na pediatria. A estenose de piloro ocorre de duas a oito semanas de vida, com vômitos não biliosos em jato após as mamadas, bebê com fome e sem dor, oliva pilórica palpável no epigástrio e alcalose metabólica hipoclorêmica hipocalêmica. Já a intussuscepção ocorre entre três meses e dois anos, com cólica intermitente e flexão das pernas, massa em forma de salsicha à direita e fezes em geleia de framboesa."
     }
   ],
   "fgv_tables": [
@@ -3659,6 +3669,18 @@
       "col2Title": "Tratamento e Pegadinhas FGV",
       "col2": "• Sem peritonite / sem perfuração / estável:\n• • Redução não cirúrgica por enema (pneumático com ar ou hidrostático com soro, guiado por USG/fluoroscopia)\n• Com peritonite, choque ou pneumoperitônio:\n• • Cirurgia de urgência (laparotomia/laparoscopia)\n• • Pegadinha: TC, RNM e colonoscopia NÃO são exames iniciais!",
       "audioText": "Resumo de intussuscepção intestinal para a FGV. Acomete principalmente crianças entre três meses e dois anos, com dor em cólica intermitente, flexão das pernas e massa em forma de salsicha à direita. O exame de escolha para diagnóstico é a ultrassonografia mostrando sinal do alvo. Sem peritonite, trata-se com redução por enema; com peritonite ou perfuração, cirurgia."
+    },
+    {
+      "id": 2018,
+      "area": "pediatria",
+      "cat": "intussuscepcao",
+      "year": "FGV",
+      "name": "EHP vs Intussuscepção Intestinal (Comparativo Pediatria)",
+      "col1Title": "Estenose Hipertrófica de Piloro (EHP)",
+      "col1": "• Idade: 2 a 8 semanas (pico ~3–6 sem; < 3 meses)\n• Vômitos: NÃO biliosos, em jato, pós-mamada\n• Dor: AUSENTE (bebê faminto após vomitar)\n• Massa palpável: OLIVA pilórica (epigástrio)\n• Lab: Alcalose metabólica hipoclorêmica hipocalêmica\n• • Conduta: corrigir DHE primeiro + piloromiotomia (Fredet-Ramstedt)",
+      "col2Title": "Intussuscepção Intestinal",
+      "col2": "• Idade: 3 meses a 2–3 anos (pico 6–18 meses)\n• Vômitos: presentes (começam não biliosos → podem ficar biliosos)\n• Dor: CÓLICAS fortes a cada 15–20 min + flexão das pernas\n• Massa palpável: em SALSICHA no lado direito (QSD/flanco D)\n• Fezes: 'geleia de framboesa' (muco + sangue, tardio)\n• • Conduta: USG (alvo) → redução por enema (se estável) ou cirurgia",
+      "audioText": "Tabela comparativa entre estenose hipertrófica de piloro e intussuscepção intestinal. Estenose de piloro: duas a oito semanas, vômitos em jato não biliosos, sem dor, oliva pilórica, alcalose metabólica hipoclorêmica e hipocalêmica. Intussuscepção: três meses a dois anos, cólica intermitente com flexão das pernas, massa em salsicha à direita e geleia de framboesa."
     }
   ]
 }
