@@ -3393,6 +3393,16 @@
       "front": "Diabética tipo 2 usando NPH + metformina apresenta sudorese, taquicardia e glicemia capilar de 60 mg/dL, consciente. Qual a conduta imediata: via oral, glicose 50% IV ou glucagon?",
       "back": "✅ Conduta correta: VIA ORAL — ingestão de carboidratos de absorção rápida (15 g) + retestar glicemia CAPILAR (15 min pela Regra dos 15, e vigiar novamente em ~1 hora pelo uso de NPH).\n\n⚠️ Pegadinha FGV:\n• Paciente CONSCIENTE com glicemia 60 mg/dL NÃO precisa de acesso venoso (glicose 50% / SG 10%) nem de glucagon!\n• Não se dosa glicemia SÉRICA em 5 minutos — o controle é com glicemia CAPILAR.\n\n💡 Quando usar IV ou Glucagon? Apenas na hipoglicemia GRAVE (nível 3: rebaixamento de consciência, convulsão ou incapacidade de engolir com segurança): Glicose 50% IV (ou SG 10%) se houver acesso, ou Glucagon IM/SC/intranasal se não houver acesso.",
       "audioText": "Na hipoglicemia leve a moderada em paciente consciente e com via oral segura, como glicemia capilar de sessenta com sudorese e taquicardia, a conduta é via oral com ingestão de carboidratos de absorção rápida e nova glicemia capilar, evitando acesso venoso desnecessário ou glucagon. Glicose intravenosa e glucagon ficam reservados para pacientes inconscientes ou incapazes de deglutir."
+    },
+    {
+      "id": 1012,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "CAD: Manejo do Potássio e Corte de 3,3 mEq/L",
+      "front": "Paciente em cetoacidose diabética (CAD) chega com K+ sérico de 2,8 mEq/L. Quando iniciar a insulina e qual o corte exato de segurança do potássio?",
+      "back": "✅ Conduta: SEGURAR a insulina, repor K+ IV antes (com a hidratação) e só iniciar insulina venosa quando K+ >= 3,3 mEq/L!\n\n• K+ < 3,3 mEq/L: PROIBIDO insulina! Repor K+ (20–40 mEq/h) até atingir >= 3,3.\n• K+ entre 3,3 e 5,2 mEq/L: iniciar insulina IV + repor K+ (alvo 4–5 mEq/L).\n• K+ > 5,2 mEq/L: iniciar insulina IV SEM repor K+ no início.\n\n⚠️ Pegadinha FGV: o corte para LIBERAR a insulina é >= 3,3 mEq/L (não precisa esperar 4 a 5 mEq/L — 4–5 é o alvo durante a manutenção, não o pré-requisito para começar!).\n\n💡 Por quê? A insulina ativa a bomba Na+/K+ ATPase e joga potássio para dentro da célula; iniciar com K+ < 3,3 mEq/L precipita hipocalemia grave e arritmia fatal.",
+      "audioText": "Na cetoacidose diabética com potássio de dois vírgula oito, é proibido iniciar insulina imediatamente. Deve-se primeiro hidratar e repor potássio intravenoso até atingir pelo menos três vírgula três miliequivalentes por litro, que é o corte exato de segurança para liberar a insulina venosa. Atenção à pegadinha: não se espera potássio de quatro a cinco para começar a insulina, pois quatro a cinco é o alvo durante a manutenção."
     }
   ],
   "fgv_tables": [
@@ -3527,6 +3537,18 @@
       "col2Title": "Inconsciente / Grave (Nível 3)",
       "col2": "• Rebaixamento, convulsão ou impossível VO\n• Com acesso venoso:\n• • Glicose 50% IV (25 g = 50 mL) ou SG 10% IV\n• Sem acesso venoso (ex.: em casa / pré-hospitalar):\n• • Glucagon 1 mg IM/SC (ou intranasal)\n• • Em álcool/hepatopata sem reserva de glicogênio: preferir glicose IV!",
       "audioText": "Conduta na hipoglicemia para a FGV. Se o paciente está consciente, usa-se via oral com quinze gramas de carboidrato simples e reteste com glicemia capilar, nunca glicemia sérica nem acesso venoso. Se estiver inconsciente ou sem via oral segura, usa-se glicose cinquenta por cento intravenosa ou glucagon se estiver sem acesso venoso."
+    },
+    {
+      "id": 2012,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "Potássio na Cetoacidose Diabética (CAD) - Cortes FGV",
+      "col1Title": "Faixa de K+ na Admissão",
+      "col1": "• K+ < 3,3 mEq/L (ex.: 2,8):\n• • NÃO iniciar insulina!\n• • Hidratar + repor K+ IV (20–40 mEq/h) até K+ >= 3,3\n• K+ 3,3 a 5,2 mEq/L:\n• • Iniciar insulina IV + repor K+ (20–30 mEq/L de soro)\n• K+ > 5,2 mEq/L:\n• • Iniciar insulina IV SEM K+ (dosar de 2/2h)",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Corte para LIBERAR insulina = K+ >= 3,3 mEq/L\n• Alvo de MANUTENÇÃO durante o tratamento = 4 a 5 mEq/L (não esperar chegar a 4–5 para começar!)\n• Nunca iniciar insulina por tempo fixo ('após 1h') sem checar o K+\n• Na CAD moderada/grave, a insulina padrão é VENOSA contínua (BIC), não subcutânea",
+      "audioText": "Cortes do potássio na cetoacidose diabética para a FGV. Abaixo de três vírgula três: segurar a insulina e repor potássio até atingir pelo menos três vírgula três. Entre três vírgula três e cinco vírgula dois: iniciar insulina venosa junto com reposição de potássio visando alvo de quatro a cinco. Acima de cinco vírgula dois: iniciar insulina sem potássio inicial."
     }
   ]
 }
