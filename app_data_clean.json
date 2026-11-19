@@ -3282,5 +3282,317 @@
       "tip": "Febre há 5 dias com lábios em framboesa e conjuntivite. Para prevenir o temido aneurisma coronariano, infundir Imunoglobulina Venosa (IVIG) em dose única associada a AAS em alta dose antes do 10º dia.",
       "year": "ENARE / FGV Pediatria"
     }
+  ],
+  "fgv_flashcards": [
+    {
+      "id": 1001,
+      "area": "pneumologia",
+      "cat": "infeccoes",
+      "year": "FGV 2024",
+      "name": "PAC - Risco de Pseudomonas vs MRSA",
+      "front": "Na pneumonia comunitária (PAC), quais são as situações de risco que indicam cobertura empírica para Pseudomonas aeruginosa (e não apenas para MRSA)?",
+      "back": "✅ Fatores de risco para Pseudomonas na PAC:\n• Hospitalização recente (últimos 90 dias / 3 meses) com uso de antibiótico IV.\n• Colonização ou infecção respiratória prévia por Pseudomonas.\n• Doença estrutural pulmonar grave (bronquiectasias, fibrose cística, DPOC grave com corticoterapia/ATB frequente).\n\n⚠️ Pegadinha FGV: hemodiálise, empiema, pneumonia cavitária/necrotizante e colonização por MRSA são fatores de risco para MRSA, NÃO para Pseudomonas!\n\n💡 Conduta empírica: associar beta-lactâmico antipseudomonas (piperacilina-tazobactam, cefepime, meropenem ou ceftazidima) ao esquema da PAC.",
+      "audioText": "Na pneumonia comunitária, os principais fatores de risco para Pseudomonas aeruginosa são hospitalização nos últimos três meses com uso de antibiótico intravenoso, colonização respiratória prévia e doença pulmonar estrutural grave como bronquiectasias. Atenção à pegadinha da FGV: doença renal em hemodiálise, empiema e pneumonia cavitária ou necrotizante indicam risco de MRSA, e não de Pseudomonas."
+    },
+    {
+      "id": 1002,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Pneumotórax Espontâneo: Primário vs Secundário",
+      "front": "Como diferenciar o pneumotórax espontâneo primário (PEP) do secundário (PES) quanto ao perfil do paciente, idade, fatores de risco e principal causa?",
+      "back": "✅ Pneumotórax Primário (PEP):\n• Sem doença pulmonar prévia aparente (bolhas subpleurais / blebs apicais).\n• Perfil clássico: homem jovem (10–40 anos), alto e magro.\n• Fatores de risco: tabagismo e uso de cannabis.\n\n✅ Pneumotórax Secundário (PES):\n• Com doença pulmonar estrutural prévia; mais comum acima dos 55 anos.\n• Principal causa: DPOC (em áreas endêmicas, também tuberculose).\n\n⚠️ Pegadinha FGV: não inverter as idades (>55 é secundário), nem confundir DPOC com doença intersticial ou achar que 50% da fibrose cística faz pneumotórax (ocorre em ~3–10%).\n\n💡 Por quê? O tabagismo e a cannabis aumentam a inflamação das pequenas vias aéreas e favorecem a ruptura de blebs subpleurais apicais.",
+      "audioText": "Diferença entre pneumotórax espontâneo primário e secundário cobrada pela FGV. O primário ocorre sem doença pulmonar prévia, em homens jovens de dez a quarenta anos, altos e magros, tendo como principais fatores de risco o tabagismo e o uso de cannabis. Já o secundário ocorre principalmente acima dos cinquenta e cinco anos em pacientes com doença pulmonar estrutural, sendo a DPOC a principal causa."
+    },
+    {
+      "id": 1003,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural: Light e Causas de Transudato",
+      "front": "Paciente com derrame pleural unilateral: proteína P/S = 0,1, LDH P/S = 0,1 e LDH pleural abaixo de 2/3 do LSN. Qual é o tipo de líquido e quais causas clássicas a FGV mistura (ex.: Atelectasia vs Uremia/Pancreatite)?",
+      "back": "✅ Classificação: TRANSUDATO (nenhum critério de Light preenchido).\n\n✅ Causas clássicas de TRANSUDATO:\n• Insuficiência cardíaca (mais comum), cirrose (hidrotórax hepático), síndrome nefrótica.\n• Atelectasia, diálise peritoneal, urinotórax, hipoalbuminemia grave.\n\n⚠️ Pegadinha FGV: uremia, pancreatite, artrite reumatoide e neoplasia causam EXSUDATO — mesmo que pareçam doenças sistêmicas!\n\n💡 Critérios de Light (basta 1 para EXSUDATO): Proteína P/S > 0,5 | LDH P/S > 0,6 | LDH pleural > 2/3 do LSN sérico.",
+      "audioText": "Nos critérios de Light para derrame pleural, basta um critério alterado para exsudato: relação proteína pleural sobre sérica maior que zero vírgula cinco, relação LDH maior que zero vírgula seis, ou LDH pleural maior que dois terços do limite superior da normalidade. Se nenhum critério fecha, é transudato. Atenção à pegadinha da FGV: atelectasia causa transudato, enquanto uremia, pancreatite, artrite reumatoide e neoplasia causam exsudato."
+    },
+    {
+      "id": 1004,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural Tuberculoso - Achados do Líquido",
+      "front": "Jovem com tosse, hemoptoico, emagrecimento, lesão em segmento 6 e derrame pleural amarelo-citrino (suspeita de TB pleural). Quais são os achados clássicos do líquido pleural?",
+      "back": "✅ Perfil clássico do líquido na TB pleural:\n• Exsudato amarelo-citrino com predomínio de LINFÓCITOS (>80%).\n• Células mesoteliais < 5% (muito cobrado pela FGV!).\n• Adenosina deaminase (ADA) elevada: >= 40 U/L.\n• Glicose normal ou reduzida e pH < 7,40.\n\n⚠️ Pegadinha FGV: líquido amarelo-citrino NÃO significa transudato! A TB pleural é EXSUDATO amarelo-citrino; e eosinofilia > 10% fala CONTRA tuberculose.\n\n💡 Por quê? A inflamação granulomatosa recobre a pleura com fibrina e impede a descamação de células mesoteliais para o líquido (< 5%).",
+      "audioText": "No derrame pleural tuberculoso, o líquido é classicamente um exsudato amarelo citrino com predomínio linfocítico, ADA maior ou igual a quarenta unidades por litro e células mesoteliais menores que cinco por cento. Atenção à pegadinha: amarelo citrino não significa transudato, e eosinofilia acima de dez por cento fala contra tuberculose."
+    },
+    {
+      "id": 1005,
+      "area": "nefrologia",
+      "cat": "nefrolitiase",
+      "year": "FGV 2024",
+      "name": "Nefrolitíase: Analgesia na DRC e Critérios de Internação",
+      "front": "Paciente com cólica nefrética refratária à dipirona, Cr basal 1,7 mg/dL (atual 1,6), afebril, sem hidronefrose e cálculo de 3 mm em ureter distal. Qual a analgesia e o local de tratamento?",
+      "back": "✅ Conduta FGV:\n• Tratamento AMBULATORIAL + analgesia com OPIÁCEO + hidratação + aguardar eliminação espontânea.\n\n⚠️ Pegadinha FGV (2 em 1):\n• Cetorolaco (AINE) é CONTRAINDICADO na disfunção renal (Cr 1,6 / basal 1,7)! Use opiáceo.\n• Cálculo < 5 mm sem febre, sem leucocitose, sem hidronefrose e sem piora renal aguda NÃO interna nem chama urologia de urgência.\n\n💡 Quando internar / chamar urologia de urgência? Infecção associada (febre/sepse — emergência urológica!), rim único, obstrução bilateral, IRA obstrutiva ou dor/vômitos refratários.",
+      "audioText": "Na cólica nefrética cobrada pela FGV, atenção a duas pegadinhas. Primeiro, embora o cetorolaco seja primeira linha no rim normal, ele é contraindicado na disfunção renal, devendo-se usar opiáceo. Segundo, cálculo de três milímetros sem febre, sem infecção e sem hidronefrose tem tratamento ambulatorial aguardando eliminação espontânea."
+    },
+    {
+      "id": 1006,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV 2024",
+      "name": "IRA e Diálise de Urgência: Pericardite Urêmica",
+      "front": "Paciente com IRA (Cr 4,0, U 80, diurese 1,8 L, K 6,0, pH 7,25) apresenta ruído na borda esternal esquerda que piora ao inclinar para frente + supra difuso de ST. Qual a conduta e o motivo?",
+      "back": "✅ Conduta: INDICAR DIÁLISE DE URGÊNCIA devido ao ACHADO CARDÍACO (Pericardite Urêmica)!\n\n• Ruído que aumenta com pressão do diafragma e inclinação para frente = atrito pericárdico.\n• Supra difuso de ST = pericardite.\n\n⚠️ Pegadinha FGV: mesmo com diurese preservada (1,8 L), ureia de apenas 80, K 6,0 e pH 7,25 (ainda não refratários), a PERICARDITE URÊMICA é indicação ABSOLUTA de diálise imediata!\n\n💡 Por quê? A pericardite urêmica tem alto risco de evoluir para derrame pericárdico hemorrágico e tamponamento cardíaco se não dialisar (e lembre: não se usa anticoagulação na diálise inicial nesses casos).",
+      "audioText": "Atenção à pegadinha clássica da FGV na injúria renal aguda. Paciente com ureia de oitenta, potássio seis, pH sete vírgula vinte e cinco e diurese preservada, mas com atrito pericárdico que piora ao inclinar para frente e supra difuso de ST no eletrocardiograma, tem pericardite urêmica. A pericardite urêmica é indicação absoluta e imediata de diálise de urgência, pelo achado cardíaco."
+    },
+    {
+      "id": 1007,
+      "area": "gastroenterologia",
+      "cat": "hda",
+      "year": "FGV",
+      "name": "HDA Varicosa: Conduta Inicial e Medicações de Uso Prévio",
+      "front": "Cirrótico Child C em uso regular de carvedilol e espironolactona chega com hematêmese volumosa e instabilidade hemodinâmica (PA 80x45, FC 120), estabilizado após volume. O que fazer com as medicações prévias e qual o tratamento inicial?",
+      "back": "✅ Conduta correta: SUSPENDER carvedilol e espironolactona + iniciar TERLIPRESSINA + LIGADURA ELÁSTICA endoscópica (EDA <= 12h).\n\n• Terlipressina (ou octreotide): iniciar logo na suspeita, ANTES da endoscopia (por 2 a 5 dias).\n• Antibioticoprofilaxia: ceftriaxona IV (por 7 dias — reduz PBE e mortalidade!).\n• Ligadura elástica: padrão-ouro para varizes esofágicas (escleroterapia só se ligadura inviável).\n\n⚠️ Pegadinha FGV: NUNCA manter betabloqueador (carvedilol/propranolol) nem diurético (espironolactona/furosemida) na HDA aguda! O BB bloqueia a taquicardia compensatória no choque e o diurético agrava a hipovolemia/IRA.\n\n💡 Quando voltar o betabloqueador? Apenas após estabilização completa (geralmente ao suspender o vasoconstritor / próximo à alta) para profilaxia secundária + ligadura seriada.",
+      "audioText": "Na hemorragia digestiva alta varicosa em cirrótico que usa carvedilol e espironolactona, a conduta inicial é suspender essas medicações na fase aguda, iniciar terlipressina imediatamente e realizar ligadura elástica endoscópica em até doze horas, além de ceftriaxona profilática. Nunca mantenha betabloqueador ou diurético durante sangramento agudo."
+    },
+    {
+      "id": 1008,
+      "area": "gastroenterologia",
+      "cat": "pbe",
+      "year": "FGV",
+      "name": "HDA no Cirrótico: Antibioticoprofilaxia (Ceftriaxona)",
+      "front": "Qual antibiótico profilático intravenoso (e por quantos dias) deve ser iniciado no paciente cirrótico com HDA, mesmo sem PBE?",
+      "back": "✅ Escolha padrão-ouro: CEFTRIAXONA 1 g IV 1x/dia por 7 dias.\n\n• Alternativa VO (apenas em Child A sem uso recente de quinolona / ou após alta para completar 7 dias): Norfloxacino ou Ciprofloxacino.\n\n⚠️ Pegadinha FGV: não confundir com:\n• SMX-TMP ou Norfloxacino diário → profilaxia primária/secundária AMBULATORIAL de PBE.\n• Piperacilina-tazobactam / Meropenem → TRATAMENTO de PBE nosocomial / infecção grave, nunca profilaxia!\n\n💡 Por quê? A HDA no cirrótico favorece translocação bacteriana entérica (E. coli, Klebsiella). A ceftriaxona por 7 dias reduz PBE, ressangramento precoce e mortalidade.",
+      "audioText": "Na hemorragia digestiva alta em paciente com cirrose hepática, mesmo sem peritonite bacteriana espontânea, deve-se iniciar antibioticoprofilaxia com ceftriaxona um grama intravenoso uma vez ao dia por sete dias. Isso reduz translocação bacteriana, infecções, ressangramento e mortalidade. Não confundir com sulfametoxazol-trimetoprim ambulatorial nem com meropenem ou piperacilina-tazobactam, que são para infecção grave ou nosocomial."
+    },
+    {
+      "id": 1009,
+      "area": "gastroenterologia",
+      "cat": "pancreatite",
+      "year": "FGV",
+      "name": "Pancreatite Aguda: Necrose Estéril vs Infectada",
+      "front": "Paciente com pancreatite aguda há 3 dias, estável, com TC mostrando grande área de necrose pancreática (sem gás). Deve-se iniciar carbapenêmico, quinolona, necrosectomia ou aguardar evolução?",
+      "back": "✅ Conduta correta: AGUARDAR EVOLUÇÃO (suporte clínico: hidratação, analgesia, nutrição precoce).\n\n• Necrose ESTÉRIL: NÃO recebe antibiótico profilático e NÃO opera!\n• Só iniciar antibiótico (carbapenêmico: meropenem/imipenem) se houver INFECÇÃO confirmada/fortemente suspeita (ex.: gás na TC, sepse/piora após 7–10 dias, PAAF positiva).\n\n⚠️ Pegadinha FGV: tamanho da necrose ('grande área sem captação') NÃO indica antibiótico nem necrosectomia na admissão se o paciente está estável e sem sinais de infecção!\n\n💡 Quando drenar/operar? Apenas na necrose INFECTADA (ou sintomática tardia), usando abordagem step-up (drenagem percutânea/endoscópica primeiro), idealmente após >= 3–4 semanas (walled-off necrosis).",
+      "audioText": "Na pancreatite aguda com necrose pancreática estéril e paciente estável, a conduta na admissão é aguardar evolução com suporte clínico. Não se faz antibiótico profilático com carbapenêmico ou quinolona, e não se indica necrosectomia precoce. Antibiótico e abordagem step-up só entram se houver infecção da necrose."
+    },
+    {
+      "id": 1010,
+      "area": "gastroenterologia",
+      "cat": "diarreia",
+      "year": "FGV",
+      "name": "Diarreia Aguda Infecciosa: Quando Evitar ATB e Loperamida",
+      "front": "Jovem hígida com diarreia líquida há 24h (8 episódios), surto familiar, febre 38,6°C, sem sangue/muco/pus e sem irritação peritoneal, hidratada. Qual a conduta quanto a antibiótico e loperamida?",
+      "back": "✅ Conduta correta: NÃO iniciar antibiótico + NÃO fazer loperamida (hidratação + sintomáticos/probióticos).\n\n• Diarreia aguda aquosa (< 14d), imunocompetente, sem sangue/muco/pus e sem sepse = autolimitada (viral na maioria).\n• Loperamida: CONTRAINDICADA na presença de FEBRE ou disenteria!\n\n⚠️ Pegadinha FGV: a presença de febre (38,6°C) NÃO obriga antibiótico na diarreia aquosa de 24h em jovem hígida, MAS PROÍBE o uso de loperamida (risco de retenção de patógenos, bacteremia e megacólon tóxico)!\n\n💡 Quando dar ATB na diarreia aguda? Disenteria grave (sangue/muco + febre alta), sepse/choque, imunodeprimidos, idoso frágil (>70a) ou diarreia do viajante moderada/grave (1ª escolha atual: azitromicina).",
+      "audioText": "Na diarreia aguda infecciosa cobrada pela FGV, paciente jovem hígida com diarreia aquosa há vinte e quatro horas, surto familiar, febre de trinta e oito vírgula seis e ausência de sangue, muco ou pus não tem indicação de antibiótico empírico. Atenção à pegadinha: a febre proíbe o uso de loperamida pelo risco de bacteremia e megacólon tóxico, mantendo-se hidratação e probióticos."
+    },
+    {
+      "id": 1011,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "Hipoglicemia no DM2: Paciente Consciente vs Grave",
+      "front": "Diabética tipo 2 usando NPH + metformina apresenta sudorese, taquicardia e glicemia capilar de 60 mg/dL, consciente. Qual a conduta imediata: via oral, glicose 50% IV ou glucagon?",
+      "back": "✅ Conduta correta: VIA ORAL — ingestão de carboidratos de absorção rápida (15 g) + retestar glicemia CAPILAR (15 min pela Regra dos 15, e vigiar novamente em ~1 hora pelo uso de NPH).\n\n⚠️ Pegadinha FGV:\n• Paciente CONSCIENTE com glicemia 60 mg/dL NÃO precisa de acesso venoso (glicose 50% / SG 10%) nem de glucagon!\n• Não se dosa glicemia SÉRICA em 5 minutos — o controle é com glicemia CAPILAR.\n\n💡 Quando usar IV ou Glucagon? Apenas na hipoglicemia GRAVE (nível 3: rebaixamento de consciência, convulsão ou incapacidade de engolir com segurança): Glicose 50% IV (ou SG 10%) se houver acesso, ou Glucagon IM/SC/intranasal se não houver acesso.",
+      "audioText": "Na hipoglicemia leve a moderada em paciente consciente e com via oral segura, como glicemia capilar de sessenta com sudorese e taquicardia, a conduta é via oral com ingestão de carboidratos de absorção rápida e nova glicemia capilar, evitando acesso venoso desnecessário ou glucagon. Glicose intravenosa e glucagon ficam reservados para pacientes inconscientes ou incapazes de deglutir."
+    },
+    {
+      "id": 1012,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "CAD: Manejo do Potássio e Corte de 3,3 mEq/L",
+      "front": "Paciente em cetoacidose diabética (CAD) chega com K+ sérico de 2,8 mEq/L. Quando iniciar a insulina e qual o corte exato de segurança do potássio?",
+      "back": "✅ Conduta: SEGURAR a insulina, repor K+ IV antes (com a hidratação) e só iniciar insulina venosa quando K+ >= 3,3 mEq/L!\n\n• K+ < 3,3 mEq/L: PROIBIDO insulina! Repor K+ (20–40 mEq/h) até atingir >= 3,3.\n• K+ entre 3,3 e 5,2 mEq/L: iniciar insulina IV + repor K+ (alvo 4–5 mEq/L).\n• K+ > 5,2 mEq/L: iniciar insulina IV SEM repor K+ no início.\n\n⚠️ Pegadinha FGV: o corte para LIBERAR a insulina é >= 3,3 mEq/L (não precisa esperar 4 a 5 mEq/L — 4–5 é o alvo durante a manutenção, não o pré-requisito para começar!).\n\n💡 Por quê? A insulina ativa a bomba Na+/K+ ATPase e joga potássio para dentro da célula; iniciar com K+ < 3,3 mEq/L precipita hipocalemia grave e arritmia fatal.",
+      "audioText": "Na cetoacidose diabética com potássio de dois vírgula oito, é proibido iniciar insulina imediatamente. Deve-se primeiro hidratar e repor potássio intravenoso até atingir pelo menos três vírgula três miliequivalentes por litro, que é o corte exato de segurança para liberar a insulina venosa. Atenção à pegadinha: não se espera potássio de quatro a cinco para começar a insulina, pois quatro a cinco é o alvo durante a manutenção."
+    },
+    {
+      "id": 1013,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "CAD: Paradoxo da Cetonúria (Nitroprussiato)",
+      "front": "Paciente com CAD melhora após 24h de tratamento, mas a cetonúria (teste urinário com nitroprussiato) AUMENTA. Por que isso acontece e o que fazer?",
+      "back": "✅ Conduta: NÃO mudar insulina nem dar bicarbonato — a cetonúria deve ser usada APENAS para DIAGNÓSTICO (não para seguimento!).\n\n💡 Por quê? (Fisiopatologia clássica FGV):\n• Na CAD descompensada predomina o BETA-HIDROXIBUTIRATO, que NÃO é detectado pelo nitroprussiato (o nitroprussiato detecta apenas ACETOACETATO).\n• Com a melhora clínica, o beta-hidroxibutirato sérico CAI porque é oxidado/convertido em ACETOACETATO — que então aparece mais na urina, simulando 'piora' da cetonúria!\n\n⚠️ Pegadinha FGV: o aumento na fita urinária é por ACETOACETATO (e o beta-hidroxibutirato sérico estará DIMINUÍDO, não aumentado!). Para acompanhar resolução da CAD, olhe pH, HCO3 e ânion gap (ou beta-hidroxibutirato sérico).",
+      "audioText": "Paradoxo da cetonúria na cetoacidose diabética cobrado pela FGV. O teste urinário com nitroprussiato detecta acetoacetato, mas não detecta beta-hidroxibutirato. Quando o paciente melhora com o tratamento, o beta-hidroxibutirato sérico cai e é convertido em acetoacetato, causando um falso aumento da cetonúria. Por isso, a cetonúria deve ser usada apenas para o diagnóstico, e nunca para acompanhar a resposta terapêutica."
+    },
+    {
+      "id": 1014,
+      "area": "neurologia",
+      "cat": "wernicke",
+      "year": "FGV",
+      "name": "Encefalopatia de Wernicke: Glicose Antes da Tiamina",
+      "front": "Etilista crônico chega com desorientação, nistagmo horizontal, paralisia bilateral do reto lateral e glicemia 70 mg/dL, recebendo glicose hipertônica IV sem tiamina prévia. Qual a evolução esperada?",
+      "back": "✅ Evolução esperada: AGRAVAMENTO DO QUADRO NEUROLÓGICO!\n\n• Diagnóstico: Encefalopatia de Wernicke (deficiência de Tiamina / Vitamina B1).\n• Tríade clássica: Encefalopatia/desorientação + Oftalmoplegia (nistagmo, paralisia do VI par/reto lateral) + Ataxia (não precisa ter os 3!).\n\n⚠️ Pegadinha FGV: nunca dar glicose sem tiamina antes em etilista/desnutrido! Mesmo quando não há hipoglicemia (70 mg/dL!), infundir glicose sem B1 piora agudamente a lesão neurológica.\n\n💡 Por quê? A glicose acelera o metabolismo celular e consome os últimos estoques de tiamina (cofator da piruvato desidrogenase), gerando acidose láctica neuronal e necrose aguda (corpos mamilares/tálamo).",
+      "audioText": "Na encefalopatia de Wernicke em etilista crônico, caracterizada por desorientação, nistagmo e paralisia do reto lateral por deficiência de vitamina B1, administrar glicose hipertônica intravenosa antes da tiamina provoca agravamento agudo do quadro neurológico, pois a glicose consome os últimos estoques de tiamina no metabolismo celular. Sempre administre tiamina antes da glicose."
+    }
+  ],
+  "fgv_tables": [
+    {
+      "id": 2001,
+      "area": "pneumologia",
+      "cat": "infeccoes",
+      "year": "FGV 2024",
+      "name": "PAC Grave: Pseudomonas aeruginosa vs MRSA (Fatores de Risco)",
+      "col1Title": "Risco de Pseudomonas aeruginosa",
+      "col1": "• Hospitalização nos últimos 3 meses (90 dias) com uso de ATB IV\n• Isolamento/colonização respiratória prévia por Pseudomonas\n• Doença pulmonar estrutural grave:\n• • Bronquiectasias / Fibrose cística\n• • DPOC grave com uso frequente de corticoide ou ATB\n• • Conduta: Piperacilina-tazobactam, Cefepime ou Meropenem",
+      "col2Title": "Risco de MRSA (Pegadinha da FGV)",
+      "col2": "• Colonização ou infecção prévia por MRSA\n• Doença renal terminal em hemodiálise\n• Pneumonia complicada com empiema\n• Pneumonia necrotizante ou com padrão cavitário\n• Pós-influenza / uso recente de ATB IV (90d)\n• • Conduta: Vancomicina ou Linezolida",
+      "audioText": "Diferença cobrada pela FGV nos fatores de risco da pneumonia comunitária. Para Pseudomonas aeruginosa: hospitalização nos últimos três meses com antibiótico intravenoso, isolamento prévio e doença estrutural pulmonar como bronquiectasias. Para MRSA: colonização prévia por MRSA, hemodiálise, empiema e pneumonia cavitária ou necrotizante."
+    },
+    {
+      "id": 2002,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Pneumotórax Espontâneo: Primário vs Secundário (FGV 2024)",
+      "col1Title": "Primário (PEP)",
+      "col1": "• Pulmão previamente normal (blebs apicais)\n• Faixa etária: jovem (10 a 40 anos)\n• Biotipo clássico: homem alto e magro\n• Fatores de risco fortes:\n• • Tabagismo (aumenta risco em até 20x)\n• • Hábito de fumar cannabis",
+      "col2Title": "Secundário (PES) e Pegadinhas",
+      "col2": "• Doença pulmonar estrutural subjacente\n• Faixa etária: mais comum > 55 anos\n• Principal causa: DPOC (não intersticial!)\n• Outras causas: TB (áreas endêmicas), fibrose cística (~3–10% na vida, não 50%)\n• • Maior gravidade clínica pela baixa reserva pulmonar",
+      "audioText": "Tabela comparativa de pneumotórax espontâneo da FGV. No primário: jovem de dez a quarenta anos, homem alto e magro, tabagismo e cannabis. No secundário: acima de cinquenta e cinco anos, principal causa DPOC, e atenção à pegadinha de fibrose cística que não chega a cinquenta por cento."
+    },
+    {
+      "id": 2003,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural: Critérios de Light e Causas (FGV 2024)",
+      "col1Title": "Critérios de Light (Exsudato se >= 1)",
+      "col1": "• Relação Proteína pleural / sérica > 0,5\n• Relação LDH pleural / sérico > 0,6\n• LDH pleural > 2/3 do LSN sérico\n• Se NENHUM critério fechado → TRANSUDATO\n• • Na questão FGV: prot 0,4/4,0 = 0,1 e LDH 20/200 = 0,1",
+      "col2Title": "Transudato vs Exsudato (Pegadinhas)",
+      "col2": "• TRANSUDATO:\n• • IC, cirrose, síndrome nefrótica\n• • Atelectasia, diálise peritoneal, urinotórax\n• EXSUDATO (não confundir!):\n• • Uremia, pancreatite, AR, LES, neoplasia, TB, parapneumônico",
+      "audioText": "Tabela dos critérios de Light cobrada pela FGV. Exsudato se proteína pleural sobre sérica maior que zero vírgula cinco, LDH maior que zero vírgula seis ou LDH pleural maior que dois terços do limite superior. Causas de transudato incluem insuficiência cardíaca, cirrose, síndrome nefrótica e atelectasia. Uremia, pancreatite, artrite reumatoide e neoplasia causam exsudato."
+    },
+    {
+      "id": 2004,
+      "area": "pneumologia",
+      "cat": "pleura",
+      "year": "FGV 2024",
+      "name": "Derrame Pleural Tuberculoso: Líquido Pleural (FGV 2024)",
+      "col1Title": "Achados Típicos da TB Pleural",
+      "col1": "• Aspecto: EXSUDATO amarelo-citrino\n• Celularidade: predomínio de linfócitos (mononucleares)\n• Células mesoteliais: < 5% (pleura recoberta por fibrina)\n• ADA: >= 40 U/L (alta sensibilidade e especificidade)\n• • Padrão-ouro diagnóstico: biópsia pleural (granuloma caseoso) + cultura",
+      "col2Title": "O que Fala CONTRA / Pegadinhas FGV",
+      "col2": "• Amarelo-citrino NÃO é sinônimo de transudato\n• Eosinofilia > 10% fala CONTRA TB (pensar em ar/sangue na pleura)\n• Predomínio de neutrófilos: pensar em derrame parapneumônico\n• ADA < 40 U/L ou pH > 7,50: não compatível com TB\n• • Segmento 6 (apical do lobo inferior) + hemoptoico = clínica clássica de TB",
+      "audioText": "Resumo de derrame pleural tuberculoso para a FGV. Achados típicos: exsudato amarelo citrino, predomínio linfocítico, células mesoteliais menores que cinco por cento e ADA maior ou igual a quarenta. Fala contra tuberculose: eosinofilia maior que dez por cento ou predomínio neutrofílico."
+    },
+    {
+      "id": 2005,
+      "area": "nefrologia",
+      "cat": "nefrolitiase",
+      "year": "FGV 2024",
+      "name": "Nefrolitíase Aguda: Analgesia e Quando Internar (FGV 2024)",
+      "col1Title": "Analgesia e Tratamento Ambulatorial",
+      "col1": "• Rim normal: AINE (cetorolaco / diclofenaco) é 1ª linha\n• Disfunção renal / DRC: PROIBIDO AINE → usar OPIÁCEO\n• Cálculo <= 5 mm sem complicações:\n• • Alta probabilidade de eliminação espontânea\n• • Tratamento ambulatorial (opcional: tansulosina se distal)",
+      "col2Title": "Quando Internar / Urologia de Urgência",
+      "col2": "• Cálculo obstrutivo + INFECÇÃO / febre (desobstrução imediata: duplo J ou nefrostomia!)\n• Injúria renal aguda (rim único ou obstrução bilateral)\n• Dor intratável ou vômitos incoercíveis\n• • Atenção: Cr 1,6 com basal 1,7 há 1 mês NÃO é IRA aguda!",
+      "audioText": "Conduta na nefrolitíase aguda para a FGV. Sem disfunção renal, o AINE como cetorolaco é primeira escolha. Na disfunção renal crônica, AINE é contraindicado e usa-se opiáceo. Cálculo pequeno sem febre, sem hidronefrose e sem piora da creatinina basal é tratado ambulatorialmente."
+    },
+    {
+      "id": 2006,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV 2024",
+      "name": "Indicações de Diálise de Urgência na IRA (AEIOU - FGV 2024)",
+      "col1Title": "Quando Indicar (AEIOU)",
+      "col1": "• A - Acidose metabólica grave REFRATÁRIA (pH < 7,1–7,2)\n• E - Eletrólitos: Hipercalemia REFRATÁRIA ou com ECG alterado\n• I - Intoxicações dialisáveis (lítio, metanol, etilenoglicol, salicilato)\n• O - Overload (hipervolemia / EAP REFRATÁRIO a diurético)\n• U - Uremia sintomática (não depende do valor isolado!):\n• • Encefalopatia urêmica / sangramento urêmico\n• • PERICARDITE URÊMICA (indicação imediata!)",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Pericardite urêmica (atrito pericárdico + supra difuso de ST) = diálise IMEDIATA mesmo com U 80 e diurese 1,8 L\n• Ureia alta isolada (sem sintomas) NÃO indica diálise\n• K 6,0 ou pH 7,25 sem refratariedade ao tratamento clínico NÃO indicam diálise isoladamente\n• • Semiologia do atrito: piora ao inclinar para a frente e ao pressionar o diafragma",
+      "audioText": "Indicações de diálise de urgência pelo mnemônico AEIOU para a FGV. Acidose grave refratária, eletrólitos como hipercalemia refratária, intoxicações dialisáveis, overload refratário e uremia sintomática, especialmente encefalopatia e pericardite urêmica. Lembre que a pericardite urêmica indica diálise imediata mesmo com ureia baixa e diurese preservada."
+    },
+    {
+      "id": 2007,
+      "area": "gastroenterologia",
+      "cat": "hda",
+      "year": "FGV",
+      "name": "HDA Varicosa no Cirrótico: Conduta Completa (FGV)",
+      "col1Title": "Medidas Imediatas (Antes da EDA)",
+      "col1": "• SUSPENDER betabloqueador (carvedilol/propranolol) e diuréticos (espironolactona/furosemida)\n• Ressuscitação volêmica cautelosa + alvo Hb 7 a 8 g/dL\n• Vasoconstritor esplâncnico imediato: Terlipressina ou Octreotide (2–5 dias)\n• Antibioticoprofilaxia: Ceftriaxona IV (7 dias)",
+      "col2Title": "Endoscopia (<= 12h) e Pegadinhas",
+      "col2": "• Varizes ESOFÁGICAS: Ligadura elástica endoscópica (1ª escolha)\n• • Escleroterapia: só se ligadura não disponível/inviável\n• Varizes GÁSTRICAS (fundo): Cianoacrilato\n• Sangramento refratário: Balão de Sengstaken-Blakemore (ponte) ou TIPS de resgate\n• • Após estabilização: reintroduzir BB + ligadura seriada",
+      "audioText": "Conduta na hemorragia digestiva alta varicosa para a FGV. Antes da endoscopia: suspender carvedilol e espironolactona, fazer reposição volêmica visando hemoglobina entre sete e oito, iniciar terlipressina e ceftriaxona intravenosa. Na endoscopia em até doze horas: ligadura elástica é primeira escolha para varizes de esôfago, e cianoacrilato para varizes de fundo gástrico."
+    },
+    {
+      "id": 2008,
+      "area": "gastroenterologia",
+      "cat": "pbe",
+      "year": "FGV",
+      "name": "Antibioticoterapia na Cirrose: Profilaxia na HDA vs PBE (FGV)",
+      "col1Title": "Profilaxia (Sem Infecção Ativa)",
+      "col1": "• HDA aguda no cirrótico (7 dias):\n• • Ceftriaxona 1 g IV 1x/dia (padrão-ouro na internação/Child B-C)\n• • Norfloxacino VO (só Child A ou transição após alta)\n• Profilaxia ambulatorial (primária/secundária de PBE):\n• • Norfloxacino 400 mg/dia ou SMX-TMP VO",
+      "col2Title": "Tratamento de PBE e Pegadinhas FGV",
+      "col2": "• PBE Comunitária: Cefotaxima 2 g IV 8/8h ou Ceftriaxona (5–7d) + Albumina (1,5 g/kg D1 e 1,0 g/kg D3)\n• PBE Nosocomial / grave: Piperacilina-tazobactam ou Meropenem\n• • Pegadinha: Meropenem e Pip-Tazo NÃO são profilaxia de HDA!\n• • Amoxicilina-clavulanato não é esquema de escolha",
+      "audioText": "Resumo de antibióticos na cirrose para a FGV. Na hemorragia digestiva alta sem PBE, a profilaxia intravenosa é ceftriaxona por sete dias. Na profilaxia ambulatorial de PBE usa-se norfloxacino ou sulfametoxazol-trimetoprim oral. Já meropenem e piperacilina-tazobactam ficam reservados para tratamento de PBE nosocomial ou infecção grave, nunca profilaxia."
+    },
+    {
+      "id": 2009,
+      "area": "gastroenterologia",
+      "cat": "pancreatite",
+      "year": "FGV",
+      "name": "Pancreatite Aguda Necrosante: Estéril vs Infectada (FGV)",
+      "col1Title": "Necrose Estéril (Sem Gás / Estável)",
+      "col1": "• Conduta: AGUARDAR EVOLUÇÃO + suporte clínico\n• • Hidratação vigorosa cautelosa (Ringer Lactato)\n• • Analgesia e dieta precoce conforme tolerância\n• PROIBIDO antibiótico profilático (mesmo em necrose extensa!)\n• Não drenar e não fazer necrosectomia precoce",
+      "col2Title": "Necrose Infectada (Gás na TC / Sepse / PAAF+)",
+      "col2": "• Antibiótico empírico com boa penetração pancreática:\n• • Carbapenêmico (Meropenem / Imipenem) ou Quinolona + Metronidazol\n• Intervenção (Step-up approach):\n• • 1º Drenagem percutânea ou endoscópica → depois necrosectomia se preciso\n• • Adiar idealmente para >= 4 semanas (encapsulamento / WON)",
+      "audioText": "Diferença cobrada pela FGV na pancreatite necrosante. Na necrose estéril com paciente estável, aguarda-se evolução com suporte clínico, sem antibiótico profilático e sem necrosectomia. Na necrose infectada, confirmada por gás na tomografia, sepse ou punção positiva, inicia-se carbapenêmico e realiza-se abordagem step-up, preferencialmente após quatro semanas."
+    },
+    {
+      "id": 2010,
+      "area": "gastroenterologia",
+      "cat": "diarreia",
+      "year": "FGV",
+      "name": "Diarreia Aguda: Antibiótico e Loperamida (FGV)",
+      "col1Title": "Quando NÃO Dar ATB (Maioria)",
+      "col1": "• Diarreia aquosa aguda (< 14 dias), sem sangue/muco/pus\n• Paciente jovem, imunocompetente, estável após hidratação\n• Surto familiar (sugere etiologia viral: norovírus/rotavírus)\n• Base do tratamento: hidratação (SRO ou cristalóide) + probióticos",
+      "col2Title": "Loperamida e Indicações de ATB",
+      "col2": "• LOPERAMIDA PROIBIDA SE:\n• • Febre (>= 38°C) ou disenteria (sangue/muco/pus)\n• • Risco de megacólon tóxico e bacteremia\n• Quando dar ATB (Azitromicina é preferida):\n• • Disenteria febril grave, sepse, imunodeprimido ou > 70 anos com comorbidade",
+      "audioText": "Resumo de diarreia aguda para a FGV. Diarreia aquosa sem sangue, muco ou pus em jovem hígida não recebe antibiótico. A loperamida é contraindicada se houver febre ou disenteria pelo risco de megacólon tóxico. Quando há indicação de antibiótico, como na disenteria grave ou sepse, a azitromicina é preferida."
+    },
+    {
+      "id": 2011,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "Conduta na Hipoglicemia: Consciente vs Inconsciente (FGV)",
+      "col1Title": "Consciente (Via Oral Segura)",
+      "col1": "• Glicemia < 70 mg/dL sem alteração neurológica\n• Conduta: Regra dos 15 (VIA ORAL)\n• • 15 g de carboidrato rápido (150 mL suco/refri, 1 col. sopa açúcar ou tabletes de glicose)\n• • Repetir glicemia CAPILAR (15 min; e vigiar em 1h se insulina NPH/longa)\n• • NÃO puncionar veia e NÃO dosar glicemia sérica!",
+      "col2Title": "Inconsciente / Grave (Nível 3)",
+      "col2": "• Rebaixamento, convulsão ou impossível VO\n• Com acesso venoso:\n• • Glicose 50% IV (25 g = 50 mL) ou SG 10% IV\n• Sem acesso venoso (ex.: em casa / pré-hospitalar):\n• • Glucagon 1 mg IM/SC (ou intranasal)\n• • Em álcool/hepatopata sem reserva de glicogênio: preferir glicose IV!",
+      "audioText": "Conduta na hipoglicemia para a FGV. Se o paciente está consciente, usa-se via oral com quinze gramas de carboidrato simples e reteste com glicemia capilar, nunca glicemia sérica nem acesso venoso. Se estiver inconsciente ou sem via oral segura, usa-se glicose cinquenta por cento intravenosa ou glucagon se estiver sem acesso venoso."
+    },
+    {
+      "id": 2012,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "Potássio na Cetoacidose Diabética (CAD) - Cortes FGV",
+      "col1Title": "Faixa de K+ na Admissão",
+      "col1": "• K+ < 3,3 mEq/L (ex.: 2,8):\n• • NÃO iniciar insulina!\n• • Hidratar + repor K+ IV (20–40 mEq/h) até K+ >= 3,3\n• K+ 3,3 a 5,2 mEq/L:\n• • Iniciar insulina IV + repor K+ (20–30 mEq/L de soro)\n• K+ > 5,2 mEq/L:\n• • Iniciar insulina IV SEM K+ (dosar de 2/2h)",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Corte para LIBERAR insulina = K+ >= 3,3 mEq/L\n• Alvo de MANUTENÇÃO durante o tratamento = 4 a 5 mEq/L (não esperar chegar a 4–5 para começar!)\n• Nunca iniciar insulina por tempo fixo ('após 1h') sem checar o K+\n• Na CAD moderada/grave, a insulina padrão é VENOSA contínua (BIC), não subcutânea",
+      "audioText": "Cortes do potássio na cetoacidose diabética para a FGV. Abaixo de três vírgula três: segurar a insulina e repor potássio até atingir pelo menos três vírgula três. Entre três vírgula três e cinco vírgula dois: iniciar insulina venosa junto com reposição de potássio visando alvo de quatro a cinco. Acima de cinco vírgula dois: iniciar insulina sem potássio inicial."
+    },
+    {
+      "id": 2013,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "Corpos Cetônicos na CAD: Nitroprussiato vs Seguimento (FGV)",
+      "col1Title": "Bioquímica dos Corpos Cetônicos",
+      "col1": "• Principal cetona na CAD grave: Beta-hidroxibutirato\n• Teste do NITROPRUSSIATO (cetonúria / fita):\n• • Detecta ACETOACETATO (e pouco acetona)\n• • NÃO detecta beta-hidroxibutirato!\n• Durante a melhora clínica:\n• • Beta-hidroxibutirato sérico CAI → vira Acetoacetato → cetonúria SOBE paradoxalmente",
+      "col2Title": "Uso Clínico e Pegadinhas FGV",
+      "col2": "• Cetonúria (nitroprussiato): usar APENAS para DIAGNÓSTICO!\n• Como acompanhar melhora da CAD:\n• • pH (> 7,3), Bicarbonato (>= 15–18) e fechamento do Ânion Gap\n• • Dosagem sérica direta de beta-hidroxibutirato (se disponível)\n• • NÃO aumentar insulina nem dar bicarbonato por cetonúria positiva em paciente melhorando!",
+      "audioText": "Corpos cetônicos na cetoacidose diabética para a FGV. O nitroprussiato na urina detecta apenas acetoacetato e não detecta beta-hidroxibutirato. Durante o tratamento, com a melhora clínica, o beta-hidroxibutirato sérico diminui ao ser convertido em acetoacetato, fazendo a cetonúria subir paradoxalmente. Portanto, cetonúria serve apenas para diagnóstico."
+    },
+    {
+      "id": 2014,
+      "area": "neurologia",
+      "cat": "wernicke",
+      "year": "FGV",
+      "name": "Encefalopatia de Wernicke vs Psicose de Korsakoff (FGV)",
+      "col1Title": "Wernicke (Aguda / Reversível)",
+      "col1": "• Causa: deficiência de Tiamina (Vitamina B1) — etilistas, desnutridos, pós-bariátrica, hiperêmese gravídica\n• Tríade clínica (nem sempre completa!):\n• • Confusão mental / desorientação\n• • Oftalmopatia (nistagmo, paralisia VI par / reto lateral)\n• • Ataxia de marcha\n• Conduta: TIAMINA IV em alta dose ANTES da glicose!",
+      "col2Title": "Pegadinha da Glicose e Korsakoff",
+      "col2": "• Glicose sem tiamina prévia → AGRAVA o quadro neurológico (esgota B1 residual)\n• Sem tratamento precoce → evolui para Síndrome de Korsakoff:\n• • Amnésia anterógrada e retrógrada + confabulação\n• • Geralmente IRREVERSÍVEL!\n• • Ordem dos fatores altera o prognóstico: B1 primeiro!",
+      "audioText": "Encefalopatia de Wernicke para a FGV. Causada por deficiência de tiamina, manifesta-se com confusão mental, alteração ocular como nistagmo e paralisia do sexto par, além de ataxia. A conduta obrigatória é administrar tiamina intravenosa antes da glicose, pois a glicose isolada esgota a tiamina restante e agrava o quadro neurológico."
+    }
   ]
 }

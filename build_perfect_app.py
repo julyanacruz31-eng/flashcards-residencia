@@ -496,6 +496,9 @@ html_content = """<!DOCTYPE html>
         <button type="button" onclick="switchTab('geral')" id="tabBtn-geral" class="main-tab-btn inactive">
           <span>Já caiu</span> <span class="text-xs bg-paper2 text-muted px-2" id="badgeCount-geral">8</span>
         </button>
+        <button type="button" onclick="switchTab('fgv')" id="tabBtn-fgv" class="main-tab-btn inactive">
+          <span>FGV</span> <span class="text-xs bg-paper2 text-muted px-2" id="badgeCount-fgv">0</span>
+        </button>
       </nav>
 
       <!-- Ações -->
@@ -599,6 +602,26 @@ html_content = """<!DOCTYPE html>
       </div>
 
       <div id="mackContainer" class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABA 4: BANCA FGV (FLASHCARDS & TABELAS)
+         ========================================== -->
+    <section id="view-fgv" class="tab-view hidden space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-rule">
+        <div>
+          <h2 class="text-lg text-ink">Banca FGV</h2>
+          <p class="text-sm text-muted">Flashcards e tabelas baseados em questões prévias da FGV.</p>
+        </div>
+        <div class="flex items-center gap-1.5" id="fgvSubTabs">
+          <button type="button" onclick="setFGVSubTab('cards')" id="fgvSubBtn-cards" class="filter-pill active">Cards FGV (0)</button>
+          <button type="button" onclick="setFGVSubTab('tables')" id="fgvSubBtn-tables" class="filter-pill inactive">Tabelas FGV (0)</button>
+        </div>
+      </div>
+
+      <div id="fgvContent" class="space-y-4">
         <!-- Renderizado dinamicamente via JS -->
       </div>
     </section>
@@ -891,10 +914,16 @@ html_content = """<!DOCTYPE html>
     var appState = """ + json.dumps(app_data, ensure_ascii=False) + """;
     // Os dados guardam as pegadinhas em "mackenzie"; a aba Já caiu lê "geral"
     if (!appState.geral) appState.geral = appState.mackenzie || [];
+    if (!appState.fgv_flashcards) appState.fgv_flashcards = [];
+    if (!appState.fgv_tables) appState.fgv_tables = [];
 
     var activeTab = 'tabelas';
     var activeArea = 'todas';
     var activeCategory = 'todas';
+    var fgvSubTab = 'cards';
+    var fgvCardIndex = 0;
+    var fgvFlipped = false;
+    var fgvShowHint = false;
     var currentFlashcardIndex = 0;
     var isFlipped = false;
     var showHint = false;
@@ -1231,9 +1260,11 @@ html_content = """<!DOCTYPE html>
       var bTab = document.getElementById('badgeCount-tabelas');
       var bFc = document.getElementById('badgeCount-flashcards');
       var bMack = document.getElementById('badgeCount-geral');
+      var bFgv = document.getElementById('badgeCount-fgv');
       if (bTab) bTab.innerText = appState.tables ? appState.tables.length : 0;
       if (bFc) bFc.innerText = appState.flashcards ? appState.flashcards.length : 0;
       if (bMack) bMack.innerText = appState.geral ? appState.geral.length : 0;
+      if (bFgv) bFgv.innerText = (appState.fgv_flashcards ? appState.fgv_flashcards.length : 0) + (appState.fgv_tables ? appState.fgv_tables.length : 0);
     }
 
     // ==========================================
@@ -1257,7 +1288,7 @@ html_content = """<!DOCTYPE html>
       lastRatedSnapshot = null;
 
       // Esconde todas as abas
-      var tabs = ['tabelas', 'flashcards', 'geral'];
+      var tabs = ['tabelas', 'flashcards', 'geral', 'fgv'];
       for (var i = 0; i < tabs.length; i++) {
         var t = tabs[i];
         var view = document.getElementById('view-' + t);
@@ -1316,6 +1347,7 @@ html_content = """<!DOCTYPE html>
       if (activeTab === 'tabelas') renderTables();
       else if (activeTab === 'flashcards') renderFlashcards();
       else if (activeTab === 'geral') renderGeral();
+      else if (activeTab === 'fgv') renderFGV();
     }
 
     // ==========================================
@@ -2220,6 +2252,280 @@ html_content = """<!DOCTYPE html>
     }
 
     // ==========================================
+    // RENDER: BANCA FGV (CARDS + TABELAS)
+    // ==========================================
+    function setFGVSubTab(sub) {
+      fgvSubTab = sub;
+      fgvFlipped = false;
+      fgvShowHint = false;
+      renderFGV();
+    }
+
+    function getFGVQueue() {
+      var all = (appState.fgv_flashcards || []).filter(function(fc) {
+        return activeArea === 'todas' || fc.area === activeArea;
+      });
+      var now = Date.now();
+      var endOfToday = getStartOfDay(1) - 1;
+      var readyDue = [], newCards = [], waitingRelearn = [];
+      for (var i = 0; i < all.length; i++) {
+        var fc = all[i];
+        var s = getCardSRS(fc.id);
+        if (s.state === 'new') newCards.push(fc);
+        else if (s.due <= now) readyDue.push(fc);
+        else if (s.due <= endOfToday) waitingRelearn.push(fc);
+      }
+      readyDue.sort(function(a, b) { return getCardSRS(a.id).due - getCardSRS(b.id).due; });
+      waitingRelearn.sort(function(a, b) { return getCardSRS(a.id).due - getCardSRS(b.id).due; });
+      return readyDue.concat(newCards).concat(waitingRelearn);
+    }
+
+    function flipFGVCard() {
+      fgvFlipped = !fgvFlipped;
+      var inner = document.getElementById('fgvFlashcardInner');
+      if (inner) {
+        if (fgvFlipped) inner.classList.add('is-flipped');
+        else inner.classList.remove('is-flipped');
+      }
+      var lbl = document.getElementById('fgvFlipLabel');
+      if (lbl) lbl.innerText = fgvFlipped ? 'Voltar à pergunta' : 'Mostrar resposta';
+    }
+
+    function toggleFGVHint(e) {
+      if (e) e.stopPropagation();
+      fgvShowHint = !fgvShowHint;
+      renderFGV();
+    }
+
+    function nextFGVCard(total) {
+      fgvFlipped = false;
+      fgvShowHint = false;
+      if (total > 0) fgvCardIndex = (fgvCardIndex + 1) % total;
+      renderFGV();
+    }
+
+    function prevFGVCard(total) {
+      fgvFlipped = false;
+      fgvShowHint = false;
+      if (total > 0) fgvCardIndex = (fgvCardIndex - 1 + total) % total;
+      renderFGV();
+    }
+
+    function rateFGVCard(cardId, quality) {
+      var s = Object.assign({}, getCardSRS(cardId));
+      var wasNew = (s.state === 'new');
+      var now = Date.now();
+      s.lastReview = now;
+      if (quality === 0) {
+        s.lapses = (s.lapses || 0) + 1;
+        s.reps = 0;
+        s.interval = 0;
+        s.ease = Math.max(1.3, (s.ease || 2.5) - 0.2);
+        s.due = now + 5 * 60 * 1000;
+        s.state = 'learning';
+      } else if (quality === 1) {
+        s.reps = Math.max(1, s.reps || 0);
+        s.interval = computeNextIntervalDays(s, 1);
+        s.ease = Math.max(1.3, (s.ease || 2.5) - 0.15);
+        s.due = getStartOfDay(s.interval);
+        s.state = 'learning';
+      } else if (quality === 2) {
+        s.interval = computeNextIntervalDays(s, 2);
+        s.reps = (s.reps || 0) + 1;
+        s.due = getStartOfDay(s.interval);
+        s.state = (s.interval >= 6) ? 'mastered' : 'review';
+      } else if (quality === 3) {
+        s.interval = computeNextIntervalDays(s, 3);
+        s.reps = (s.reps || 0) + 2;
+        s.ease = Math.min(3.0, (s.ease || 2.5) + 0.1);
+        s.due = getStartOfDay(s.interval);
+        s.state = (s.interval >= 6) ? 'mastered' : 'review';
+      }
+      if (wasNew) srsStats.newToday = (srsStats.newToday || 0) + 1;
+      srsData[cardId] = s;
+      srsStats.reviewedToday = (srsStats.reviewedToday || 0) + 1;
+      saveSRS();
+      fgvFlipped = false;
+      fgvShowHint = false;
+      delete fcDraftAnswers[cardId];
+      var q = getFGVQueue();
+      if (fgvCardIndex >= q.length) fgvCardIndex = 0;
+      if (q.length > 1 && q[fgvCardIndex] && q[fgvCardIndex].id === cardId) {
+        fgvCardIndex = (fgvCardIndex + 1) % q.length;
+      }
+      renderFGV();
+    }
+
+    function playFGVCardAudio() {
+      var q = getFGVQueue();
+      if (fgvCardIndex >= q.length) return;
+      var cur = q[fgvCardIndex];
+      if (cur && cur.audioText) playItemAudio(cur.name || 'Card FGV', cur.audioText);
+    }
+
+    function playFGVTableAudio(id) {
+      var list = appState.fgv_tables || [];
+      var item = list.find(function(t) { return t.id === id; });
+      if (item && item.audioText) playItemAudio(item.name || 'Tabela FGV', item.audioText);
+    }
+
+    function renderFGV() {
+      var container = document.getElementById('fgvContent');
+      var btnCards = document.getElementById('fgvSubBtn-cards');
+      var btnTables = document.getElementById('fgvSubBtn-tables');
+      if (!container) return;
+
+      var allCards = appState.fgv_flashcards || [];
+      var allTables = appState.fgv_tables || [];
+      if (btnCards) {
+        btnCards.innerText = 'Cards FGV (' + allCards.length + ')';
+        btnCards.className = 'filter-pill ' + (fgvSubTab === 'cards' ? 'active' : 'inactive');
+      }
+      if (btnTables) {
+        btnTables.innerText = 'Tabelas FGV (' + allTables.length + ')';
+        btnTables.className = 'filter-pill ' + (fgvSubTab === 'tables' ? 'active' : 'inactive');
+      }
+
+      if (fgvSubTab === 'tables') {
+        var filteredTables = allTables.filter(function(item) {
+          return activeArea === 'todas' || item.area === activeArea;
+        });
+        if (filteredTables.length === 0) {
+          container.innerHTML = '<div class="glass-card p-6 space-y-2">' +
+            '<h3 class="text-base text-ink">Nenhuma tabela da FGV ainda</h3>' +
+            '<p class="text-sm text-muted">Envie as questões prévias da FGV no chat para preencher esta seção com tabelas e fluxogramas da banca.</p>' +
+          '</div>';
+          return;
+        }
+        var tHtml = '';
+        for (var i = 0; i < filteredTables.length; i++) {
+          var item = filteredTables[i];
+          var audioBtn = item.audioText
+            ? '<button type="button" onclick="playFGVTableAudio(' + item.id + ')" class="h-9 px-3 border-2 border-ink bg-paper3 text-ink hover:bg-ink hover:text-paper text-xs font-medium flex items-center gap-2 transition-colors shrink-0"><span>Ouvir 1.7x</span></button>'
+            : '';
+          tHtml += '<article class="glass-card">' +
+            '<div class="flex items-start justify-between gap-3 p-4 border-b-2 border-ink">' +
+              '<div class="min-w-0 space-y-1">' +
+                '<div class="flex items-center gap-2 flex-wrap">' +
+                  '<span class="tag">' + getAreaLabel(item.area) + '</span>' +
+                  (item.cat ? '<span class="font-display text-xs text-muted">' + getCatLabel(item.cat) + '</span>' : '') +
+                  (item.year ? '<span class="tag tag--new">' + escapeText(item.year) + '</span>' : '') +
+                '</div>' +
+                '<h3 class="text-base text-ink leading-snug">' + escapeText(item.name) + '</h3>' +
+              '</div>' +
+              audioBtn +
+            '</div>' +
+            '<div class="grid grid-cols-1 md:grid-cols-2 text-sm">' +
+              '<div class="p-4 md:border-r border-rule">' +
+                '<div class="font-display text-xs text-muted mb-2">' + escapeText(item.col1Title || 'Como a FGV cobra') + '</div>' +
+                '<p class="text-ink leading-relaxed whitespace-pre-line">' + tidyBullets(item.col1) + '</p>' +
+              '</div>' +
+              '<div class="p-4 border-t md:border-t-0 border-rule">' +
+                '<div class="font-display text-xs text-muted mb-2">' + escapeText(item.col2Title || 'Diagnóstico e conduta') + '</div>' +
+                '<p class="text-ink leading-relaxed whitespace-pre-line">' + tidyBullets(item.col2) + '</p>' +
+              '</div>' +
+            '</div>' +
+          '</article>';
+        }
+        container.innerHTML = tHtml;
+        return;
+      }
+
+      // Sub-aba: Cards FGV
+      var q = getFGVQueue();
+      if (allCards.length === 0) {
+        container.innerHTML = '<div class="glass-card p-6 space-y-2">' +
+          '<h3 class="text-base text-ink">Nenhum flashcard da FGV ainda</h3>' +
+          '<p class="text-sm text-muted">Envie as questões de provas anteriores da FGV no chat para montar seu baralho direcionado aqui.</p>' +
+        '</div>';
+        return;
+      }
+      if (q.length === 0) {
+        container.innerHTML = '<div class="glass-card p-6 space-y-2">' +
+          '<h3 class="text-base text-ink">Tudo em dia na FGV</h3>' +
+          '<p class="text-sm text-muted">Todos os cards da FGV deste filtro já foram revisados hoje e voltam na data programada.</p>' +
+        '</div>';
+        return;
+      }
+
+      if (fgvCardIndex >= q.length) fgvCardIndex = 0;
+      var current = q[fgvCardIndex];
+      var srs = getCardSRS(current.id);
+      var statusBadge = '';
+      if (srs.state === 'new') statusBadge = '<span class="tag tag--new">Novo</span>';
+      else if (srs.lapses > 0 && srs.interval <= 1) statusBadge = '<span class="tag tag--due">Rever, ' + srs.lapses + (srs.lapses === 1 ? ' erro' : ' erros') + '</span>';
+      else if (srs.interval >= 7) statusBadge = '<span class="tag tag--done">' + srs.interval + ' dias</span>';
+      else statusBadge = '<span class="tag">' + srs.interval + (srs.interval === 1 ? ' dia' : ' dias') + '</span>';
+
+      var hintData = buildSmartHint(current);
+      var hintBox = fgvShowHint
+        ? '<div onclick="event.stopPropagation()" class="mt-4 border-l-4 border-accent bg-paper2 px-3 py-2 text-left space-y-1 rounded-r-lg">' +
+            '<div class="font-display text-xs text-muted">' + escapeText(hintData.topic) + '</div>' +
+            '<div class="text-sm text-ink">Pista: ' + escapeText(hintData.clue) + '</div>' +
+          '</div>'
+        : '';
+
+      var html = '<div class="space-y-3">' +
+        '<div class="flex items-center justify-between text-xs font-display text-muted">' +
+          '<span>Card ' + (fgvCardIndex + 1) + ' de ' + q.length + ' (#' + current.id + ')</span>' +
+          (current.year ? '<span class="tag">' + escapeText(current.year) + '</span>' : '') +
+        '</div>' +
+        '<div class="flashcard-wrapper" onclick="flipFGVCard()">' +
+          '<div id="fgvFlashcardInner" class="flashcard-inner' + (fgvFlipped ? ' is-flipped' : '') + '">' +
+            '<div class="card-face card-front">' +
+              '<div class="flex items-center justify-between gap-2 flex-wrap">' +
+                '<div class="flex items-center gap-2">' +
+                  '<span class="font-display text-xs text-muted">' + getAreaLabel(current.area) + '</span>' +
+                  statusBadge +
+                '</div>' +
+                '<button type="button" onclick="toggleFGVHint(event)" class="h-9 px-3 border-2 border-ink bg-paper3 text-ink hover:bg-paper2 font-display text-xs font-medium transition-colors">' +
+                  (fgvShowHint ? 'Esconder dica' : 'Quero uma dica') +
+                '</button>' +
+              '</div>' +
+              '<div class="my-auto py-4">' +
+                '<p class="text-lg sm:text-xl font-medium text-ink leading-snug">' + escapeText(current.front) + '</p>' +
+                hintBox +
+              '</div>' +
+              '<div class="font-display text-xs text-muted">Toque no card para ver a resposta e o porquê.</div>' +
+            '</div>' +
+            '<div class="card-face card-back">' +
+              '<div class="flex items-center justify-between gap-2 pb-2 border-b border-rule">' +
+                '<span class="font-display text-sm font-extrabold text-ink">' + escapeText(current.name || 'Resposta') + '</span>' +
+                (current.audioText ? '<button type="button" onclick="event.stopPropagation(); playFGVCardAudio()" class="h-9 px-3 border-2 border-ink bg-paper3 text-ink hover:bg-ink hover:text-paper font-display text-xs font-medium flex items-center gap-2 transition-colors shrink-0">Ouvir 1.7x</button>' : '') +
+              '</div>' +
+              '<div class="my-auto py-3 space-y-2">' +
+                formatCardBack(current.back) +
+                (current.audioText ? '<p class="text-sm text-ink2 italic border-l-4 border-rule pl-3 leading-relaxed">“' + escapeText(current.audioText) + '”</p>' : '') +
+              '</div>' +
+              '<div class="font-display text-xs text-muted pt-2">Avalie abaixo para marcar a próxima revisão.</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="glass-card p-3 space-y-1.5">' +
+          '<div class="flex items-center justify-between">' +
+            '<label for="fcScratchpad" class="font-display text-xs font-bold text-ink">Meu Rascunho <span class="font-normal text-muted">(para raciocinar e conferir depois)</span></label>' +
+            '<button type="button" onclick="clearFCDraft(' + current.id + ')" class="font-display text-xs text-muted hover:text-ink px-2 py-0.5">Limpar</button>' +
+          '</div>' +
+          '<textarea id="fcScratchpad" rows="2" oninput="saveFCDraft(' + current.id + ', this.value)" placeholder="Escreva aqui o que você lembra antes de virar o card..." class="w-full rounded-lg border border-rule bg-paper2 px-3 py-2 text-sm text-ink placeholder:text-muted focus:outline-none focus:border-ink focus:bg-paper3 resize-y leading-relaxed">' + escapeText(fcDraftAnswers[current.id] || '') + '</textarea>' +
+        '</div>' +
+        '<div class="flex items-stretch gap-2">' +
+          '<button type="button" onclick="prevFGVCard(' + q.length + ')" class="w-12 h-11 bg-paper3 hover:bg-paper2 text-ink border-2 border-ink transition-colors" aria-label="Card anterior"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>' +
+          '<button type="button" onclick="flipFGVCard()" class="flex-1 h-11 bg-paper3 hover:bg-paper2 text-ink font-display text-sm font-medium border-2 border-ink transition-colors flex items-center justify-center gap-2">' +
+            '<span id="fgvFlipLabel">' + (fgvFlipped ? 'Voltar à pergunta' : 'Mostrar resposta') + '</span>' +
+          '</button>' +
+          '<button type="button" onclick="nextFGVCard(' + q.length + ')" class="w-12 h-11 bg-paper3 hover:bg-paper2 text-ink border-2 border-ink transition-colors" aria-label="Próximo card"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>' +
+        '</div>' +
+        '<div class="grade-row" role="group" aria-label="Como foi">' +
+          '<button type="button" onclick="rateFGVCard(' + current.id + ', 0)" class="grade-btn"><span class="grade-name">Errei</span><span class="grade-when">' + previewNextInterval(current.id, 0) + '</span></button>' +
+          '<button type="button" onclick="rateFGVCard(' + current.id + ', 1)" class="grade-btn"><span class="grade-name">Difícil</span><span class="grade-when">' + previewNextInterval(current.id, 1) + '</span></button>' +
+          '<button type="button" onclick="rateFGVCard(' + current.id + ', 2)" class="grade-btn"><span class="grade-name">Acertei</span><span class="grade-when">' + previewNextInterval(current.id, 2) + '</span></button>' +
+          '<button type="button" onclick="rateFGVCard(' + current.id + ', 3)" class="grade-btn"><span class="grade-name">Fácil</span><span class="grade-when">' + previewNextInterval(current.id, 3) + '</span></button>' +
+        '</div>' +
+      '</div>';
+      container.innerHTML = html;
+    }
+
+    // ==========================================
     // MOTOR DE ÁUDIO 1.7X (COMPATIBILIDADE UNIVERSAL)
     // ==========================================
     function initSpeech() {
@@ -2613,6 +2919,8 @@ html_content = """<!DOCTYPE html>
         'endocrinologia': 'Endocrinologia',
         'reumatologia': 'Reumatologia',
         'hematologia': 'Hematologia',
+        'nefrologia': 'Nefrologia',
+        'neurologia': 'Neurologia',
         'cirurgia': 'Cirurgia Geral',
         'pediatria': 'Pediatria',
         'go': 'G.O.',
@@ -2645,6 +2953,7 @@ html_content = """<!DOCTYPE html>
         'hepatites': 'Hepatites Virais',
         'pancreatite': 'Pancreatite',
         'dii': 'Crohn & RCU',
+        'diarreia': 'Diarreia Aguda',
         'emergencias_dm': 'CAD & EHH',
         'tireoide': 'Tireoide',
         'adrenal': 'Adrenal',
@@ -2658,7 +2967,10 @@ html_content = """<!DOCTYPE html>
         'anemias': 'Anemias',
         'onco_hemato': 'Leucemias & Linfomas',
         'mieloma': 'Mieloma Múltiplo',
-        'hemostasia': 'Plaquetas & Coagulação'
+        'hemostasia': 'Plaquetas & Coagulação',
+        'nefrolitiase': 'Nefrolitíase',
+        'ira_dialise': 'IRA & Diálise',
+        'wernicke': 'Wernicke & Carências'
       };
       return map[cat] || cat || 'Geral';
     }
@@ -2674,6 +2986,14 @@ html_content = """<!DOCTYPE html>
 
     // GARANTE QUE AS FUNÇÕES ESTEJAM NO ESCOPO GLOBAL DO WINDOW
     window.switchTab = switchTab;
+    window.setFGVSubTab = setFGVSubTab;
+    window.flipFGVCard = flipFGVCard;
+    window.toggleFGVHint = toggleFGVHint;
+    window.nextFGVCard = nextFGVCard;
+    window.prevFGVCard = prevFGVCard;
+    window.rateFGVCard = rateFGVCard;
+    window.playFGVCardAudio = playFGVCardAudio;
+    window.playFGVTableAudio = playFGVTableAudio;
     window.setAreaFilter = setAreaFilter;
     window.setCategoryFilter = setCategoryFilter;
     window.setFCStudyMode = setFCStudyMode;
