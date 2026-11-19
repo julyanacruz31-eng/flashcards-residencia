@@ -3483,6 +3483,16 @@
       "front": "Paciente de 35 anos com hipertireoidismo sem tratamento e FA estável há 10 dias, já com betabloqueador e iniciando metimazol. Qual a conduta imediata: anticoagular, cardioverter (química ou elétrica) ou ambos?",
       "back": "✅ Conduta imediata: APENAS ANTICOAGULAÇÃO (junto com controle da FC e tratamento do hipertireoidismo).\n\n• Regra da FA > 48 horas (ou tempo desconhecido) e estável:\n• • PROIBIDO cardioverter agora sem 3 semanas de anticoagulação plena (ou ETE sem trombo) — alto risco de AVC embólico!\n• • Além disso, na tireotoxicose ativa, a chance de recorrência após cardioversão é muito alta; muitas vezes reverte espontaneamente após atingir eutireoidismo.\n\n⚠️ Pegadinha FGV: não marcar cardioversão química nem elétrica antes de 3 semanas de anticoagulação (ou ETE) e controle do hipertireoidismo!",
       "audioText": "Na fibrilação atrial estável com duração maior que quarenta e oito horas, como há dez dias, em paciente com hipertireoidismo sem tratamento que já recebeu betabloqueador e metimazol, a conduta imediata é apenas anticoagulação plena. É proibido cardioverter nesse momento antes de completar três semanas de anticoagulação ou excluir trombo por ecocardiograma transesofágico, além de a recorrência ser alta antes do eutireoidismo."
+    },
+    {
+      "id": 1021,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Amitriptilina e Torsades de Pointes: Intervalo QT Longo",
+      "front": "Paciente em uso de amitriptilina chega com torpor, hipotensão e ECG mostrando TV polimórfica 'torcendo' sobre a linha de base (Torsades de Pointes). Qual alteração inicial do ECG levou a essa arritmia e como tratar?",
+      "back": "✅ Alteração inicial: INTERVALO QT LONGO (prolongado)!\n\n• Arritmia do traçado: Torsades de Pointes (TV polimórfica com alternância de eixo/amplitude em torno da linha de base).\n• Outros achados da intoxicação por tricíclicos (amitriptilina): QRS ALARGADO (> 100 ms) + R proeminente em aVR + taquicardia sinusal + síndrome anticolinérgica.\n\n• Tratamento:\n• • Torsades de Pointes (estável/recorrente): Sulfato de Magnésio IV (se instável/sem pulso: desfibrilação!).\n• • Toxicidade por tricíclico (QRS > 100 ms / hipotensão): Bicarbonato de Sódio IV.\n\n⚠️ Pegadinha FGV: tricíclicos ALARGAM QRS e PROLONGAM QT (nunca QRS curto ou QT curto!).",
+      "audioText": "Na intoxicação por antidepressivo tricíclico como a amitriptilina evoluindo com Torsades de Pointes, caracterizada por taquicardia ventricular polimórfica que torce ao redor da linha de base, a alteração inicial que precipita essa arritmia é o intervalo QT longo. Lembre que o tratamento do Torsades estável é sulfato de magnésio intravenoso, e na toxicidade por tricíclico com QRS alargado e hipotensão usa-se bicarbonato de sódio intravenoso."
     }
   ],
   "fgv_tables": [
@@ -3725,6 +3735,18 @@
       "col2Title": "Particularidades do Hipertireoidismo",
       "col2": "• Tratar a causa base (Metimazol / Propiltiouracil)\n• Cardioverter durante tireotoxicose ativa tem altíssima taxa de recorrência\n• Muitos pacientes revertem para sinusal espontaneamente ao atingir o eutireoidismo\n• • FA INSTÁVEL (choque, EAP, angina, rebaixamento): Cardioversão ELÉTRICA sincronizada IMEDIATA (independe do tempo!)",
       "audioText": "Conduta na fibrilação atrial maior que quarenta e oito horas e no hipertireoidismo para a FGV. Se estável, não cardioverter imediatamente: controlar frequência cardíaca com betabloqueador, tratar o hipertireoidismo com metimazol e anticoagular por pelo menos três semanas antes de cardioverter, ou fazer ecocardiograma transesofágico. Só cardioverte imediatamente sem esperar se houver instabilidade hemodinâmica."
+    },
+    {
+      "id": 2021,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Torsades de Pointes e Intoxicação por Tricíclicos (FGV)",
+      "col1Title": "Intervalo QT Longo → Torsades de Pointes",
+      "col1": "• Causas clássicas de QT longo:\n• • Fármacos: tricíclicos (amitriptilina), antipsicóticos (haloperidol), macrolídeos, fluoroquinolonas, amiodarona, ondansetrona\n• • Distúrbios: hipocalemia, hipomagnesemia, hipocalcemia, bradicardia\n• Conduta no Torsades:\n• • Instável / PCR: Desfibrilação imediata\n• • Estável / prevenção de recorrência: Sulfato de Magnésio IV (2 g)",
+      "col2Title": "Intoxicação por Tricíclicos (Amitriptilina)",
+      "col2": "• ECG típico: QRS ALARGADO (> 100–120 ms), onda R > 3 mm em aVR, QT longo\n• Clínica: síndrome anticolinérgica (midríase, boca seca, retenção urinária) + torpor/convulsão + hipotensão\n• Antídoto cardíaco (se QRS > 100 ms, hipotensão ou arritmia): Bicarbonato de Sódio IV!\n• • Pegadinha: NÃO confundir com PR curto (WPW) ou QRS curto!",
+      "audioText": "Tabela de Torsades de Pointes e intoxicação por tricíclicos para a FGV. O intervalo QT longo é precipitado por drogas como amitriptilina, haloperidol, macrolídeos e amiodarona, além de hipocalemia e hipomagnesemia. O tratamento do Torsades estável é sulfato de magnésio intravenoso, e na intoxicação por tricíclico com QRS alargado ou hipotensão administra-se bicarbonato de sódio."
     }
   ]
 }
