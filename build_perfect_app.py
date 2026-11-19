@@ -2972,7 +2972,8 @@ html_content = """<!DOCTYPE html>
         'ira_dialise': 'IRA & Diálise',
         'wernicke': 'Wernicke & Carências',
         'anafilaxia': 'Anafilaxia & Alergia',
-        'intussuscepcao': 'Intussuscepção'
+        'intussuscepcao': 'Intussuscepção',
+        'diverticulite': 'Diverticulite'
       };
       return map[cat] || cat || 'Geral';
     }

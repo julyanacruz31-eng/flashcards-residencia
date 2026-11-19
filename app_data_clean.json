@@ -3463,6 +3463,16 @@
       "front": "Como diferenciar pela idade, dor, tipo de vômito e massa palpável a Estenose Hipertrófica de Piloro (EHP) da Intussuscepção Intestinal?",
       "back": "✅ Estenose Hipertrófica de Piloro (EHP):\n• Idade: 2 a 8 semanas (< 3 meses).\n• Clínica: vômitos NÃO biliosos em jato pós-mamada, SEM dor (bebê continua com fome!).\n• Massa: OLIVA pilórica no epigástrio.\n• Lab: alcalose metabólica hipoclorêmica hipocalêmica.\n\n✅ Intussuscepção (Invaginação) Intestinal:\n• Idade: 3 meses a 2–3 anos (pico 6–18 meses).\n• Clínica: dor em cólica intermitente (15–20 min) + flexão das pernas + fezes em geleia de framboesa (tardio).\n• Massa: em forma de SALSICHA à direita.\n\n⚠️ Pegadinha de prova: ambos fazem USG de abdome como exame de escolha, mas na EHP vê espessamento do canal pilórico e na intussuscepção vê sinal do ALVO!",
       "audioText": "Diferença entre estenose hipertrófica de piloro e intussuscepção intestinal na pediatria. A estenose de piloro ocorre de duas a oito semanas de vida, com vômitos não biliosos em jato após as mamadas, bebê com fome e sem dor, oliva pilórica palpável no epigástrio e alcalose metabólica hipoclorêmica hipocalêmica. Já a intussuscepção ocorre entre três meses e dois anos, com cólica intermitente e flexão das pernas, massa em forma de salsicha à direita e fezes em geleia de framboesa."
+    },
+    {
+      "id": 1019,
+      "area": "cirurgia",
+      "cat": "diverticulite",
+      "year": "FGV",
+      "name": "Diverticulite Aguda: Corte do Abscesso (1 cm vs >= 4 cm)",
+      "front": "Paciente estável com diverticulite de sigmoide complicada com abscesso de 1 cm na TC (sem peritonite). Deve-se drenar por TC, operar ou fazer apenas antibiótico? Qual esquema?",
+      "back": "✅ Conduta: APENAS ANTIBIOTICOTERAPIA (Ceftriaxona + Metronidazol) — SEM drenagem!\n\n• Regra do tamanho do abscesso:\n• • < 4 cm (aqui: 1 cm): apenas ATB (cobrindo Gram-negativos + anaeróbios).\n• • >= 4 cm: ATB + Drenagem percutânea guiada por TC.\n• • Hinchey III / IV (peritonite purulenta/fecal) ou falha: Cirurgia.\n\n⚠️ Pegadinha FGV: não drenar abscesso pequeno (< 4 cm), e lembrar de SEMPRE cobrir anaeróbios (metronidazol) junto da ceftriaxona!\n\n💡 E depois que resolver? Colonoscopia após 6 a 8 semanas para excluir neoplasia de cólon (se não tiver feito recentemente).",
+      "audioText": "Na diverticulite aguda complicada com abscesso pequeno de um centímetro em paciente estável e sem peritonite, a conduta é apenas antibioticoterapia cobrindo Gram negativos e anaeróbios, como ceftriaxona associada a metronidazol, sem drenagem percutânea nem cirurgia. A drenagem guiada por tomografia só é indicada para abscessos maiores ou iguais a quatro centímetros."
     }
   ],
   "fgv_tables": [
@@ -3681,6 +3691,18 @@
       "col2Title": "Intussuscepção Intestinal",
       "col2": "• Idade: 3 meses a 2–3 anos (pico 6–18 meses)\n• Vômitos: presentes (começam não biliosos → podem ficar biliosos)\n• Dor: CÓLICAS fortes a cada 15–20 min + flexão das pernas\n• Massa palpável: em SALSICHA no lado direito (QSD/flanco D)\n• Fezes: 'geleia de framboesa' (muco + sangue, tardio)\n• • Conduta: USG (alvo) → redução por enema (se estável) ou cirurgia",
       "audioText": "Tabela comparativa entre estenose hipertrófica de piloro e intussuscepção intestinal. Estenose de piloro: duas a oito semanas, vômitos em jato não biliosos, sem dor, oliva pilórica, alcalose metabólica hipoclorêmica e hipocalêmica. Intussuscepção: três meses a dois anos, cólica intermitente com flexão das pernas, massa em salsicha à direita e geleia de framboesa."
+    },
+    {
+      "id": 2019,
+      "area": "cirurgia",
+      "cat": "diverticulite",
+      "year": "FGV",
+      "name": "Diverticulite Aguda: Conduta por Hinchey e Tamanho do Abscesso (FGV)",
+      "col1Title": "Não Complicada e Abscessos (Hinchey I / II)",
+      "col1": "• Não complicada (Hinchey 0): dieta líquida/leve; ATB seletivo (ou Cipro + Metro / Amoxi-clav se risco)\n• Abscesso < 4 cm (ex.: 1 cm):\n• • APENAS Antibiótico IV (Ceftriaxona + Metronidazol)\n• • NÃO drenar!\n• Abscesso >= 4 cm (Hinchey Ib / II):\n• • ATB IV + Drenagem percutânea guiada por TC",
+      "col2Title": "Peritonite (Hinchey III / IV) e Seguimento",
+      "col2": "• Hinchey III (peritonite purulenta difusa) ou IV (fecal):\n• • Cirurgia de urgência (Hartmann ou ressecção + anastomose + ostomia protetora)\n• Pegadinhas FGV:\n• • Nunca dar ceftriaxona isolada (precisa de metronidazol para anaeróbios!)\n• • Colonoscopia de controle: após 6–8 semanas (nunca na fase aguda!)",
+      "audioText": "Conduta na diverticulite aguda para a FGV. Abscesso menor que quatro centímetros trata apenas com antibiótico cobrindo Gram negativos e anaeróbios, como ceftriaxona e metronidazol, sem drenagem. Abscesso maior ou igual a quatro centímetros associa drenagem percutânea por tomografia. Hinchey três ou quatro, com peritonite difusa, exige cirurgia de urgência."
     }
   ]
 }
