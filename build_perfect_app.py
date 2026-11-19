@@ -2970,7 +2970,8 @@ html_content = """<!DOCTYPE html>
         'hemostasia': 'Plaquetas & Coagulação',
         'nefrolitiase': 'Nefrolitíase',
         'ira_dialise': 'IRA & Diálise',
-        'wernicke': 'Wernicke & Carências'
+        'wernicke': 'Wernicke & Carências',
+        'anafilaxia': 'Anafilaxia & Alergia'
       };
       return map[cat] || cat || 'Geral';
     }

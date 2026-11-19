@@ -3433,6 +3433,16 @@
       "front": "Como diferenciar clinicamente e tratar na emergência: Intoxicação Alcoólica Aguda, Síndrome de Abstinência Alcoólica e Encefalopatia de Wernicke?",
       "back": "✅ 1. Intoxicação Aguda (bebeu agora):\n• Hálito etílico, fala arrastada, ataxia, sonolência/coma.\n• Conduta: SUPORTE + Tiamina (B1) antes de glicose. PROIBIDO benzodiazepínico (risco de parada respiratória!).\n\n✅ 2. Abstinência Alcoólica (parou há 6–72h):\n• Hiperatividade autonômica: tremor, sudorese, taquicardia, HAS, agitação → alucinações → convulsões → Delirium tremens.\n• Conduta: BENZODIAZEPÍNICO (Diazepam; ou Lorazepam se cirrótico) + Tiamina (B1).\n\n✅ 3. Encefalopatia de Wernicke (falta de B1, em qualquer fase):\n• Confusão mental + oftalmoplegia (nistagmo, paralisia VI par) + ataxia.\n• Conduta: TIAMINA IV em alta dose ANTES da glicose.\n\n⚠️ Pegadinha: glicose sem B1 consome os últimos estoques de tiamina (cofator da piruvato desidrogenase) e piora agudamente a lesão neuronal!",
       "audioText": "Resumo dos quadros ligados ao álcool na emergência. Na intoxicação aguda, o paciente está deprimido e o tratamento é suporte com tiamina antes da glicose, sendo proibido benzodiazepínico. Na abstinência alcoólica, há hiperatividade autonômica após parar de beber, e o tratamento é benzodiazepínico, como diazepam ou lorazepam no cirrótico, associado à tiamina. Já na encefalopatia de Wernicke, por deficiência de vitamina B1, ocorre confusão, nistagmo ou paralisia do sexto par e ataxia, exigindo tiamina intravenosa antes da glicose."
+    },
+    {
+      "id": 1016,
+      "area": "clinica",
+      "cat": "anafilaxia",
+      "year": "FGV",
+      "name": "Anafilaxia em Uso de Betabloqueador: Epinefrina vs Glucagon",
+      "front": "Paciente usando atenolol e anlodipina apresenta urticária generalizada, prurido e estridor (anafilaxia). Qual a medicação de escolha INICIAL e quando entra o glucagon?",
+      "back": "✅ Escolha INICIAL obrigatória: EPINEFRINA (adrenalina) IM no vasto lateral da coxa (0,3 a 0,5 mg; repetir a cada 5–15 min se necessário).\n\n⚠️ Pegadinha FGV (Atenolol + Glucagon):\n• O uso de betabloqueador (atenolol) NÃO contraindica nem substitui a epinefrina IM como primeira droga!\n• O GLUCAGON IV (1–5 mg) só entra como RESGATE se o paciente ficar REFRATÁRIO à epinefrina IM!\n\n💡 Por quê? O glucagon ativa a adenilato ciclase por receptor próprio, aumentando AMPc independentemente dos receptores beta bloqueados pelo atenolol. Difenidramina e corticoide são apenas adjuvantes.",
+      "audioText": "Na anafilaxia com urticária e estridor em paciente usando betabloqueador como atenolol, a medicação de escolha inicial continua sendo a epinefrina intramuscular no vasto lateral da coxa. Atenção à pegadinha da FGV: o glucagon intravenoso entra apenas como resgate se o quadro for refratário à epinefrina por causa do bloqueio beta."
     }
   ],
   "fgv_tables": [
@@ -3615,6 +3625,18 @@
       "col2Title": "Tratamento e Proibições",
       "col2": "• Intoxicação: SUPORTE + B1 antes de glicose\n• • PROIBIDO benzodiazepínico (soma depressão respiratória!)\n• Abstinência: BENZODIAZEPÍNICO (Diazepam; Lorazepam se cirrótico) + B1\n• Wernicke: TIAMINA IV alta dose ANTES da glicose\n• • PROIBIDO glicose isolada antes de B1 (agrava lesão!)",
       "audioText": "Tabela comparativa de álcool na emergência. Intoxicação aguda: depressão do sistema nervoso, trata com suporte e tiamina, proibido benzodiazepínico. Abstinência alcoólica: hiperexcitabilidade após parar de beber, trata com diazepam ou lorazepam no cirrótico mais tiamina. Wernicke: confusão, alteração ocular e ataxia, trata com tiamina intravenosa antes da glicose."
+    },
+    {
+      "id": 2016,
+      "area": "clinica",
+      "cat": "anafilaxia",
+      "year": "FGV",
+      "name": "Anafilaxia na Emergência: Conduta e Betabloqueador (FGV)",
+      "col1Title": "1ª Linha e Adjuvantes",
+      "col1": "• 1ª Escolha INICIAL (sempre!): Epinefrina IM (0,3–0,5 mg adulto / 0,01 mg/kg criança) no vasto lateral da coxa\n• • Pode repetir a cada 5–15 min se preciso\n• Suporte: via aérea precoce se estridor, O2, cristalóide IV\n• Adjuvantes (NUNCA substituem epinefrina!):\n• • Anti-H1 (difenidramina/cetirizina) e Corticoide (metilprednisolona)",
+      "col2Title": "Refratariedade / Uso de Betabloqueador",
+      "col2": "• Paciente em uso de betabloqueador (ex.: atenolol):\n• • 1º passo: Epinefrina IM normalmente!\n• • Se REFRATÁRIO à epinefrina → GLUCAGON IV (1–5 mg, depois infusão)\n• • Mecanismo: ativa adenilato ciclase sem usar receptor beta\n• • Pegadinha FGV: não marcar Glucagon como escolha inicial!",
+      "audioText": "Conduta na anafilaxia para a FGV. A primeira escolha inicial é sempre epinefrina intramuscular no vasto lateral da coxa. Anti-histamínicos como difenidramina e corticoides como metilprednisolona são apenas adjuvantes. Em pacientes usando betabloqueador como atenolol, inicia-se com epinefrina intramuscular normalmente e reserva-se o glucagon intravenoso para casos refratários."
     }
   ]
 }
