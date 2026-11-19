@@ -3373,6 +3373,16 @@
       "front": "Paciente com pancreatite aguda há 3 dias, estável, com TC mostrando grande área de necrose pancreática (sem gás). Deve-se iniciar carbapenêmico, quinolona, necrosectomia ou aguardar evolução?",
       "back": "✅ Conduta correta: AGUARDAR EVOLUÇÃO (suporte clínico: hidratação, analgesia, nutrição precoce).\n\n• Necrose ESTÉRIL: NÃO recebe antibiótico profilático e NÃO opera!\n• Só iniciar antibiótico (carbapenêmico: meropenem/imipenem) se houver INFECÇÃO confirmada/fortemente suspeita (ex.: gás na TC, sepse/piora após 7–10 dias, PAAF positiva).\n\n⚠️ Pegadinha FGV: tamanho da necrose ('grande área sem captação') NÃO indica antibiótico nem necrosectomia na admissão se o paciente está estável e sem sinais de infecção!\n\n💡 Quando drenar/operar? Apenas na necrose INFECTADA (ou sintomática tardia), usando abordagem step-up (drenagem percutânea/endoscópica primeiro), idealmente após >= 3–4 semanas (walled-off necrosis).",
       "audioText": "Na pancreatite aguda com necrose pancreática estéril e paciente estável, a conduta na admissão é aguardar evolução com suporte clínico. Não se faz antibiótico profilático com carbapenêmico ou quinolona, e não se indica necrosectomia precoce. Antibiótico e abordagem step-up só entram se houver infecção da necrose."
+    },
+    {
+      "id": 1010,
+      "area": "gastroenterologia",
+      "cat": "diarreia",
+      "year": "FGV",
+      "name": "Diarreia Aguda Infecciosa: Quando Evitar ATB e Loperamida",
+      "front": "Jovem hígida com diarreia líquida há 24h (8 episódios), surto familiar, febre 38,6°C, sem sangue/muco/pus e sem irritação peritoneal, hidratada. Qual a conduta quanto a antibiótico e loperamida?",
+      "back": "✅ Conduta correta: NÃO iniciar antibiótico + NÃO fazer loperamida (hidratação + sintomáticos/probióticos).\n\n• Diarreia aguda aquosa (< 14d), imunocompetente, sem sangue/muco/pus e sem sepse = autolimitada (viral na maioria).\n• Loperamida: CONTRAINDICADA na presença de FEBRE ou disenteria!\n\n⚠️ Pegadinha FGV: a presença de febre (38,6°C) NÃO obriga antibiótico na diarreia aquosa de 24h em jovem hígida, MAS PROÍBE o uso de loperamida (risco de retenção de patógenos, bacteremia e megacólon tóxico)!\n\n💡 Quando dar ATB na diarreia aguda? Disenteria grave (sangue/muco + febre alta), sepse/choque, imunodeprimidos, idoso frágil (>70a) ou diarreia do viajante moderada/grave (1ª escolha atual: azitromicina).",
+      "audioText": "Na diarreia aguda infecciosa cobrada pela FGV, paciente jovem hígida com diarreia aquosa há vinte e quatro horas, surto familiar, febre de trinta e oito vírgula seis e ausência de sangue, muco ou pus não tem indicação de antibiótico empírico. Atenção à pegadinha: a febre proíbe o uso de loperamida pelo risco de bacteremia e megacólon tóxico, mantendo-se hidratação e probióticos."
     }
   ],
   "fgv_tables": [
@@ -3483,6 +3493,18 @@
       "col2Title": "Necrose Infectada (Gás na TC / Sepse / PAAF+)",
       "col2": "• Antibiótico empírico com boa penetração pancreática:\n• • Carbapenêmico (Meropenem / Imipenem) ou Quinolona + Metronidazol\n• Intervenção (Step-up approach):\n• • 1º Drenagem percutânea ou endoscópica → depois necrosectomia se preciso\n• • Adiar idealmente para >= 4 semanas (encapsulamento / WON)",
       "audioText": "Diferença cobrada pela FGV na pancreatite necrosante. Na necrose estéril com paciente estável, aguarda-se evolução com suporte clínico, sem antibiótico profilático e sem necrosectomia. Na necrose infectada, confirmada por gás na tomografia, sepse ou punção positiva, inicia-se carbapenêmico e realiza-se abordagem step-up, preferencialmente após quatro semanas."
+    },
+    {
+      "id": 2010,
+      "area": "gastroenterologia",
+      "cat": "diarreia",
+      "year": "FGV",
+      "name": "Diarreia Aguda: Antibiótico e Loperamida (FGV)",
+      "col1Title": "Quando NÃO Dar ATB (Maioria)",
+      "col1": "• Diarreia aquosa aguda (< 14 dias), sem sangue/muco/pus\n• Paciente jovem, imunocompetente, estável após hidratação\n• Surto familiar (sugere etiologia viral: norovírus/rotavírus)\n• Base do tratamento: hidratação (SRO ou cristalóide) + probióticos",
+      "col2Title": "Loperamida e Indicações de ATB",
+      "col2": "• LOPERAMIDA PROIBIDA SE:\n• • Febre (>= 38°C) ou disenteria (sangue/muco/pus)\n• • Risco de megacólon tóxico e bacteremia\n• Quando dar ATB (Azitromicina é preferida):\n• • Disenteria febril grave, sepse, imunodeprimido ou > 70 anos com comorbidade",
+      "audioText": "Resumo de diarreia aguda para a FGV. Diarreia aquosa sem sangue, muco ou pus em jovem hígida não recebe antibiótico. A loperamida é contraindicada se houver febre ou disenteria pelo risco de megacólon tóxico. Quando há indicação de antibiótico, como na disenteria grave ou sepse, a azitromicina é preferida."
     }
   ]
 }

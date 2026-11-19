@@ -2835,6 +2835,7 @@ html_content = """<!DOCTYPE html>
         'hepatites': 'Hepatites Virais',
         'pancreatite': 'Pancreatite',
         'dii': 'Crohn & RCU',
+        'diarreia': 'Diarreia Aguda',
         'emergencias_dm': 'CAD & EHH',
         'tireoide': 'Tireoide',
         'adrenal': 'Adrenal',
