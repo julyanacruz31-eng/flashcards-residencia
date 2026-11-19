@@ -3503,6 +3503,16 @@
       "front": "Paciente com ICFEr NYHA III, glicemia 80 mg/dL, HbA1c 5,0%, Cr 1,2 mg/dL e K+ 4,2 mEq/L. Quais classes medicamentosas DEVEM fazer parte do tratamento?",
       "back": "✅ Os 4 Pilares (Quarteto Fantástico) da ICFEr:\n1. ARNI (Sacubitril/Valsartana — ou IECA/BRA).\n2. Betabloqueador (Carvedilol, Succinato de Metoprolol ou Bisoprolol).\n3. Antagonista mineralocorticoide — ARM (Espironolactona).\n4. Inibidor de SGLT2 (Dapagliflozina ou Empagliflozina).\n\n⚠️ Pegadinha FGV: HbA1c 5,0% e glicose 80 NÃO contraindicam o iSGLT2! Ele reduz mortalidade e internações na ICFEr INDEPENDENTEMENTE de ter diabetes (e sem causar hipoglicemia). Cr 1,2 e K+ 4,2 também liberam ARM e ARNI!\n\n💡 Quando contraindicar ARM (espironolactona)? K+ > 5,0 mEq/L ou TFG < 30 mL/min (atenção se Cr > 2,5 em homens / > 2,0 em mulheres).",
       "audioText": "Na insuficiência cardíaca com fração de ejeção reduzida classe funcional três, mesmo sem diabetes, com hemoglobina glicada de cinco por cento, creatinina um vírgula dois e potássio quatro vírgula dois, deve-se usar o quarteto fantástico completo: inibidor do receptor de angiotensina e neprilisina, betabloqueador, antagonista mineralocorticoide e inibidor de SGLT2. O iSGLT2 reduz mortalidade na insuficiência cardíaca independentemente de diabetes."
+    },
+    {
+      "id": 1023,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "Dor Torácica Pós-Cocaína: Conduta e Contraindicação",
+      "front": "Jovem de 35 anos após uso de cocaína chega com dor torácica anginosa, agitação, PA 180x114, FC 120 e ECG com taquicardia sinusal. Qual o esquema inicial e qual droga é PROIBIDA?",
+      "back": "✅ Conduta correta: BENZODIAZEPÍNICO + NITROGLICERINA + AAS!\n\n• Benzodiazepínico (diazepam/lorazepam): 1ª medida — reduz descarga simpática central, agitação, PA e FC.\n• Nitroglicerina: reverte vasoespasmo coronariano e reduz PA.\n• AAS: previne trombose (cocaína aumenta agregação plaquetária).\n\n⚠️ PROIBIDO BETABLOQUEADOR (A, C, D e E na questão!):\n• Por quê? Bloquear beta-2 deixa o receptor ALFA-adrenérgico sem oposição → piora dramática do vasoespasmo coronariano e hipertensão paradoxal!\n\n💡 Se refratário: bloqueador de canal de cálcio (diltiazem/verapamil) ou fentolamina (alfa-bloqueador).",
+      "audioText": "Na dor torácica associada ao uso de cocaína, a conduta inicial é benzodiazepínico para reduzir a descarga simpática, nitroglicerina para reverter o vasoespasmo coronariano e AAS para antiagregação plaquetária. É proibido usar betabloqueador na intoxicação aguda por cocaína, pois bloqueia o efeito vasodilatador beta dois e deixa o estímulo alfa sem oposição, agravando o vasoespasmo coronariano."
     }
   ],
   "fgv_tables": [
@@ -3769,6 +3779,18 @@
       "col2Title": "Pegadinhas Clássicas da FGV",
       "col2": "• iSGLT2 é obrigatório MESMO SEM DIABETES (glicose 80 / HbA1c 5,0% não impedem!)\n• ARM (espironolactona) é liberada se K+ <= 5,0 mEq/L e TFG >= 30\n• Furosemida (diurético de alça): alivia congestão/sintomas, mas NÃO reduz mortalidade!\n• • Digoxina também não reduz mortalidade",
       "audioText": "Os quatro pilares que reduzem mortalidade na insuficiência cardíaca com fração de ejeção reduzida para a FGV. Primeiro: sacubitril valsartana. Segundo: betabloqueador como carvedilol, succinato de metoprolol ou bisoprolol. Terceiro: espironolactona se potássio até cinco e função renal adequada. Quarto: inibidor de SGLT2, obrigatório mesmo em pacientes sem diabetes."
+    },
+    {
+      "id": 2023,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "Dor Torácica por Cocaína: O Que Fazer e O Que É Proibido (FGV)",
+      "col1Title": "Conduta Recomendada",
+      "col1": "• 1º Benzodiazepínico IV (diazepam / lorazepam) → reduz tônus simpático, agitação, FC e PA\n• Nitroglicerina IV/SL → vasodilatação coronariana (combate vasoespasmo)\n• AAS → cocaína ativa plaquetas e favorece trombose\n• Se refratário: Bloqueador de canal de cálcio (diltiazem/verapamil) ou Fentolamina\n• • Se supra de ST persistente após nitrato/BZD: CATE imediato!",
+      "col2Title": "Proibições e Pegadinhas FGV",
+      "col2": "• PROIBIDO Betabloqueador (mesmo seletivo / labetalol na maioria das provas):\n• • Risco de estimulação ALFA sem oposição → vasoespasmo coronariano grave + pico hipertensivo paradoxal\n• Evitar Nitroprussiato (risco de roubo coronariano; preferir nitroglicerina)\n• • Pegadinha: na questão FGV, 4 das 5 alternativas tinham betabloqueador!",
+      "audioText": "Conduta na dor torácica por cocaína para a FGV. Fazer benzodiazepínico intravenoso, nitroglicerina e AAS. É proibido usar betabloqueador pelo risco de estímulo alfa sem oposição e piora do vasoespasmo coronariano. Também se evita nitroprussiato pelo risco de roubo coronariano."
     }
   ]
 }
