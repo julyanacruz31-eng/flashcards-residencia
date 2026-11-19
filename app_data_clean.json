@@ -3363,6 +3363,16 @@
       "front": "Qual antibiótico profilático intravenoso (e por quantos dias) deve ser iniciado no paciente cirrótico com HDA, mesmo sem PBE?",
       "back": "✅ Escolha padrão-ouro: CEFTRIAXONA 1 g IV 1x/dia por 7 dias.\n\n• Alternativa VO (apenas em Child A sem uso recente de quinolona / ou após alta para completar 7 dias): Norfloxacino ou Ciprofloxacino.\n\n⚠️ Pegadinha FGV: não confundir com:\n• SMX-TMP ou Norfloxacino diário → profilaxia primária/secundária AMBULATORIAL de PBE.\n• Piperacilina-tazobactam / Meropenem → TRATAMENTO de PBE nosocomial / infecção grave, nunca profilaxia!\n\n💡 Por quê? A HDA no cirrótico favorece translocação bacteriana entérica (E. coli, Klebsiella). A ceftriaxona por 7 dias reduz PBE, ressangramento precoce e mortalidade.",
       "audioText": "Na hemorragia digestiva alta em paciente com cirrose hepática, mesmo sem peritonite bacteriana espontânea, deve-se iniciar antibioticoprofilaxia com ceftriaxona um grama intravenoso uma vez ao dia por sete dias. Isso reduz translocação bacteriana, infecções, ressangramento e mortalidade. Não confundir com sulfametoxazol-trimetoprim ambulatorial nem com meropenem ou piperacilina-tazobactam, que são para infecção grave ou nosocomial."
+    },
+    {
+      "id": 1009,
+      "area": "gastroenterologia",
+      "cat": "pancreatite",
+      "year": "FGV",
+      "name": "Pancreatite Aguda: Necrose Estéril vs Infectada",
+      "front": "Paciente com pancreatite aguda há 3 dias, estável, com TC mostrando grande área de necrose pancreática (sem gás). Deve-se iniciar carbapenêmico, quinolona, necrosectomia ou aguardar evolução?",
+      "back": "✅ Conduta correta: AGUARDAR EVOLUÇÃO (suporte clínico: hidratação, analgesia, nutrição precoce).\n\n• Necrose ESTÉRIL: NÃO recebe antibiótico profilático e NÃO opera!\n• Só iniciar antibiótico (carbapenêmico: meropenem/imipenem) se houver INFECÇÃO confirmada/fortemente suspeita (ex.: gás na TC, sepse/piora após 7–10 dias, PAAF positiva).\n\n⚠️ Pegadinha FGV: tamanho da necrose ('grande área sem captação') NÃO indica antibiótico nem necrosectomia na admissão se o paciente está estável e sem sinais de infecção!\n\n💡 Quando drenar/operar? Apenas na necrose INFECTADA (ou sintomática tardia), usando abordagem step-up (drenagem percutânea/endoscópica primeiro), idealmente após >= 3–4 semanas (walled-off necrosis).",
+      "audioText": "Na pancreatite aguda com necrose pancreática estéril e paciente estável, a conduta na admissão é aguardar evolução com suporte clínico. Não se faz antibiótico profilático com carbapenêmico ou quinolona, e não se indica necrosectomia precoce. Antibiótico e abordagem step-up só entram se houver infecção da necrose."
     }
   ],
   "fgv_tables": [
@@ -3461,6 +3471,18 @@
       "col2Title": "Tratamento de PBE e Pegadinhas FGV",
       "col2": "• PBE Comunitária: Cefotaxima 2 g IV 8/8h ou Ceftriaxona (5–7d) + Albumina (1,5 g/kg D1 e 1,0 g/kg D3)\n• PBE Nosocomial / grave: Piperacilina-tazobactam ou Meropenem\n• • Pegadinha: Meropenem e Pip-Tazo NÃO são profilaxia de HDA!\n• • Amoxicilina-clavulanato não é esquema de escolha",
       "audioText": "Resumo de antibióticos na cirrose para a FGV. Na hemorragia digestiva alta sem PBE, a profilaxia intravenosa é ceftriaxona por sete dias. Na profilaxia ambulatorial de PBE usa-se norfloxacino ou sulfametoxazol-trimetoprim oral. Já meropenem e piperacilina-tazobactam ficam reservados para tratamento de PBE nosocomial ou infecção grave, nunca profilaxia."
+    },
+    {
+      "id": 2009,
+      "area": "gastroenterologia",
+      "cat": "pancreatite",
+      "year": "FGV",
+      "name": "Pancreatite Aguda Necrosante: Estéril vs Infectada (FGV)",
+      "col1Title": "Necrose Estéril (Sem Gás / Estável)",
+      "col1": "• Conduta: AGUARDAR EVOLUÇÃO + suporte clínico\n• • Hidratação vigorosa cautelosa (Ringer Lactato)\n• • Analgesia e dieta precoce conforme tolerância\n• PROIBIDO antibiótico profilático (mesmo em necrose extensa!)\n• Não drenar e não fazer necrosectomia precoce",
+      "col2Title": "Necrose Infectada (Gás na TC / Sepse / PAAF+)",
+      "col2": "• Antibiótico empírico com boa penetração pancreática:\n• • Carbapenêmico (Meropenem / Imipenem) ou Quinolona + Metronidazol\n• Intervenção (Step-up approach):\n• • 1º Drenagem percutânea ou endoscópica → depois necrosectomia se preciso\n• • Adiar idealmente para >= 4 semanas (encapsulamento / WON)",
+      "audioText": "Diferença cobrada pela FGV na pancreatite necrosante. Na necrose estéril com paciente estável, aguarda-se evolução com suporte clínico, sem antibiótico profilático e sem necrosectomia. Na necrose infectada, confirmada por gás na tomografia, sepse ou punção positiva, inicia-se carbapenêmico e realiza-se abordagem step-up, preferencialmente após quatro semanas."
     }
   ]
 }
