@@ -3403,6 +3403,16 @@
       "front": "Paciente em cetoacidose diabética (CAD) chega com K+ sérico de 2,8 mEq/L. Quando iniciar a insulina e qual o corte exato de segurança do potássio?",
       "back": "✅ Conduta: SEGURAR a insulina, repor K+ IV antes (com a hidratação) e só iniciar insulina venosa quando K+ >= 3,3 mEq/L!\n\n• K+ < 3,3 mEq/L: PROIBIDO insulina! Repor K+ (20–40 mEq/h) até atingir >= 3,3.\n• K+ entre 3,3 e 5,2 mEq/L: iniciar insulina IV + repor K+ (alvo 4–5 mEq/L).\n• K+ > 5,2 mEq/L: iniciar insulina IV SEM repor K+ no início.\n\n⚠️ Pegadinha FGV: o corte para LIBERAR a insulina é >= 3,3 mEq/L (não precisa esperar 4 a 5 mEq/L — 4–5 é o alvo durante a manutenção, não o pré-requisito para começar!).\n\n💡 Por quê? A insulina ativa a bomba Na+/K+ ATPase e joga potássio para dentro da célula; iniciar com K+ < 3,3 mEq/L precipita hipocalemia grave e arritmia fatal.",
       "audioText": "Na cetoacidose diabética com potássio de dois vírgula oito, é proibido iniciar insulina imediatamente. Deve-se primeiro hidratar e repor potássio intravenoso até atingir pelo menos três vírgula três miliequivalentes por litro, que é o corte exato de segurança para liberar a insulina venosa. Atenção à pegadinha: não se espera potássio de quatro a cinco para começar a insulina, pois quatro a cinco é o alvo durante a manutenção."
+    },
+    {
+      "id": 1013,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "CAD: Paradoxo da Cetonúria (Nitroprussiato)",
+      "front": "Paciente com CAD melhora após 24h de tratamento, mas a cetonúria (teste urinário com nitroprussiato) AUMENTA. Por que isso acontece e o que fazer?",
+      "back": "✅ Conduta: NÃO mudar insulina nem dar bicarbonato — a cetonúria deve ser usada APENAS para DIAGNÓSTICO (não para seguimento!).\n\n💡 Por quê? (Fisiopatologia clássica FGV):\n• Na CAD descompensada predomina o BETA-HIDROXIBUTIRATO, que NÃO é detectado pelo nitroprussiato (o nitroprussiato detecta apenas ACETOACETATO).\n• Com a melhora clínica, o beta-hidroxibutirato sérico CAI porque é oxidado/convertido em ACETOACETATO — que então aparece mais na urina, simulando 'piora' da cetonúria!\n\n⚠️ Pegadinha FGV: o aumento na fita urinária é por ACETOACETATO (e o beta-hidroxibutirato sérico estará DIMINUÍDO, não aumentado!). Para acompanhar resolução da CAD, olhe pH, HCO3 e ânion gap (ou beta-hidroxibutirato sérico).",
+      "audioText": "Paradoxo da cetonúria na cetoacidose diabética cobrado pela FGV. O teste urinário com nitroprussiato detecta acetoacetato, mas não detecta beta-hidroxibutirato. Quando o paciente melhora com o tratamento, o beta-hidroxibutirato sérico cai e é convertido em acetoacetato, causando um falso aumento da cetonúria. Por isso, a cetonúria deve ser usada apenas para o diagnóstico, e nunca para acompanhar a resposta terapêutica."
     }
   ],
   "fgv_tables": [
@@ -3549,6 +3559,18 @@
       "col2Title": "Pegadinhas Clássicas da FGV",
       "col2": "• Corte para LIBERAR insulina = K+ >= 3,3 mEq/L\n• Alvo de MANUTENÇÃO durante o tratamento = 4 a 5 mEq/L (não esperar chegar a 4–5 para começar!)\n• Nunca iniciar insulina por tempo fixo ('após 1h') sem checar o K+\n• Na CAD moderada/grave, a insulina padrão é VENOSA contínua (BIC), não subcutânea",
       "audioText": "Cortes do potássio na cetoacidose diabética para a FGV. Abaixo de três vírgula três: segurar a insulina e repor potássio até atingir pelo menos três vírgula três. Entre três vírgula três e cinco vírgula dois: iniciar insulina venosa junto com reposição de potássio visando alvo de quatro a cinco. Acima de cinco vírgula dois: iniciar insulina sem potássio inicial."
+    },
+    {
+      "id": 2013,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "Corpos Cetônicos na CAD: Nitroprussiato vs Seguimento (FGV)",
+      "col1Title": "Bioquímica dos Corpos Cetônicos",
+      "col1": "• Principal cetona na CAD grave: Beta-hidroxibutirato\n• Teste do NITROPRUSSIATO (cetonúria / fita):\n• • Detecta ACETOACETATO (e pouco acetona)\n• • NÃO detecta beta-hidroxibutirato!\n• Durante a melhora clínica:\n• • Beta-hidroxibutirato sérico CAI → vira Acetoacetato → cetonúria SOBE paradoxalmente",
+      "col2Title": "Uso Clínico e Pegadinhas FGV",
+      "col2": "• Cetonúria (nitroprussiato): usar APENAS para DIAGNÓSTICO!\n• Como acompanhar melhora da CAD:\n• • pH (> 7,3), Bicarbonato (>= 15–18) e fechamento do Ânion Gap\n• • Dosagem sérica direta de beta-hidroxibutirato (se disponível)\n• • NÃO aumentar insulina nem dar bicarbonato por cetonúria positiva em paciente melhorando!",
+      "audioText": "Corpos cetônicos na cetoacidose diabética para a FGV. O nitroprussiato na urina detecta apenas acetoacetato e não detecta beta-hidroxibutirato. Durante o tratamento, com a melhora clínica, o beta-hidroxibutirato sérico diminui ao ser convertido em acetoacetato, fazendo a cetonúria subir paradoxalmente. Portanto, cetonúria serve apenas para diagnóstico."
     }
   ]
 }
