@@ -3343,6 +3343,16 @@
       "front": "Paciente com IRA (Cr 4,0, U 80, diurese 1,8 L, K 6,0, pH 7,25) apresenta ruído na borda esternal esquerda que piora ao inclinar para frente + supra difuso de ST. Qual a conduta e o motivo?",
       "back": "✅ Conduta: INDICAR DIÁLISE DE URGÊNCIA devido ao ACHADO CARDÍACO (Pericardite Urêmica)!\n\n• Ruído que aumenta com pressão do diafragma e inclinação para frente = atrito pericárdico.\n• Supra difuso de ST = pericardite.\n\n⚠️ Pegadinha FGV: mesmo com diurese preservada (1,8 L), ureia de apenas 80, K 6,0 e pH 7,25 (ainda não refratários), a PERICARDITE URÊMICA é indicação ABSOLUTA de diálise imediata!\n\n💡 Por quê? A pericardite urêmica tem alto risco de evoluir para derrame pericárdico hemorrágico e tamponamento cardíaco se não dialisar (e lembre: não se usa anticoagulação na diálise inicial nesses casos).",
       "audioText": "Atenção à pegadinha clássica da FGV na injúria renal aguda. Paciente com ureia de oitenta, potássio seis, pH sete vírgula vinte e cinco e diurese preservada, mas com atrito pericárdico que piora ao inclinar para frente e supra difuso de ST no eletrocardiograma, tem pericardite urêmica. A pericardite urêmica é indicação absoluta e imediata de diálise de urgência, pelo achado cardíaco."
+    },
+    {
+      "id": 1007,
+      "area": "gastroenterologia",
+      "cat": "hda",
+      "year": "FGV",
+      "name": "HDA Varicosa: Conduta Inicial e Medicações de Uso Prévio",
+      "front": "Cirrótico Child C em uso regular de carvedilol e espironolactona chega com hematêmese volumosa e instabilidade hemodinâmica (PA 80x45, FC 120), estabilizado após volume. O que fazer com as medicações prévias e qual o tratamento inicial?",
+      "back": "✅ Conduta correta: SUSPENDER carvedilol e espironolactona + iniciar TERLIPRESSINA + LIGADURA ELÁSTICA endoscópica (EDA <= 12h).\n\n• Terlipressina (ou octreotide): iniciar logo na suspeita, ANTES da endoscopia (por 2 a 5 dias).\n• Antibioticoprofilaxia: ceftriaxona IV (por 7 dias — reduz PBE e mortalidade!).\n• Ligadura elástica: padrão-ouro para varizes esofágicas (escleroterapia só se ligadura inviável).\n\n⚠️ Pegadinha FGV: NUNCA manter betabloqueador (carvedilol/propranolol) nem diurético (espironolactona/furosemida) na HDA aguda! O BB bloqueia a taquicardia compensatória no choque e o diurético agrava a hipovolemia/IRA.\n\n💡 Quando voltar o betabloqueador? Apenas após estabilização completa (geralmente ao suspender o vasoconstritor / próximo à alta) para profilaxia secundária + ligadura seriada.",
+      "audioText": "Na hemorragia digestiva alta varicosa em cirrótico que usa carvedilol e espironolactona, a conduta inicial é suspender essas medicações na fase aguda, iniciar terlipressina imediatamente e realizar ligadura elástica endoscópica em até doze horas, além de ceftriaxona profilática. Nunca mantenha betabloqueador ou diurético durante sangramento agudo."
     }
   ],
   "fgv_tables": [
@@ -3417,6 +3427,18 @@
       "col2Title": "Pegadinhas Clássicas da FGV",
       "col2": "• Pericardite urêmica (atrito pericárdico + supra difuso de ST) = diálise IMEDIATA mesmo com U 80 e diurese 1,8 L\n• Ureia alta isolada (sem sintomas) NÃO indica diálise\n• K 6,0 ou pH 7,25 sem refratariedade ao tratamento clínico NÃO indicam diálise isoladamente\n• • Semiologia do atrito: piora ao inclinar para a frente e ao pressionar o diafragma",
       "audioText": "Indicações de diálise de urgência pelo mnemônico AEIOU para a FGV. Acidose grave refratária, eletrólitos como hipercalemia refratária, intoxicações dialisáveis, overload refratário e uremia sintomática, especialmente encefalopatia e pericardite urêmica. Lembre que a pericardite urêmica indica diálise imediata mesmo com ureia baixa e diurese preservada."
+    },
+    {
+      "id": 2007,
+      "area": "gastroenterologia",
+      "cat": "hda",
+      "year": "FGV",
+      "name": "HDA Varicosa no Cirrótico: Conduta Completa (FGV)",
+      "col1Title": "Medidas Imediatas (Antes da EDA)",
+      "col1": "• SUSPENDER betabloqueador (carvedilol/propranolol) e diuréticos (espironolactona/furosemida)\n• Ressuscitação volêmica cautelosa + alvo Hb 7 a 8 g/dL\n• Vasoconstritor esplâncnico imediato: Terlipressina ou Octreotide (2–5 dias)\n• Antibioticoprofilaxia: Ceftriaxona IV (7 dias)",
+      "col2Title": "Endoscopia (<= 12h) e Pegadinhas",
+      "col2": "• Varizes ESOFÁGICAS: Ligadura elástica endoscópica (1ª escolha)\n• • Escleroterapia: só se ligadura não disponível/inviável\n• Varizes GÁSTRICAS (fundo): Cianoacrilato\n• Sangramento refratário: Balão de Sengstaken-Blakemore (ponte) ou TIPS de resgate\n• • Após estabilização: reintroduzir BB + ligadura seriada",
+      "audioText": "Conduta na hemorragia digestiva alta varicosa para a FGV. Antes da endoscopia: suspender carvedilol e espironolactona, fazer reposição volêmica visando hemoglobina entre sete e oito, iniciar terlipressina e ceftriaxona intravenosa. Na endoscopia em até doze horas: ligadura elástica é primeira escolha para varizes de esôfago, e cianoacrilato para varizes de fundo gástrico."
     }
   ]
 }
