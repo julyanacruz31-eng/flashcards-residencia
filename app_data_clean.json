@@ -3493,6 +3493,16 @@
       "front": "Paciente em uso de amitriptilina chega com torpor, hipotensão e ECG mostrando TV polimórfica 'torcendo' sobre a linha de base (Torsades de Pointes). Qual alteração inicial do ECG levou a essa arritmia e como tratar?",
       "back": "✅ Alteração inicial: INTERVALO QT LONGO (prolongado)!\n\n• Arritmia do traçado: Torsades de Pointes (TV polimórfica com alternância de eixo/amplitude em torno da linha de base).\n• Outros achados da intoxicação por tricíclicos (amitriptilina): QRS ALARGADO (> 100 ms) + R proeminente em aVR + taquicardia sinusal + síndrome anticolinérgica.\n\n• Tratamento:\n• • Torsades de Pointes (estável/recorrente): Sulfato de Magnésio IV (se instável/sem pulso: desfibrilação!).\n• • Toxicidade por tricíclico (QRS > 100 ms / hipotensão): Bicarbonato de Sódio IV.\n\n⚠️ Pegadinha FGV: tricíclicos ALARGAM QRS e PROLONGAM QT (nunca QRS curto ou QT curto!).",
       "audioText": "Na intoxicação por antidepressivo tricíclico como a amitriptilina evoluindo com Torsades de Pointes, caracterizada por taquicardia ventricular polimórfica que torce ao redor da linha de base, a alteração inicial que precipita essa arritmia é o intervalo QT longo. Lembre que o tratamento do Torsades estável é sulfato de magnésio intravenoso, e na toxicidade por tricíclico com QRS alargado e hipotensão usa-se bicarbonato de sódio intravenoso."
+    },
+    {
+      "id": 1022,
+      "area": "cardiologia",
+      "cat": "ic",
+      "year": "FGV",
+      "name": "ICFEr NYHA III Sem Diabetes: Quarteto Fantástico (iSGLT2)",
+      "front": "Paciente com ICFEr NYHA III, glicemia 80 mg/dL, HbA1c 5,0%, Cr 1,2 mg/dL e K+ 4,2 mEq/L. Quais classes medicamentosas DEVEM fazer parte do tratamento?",
+      "back": "✅ Os 4 Pilares (Quarteto Fantástico) da ICFEr:\n1. ARNI (Sacubitril/Valsartana — ou IECA/BRA).\n2. Betabloqueador (Carvedilol, Succinato de Metoprolol ou Bisoprolol).\n3. Antagonista mineralocorticoide — ARM (Espironolactona).\n4. Inibidor de SGLT2 (Dapagliflozina ou Empagliflozina).\n\n⚠️ Pegadinha FGV: HbA1c 5,0% e glicose 80 NÃO contraindicam o iSGLT2! Ele reduz mortalidade e internações na ICFEr INDEPENDENTEMENTE de ter diabetes (e sem causar hipoglicemia). Cr 1,2 e K+ 4,2 também liberam ARM e ARNI!\n\n💡 Quando contraindicar ARM (espironolactona)? K+ > 5,0 mEq/L ou TFG < 30 mL/min (atenção se Cr > 2,5 em homens / > 2,0 em mulheres).",
+      "audioText": "Na insuficiência cardíaca com fração de ejeção reduzida classe funcional três, mesmo sem diabetes, com hemoglobina glicada de cinco por cento, creatinina um vírgula dois e potássio quatro vírgula dois, deve-se usar o quarteto fantástico completo: inibidor do receptor de angiotensina e neprilisina, betabloqueador, antagonista mineralocorticoide e inibidor de SGLT2. O iSGLT2 reduz mortalidade na insuficiência cardíaca independentemente de diabetes."
     }
   ],
   "fgv_tables": [
@@ -3747,6 +3757,18 @@
       "col2Title": "Intoxicação por Tricíclicos (Amitriptilina)",
       "col2": "• ECG típico: QRS ALARGADO (> 100–120 ms), onda R > 3 mm em aVR, QT longo\n• Clínica: síndrome anticolinérgica (midríase, boca seca, retenção urinária) + torpor/convulsão + hipotensão\n• Antídoto cardíaco (se QRS > 100 ms, hipotensão ou arritmia): Bicarbonato de Sódio IV!\n• • Pegadinha: NÃO confundir com PR curto (WPW) ou QRS curto!",
       "audioText": "Tabela de Torsades de Pointes e intoxicação por tricíclicos para a FGV. O intervalo QT longo é precipitado por drogas como amitriptilina, haloperidol, macrolídeos e amiodarona, além de hipocalemia e hipomagnesemia. O tratamento do Torsades estável é sulfato de magnésio intravenoso, e na intoxicação por tricíclico com QRS alargado ou hipotensão administra-se bicarbonato de sódio."
+    },
+    {
+      "id": 2022,
+      "area": "cardiologia",
+      "cat": "ic",
+      "year": "FGV",
+      "name": "Quarteto Fantástico da ICFEr: Indicações e Pegadinhas (FGV)",
+      "col1Title": "Os 4 Pilares que Reduzem Mortalidade",
+      "col1": "• 1. ARNI (Sacubitril/Valsartana) — preferido sobre IECA/BRA (washout de 36h se trocar de IECA)\n• 2. Betabloqueador (Carvedilol, Succ. Metoprolol, Bisoprolol — ou Nebivolol em idoso)\n• 3. ARM (Espironolactona / Eplerenona)\n• 4. iSGLT2 (Dapagliflozina / Empagliflozina)",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• iSGLT2 é obrigatório MESMO SEM DIABETES (glicose 80 / HbA1c 5,0% não impedem!)\n• ARM (espironolactona) é liberada se K+ <= 5,0 mEq/L e TFG >= 30\n• Furosemida (diurético de alça): alivia congestão/sintomas, mas NÃO reduz mortalidade!\n• • Digoxina também não reduz mortalidade",
+      "audioText": "Os quatro pilares que reduzem mortalidade na insuficiência cardíaca com fração de ejeção reduzida para a FGV. Primeiro: sacubitril valsartana. Segundo: betabloqueador como carvedilol, succinato de metoprolol ou bisoprolol. Terceiro: espironolactona se potássio até cinco e função renal adequada. Quarto: inibidor de SGLT2, obrigatório mesmo em pacientes sem diabetes."
     }
   ]
 }
