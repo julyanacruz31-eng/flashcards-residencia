@@ -3773,6 +3773,16 @@
       "front": "Jovem de 32 anos com dor localizada em QIE há 2 dias, sem febre e sem peritonite. TC mostra massa paracólica oval de 2–3 cm com densidade de gordura, halo espessado e borramento perilesional. Qual o diagnóstico e o tratamento?",
       "back": "✅ Diagnóstico: APENDAGITE EPIPLOICA (torção/trombose espontânea de apêndice epiploico do sigmoide).\n\n✅ Tratamento: CONSERVADOR — ANALGESIA / ANTI-INFLAMATÓRIO (AINE)! Doença autolimitada (reabsorve em 1–2 semanas).\n\n• Achado patognomônico na TC:\n• • Massa paracólica oval (1,5–3,5 cm) com DENSIDADE DE GORDURA + anel hiperdenso (peritônio espessado) + borramento da gordura adjacente.\n\n⚠️ Pegadinha FGV: por ser dor em QIE, imita diverticulite — mas NÃO tem febre, NÃO usa antibiótico (cipro/metronidazol) e NÃO opera (nada de videolaparoscopia)!",
       "audioText": "Na apendagite epiploica cobrada pela FGV, paciente jovem com dor localizada em quadrante inferior esquerdo sem febre apresenta na tomografia massa paracólica oval de dois a três centímetros com densidade de gordura e halo peritoneal espessado. Trata-se de quadro autolimitado por torção ou trombose de apêndice epiploico, e o tratamento inicial é apenas conservador com anti-inflamatório e analgesia, sem antibióticos e sem cirurgia."
+    },
+    {
+      "id": 1050,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "HIT (Trombocitopenia Induzida por Heparina): Conduta e Proibições",
+      "front": "Paciente no 7º dia de enoxaparina apresenta queda das plaquetas de 200.000 para 60.000/mm³ com suspeita de HIT. Qual a conduta imediata e por que NÃO se pode dar HNF, aguardar ou iniciar varfarina?",
+      "back": "✅ Conduta imediata: SUSPENDER enoxaparina (toda heparina!) e INICIAR anticoagulante NÃO-heparínico (FONDAPARINUX, argatroban ou bivalirudina).\n\n• Por que anticoagular se as plaquetas estão baixas?\n• • Na HIT (anticorpo anti-PF4/heparina, D5–D10, queda >= 50%), o risco é TROMBOSE (venosa/arterial), NÃO sangramento!\n\n⚠️ Pegadinhas FGV (Erradas):\n• Trocar por HNF → PROIBIDO (reação cruzada; HNF causa ainda mais HIT que HBPM!).\n• Só suspender e aguardar → ERRADO (~50% evoluem com trombose!).\n• Iniciar Varfarina na fase aguda → PROIBIDO! Cai Proteína C rápido → necrose cutânea e gangrena venosa! (Só iniciar varfarina após plaquetas > 150.000).",
+      "audioText": "Na trombocitopenia induzida por heparina, a HIT, com queda de plaquetas maior que cinquenta por cento entre o quinto e o décimo dia de enoxaparina, a conduta imediata é suspender toda heparina e iniciar um anticoagulante não heparínico, como fondaparinux ou argatroban. Nunca trocar para heparina não fracionada por reação cruzada, nunca apenas suspender e aguardar pelo altíssimo risco de trombose, e nunca iniciar varfarina na fase aguda pelo risco de queda da proteína C e necrose cutânea."
     }
   ],
   "fgv_tables": [
@@ -4339,6 +4349,18 @@
       "col2Title": "Diverticulite Aguda (Diferencial)",
       "col2": "• Perfil: geralmente > 50 anos\n• Clínica: dor em QIE + FEBRE + alteração do hábito intestinal + leucocitose\n• TC: divertículos + espessamento da parede do sigmoide + borramento (ou abscesso/gás)\n• Tratamento: dieta + ATB (se indicado/abscesso) + drenagem se >= 4 cm\n• • Pegadinha FGV: não dar cipro/metronidazol nem operar apendagite!",
       "audioText": "Diferencial de dor no quadrante inferior esquerdo para a FGV. Apendagite epiploica ocorre em adultos jovens, sem febre, com tomografia mostrando massa oval paracólica com densidade de gordura e halo espessado; o tratamento é apenas anti-inflamatório e analgesia, sem antibiótico e sem cirurgia. Diverticulite ocorre em pacientes mais velhos, com febre, leucocitose e espessamento da parede colônica com divertículos."
+    },
+    {
+      "id": 2048,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "HIT — Trombocitopenia Induzida por Heparina: Conduta Completa (FGV)",
+      "col1Title": "Diagnóstico e Conduta Correta",
+      "col1": "• Mecanismo (HIT tipo II): anticorpo IgG anti-PF4/heparina → ativa plaquetas → TROMBOSE!\n• Clínica típica (Escore 4Ts): queda >= 50% das plaquetas (geralmente entre D5 e D10), raro < 20.000/mm³\n• Conduta IMEDIATA (2 passos obrigatórios):\n• • 1. SUSPENDER toda heparina (HNF, HBPM, flush)\n• • 2. Iniciar anticoagulante NÃO-heparínico: Fondaparinux, Argatroban, Bivalirudina (ou DOAC)",
+      "col2Title": "O Que É PROIBIDO na HIT (Pegadinhas)",
+      "col2": "• Trocar enoxaparina por HNF → PROIBIDO (reação cruzada!)\n• Apenas suspender e observar → ERRADO (~50% fazem TVP/TEP/trombose arterial!)\n• Iniciar VARFARINA com plaquetopenia → PROIBIDO! (depleta Proteína C → necrose cutânea / gangrena venosa; só usar após plaquetas > 150 mil)\n• Transfundir plaquetas de rotina → EVITAR ('joga gasolina no fogo')",
+      "audioText": "Conduta na trombocitopenia induzida por heparina para a FGV. A queda de plaquetas acima de cinquenta por cento entre cinco e dez dias de heparina gera alto risco de trombose. A conduta obrigatória é suspender toda heparina e iniciar fondaparinux, argatroban ou bivalirudina. É proibido trocar por heparina não fracionada, apenas observar sem anticoagular, ou iniciar varfarina na fase aguda pelo risco de necrose cutânea e gangrena venosa."
     }
   ]
 }
