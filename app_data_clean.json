@@ -3613,6 +3613,16 @@
       "front": "Paciente em PCR por Fibrilação Ventricular (FV): qual a energia inicial do desfibrilador bifásico vs monofásico, o que fazer logo após o choque, e quando entram adrenalina e amiodarona?",
       "back": "✅ Logo após o choque:\n• RETOMAR A RCP IMEDIATAMENTE por 2 minutos, SEM verificar pulso nem ritmo!\n\n• Energia inicial:\n• • BIFÁSICO (preferido — maior eficácia com menor energia): 120 a 200 J (se desconhecido, usar máxima).\n• • MONOFÁSICO: 360 J.\n\n• Ordem das drogas na FV/TVSP:\n• • 1º Choque → 2 min RCP → 2º Choque → Adrenalina 1 mg → 3º Choque → Amiodarona 300 mg (ou Lidocaína).\n\n⚠️ Pegadinha FGV: nunca checar pulso logo após o choque e nunca atrasar o 1º choque para fazer adrenalina ou amiodarona!",
       "audioText": "Regras da desfibrilação na fibrilação ventricular segundo o ACLS para a FGV. Logo após aplicar o choque, deve-se retomar a RCP imediatamente por dois minutos, sem parar para verificar pulso ou ritmo. O desfibrilador bifásico é preferido por maior eficácia em energias menores, usando cento e vinte a duzentos joules; o monofásico usa trezentos e sessenta joules. Adrenalina entra após o segundo choque e amiodarona após o terceiro."
+    },
+    {
+      "id": 1034,
+      "area": "psiquiatria",
+      "cat": "suicidio",
+      "year": "FGV",
+      "name": "Ideação Suicida: Passiva vs Ativa e Conduta",
+      "front": "Paciente deprimido diz 'espero dormir e não acordar', sem abuso de álcool/drogas, aceita plano de segurança e tem pais e irmã presentes para ajudar. Qual o tipo de ideação e o cenário de tratamento?",
+      "back": "✅ Tipo e Conduta: IDEAÇÃO PASSIVA / TRATAMENTO AMBULATORIAL!\n\n• Ideação PASSIVA: desejo de morrer sem intenção/ação de provocar a própria morte ('espero dormir e não acordar').\n• Ideação ATIVA: pensamento/intenção de se matar (com ou sem plano estruturado).\n\n• Por que AMBULATORIAL aqui?\n• • Ideação apenas passiva (sem plano/meios/tentativa recente)\n• • Boa aliança terapêutica (aceita plano de segurança)\n• • Rede de apoio familiar forte e ausência de abuso de substâncias.\n\n⚠️ Quando HOSPITALIZAR? Ideação ativa com plano/intenção, meios letais acessíveis, tentativa recente grave, falta de apoio/aliança, psicose com comando ou agitação/intoxicação aguda.",
+      "audioText": "Na avaliação do risco de suicídio para a FGV, frases como espero dormir e não acordar configuram ideação suicida passiva, pois há desejo de morrer sem intenção ou plano de provocar a própria morte. Quando o paciente tem ideação passiva, sem abuso de substâncias, aceita aderir a um plano de segurança e possui boa rede de apoio familiar, o melhor cenário é o tratamento ambulatorial, não sendo necessária internação."
     }
   ],
   "fgv_tables": [
@@ -3987,6 +3997,18 @@
       "col2Title": "Pegadinhas Clássicas da FGV",
       "col2": "• NÃO é monofásico que é mais eficaz em baixa energia — é o BIFÁSICO!\n• 120–200 J é dose de BIFÁSICO (monofásico = 360 J)\n• Adrenalina NÃO vem antes do 1º choque (entra após o 2º choque)\n• Amiodarona/Lidocaína NÃO vêm antes do choque (entram após o 3º choque)",
       "audioText": "Desfibrilação no ACLS para a FGV. O aparelho bifásico é mais eficaz em menor energia, iniciando com cento e vinte a duzentos joules, enquanto o monofásico usa trezentos e sessenta joules. Após o choque, retoma-se imediatamente a RCP por dois minutos sem checar pulso. Adrenalina vem só após o segundo choque, e amiodarona ou lidocaína após o terceiro choque."
+    },
+    {
+      "id": 2032,
+      "area": "psiquiatria",
+      "cat": "suicidio",
+      "year": "FGV",
+      "name": "Avaliação do Risco de Suicídio: Passiva vs Ativa (FGV)",
+      "col1Title": "Ideação Passiva vs Ativa",
+      "col1": "• Ideação PASSIVA:\n• • Desejo de morrer / desaparecer sem ação contra si ('espero dormir e não acordar')\n• Ideação ATIVA:\n• • Pensamentos de cometer suicídio (se matar)\n• • Avaliar sempre: intenção + plano + acesso a meios letais + tentativa prévia",
+      "col2Title": "Ambulatorial vs Hospitalização",
+      "col2": "• TRATAMENTO AMBULATORIAL:\n• • Ideação passiva (ou ativa sem plano/intenção)\n• • Boa aliança terapêutica (aceita plano de segurança)\n• • Rede de apoio familiar/social presente + sem abuso de álcool/drogas\n• HOSPITALIZAÇÃO (Alto Risco):\n• • Plano estruturado / intenção / tentativa recente grave / psicose com comando / sem suporte ou sem aliança",
+      "audioText": "Avaliação do risco de suicídio para a FGV. Ideação passiva é o desejo de morrer sem ação contra si, como esperar dormir e não acordar. Ideação ativa envolve pensamento ou plano de se matar. Tratamento ambulatorial é indicado na ideação passiva com boa aliança terapêutica, plano de segurança e rede de apoio. Hospitalização fica para alto risco, como plano estruturado, tentativa recente grave, psicose ou falta de suporte."
     }
   ]
 }

@@ -2921,6 +2921,7 @@ html_content = """<!DOCTYPE html>
         'hematologia': 'Hematologia',
         'nefrologia': 'Nefrologia',
         'neurologia': 'Neurologia',
+        'psiquiatria': 'Psiquiatria',
         'cirurgia': 'Cirurgia Geral',
         'pediatria': 'Pediatria',
         'go': 'G.O.',
@@ -2975,7 +2976,8 @@ html_content = """<!DOCTYPE html>
         'intussuscepcao': 'Intussuscepção',
         'diverticulite': 'Diverticulite',
         'dheg': 'Pré-eclâmpsia & DHEG',
-        'trauma': 'Trauma / ATLS'
+        'trauma': 'Trauma / ATLS',
+        'suicidio': 'Risco de Suicídio'
       };
       return map[cat] || cat || 'Geral';
     }
