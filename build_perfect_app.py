@@ -2974,7 +2974,8 @@ html_content = """<!DOCTYPE html>
         'anafilaxia': 'Anafilaxia & Alergia',
         'intussuscepcao': 'Intussuscepção',
         'diverticulite': 'Diverticulite',
-        'dheg': 'Pré-eclâmpsia & DHEG'
+        'dheg': 'Pré-eclâmpsia & DHEG',
+        'trauma': 'Trauma / ATLS'
       };
       return map[cat] || cat || 'Geral';
     }

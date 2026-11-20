@@ -3523,6 +3523,16 @@
       "front": "Gestante com 36 semanas apresenta cefaleia persistente e PA 164x110 mmHg confirmada. Enquanto não se obtém acesso IV (para hidralazina/MgSO4), qual anti-hipertensivo ORAL deve ser usado?",
       "back": "✅ Anti-hipertensivo ORAL de escolha na crise hipertensiva grave (PA >= 160x110): NIFEDIPINA VO (10 mg de liberação imediata — NUNCA sublingual!).\n\n• Se houver acesso IV: Hidralazina IV (5 mg bolus, repetir a cada 20 min) ou Labetalol IV.\n• Cefaleia = sinal de IMINÊNCIA DE ECLÂMPSIA → associar Sulfato de Magnésio (MgSO4) assim que possível!\n\n⚠️ Pegadinha FGV:\n• IECA (captopril) e BRA (losartana) são PROIBIDOS na gestação (disgenesia renal fetal, oligoidrâmnio, hipoplasia pulmonar)!\n• Metildopa serve para MANUTENÇÃO ambulatorial, NÃO para crise hipertensiva aguda (início lento)!",
       "audioText": "Na crise hipertensiva grave da gestação, com pressão maior ou igual a cento e sessenta por cento e dez, enquanto não há acesso venoso para hidralazina intravenosa, o anti-hipertensivo oral de escolha é a nifedipina dez miligramas por via oral, nunca sublingual. Lembre que captopril e losartana são proibidos na gravidez, e como há cefaleia caracterizando iminência de eclâmpsia, deve-se associar sulfato de magnésio."
+    },
+    {
+      "id": 1025,
+      "area": "cirurgia",
+      "cat": "trauma",
+      "year": "FGV",
+      "name": "Tamponamento Cardíaco no Trauma: Tratamento Definitivo",
+      "front": "Vítima de trauma automobilístico com Tríade de Beck (PA 80x44, TJP 90°, bulhas hipofonéticas), pulso paradoxal (>10 mmHg) e baixa voltagem no ECG. Qual o tratamento DEFINITIVO de escolha?",
+      "back": "✅ Tratamento DEFINITIVO: REPOSIÇÃO DE VOLUME + DRENAGEM PERICÁRDICA CIRÚRGICA (janela pericárdica / toracotomia / esternotomia).\n\n• Reposição de volume (cristaloide): aumenta a pré-carga para vencer a pressão pericárdica enquanto vai para o centro cirúrgico.\n• Drenagem cirúrgica: remove coágulos (que entopem a agulha!) e permite reparar a lesão cardíaca.\n\n⚠️ Pegadinha clássica FGV / ATLS: PERICARDIOCENTESE (punção de Marfan) é medida TEMPORÁRIA/de ponte se não houver cirurgião disponível — NÃO é o tratamento definitivo! E NÃO se usa dobutamina!\n\n💡 Bônus: no trauma, a Tríade de Beck + ausculta pulmonar normal diferencia tamponamento cardíaco de pneumotórax hipertensivo (onde o murmúrio está abolido + hipertimpanismo).",
+      "audioText": "No tamponamento cardíaco pós-trauma, caracterizado pela tríade de Beck com hipotensão, turgência jugular e bulhas hipofonéticas, além de pulso paradoxal e baixa voltagem no ECG, o tratamento definitivo de escolha é reposição volêmica associada à drenagem pericárdica cirúrgica. Atenção à pegadinha do ATLS cobrada pela FGV: a pericardiocentese é apenas medida temporária, não o tratamento definitivo, e não se usa dobutamina."
     }
   ],
   "fgv_tables": [
@@ -3813,6 +3823,18 @@
       "col2Title": "Manutenção e Proibidos na Gestação",
       "col2": "• Manutenção VO (PA < 160x110): Metildopa (1ª linha), Nifedipina retard, Pindolol\n• PROIBIDOS na gravidez:\n• • IECA (captopril/enalapril) e BRA (losartana) — teratogênicos/fetotóxicos!\n• • Espironolactona (antiandrogênica) e Diuréticos de rotina na pré-eclâmpsia\n• • Atenolol / Propranolol (CIUR, bradicardia e hipoglicemia neonatal)",
       "audioText": "Manejo da hipertensão na gestação para a FGV. Na crise hipertensiva grave, acima de cento e sessenta por cento e dez, usa-se hidralazina intravenosa ou nifedipina por via oral enquanto não há acesso venoso. Para manutenção ambulatorial, a primeira linha é metildopa. Captopril, losartana e espironolactona são contraindicados na gestação."
+    },
+    {
+      "id": 2025,
+      "area": "cirurgia",
+      "cat": "trauma",
+      "year": "FGV",
+      "name": "Tamponamento Cardíaco no Trauma (ATLS - FGV)",
+      "col1Title": "Diagnóstico e Clínica",
+      "col1": "• Tríade de Beck: Hipotensão + Turgência jugular (TJP) + Bulhas hipofonéticas\n• Pulso paradoxal: queda > 10 mmHg da PAS na inspiração\n• ECG: taquicardia sinusal + baixa voltagem (+ alternância elétrica)\n• Ausculta pulmonar NORMAL (diferencia de pneumotórax hipertensivo!)\n• FAST / e-FAST: líquido no saco pericárdico",
+      "col2Title": "Conduta e Pegadinhas FGV",
+      "col2": "• Medida inicial de suporte: Reposição volêmica cautelosa (melhora pré-carga) — NÃO usar dobutamina!\n• Ponte / se sem cirurgião no local: Pericardiocentese (temporária!)\n• Tratamento DEFINITIVO: DRENAGEM PERICÁRDICA CIRÚRGICA (janela pericárdica subxifoideana ou toracotomia/esternotomia)\n• • Motivo: sangue traumático coagula e obstrui a agulha, além de precisar reparar a câmara cardíaca",
+      "audioText": "Tamponamento cardíaco no trauma para a FGV. Diagnóstico pela tríade de Beck com hipotensão, turgência jugular e bulhas hipofonéticas, pulso paradoxal e ausculta pulmonar normal. Conduta inicial com reposição de volume, sem dobutamina. A pericardiocentese é apenas temporária, sendo a drenagem pericárdica cirúrgica o tratamento definitivo."
     }
   ]
 }
