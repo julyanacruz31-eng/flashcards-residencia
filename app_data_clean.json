@@ -3723,6 +3723,16 @@
       "front": "Homem sexualmente ativo com disúria e descarga uretral purulenta há 2 dias. Além de tratar parceiro(a)s e abstenção sexual por 7 dias, qual o tratamento empírico de escolha (CDC/PCDT)?",
       "back": "✅ Tratamento empírico (cobre Gonococo + Clamídia):\n• Ceftriaxona 500 mg IM dose única (para Neisseria gonorrhoeae)\n• + Doxiciclina 100 mg VO 12/12h por 7 dias (1ª escolha para Chlamydia trachomatis).\n\n• Se gestante ou contraindicação à doxiciclina: substituir doxiciclina por Azitromicina 1 g VO dose única!\n\n⚠️ Pegadinhas FGV:\n• Ciprofloxacina está PROSCRITA para gonococo (altíssima resistência bacteriana!).\n• Azitromicina 500 mg por 7 dias é dose errada (para clamídia é 1 g dose única!).\n• Cefuroxima VO não substitui ceftriaxona IM!",
       "audioText": "Na uretrite aguda com corrimento purulento cobrada pela FGV, deve-se cobrir empiricamente gonococo e clamídia com ceftriaxona quinhentos miligramas intramuscular em dose única, associada à doxiciclina cem miligramas via oral de doze em doze horas por sete dias, além de abstenção sexual por sete dias e tratamento dos parceiros. Ciprofloxacina não se usa mais por alta resistência do gonococo."
+    },
+    {
+      "id": 1045,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Síncope Vasovagal vs Cardíaca vs Convulsão",
+      "front": "Jovem de 25 anos com episódios de perda de consciência há 5 anos em locais quentes/cheios, precedidos por visão escurecida, náuseas e palidez, com recuperação rápida, exame físico e ECG normais. Qual o diagnóstico e os sinais de alerta da síncope cardíaca?",
+      "back": "✅ Diagnóstico: SÍNCOPE VASOVAGAL (neurocardiogênica / reflexa).\n\n• Pistas da Vasovagal:\n• • Pródromos autonômicos: escurecimento visual, náuseas, sudorese fria, palidez.\n• • Gatilhos: lugares quentes/cheios, ficar muito tempo em pé, dor, medo.\n• • Recuperação rápida ao deitar; exame físico e ECG normais.\n\n⚠️ Sinais de alerta (Síncope Cardíaca — alto risco!):\n• Súbita SEM pródromos ('desliga a chave') ou durante ESFORÇO FÍSICO / deitado.\n• História familiar de MORTE SÚBITA em jovens (canalopatias: QT longo, Brugada, CMH).\n• ECG alterado (BAV, WPW, Brugada, QT longo, sobrecarga) ou cardiopatia estrutural.",
+      "audioText": "Na avaliação da síncope para a FGV, paciente jovem com perda de consciência precedida por pródromos autonômicos como escurecimento visual, náuseas e palidez, desencadeada por locais quentes ou cheios, com recuperação rápida e ECG normal, apresenta síncope vasovagal. Já a síncope cardíaca é súbita sem pródromos, ocorre durante esforço ou em decúbito, e associa-se a alterações no ECG ou história familiar de morte súbita."
     }
   ],
   "fgv_tables": [
@@ -4229,6 +4239,18 @@
       "col2Title": "Pegadinhas e Esquemas Errados",
       "col2": "• Ciprofloxacina VO → NÃO usar (alta resistência do gonococo!)\n• Azitromicina 500 mg por 7 dias → DOSE ERRADA (o certo seria 1 g dose única)\n• Cefuroxima VO → eficácia inferior à ceftriaxona IM\n• • Na doença inflamatória pélvica (DIP) leve: Ceftriaxona 500 mg IM DU + Doxi 100 mg 12/12h 14d + Metronidazol 500 mg 12/12h 14d!",
       "audioText": "Tratamento da uretrite aguda para a FGV. Associar ceftriaxona quinhentos miligramas intramuscular em dose única para gonococo com doxiciclina cem miligramas de doze em doze horas por sete dias para clamídia. Em gestantes troca-se doxiciclina por azitromicina um grama dose única. Ciprofloxacina não deve ser usada pela resistência do gonococo."
+    },
+    {
+      "id": 2043,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Diagnóstico Diferencial da Síncope: Vasovagal vs Cardíaca vs Epilepsia (FGV)",
+      "col1Title": "Síncope Vasovagal (Reflexa)",
+      "col1": "• Gatilhos: calor, locais cheios, ortostatismo prolongado, dor/ansiedade\n• Pródromos típicos: visão escurecida, náuseas, sudorese, palidez\n• Recuperação: rápida (segundos) ao assumir decúbito\n• ECG e exame físico: normais (sem hipotensão ortostática)\n• • Tratamento: educação, evitar gatilhos, manobras de contrapressão física, hidratação",
+      "col2Title": "Cardíaca vs Crise Epiléptica",
+      "col2": "• Síncope Cardíaca (Alto Risco):\n• • Súbita SEM pródromos, durante esforço ou deitado\n• • História familiar POSITIVA de morte súbita (canalopatias: Brugada, QT longo)\n• • ECG alterado ou cardiopatia estrutural\n• Crise Epiléptica:\n• • Confusão pós-ictal prolongada, mordedura lateral de língua, liberação esfincteriana",
+      "audioText": "Diagnóstico diferencial da síncope para a FGV. Síncope vasovagal tem gatilho em locais quentes ou cheios, pródromos de visão escurecida e náuseas, recuperação rápida e ECG normal. Síncope cardíaca é súbita sem pródromos, ocorre no esforço e tem história familiar de morte súbita ou ECG alterado. Crise epiléptica cursa com confusão pós-ictal prolongada e mordedura de língua."
     }
   ]
 }
