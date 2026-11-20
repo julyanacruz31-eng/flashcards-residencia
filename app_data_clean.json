@@ -3573,6 +3573,16 @@
       "front": "Em quais 3 situações do ACLS se usa AMIODARONA (e suas doses) e em quais 2 arritmias ela é PROIBIDA / pegadinha?",
       "back": "✅ Quando USAR Amiodarona:\n1. PCR em ritmo CHOCÁVEL (FV / TV sem pulso) refratária após o 3º choque: 300 mg IV/IO em bolus (2ª dose: 150 mg).\n2. TV monomórfica estável (ou QRS largo regular indeterminado): 150 mg IV em 10 min.\n3. Cardioversão química / ritmo na FA ou Flutter estável (especialmente se cardiopatia estrutural / ICFEr).\n\n⚠️ Onde NÃO usar (Pegadinhas):\n• Assistolia ou AESP (não chocáveis) → NUNCA! Só Adrenalina.\n• Torsades de Pointes (QT longo) → amiodarona alarga mais o QT → usar Sulfato de Magnésio IV.\n• FA pré-excitada (WPW) → usar Procainamida (ou CVE se instável).",
       "audioText": "Quando usar amiodarona no ACLS. Primeiro: na parada em fibrilação ventricular ou taquicardia ventricular sem pulso refratária após o terceiro choque, na dose de trezentos miligramas em bolus. Segundo: na taquicardia ventricular monomórfica estável, cento e cinquenta miligramas intravenosos em dez minutos. Terceiro: na fibrilação atrial estável com cardiopatia estrutural. Não usar em assistolia, AESP, Torsades de Pointes ou FA com Wolff-Parkinson-White."
+    },
+    {
+      "id": 1030,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS: Bradicardia Com Pulso (Atropina vs Marca-Passo)",
+      "front": "Paciente com FC < 50 bpm e sinais de instabilidade (hipotensão, dor torácica, rebaixamento, EAP). Qual a conduta de 1ª linha e o que fazer se não responder (ou se BAV 2º grau Mobitz II / BAVT)?",
+      "back": "✅ 1ª Linha: ATROPINA 1 mg IV em bolus (repetir a cada 3–5 min até máximo de 3 mg)!\n\n• Se NÃO responder à atropina:\n• • Marca-passo transcutâneo (MPTC) OU\n• • Dopamina IV (5–20 mcg/kg/min) OU Adrenalina IV (2–10 mcg/min).\n• Depois: avaliar Marca-passo transvenoso (definitivo/ponte) e tratar causa (5Hs/5Ts, intoxicação por BB/BCC/digoxina).\n\n⚠️ Pegadinha FGV: no BAV de 2º grau Mobitz II e no BAV Total (3º grau) com QRS largo, a atropina costuma NÃO funcionar (bloqueio infra-hissiano) — não atrase o marca-passo transcutâneo!\n\n💡 Se assintomático / estável: apenas observar e investigar causa (não dá atropina à toa!).",
+      "audioText": "Na bradicardia sintomática ou instável com pulso no ACLS, a primeira linha é atropina um miligrama intravenoso em bolus, podendo repetir a cada três a cinco minutos até o máximo de três miligramas. Se não responder, ou nos bloqueios avançados como Mobitz dois e bloqueio atrioventricular total, indicar marca-passo transcutâneo ou infusão de dopamina ou adrenalina."
     }
   ],
   "fgv_tables": [
@@ -3911,6 +3921,18 @@
       "col2Title": "QRS Largo Irregular e Usos da Amiodarona",
       "col2": "• Torsades de Pointes (QT longo): Sulfato de Magnésio 2 g IV (NÃO dar amiodarona!)\n• FA + WPW (pré-excitada): Procainamida (PROIBIDO adenosina, BB, BCC, digoxina!)\n• Amiodarona na PCR (FV/TVSP): 300 mg após 3º choque (2ª dose 150 mg)\n• • Na PCR em Assistolia/AESP: NUNCA usar amiodarona (só Adrenalina!)",
       "audioText": "Mapa rápido das taquiarritmias no ACLS. Paciente instável vai para cardioversão elétrica sincronizada. Estável com QRS estreito e regular recebe manobra vagal e adenosina. Estável com QRS estreito e irregular recebe betabloqueador ou diltiazem. Estável com QRS largo e regular recebe amiodarona cento e cinquenta miligramas. Torsades de Pointes recebe sulfato de magnésio, e FA com Wolff-Parkinson-White recebe procainamida."
+    },
+    {
+      "id": 2029,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Guia Definitivo ACLS: PCR, Bradiarritmias e Taquiarritmias",
+      "col1Title": "PCR e Bradicardias",
+      "col1": "• PCR Chocável (FV / TVSP): Choque imediato → 2 min RCP → Choque → Adrenalina 1 mg (3/3–5 min) → 3º Choque → Amiodarona 300 mg (2ª: 150 mg)\n• PCR Não Chocável (Assistolia / AESP): RCP + Adrenalina 1 mg IMEDIATA (3/3–5 min) + 5Hs e 5Ts (SEM choque, SEM atropina, SEM amiodarona)\n• Bradicardia Instável (< 50 bpm): Atropina 1 mg IV (máx 3 mg) → se refratário/BAVT: Marca-passo transcutâneo ou Dopamina/Adrenalina",
+      "col2Title": "Taquiarritmias Com Pulso",
+      "col2": "• INSTÁVEL (qualquer ritmo): CVE sincronizada imediata!\n• Estável QRS Estreito Regular (TSV): Vagal → Adenosina 6 mg (depois 12 mg)\n• Estável QRS Estreito Irregular (FA): Controle FC (Betabloqueador ou Diltiazem/Verapamil)\n• Estável QRS Largo Regular (TV): Amiodarona 150 mg IV em 10 min\n• Torsades (QT longo): Sulfato de Magnésio 2 g IV\n• FA + WPW: Procainamida",
+      "audioText": "Guia definitivo do ACLS. Na PCR chocável em FV ou TV sem pulso: choque imediato, adrenalina após o segundo choque e amiodarona após o terceiro choque. Na PCR não chocável em assistolia ou AESP: RCP e adrenalina imediata sem choque. Na bradicardia instável: atropina um miligrama até três miligramas, depois marca-passo transcutâneo ou dopamina ou adrenalina. Nas taquiarritmias instáveis: cardioversão elétrica sincronizada. Se estável: TSV usa adenosina, FA controla com betabloqueador ou diltiazem, TV estável usa amiodarona, Torsades usa sulfato de magnésio e FA com WPW usa procainamida."
     }
   ]
 }
