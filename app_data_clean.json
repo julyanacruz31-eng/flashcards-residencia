@@ -3553,6 +3553,26 @@
       "front": "Na PCR em Assistolia ou Atividade Elétrica Sem Pulso (AESP), além de RCP imediata e reversão dos 5Hs e 5Ts, qual droga deve ser administrada precocemente e quais intervenções são PROIBIDAS/obsoletas?",
       "back": "✅ Droga recomendada: ADRENALINA (epinefrina 1 mg IV/IO o quanto antes, a cada 3–5 min)!\n\n• Ritmos NÃO chocáveis (Assistolia e AESP):\n• • RCP imediata + Adrenalina PRECOCE (diferente de FV/TV sem pulso, onde a adrenalina entra só após o 2º choque!).\n• • Buscar e tratar causas reversíveis: 5Hs e 5Ts.\n\n⚠️ Pegadinhas FGV (Obsoletas / Proibidas na Assistolia/AESP):\n• Atropina → RETIRADA da PCR desde 2010 (só bradicardia com pulso).\n• Vasopressina → RETIRADA do algoritmo da PCR.\n• Marca-passo → NÃO indicado na assistolia (só bradiarritmia instável com pulso).\n• Choque / Cardioversão → NUNCA em ritmos não chocáveis!",
       "audioText": "Na parada cardiorrespiratória em assistolia ou atividade elétrica sem pulso, que são ritmos não chocáveis, além de iniciar ressuscitação imediatamente e reverter as causas como os cinco Hs e cinco Ts, deve-se administrar adrenalina um miligrama intravenoso o mais precocemente possível, repetindo a cada três a cinco minutos. Atropina, vasopressina, marca-passo e choque não são recomendados."
+    },
+    {
+      "id": 1028,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Taquiarritmias Com Pulso: Adenosina vs BB vs Amiodarona vs CVE",
+      "front": "Paciente com taquiarritmia COM PULSO na emergência. Qual a conduta se: (1) instável; (2) estável QRS estreito regular; (3) estável QRS estreito irregular; (4) estável QRS largo regular?",
+      "back": "✅ 1. INSTÁVEL (hipotensão, dor torácica, EAP, rebaixamento):\n• CARDIOVERSÃO ELÉTRICA SINCRONIZADA (CVE) imediata!\n\n✅ 2. ESTÁVEL — QRS Estreito + Regular (TSV):\n• 1º Manobra vagal (Valsalva modificada) → 2º ADENOSINA (6 mg bolus rápido + flush; depois 12 mg).\n\n✅ 3. ESTÁVEL — QRS Estreito + Irregular (FA / Flutter variável):\n• Controle de FC: Betabloqueador (metoprolol) ou Diltiazem/Verapamil (evitar BCC se ICFEr).\n\n✅ 4. ESTÁVEL — QRS Largo + Regular (TV monomórfica até prova em contrário):\n• AMIODARONA 150 mg IV em 10 min (ou Procainamida).\n\n⚠️ Pegadinha: QRS largo IRREGULAR → se QT longo (Torsades) = Sulfato de Magnésio IV; se FA + WPW = Procainamida (PROIBIDO adenosina/BB/BCC!).",
+      "audioText": "Fluxograma rápido das taquiarritmias com pulso no ACLS. Se o paciente está instável, cardioversão elétrica sincronizada imediata. Se estável com QRS estreito e regular, típico de taquicardia supraventricular, fazer manobra vagal e depois adenosina seis miligramas em bolus rápido. Se QRS estreito e irregular, como fibrilação atrial, controlar frequência com betabloqueador ou diltiazem. Se QRS largo e regular, tratar como taquicardia ventricular com amiodarona cento e cinquenta miligramas em dez minutos."
+    },
+    {
+      "id": 1029,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Quando Usar Amiodarona (e Onde É Proibida)",
+      "front": "Em quais 3 situações do ACLS se usa AMIODARONA (e suas doses) e em quais 2 arritmias ela é PROIBIDA / pegadinha?",
+      "back": "✅ Quando USAR Amiodarona:\n1. PCR em ritmo CHOCÁVEL (FV / TV sem pulso) refratária após o 3º choque: 300 mg IV/IO em bolus (2ª dose: 150 mg).\n2. TV monomórfica estável (ou QRS largo regular indeterminado): 150 mg IV em 10 min.\n3. Cardioversão química / ritmo na FA ou Flutter estável (especialmente se cardiopatia estrutural / ICFEr).\n\n⚠️ Onde NÃO usar (Pegadinhas):\n• Assistolia ou AESP (não chocáveis) → NUNCA! Só Adrenalina.\n• Torsades de Pointes (QT longo) → amiodarona alarga mais o QT → usar Sulfato de Magnésio IV.\n• FA pré-excitada (WPW) → usar Procainamida (ou CVE se instável).",
+      "audioText": "Quando usar amiodarona no ACLS. Primeiro: na parada em fibrilação ventricular ou taquicardia ventricular sem pulso refratária após o terceiro choque, na dose de trezentos miligramas em bolus. Segundo: na taquicardia ventricular monomórfica estável, cento e cinquenta miligramas intravenosos em dez minutos. Terceiro: na fibrilação atrial estável com cardiopatia estrutural. Não usar em assistolia, AESP, Torsades de Pointes ou FA com Wolff-Parkinson-White."
     }
   ],
   "fgv_tables": [
@@ -3879,6 +3899,18 @@
       "col2Title": "Obsoletos e Comparação com FV/TVSP",
       "col2": "• NÃO usar na Assistolia/AESP:\n• • Atropina (obsoleta na PCR; só bradicardia com pulso)\n• • Vasopressina (removida do ACLS)\n• • Marca-passo (ineficaz na assistolia)\n• FV / TV sem pulso (Chocáveis):\n• • Choque imediato → Adrenalina só após 2º choque → Amiodarona (300 mg) ou Lidocaína após 3º choque",
       "audioText": "Comparação dos ritmos na parada cardiorrespiratória para a FGV. Em assistolia e atividade elétrica sem pulso, nunca chocar e administrar adrenalina um miligrama o mais rápido possível a cada três a cinco minutos, além de corrigir os cinco Hs e cinco Ts. Atropina, vasopressina e marca-passo não são mais usados na PCR. Já em fibrilação ventricular e taquicardia ventricular sem pulso, o choque é imediato e a adrenalina entra após o segundo choque."
+    },
+    {
+      "id": 2028,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Mapa Rápido das Taquiarritmias e Antiarrítmicos (ACLS - FGV)",
+      "col1Title": "Taquiarritmias Com Pulso (Fluxo)",
+      "col1": "• INSTÁVEL (choque/dor/EAP/rebaixamento) → CVE sincronizada imediata!\n• Estável QRS Estreito + Regular (TSV):\n• • Vagal → Adenosina 6 mg (depois 12 mg)\n• Estável QRS Estreito + Irregular (FA):\n• • Controle FC: Betabloqueador ou Diltiazem/Verapamil\n• Estável QRS Largo + Regular (TV):\n• • Amiodarona 150 mg IV em 10 min",
+      "col2Title": "QRS Largo Irregular e Usos da Amiodarona",
+      "col2": "• Torsades de Pointes (QT longo): Sulfato de Magnésio 2 g IV (NÃO dar amiodarona!)\n• FA + WPW (pré-excitada): Procainamida (PROIBIDO adenosina, BB, BCC, digoxina!)\n• Amiodarona na PCR (FV/TVSP): 300 mg após 3º choque (2ª dose 150 mg)\n• • Na PCR em Assistolia/AESP: NUNCA usar amiodarona (só Adrenalina!)",
+      "audioText": "Mapa rápido das taquiarritmias no ACLS. Paciente instável vai para cardioversão elétrica sincronizada. Estável com QRS estreito e regular recebe manobra vagal e adenosina. Estável com QRS estreito e irregular recebe betabloqueador ou diltiazem. Estável com QRS largo e regular recebe amiodarona cento e cinquenta miligramas. Torsades de Pointes recebe sulfato de magnésio, e FA com Wolff-Parkinson-White recebe procainamida."
     }
   ]
 }
