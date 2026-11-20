@@ -3663,6 +3663,16 @@
       "front": "Paciente com dor torácica há 3h, supra de ST em DII, DIII e aVF, hipotenso, com turgência jugular patológica (TJP), pulsos simétricos e ausculta cardíaca/pulmonar normais. Qual o diagnóstico, qual derivação pedir e o que é PROIBIDO?",
       "back": "✅ Diagnóstico: INFARTO DE VENTRÍCULO DIREITO (VD)!\n\n• Tríade clássica: Hipotensão + Turgência jugular (TJP) + Pulmões limpos (sem congestão!) no IAM inferior (DII, DIII, aVF).\n• Derivações obrigatórias: V3R e V4R (supra em V4R confirma!).\n• Conduta: Expansão volêmica (SF 0,9%) + reperfusão imediata.\n\n⚠️ PROIBIDOS no IAM de VD: Nitratos, Morfina, Diuréticos e Betabloqueadores (derrubam a pré-carga e o paciente choca!).\n\n💡 Como diferenciar de rotura de cordoalha/papilar? Rotura dá SOPRO mitral + EDEMA AGUDO DE PULMÃO (estertores), nunca ausculta normal!",
       "audioText": "No infarto agudo do miocárdio de parede inferior, com supra em D2, D3 e aVF, cursando com hipotensão, turgência jugular patológica e ausculta pulmonar normal, o diagnóstico clássico é infarto de ventrículo direito. Deve-se solicitar derivações direitas V3R e V4R e fazer expansão volêmica com soro fisiológico, sendo proibidos nitratos, morfina e diuréticos."
+    },
+    {
+      "id": 1039,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "SCA Sem Supra em Uso de Tadalafila: Esquema Sem Nitrato",
+      "front": "Idoso hipertenso com angina instável / SCA sem supra de ST em uso de losartana e TADALAFILA (sem estratégia invasiva programada no momento). Quais medicações devem compor o esquema inicial e qual é PROIBIDA?",
+      "back": "✅ Esquema completo: AAS + Bloqueador P2Y12 (Clopidogrel/Ticagrelor) + Enoxaparina + Betabloqueador + Estatina!\n\n⚠️ PROIBIDO: NITRATO (nitroglicerina / isossorbida)!\n• Por quê? O paciente usa TADALAFILA (inibidor de PDE-5)! Associar nitrato com PDE-5 causa vasodilatação sinérgica intensa e HIPOTENSÃO REFRATÁRIA FATAL!\n• Intervalo mínimo sem nitrato após PDE-5: 24h para sildenafila/vardenafila e 48h para TADALAFILA!\n\n💡 Bônus: como ainda não foi programado CATE imediato, usa-se Clopidogrel ou Ticagrelor (NUNCA Prasugrel antes de conhecer a anatomia coronariana!).",
+      "audioText": "Na síndrome coronariana aguda sem supra de ST em paciente que faz uso de tadalafila, o tratamento inicial deve conter AAS, bloqueador do receptor P2Y12 como clopidogrel ou ticagrelor, enoxaparina, betabloqueador e estatina. O nitrato é absolutamente contraindicado pelo risco de hipotensão grave refratária ao interagir com inibidores da fosfodiesterase cinco, devendo-se respeitar quarenta e oito horas após tadalafila e vinte e quatro horas após sildenafila."
     }
   ],
   "fgv_tables": [
@@ -4097,6 +4107,18 @@
       "col2Title": "Diagnósticos Diferenciais (Pegadinhas)",
       "col2": "• Rotura de músculo papilar / cordoalha: SOPRO mitral agudo + Edema Agudo de Pulmão (estertores!)\n• Dissecção de aorta: dor lancinante, assimetria de pulsos/PA, sopro de IAo\n• Aneurisma de VE: complicação TARDIA (semanas pós-IAM extenso, geralmente anterior)\n• Pericardite constritiva: quadro CRÔNICO, nunca agudo em 3h",
       "audioText": "Diferenciais no infarto inferior para a FGV. O infarto de ventrículo direito cursa com hipotensão, turgência jugular e pulmões limpos, confirmado em V4R e tratado com volume, proibindo nitratos e diuréticos. Rotura de cordoalha dá sopro e edema agudo de pulmão. Dissecção de aorta dá assimetria de pulsos. Aneurisma de VE é complicação tardia, e pericardite constritiva é crônica."
+    },
+    {
+      "id": 2037,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "SCA Sem Supra: Esquema Padrão e Contraindicações ao Nitrato (FGV)",
+      "col1Title": "Pilares da SCA Sem Supra",
+      "col1": "• Dupla antiagregação (DAPT): AAS + P2Y12 (Clopidogrel ou Ticagrelor — Prasugrel só pós-CATE!)\n• Anticoagulação plena: Enoxaparina (1 mg/kg SC 12/12h) ou HNF / Fondaparinux\n• Betabloqueador (VO nas primeiras 24h se estável)\n• Estatina de alta potência (Atorvastatina / Rosuvastatina)\n• IECA/BRA (já usa losartana)",
+      "col2Title": "Quando Nitrato É PROIBIDO (Pegadinhas)",
+      "col2": "• Uso de inibidor de PDE-5:\n• • Sildenafila / Vardenafila nas últimas 24 horas\n• • TADALAFILA nas últimas 48 horas (cai muito na FGV!)\n• IAM de Ventrículo Direito (supra em V4R)\n• Hipotensão (PAS < 90 mmHg) ou Estenose Aórtica grave",
+      "audioText": "Esquema da síndrome coronariana aguda sem supra de ST e contraindicações ao nitrato para a FGV. Os pilares são AAS, bloqueador P2Y12 como clopidogrel ou ticagrelor, enoxaparina, betabloqueador e estatina. O nitrato é proibido em quem usou sildenafila nas últimas vinte e quatro horas ou tadalafila nas últimas quarenta e oito horas, no infarto de ventrículo direito e na hipotensão."
     }
   ]
 }
