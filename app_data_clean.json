@@ -3633,6 +3633,16 @@
       "front": "Qual é a principal peculiaridade da RCP na vítima de afogamento em comparação à PCR cardíaca comum do adulto (e quais condutas são erradas)?",
       "back": "✅ Peculiaridade principal: a VENTILAÇÃO é ainda mais importante que as compressões isoladas — usar sequência A-B-C (respirações de resgate imediatas)! Nunca fazer RCP só com as mãos (hands-only).\n\n• Por quê? A causa da PCR no afogamento é HIPÓXIA (asfixia), não arritmia cardíaca primária!\n• Ao retirar da água e não respirar: fazer logo 2–5 ventilações de resgate (sem esperar checar pulso antes de ventilar!).\n\n⚠️ O que NÃO fazer (Pegadinhas FGV):\n• Não manter roupas molhadas para chocar → SECAR o tórax antes do DEA/choque!\n• Não imobilizar coluna cervical de rotina se não houver história/suspeita de trauma (atrasa via aérea).\n• Não manter hipotermia → retirar roupas molhadas e aquecer ativamente.",
       "audioText": "Na parada cardiorrespiratória por afogamento cobrada pela FGV, a principal peculiaridade é que a ventilação é mais importante do que na parada cardíaca comum, pois a causa primária é hipóxia. Deve-se priorizar ventilações de resgate imediatas na sequência A B C, sem esperar checagem de pulso para ventilar. Não se deve imobilizar coluna cervical de rotina sem história de trauma, nem manter roupas molhadas ao desfibrilar, devendo-se secar o tórax e aquecer o paciente."
+    },
+    {
+      "id": 1036,
+      "area": "cirurgia",
+      "cat": "trauma",
+      "year": "FGV",
+      "name": "Choque no Trauma com e-FAST Negativo: Fratura de Pelve / Quadril",
+      "front": "Politraumatizado em choque (PA 84x40, FC 120, pulso filiforme, extremidades frias), sem sangramento externo, sem deformidades em membros, ausculta normal, abdome indolor e e-FAST negativo. Qual a causa mais provável?",
+      "back": "✅ Causa mais provável: FRATURA DE QUADRIL / PELVE (sangramento retroperitoneal oculto)!\n\n• Regra 'Chão e mais 4' do sangramento no trauma:\n1. Chão (externo) → descartado.\n2. Tórax (hemotórax) → descartado (ausculta e e-FAST normais).\n3. Abdome (hemoperitôneo) → descartado (abdome indolor e e-FAST negativo).\n4. Fêmur / ossos longos → descartado (sem deformidades).\n5. PELVE / QUADRIL (retroperitônio) → O e-FAST NÃO enxerga o retroperitônio! Pode sangrar litros ocultamente!\n\n⚠️ Pegadinha FGV (Choque Neurogênico):\n• Choque neurogênico faz hipotensão + BRADICARDIA + extremidades QUENTES!\n• Aqui tem FC 120 + pulso filiforme + extremidades frias = CHOQUE HEMORRÁGICO! Conduta: fechar pelve (lençol/cinta pélvica nos trocânteres maiores) + Rx de pelve + sangue!",
+      "audioText": "No politraumatizado com choque hipovolêmico, taquicardia de cento e vinte, pulso filiforme e extremidades frias, mas com ausculta cardiopulmonar normal, sem deformidades em membros e e-FAST negativo, a causa mais provável de choque é fratura de quadril ou pelve com sangramento retroperitoneal oculto, pois o e-FAST não avalia adequadamente o retroperitônio. Atenção à pegadinha: choque neurogênico cursa com bradicardia e extremidades quentes."
     }
   ],
   "fgv_tables": [
@@ -4031,6 +4041,18 @@
       "col2Title": "Pegadinhas Clássicas da FGV",
       "col2": "• Imobilização cervical de rotina? NÃO! (Só se trauma/mergulho em águas rasas — senão atrasa ventilação)\n• Manobra de Heimlich para tirar água do pulmão? PROIBIDO! (Só atrasa RCP e causa broncoaspiração)\n• Manter roupas molhadas para chocar? PROIBIDO!\n• Manter hipotermia? NÃO (hipotermia grave refrata choque e causa arritmia)",
       "audioText": "Peculiaridades do atendimento à parada cardiorrespiratória por afogamento para a FGV. Priorizar ventilação precoce na sequência A B C devido à hipóxia, evitando RCP apenas com compressões. Secar o tórax antes de desfibrilar, tratar a hipotermia e não fazer imobilização cervical de rotina nem manobra de Heimlich se não houver trauma."
+    },
+    {
+      "id": 2034,
+      "area": "cirurgia",
+      "cat": "trauma",
+      "year": "FGV",
+      "name": "Choque no Trauma: 'Chão e Mais 4' e e-FAST Negativo (ATLS - FGV)",
+      "col1Title": "Os 5 Sítios de Sangramento ('Chão e +4')",
+      "col1": "• 1. Chão (sangramento externo visível)\n• 2. Tórax (hemotórax — visto no Rx/e-FAST + ausculta)\n• 3. Abdome (hemoperitôneo — visto no e-FAST)\n• 4. Pelve / Retroperitônio (NÃO aparece no e-FAST! Pedir Rx de pelve e fechar nos trocânteres maiores!)\n• 5. Fêmur / ossos longos (deformidade/edema em coxa)",
+      "col2Title": "Choque Hemorrágico vs Neurogênico",
+      "col2": "• Choque Hemorrágico:\n• • PA baixa + TAQUICARDIA (FC alta) + pulso filiforme + extremidades FRIAS\n• Choque Neurogênico (lesão medular >= T6):\n• • PA baixa + BRADICARDIA + extremidades QUENTES (vasoplegia)\n• • e-FAST negativo exclui tamponamento, pneumotórax e hemoperitôneo significativos",
+      "audioText": "Causas de choque no trauma para a FGV pela regra do chão e mais quatro. Chão, tórax, abdome, pelve com retroperitônio e fêmur. Lembre que o e-FAST exclui tamponamento, pneumotórax e hemoperitônio, mas não vê sangramento retroperitoneal por fratura de pelve ou quadril. Diferencie também choque hemorrágico, com taquicardia e extremidades frias, do choque neurogênico, com bradicardia e extremidades quentes."
     }
   ]
 }
