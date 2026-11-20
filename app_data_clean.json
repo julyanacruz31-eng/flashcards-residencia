@@ -3623,6 +3623,16 @@
       "front": "Paciente deprimido diz 'espero dormir e não acordar', sem abuso de álcool/drogas, aceita plano de segurança e tem pais e irmã presentes para ajudar. Qual o tipo de ideação e o cenário de tratamento?",
       "back": "✅ Tipo e Conduta: IDEAÇÃO PASSIVA / TRATAMENTO AMBULATORIAL!\n\n• Ideação PASSIVA: desejo de morrer sem intenção/ação de provocar a própria morte ('espero dormir e não acordar').\n• Ideação ATIVA: pensamento/intenção de se matar (com ou sem plano estruturado).\n\n• Por que AMBULATORIAL aqui?\n• • Ideação apenas passiva (sem plano/meios/tentativa recente)\n• • Boa aliança terapêutica (aceita plano de segurança)\n• • Rede de apoio familiar forte e ausência de abuso de substâncias.\n\n⚠️ Quando HOSPITALIZAR? Ideação ativa com plano/intenção, meios letais acessíveis, tentativa recente grave, falta de apoio/aliança, psicose com comando ou agitação/intoxicação aguda.",
       "audioText": "Na avaliação do risco de suicídio para a FGV, frases como espero dormir e não acordar configuram ideação suicida passiva, pois há desejo de morrer sem intenção ou plano de provocar a própria morte. Quando o paciente tem ideação passiva, sem abuso de substâncias, aceita aderir a um plano de segurança e possui boa rede de apoio familiar, o melhor cenário é o tratamento ambulatorial, não sendo necessária internação."
+    },
+    {
+      "id": 1035,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "PCR no Afogamento: Prioridade na Ventilação (A-B-C)",
+      "front": "Qual é a principal peculiaridade da RCP na vítima de afogamento em comparação à PCR cardíaca comum do adulto (e quais condutas são erradas)?",
+      "back": "✅ Peculiaridade principal: a VENTILAÇÃO é ainda mais importante que as compressões isoladas — usar sequência A-B-C (respirações de resgate imediatas)! Nunca fazer RCP só com as mãos (hands-only).\n\n• Por quê? A causa da PCR no afogamento é HIPÓXIA (asfixia), não arritmia cardíaca primária!\n• Ao retirar da água e não respirar: fazer logo 2–5 ventilações de resgate (sem esperar checar pulso antes de ventilar!).\n\n⚠️ O que NÃO fazer (Pegadinhas FGV):\n• Não manter roupas molhadas para chocar → SECAR o tórax antes do DEA/choque!\n• Não imobilizar coluna cervical de rotina se não houver história/suspeita de trauma (atrasa via aérea).\n• Não manter hipotermia → retirar roupas molhadas e aquecer ativamente.",
+      "audioText": "Na parada cardiorrespiratória por afogamento cobrada pela FGV, a principal peculiaridade é que a ventilação é mais importante do que na parada cardíaca comum, pois a causa primária é hipóxia. Deve-se priorizar ventilações de resgate imediatas na sequência A B C, sem esperar checagem de pulso para ventilar. Não se deve imobilizar coluna cervical de rotina sem história de trauma, nem manter roupas molhadas ao desfibrilar, devendo-se secar o tórax e aquecer o paciente."
     }
   ],
   "fgv_tables": [
@@ -4009,6 +4019,18 @@
       "col2Title": "Ambulatorial vs Hospitalização",
       "col2": "• TRATAMENTO AMBULATORIAL:\n• • Ideação passiva (ou ativa sem plano/intenção)\n• • Boa aliança terapêutica (aceita plano de segurança)\n• • Rede de apoio familiar/social presente + sem abuso de álcool/drogas\n• HOSPITALIZAÇÃO (Alto Risco):\n• • Plano estruturado / intenção / tentativa recente grave / psicose com comando / sem suporte ou sem aliança",
       "audioText": "Avaliação do risco de suicídio para a FGV. Ideação passiva é o desejo de morrer sem ação contra si, como esperar dormir e não acordar. Ideação ativa envolve pensamento ou plano de se matar. Tratamento ambulatorial é indicado na ideação passiva com boa aliança terapêutica, plano de segurança e rede de apoio. Hospitalização fica para alto risco, como plano estruturado, tentativa recente grave, psicose ou falta de suporte."
+    },
+    {
+      "id": 2033,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "PCR no Afogamento: Peculiaridades do ACLS / AHA (FGV)",
+      "col1Title": "O Que Muda no Afogamento",
+      "col1": "• Causa primária: HIPÓXIA → usar A-B-C (ventilações de resgate precoces)\n• Iniciar ventilações de resgate imediatamente se não respira (não esperar pulso!)\n• NÃO usar hands-only (somente compressões não resolve hipóxia)\n• Antes de desfibrilar: retirar da água e SECAR o tórax\n• Hipotermia: remover roupas molhadas e aquecer",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Imobilização cervical de rotina? NÃO! (Só se trauma/mergulho em águas rasas — senão atrasa ventilação)\n• Manobra de Heimlich para tirar água do pulmão? PROIBIDO! (Só atrasa RCP e causa broncoaspiração)\n• Manter roupas molhadas para chocar? PROIBIDO!\n• Manter hipotermia? NÃO (hipotermia grave refrata choque e causa arritmia)",
+      "audioText": "Peculiaridades do atendimento à parada cardiorrespiratória por afogamento para a FGV. Priorizar ventilação precoce na sequência A B C devido à hipóxia, evitando RCP apenas com compressões. Secar o tórax antes de desfibrilar, tratar a hipotermia e não fazer imobilização cervical de rotina nem manobra de Heimlich se não houver trauma."
     }
   ]
 }
