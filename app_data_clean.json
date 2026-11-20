@@ -3543,6 +3543,16 @@
       "front": "Quais são as recomendações do ACLS sobre confirmação do tubo traqueal, relação compressão/ventilação, volume com bolsa-válvula-máscara, pressão cricoide e alvo de O2 após retorno da circulação?",
       "back": "✅ Recomendações ACLS:\n• Tubo traqueal: CAPNOGRAFIA CONTÍNUA em forma de onda (padrão-ouro para confirmar e monitorar posição, qualidade da RCP e detectar RCE).\n• Sem via aérea avançada: 30:2 (com IOT/supraglótico: compressões contínuas + 1 vent a cada 6s = 10/min).\n• Bolsa-válvula-máscara: apertar só até ELEVAÇÃO VISÍVEL DO TÓRAX (~500–600 mL), nunca apertar tudo!\n• Pós-RCE (ROSC): titular O2 para SatO2 92%–98% (NÃO deixar 100% sem necessidade!).\n\n⚠️ Pegadinha FGV: Pressão cricoide (manobra de Sellick) NÃO é recomendada de rotina durante a intubação na PCR!",
       "audioText": "Recomendações do ACLS sobre vias aéreas e ventilação para a FGV. A capnografia contínua em forma de onda é o padrão-ouro para confirmar e monitorar a posição do tubo traqueal. Sem via aérea avançada a relação é trinta para dois; com tubo, compressões contínuas e uma ventilação a cada seis segundos. Após o retorno da circulação espontânea, titular oxigênio para saturação entre noventa e dois e noventa e oito por cento. A pressão cricoide não é recomendada de rotina."
+    },
+    {
+      "id": 1027,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS: Assistolia e AESP (Ritmos Não Chocáveis)",
+      "front": "Na PCR em Assistolia ou Atividade Elétrica Sem Pulso (AESP), além de RCP imediata e reversão dos 5Hs e 5Ts, qual droga deve ser administrada precocemente e quais intervenções são PROIBIDAS/obsoletas?",
+      "back": "✅ Droga recomendada: ADRENALINA (epinefrina 1 mg IV/IO o quanto antes, a cada 3–5 min)!\n\n• Ritmos NÃO chocáveis (Assistolia e AESP):\n• • RCP imediata + Adrenalina PRECOCE (diferente de FV/TV sem pulso, onde a adrenalina entra só após o 2º choque!).\n• • Buscar e tratar causas reversíveis: 5Hs e 5Ts.\n\n⚠️ Pegadinhas FGV (Obsoletas / Proibidas na Assistolia/AESP):\n• Atropina → RETIRADA da PCR desde 2010 (só bradicardia com pulso).\n• Vasopressina → RETIRADA do algoritmo da PCR.\n• Marca-passo → NÃO indicado na assistolia (só bradiarritmia instável com pulso).\n• Choque / Cardioversão → NUNCA em ritmos não chocáveis!",
+      "audioText": "Na parada cardiorrespiratória em assistolia ou atividade elétrica sem pulso, que são ritmos não chocáveis, além de iniciar ressuscitação imediatamente e reverter as causas como os cinco Hs e cinco Ts, deve-se administrar adrenalina um miligrama intravenoso o mais precocemente possível, repetindo a cada três a cinco minutos. Atropina, vasopressina, marca-passo e choque não são recomendados."
     }
   ],
   "fgv_tables": [
@@ -3857,6 +3867,18 @@
       "col2Title": "O Que NÃO Fazer (Pegadinhas FGV)",
       "col2": "• Pós-RCE: NÃO manter FiO2 100% se SatO2 >= 92% (alvo: 92–98%, evita hiperóxia)\n• Pressão cricoide (Sellick): NÃO recomendada de rotina na PCR\n• BVM: NÃO apertar a bolsa inteira (causa hiperventilação, barotrauma e queda do retorno venoso)\n• • Relação NÃO é 30:1 — é 30:2!",
       "audioText": "Tabela do ACLS sobre vias aéreas e ventilação na parada cardiorrespiratória para a FGV. Correto: capnografia contínua para confirmar o tubo, relação trinta para dois sem via aérea avançada, dez ventilações por minuto com via aérea avançada, e apertar a bolsa apenas até elevar o tórax. Errado: manter cem por cento de oxigênio após retorno da circulação, fazer pressão cricoide de rotina ou apertar a bolsa inteira."
+    },
+    {
+      "id": 2027,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS na PCR: Ritmos Não Chocáveis vs Chocáveis (FGV)",
+      "col1Title": "Assistolia e AESP (Não Chocáveis)",
+      "col1": "• NÃO chocar! (e na assistolia confirmar pelo Protocolo da Linha Reta: cabos, ganho, 2 derivações)\n• RCP imediata + Adrenalina 1 mg IV/IO PRECOCE (o mais rápido possível, a cada 3–5 min)\n• Tratar 5Hs e 5Ts: Hipovolemia, Hipóxia, H+ (acidose), Hipo/Hipercalemia, Hipotermia | Tensão (pneumotórax), Tamponamento, Toxinas, Trombose (TEP/IAM)",
+      "col2Title": "Obsoletos e Comparação com FV/TVSP",
+      "col2": "• NÃO usar na Assistolia/AESP:\n• • Atropina (obsoleta na PCR; só bradicardia com pulso)\n• • Vasopressina (removida do ACLS)\n• • Marca-passo (ineficaz na assistolia)\n• FV / TV sem pulso (Chocáveis):\n• • Choque imediato → Adrenalina só após 2º choque → Amiodarona (300 mg) ou Lidocaína após 3º choque",
+      "audioText": "Comparação dos ritmos na parada cardiorrespiratória para a FGV. Em assistolia e atividade elétrica sem pulso, nunca chocar e administrar adrenalina um miligrama o mais rápido possível a cada três a cinco minutos, além de corrigir os cinco Hs e cinco Ts. Atropina, vasopressina e marca-passo não são mais usados na PCR. Já em fibrilação ventricular e taquicardia ventricular sem pulso, o choque é imediato e a adrenalina entra após o segundo choque."
     }
   ]
 }
