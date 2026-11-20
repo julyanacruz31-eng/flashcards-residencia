@@ -3693,6 +3693,16 @@
       "front": "Quais são os principais pares 'Situação Clínica → Medicação PROIBIDA' cobrados em emergências pela FGV?",
       "back": "🚫 Pares PROIBIDOS clássicos:\n• Cocaína + dor torácica → SEM Betabloqueador (vasoespasmo alfa sem oposição).\n• Tadalafila (48h) / Sildenafila (24h) → SEM Nitrato (hipotensão fatal).\n• IAM de VD (supra V4R) → SEM Nitrato, Morfina, Diurético ou BB.\n• IAM Sem Supra (IAMSSST) → SEM Trombolítico; e SEM Prasugrel antes do CATE.\n• FA + WPW (pré-excitada) → SEM Adenosina, BB, BCC ou Digoxina (usar Procainamida).\n• Intoxicação alcoólica aguda → SEM Benzodiazepínico (risco de PCR).\n• Etilista / desnutrido → SEM Glicose antes da Tiamina (B1).\n• CAD com K+ < 3,3 mEq/L → SEM Insulina antes de repor K+.\n• Gestação → SEM IECA, BRA, Espironolactona, Estatina, Varfarina (1º tri) ou Metotrexato.\n• Diarreia com febre / disenteria → SEM Loperamida.\n• HDA varicosa aguda → SUSPENDER Betabloqueador e Diurético.\n• Cólica nefrética com DRC → SEM AINE (cetorolaco).",
       "audioText": "Principais contraindicações clássicas de emergência cobradas pela FGV. Cocaína com dor torácica: proibido betabloqueador. Uso de tadalafila ou sildenafila: proibido nitrato. Infarto de ventrículo direito: proibido nitrato, morfina e diurético. Infarto sem supra: proibido trombolítico e prasugrel antes do cateterismo. Fibrilação atrial com Wolff-Parkinson-White: proibido adenosina, betabloqueador, bloqueador de canal de cálcio e digoxina. Intoxicação alcoólica aguda: proibido benzodiazepínico. Etilista: proibido glicose antes da tiamina. Cetoacidose com potássio menor que três vírgula três: proibido insulina. Gestante: proibido IECA, BRA e espironolactona. Diarreia febril: proibido loperamida. Cólica renal com insuficiência renal: proibido anti-inflamatório."
+    },
+    {
+      "id": 1042,
+      "area": "cirurgia",
+      "cat": "trauma",
+      "year": "FGV",
+      "name": "Grande Queimado: Ressuscitação, Analgesia e Antimicrobianos",
+      "front": "Sobre o manejo inicial do paciente queimado: qual o fluido de ressuscitação, qual a 1ª linha de analgesia, quando usar ATB sistêmico e quando usar antimicrobiano tópico?",
+      "back": "✅ Regras de ouro no Queimado (ATLS / UpToDate - FGV):\n• Reposição volêmica inicial: CRISTALOIDE (Ringer Lactato — Parkland/ATLS), NUNCA coloide nas primeiras 24h!\n• Analgesia (dor aguda moderada/grave): OPIOIDE IV (morfina/fentanil; evitar IM/SC e gabapentoides como 1ª linha).\n• ATB sistêmico profilático: PROIBIDO (seleciona germes resistentes; só tratar se infecção!).\n• Antimicrobiano tópico (ex.: sulfadiazina de prata): NÃO é necessário em queimaduras superficiais pequenas, MAS em queimaduras superficiais extensas ajuda a prevenir colonização (e é indicado em 2º profundo / 3º grau).\n\n⚠️ Pegadinha FGV: coloide nas primeiras 24h extravasa pelo aumento da permeabilidade capilar e piora o edema!",
+      "audioText": "Manejo inicial do paciente queimado cobrado pela FGV. A ressuscitação volêmica inicial é sempre com cristaloide, Ringer Lactato, nunca coloide nas primeiras vinte e quatro horas. A analgesia de primeira linha para dor aguda moderada a grave é opioide intravenoso, não gabapentoides. Antibiótico sistêmico profilático é proibido. Já o antimicrobiano tópico não é necessário em queimaduras superficiais pequenas, mas pode ajudar a prevenir colonização quando são extensas."
     }
   ],
   "fgv_tables": [
@@ -4163,6 +4173,18 @@
       "col2Title": "Clínica, GO e Trauma",
       "col2": "• CAD com K+ < 3,3 → PROIBIDO Insulina antes de repor K+\n• Etilista / Wernicke → PROIBIDO Glicose antes da Tiamina (B1)\n• Intoxicação alcoólica aguda → PROIBIDO Benzodiazepínico\n• Diarreia com febre/sangue → PROIBIDO Loperamida\n• HDA varicosa aguda → SUSPENDER BB e Espironolactona\n• Cólica renal + DRC → PROIBIDO AINE / Cetorolaco (usar opiáceo)\n• Gestação → PROIBIDO IECA, BRA, Espironolactona, Estatina",
       "audioText": "Guia de ouro dos pares proibidos cobrados pela FGV. Em cardiologia: cocaína proíbe betabloqueador, tadalafila proíbe nitrato, infarto de VD proíbe nitrato e morfina, infarto sem supra proíbe trombolítico, FA com WPW proíbe adenosina e betabloqueador, Torsades proíbe amiodarona. Em clínica e obstetrícia: CAD com potássio abaixo de três vírgula três proíbe insulina, etilista proíbe glicose antes de B1, intoxicação alcoólica proíbe benzodiazepínico, diarreia febril proíbe loperamida, cólica renal na DRC proíbe AINE e gestação proíbe IECA e BRA."
+    },
+    {
+      "id": 2040,
+      "area": "cirurgia",
+      "cat": "trauma",
+      "year": "FGV",
+      "name": "Manejo Inicial do Queimado: O Que Fazer vs Proibições (FGV)",
+      "col1Title": "Condutas Corretas",
+      "col1": "• Volêmica (ATLS 10ª ed.): Ringer Lactato 2 mL/kg/%SCQ (adulto térmico; 4 mL na queimadura elétrica; 50% nas 1as 8h, 50% nas 16h seguintes)\n• Analgesia aguda: Opioide IV titulado (morfina / fentanil)\n• Tópico (sulfadiazina de prata / mafenida): 2º profundo, 3º grau e pode prevenir colonização em superficiais extensas\n• Queimadura circunferencial com isquemia/restrição: Escarotomia imediata",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Coloide inicial (albumina)? NÃO! (extravasa nas 1as 24h)\n• ATB sistêmico profilático? PROIBIDO! (só se infecção confirmada)\n• Gabapentoides como 1ª linha na dor aguda? NÃO! (são adjuvantes para dor neuropática/prurido)\n• Queimadura superficial pequena: não precisa de ATB tópico\n• • Superficial = 1º grau; 2º grau tem bolhas e dor; 3º grau = indolor, couro, subcutâneo",
+      "audioText": "Tabela de manejo do grande queimado para a FGV. Hidratação com Ringer Lactato pela fórmula do ATLS, dois mililitros por quilo por porcentagem de superfície queimada em adultos, evitando coloides nas primeiras vinte e quatro horas. Analgesia aguda com opioide intravenoso. Proibido antibiótico sistêmico profilático. Antimicrobiano tópico é dispensável em queimaduras superficiais pequenas, mas ajuda a prevenir colonização nas extensas."
     }
   ]
 }
