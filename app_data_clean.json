@@ -3673,6 +3673,16 @@
       "front": "Idoso hipertenso com angina instável / SCA sem supra de ST em uso de losartana e TADALAFILA (sem estratégia invasiva programada no momento). Quais medicações devem compor o esquema inicial e qual é PROIBIDA?",
       "back": "✅ Esquema completo: AAS + Bloqueador P2Y12 (Clopidogrel/Ticagrelor) + Enoxaparina + Betabloqueador + Estatina!\n\n⚠️ PROIBIDO: NITRATO (nitroglicerina / isossorbida)!\n• Por quê? O paciente usa TADALAFILA (inibidor de PDE-5)! Associar nitrato com PDE-5 causa vasodilatação sinérgica intensa e HIPOTENSÃO REFRATÁRIA FATAL!\n• Intervalo mínimo sem nitrato após PDE-5: 24h para sildenafila/vardenafila e 48h para TADALAFILA!\n\n💡 Bônus: como ainda não foi programado CATE imediato, usa-se Clopidogrel ou Ticagrelor (NUNCA Prasugrel antes de conhecer a anatomia coronariana!).",
       "audioText": "Na síndrome coronariana aguda sem supra de ST em paciente que faz uso de tadalafila, o tratamento inicial deve conter AAS, bloqueador do receptor P2Y12 como clopidogrel ou ticagrelor, enoxaparina, betabloqueador e estatina. O nitrato é absolutamente contraindicado pelo risco de hipotensão grave refratária ao interagir com inibidores da fosfodiesterase cinco, devendo-se respeitar quarenta e oito horas após tadalafila e vinte e quatro horas após sildenafila."
+    },
+    {
+      "id": 1040,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "IAM Sem Supra (SCA Sem Supra): Conduta Completa e Tempo de CATE",
+      "front": "Qual é a conduta completa na SCA sem supra de ST (IAMSSST / Angina Instável): medicações obrigatórias, o que é PROIBIDO e qual o prazo para o cateterismo (CATE)?",
+      "back": "✅ 1. Terapia Antitrombótica (IMEDIATA):\n• DAPT: AAS (300 mg ataque) + P2Y12 (Clopidogrel 300–600 mg ou Ticagrelor 180 mg).\n• Anticoagulação plena: Enoxaparina (1 mg/kg SC 12/12h), HNF ou Fondaparinux.\n\n✅ 2. Anti-isquêmicos / Protetores:\n• Estatina de alta potência + Betabloqueador VO (até 24h se estável) + IECA/BRA (até 24h).\n• Nitrato (só se dor e SEM tadalafila/sildenafila, IAM de VD ou hipotensão).\n\n✅ 3. Tempo do CATE (Estratificação de Risco):\n• Imediato (< 2h): choque, dor refratária, IC aguda, TV/FV.\n• Precoce (< 24h): troponina elevada (IAMSSST), alteração dinâmica de ST-T, GRACE > 140.\n• Retardado (< 72h): risco intermediário (DM, DRC, FEVE < 40%).\n\n⚠️ PROIBIDO no IAM sem supra: TROMBOLÍTICO (só piora sangramento sem benefício) e PRASUGREL antes de conhecer a coronária no CATE!",
+      "audioText": "Conduta completa na síndrome coronariana aguda sem supra de ST. Terapia antitrombótica imediata com dupla antiagregação usando AAS mais clopidogrel ou ticagrelor, associada a anticoagulação plena com enoxaparina, heparina não fracionada ou fondaparinux. Acrescentar estatina de alta potência, betabloqueador oral e IECA em até vinte e quatro horas. Atenção: nunca fazer trombolítico no infarto sem supra, e nunca dar prasugrel antes do cateterismo. O cateterismo é imediato em menos de duas horas se instabilidade ou dor refratária, e em menos de vinte e quatro horas se troponina positiva ou GRACE alto."
     }
   ],
   "fgv_tables": [
@@ -4119,6 +4129,18 @@
       "col2Title": "Quando Nitrato É PROIBIDO (Pegadinhas)",
       "col2": "• Uso de inibidor de PDE-5:\n• • Sildenafila / Vardenafila nas últimas 24 horas\n• • TADALAFILA nas últimas 48 horas (cai muito na FGV!)\n• IAM de Ventrículo Direito (supra em V4R)\n• Hipotensão (PAS < 90 mmHg) ou Estenose Aórtica grave",
       "audioText": "Esquema da síndrome coronariana aguda sem supra de ST e contraindicações ao nitrato para a FGV. Os pilares são AAS, bloqueador P2Y12 como clopidogrel ou ticagrelor, enoxaparina, betabloqueador e estatina. O nitrato é proibido em quem usou sildenafila nas últimas vinte e quatro horas ou tadalafila nas últimas quarenta e oito horas, no infarto de ventrículo direito e na hipotensão."
+    },
+    {
+      "id": 2038,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "Conduta Completa do IAM Sem Supra (IAMSSST / AI - FGV)",
+      "col1Title": "Medicações e Proibições",
+      "col1": "• DAPT: AAS + Clopidogrel ou Ticagrelor (Prasugrel SÓ após conhecer coronária no CATE!)\n• Anticoagulação: Enoxaparina, HNF ou Fondaparinux\n• Estatina alta potência + Betabloqueador (24h) + IECA/BRA (24h)\n• Nitrato/Morfina/O2: apenas se necessidade clínica e sem contraindicação\n• • PROIBIDO TROMBOLÍTICO (fibrinólise é SÓ no IAM COM supra!)",
+      "col2Title": "Quando Fazer CATE (Estratificação)",
+      "col2": "• < 2 horas (Imediato): instabilidade hemodinâmica/choque, dor refratária, arritmia maligna, IC aguda\n• < 24 horas (Alto risco): troponina positiva, alteração dinâmica ST-T, GRACE > 140\n• < 72 horas (Intermediário): DM, DRC, FEVE < 40%, GRACE 109–140\n• Baixo risco: curva de troponina negativa → teste isquêmico não invasivo",
+      "audioText": "Conduta do infarto sem supra de ST para a FGV. Dupla antiagregação com AAS mais clopidogrel ou ticagrelor, anticoagulação com enoxaparina, estatina de alta potência, betabloqueador e IECA. Trombolítico é proibido no infarto sem supra, e prasugrel só após o cateterismo. Cateterismo imediato em até duas horas na instabilidade ou dor refratária; até vinte e quatro horas na troponina positiva ou GRACE maior que cento e quarenta; até setenta e duas horas no risco intermediário."
     }
   ]
 }
