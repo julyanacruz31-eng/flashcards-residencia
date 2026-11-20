@@ -3583,6 +3583,26 @@
       "front": "Paciente com FC < 50 bpm e sinais de instabilidade (hipotensão, dor torácica, rebaixamento, EAP). Qual a conduta de 1ª linha e o que fazer se não responder (ou se BAV 2º grau Mobitz II / BAVT)?",
       "back": "✅ 1ª Linha: ATROPINA 1 mg IV em bolus (repetir a cada 3–5 min até máximo de 3 mg)!\n\n• Se NÃO responder à atropina:\n• • Marca-passo transcutâneo (MPTC) OU\n• • Dopamina IV (5–20 mcg/kg/min) OU Adrenalina IV (2–10 mcg/min).\n• Depois: avaliar Marca-passo transvenoso (definitivo/ponte) e tratar causa (5Hs/5Ts, intoxicação por BB/BCC/digoxina).\n\n⚠️ Pegadinha FGV: no BAV de 2º grau Mobitz II e no BAV Total (3º grau) com QRS largo, a atropina costuma NÃO funcionar (bloqueio infra-hissiano) — não atrase o marca-passo transcutâneo!\n\n💡 Se assintomático / estável: apenas observar e investigar causa (não dá atropina à toa!).",
       "audioText": "Na bradicardia sintomática ou instável com pulso no ACLS, a primeira linha é atropina um miligrama intravenoso em bolus, podendo repetir a cada três a cinco minutos até o máximo de três miligramas. Se não responder, ou nos bloqueios avançados como Mobitz dois e bloqueio atrioventricular total, indicar marca-passo transcutâneo ou infusão de dopamina ou adrenalina."
+    },
+    {
+      "id": 1031,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS: Os 5 Hs na PCR e Como Reverter",
+      "front": "Quais são os 5 Hs da parada cardiorrespiratória (especialmente em AESP/Assistolia) e qual a conduta específica para reverter cada um?",
+      "back": "✅ 1. Hipovolemia:\n• Cristaloide IV rápido (+ hemocomponentes e controle do foco se hemorragia).\n\n✅ 2. Hipóxia:\n• O2 100% + via aérea pérvia + ventilação eficaz (sem hiperventilar).\n\n✅ 3. H+ (Acidose metabólica grave):\n• Otimizar ventilação/RCP; se acidemia grave, hipercalemia ou tricíclico → Bicarbonato de sódio IV (1 mEq/kg).\n\n✅ 4. Hipo / Hipercalemia:\n• Hipercalemia: Gluconato de cálcio 10% IV + Insulina/Glicose + Bicarbonato.\n• Hipocalemia: KCl IV (+ Sulfato de Magnésio).\n\n✅ 5. Hipotermia:\n• Aquecimento ativo (manta térmica, soro aquecido) — 'só declara óbito depois de aquecer!'",
+      "audioText": "Os cinco Hs reversíveis na parada cardiorrespiratória. Primeiro: hipovolemia, tratada com cristaloide intravenoso rápido e sangue se hemorragia. Segundo: hipóxia, tratada com oxigênio a cem por cento e via aérea pérvia. Terceiro: hidrogênio ou acidose grave, tratada com ventilação e bicarbonato se grave, hipercalemia ou tricíclico. Quarto: hipercalemia com gluconato de cálcio, insulina com glicose e bicarbonato, ou hipocalemia com cloreto de potássio e magnésio. Quinto: hipotermia, com aquecimento ativo."
+    },
+    {
+      "id": 1032,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS: Os 5 Ts na PCR e Como Reverter",
+      "front": "Quais são os 5 Ts da parada cardiorrespiratória e qual a conduta específica (ou antídoto) para reverter cada um?",
+      "back": "✅ 1. Tensão no tórax (Pneumotórax hipertensivo):\n• Punção descompressiva imediata (4º/5º EIC LAA no adulto ou 2º EIC LHC) → depois dreno de tórax.\n\n✅ 2. Tamponamento cardíaco:\n• Pericardiocentese imediata na PCR (e drenagem cirúrgica definitiva se trauma).\n\n✅ 3. Toxinas (Intoxicações):\n• Opioide → Naloxona | Tricíclico → Bicarbonato IV | Betabloqueador → Glucagon | BCC → Cálcio IV.\n\n✅ 4. Trombose Coronariana (IAM):\n• CATE / Angioplastia primária (ou trombólise).\n\n✅ 5. Trombose Pulmonar (TEP maciço):\n• Trombolítico IV (Alteplase) durante a RCP!",
+      "audioText": "Os cinco Ts reversíveis na parada cardiorrespiratória. Primeiro: tensão no tórax por pneumotórax hipertensivo, tratado com punção descompressiva imediata seguida de drenagem torácica. Segundo: tamponamento cardíaco, tratado com pericardiocentese imediata. Terceiro: toxinas com antídotos específicos, como naloxona para opioide, bicarbonato para tricíclico, glucagon para betabloqueador e cálcio para bloqueador de canal de cálcio. Quarto: trombose coronariana com cateterismo. Quinto: trombose pulmonar por TEP maciço com trombolítico durante a RCP."
     }
   ],
   "fgv_tables": [
@@ -3933,6 +3953,18 @@
       "col2Title": "Taquiarritmias Com Pulso",
       "col2": "• INSTÁVEL (qualquer ritmo): CVE sincronizada imediata!\n• Estável QRS Estreito Regular (TSV): Vagal → Adenosina 6 mg (depois 12 mg)\n• Estável QRS Estreito Irregular (FA): Controle FC (Betabloqueador ou Diltiazem/Verapamil)\n• Estável QRS Largo Regular (TV): Amiodarona 150 mg IV em 10 min\n• Torsades (QT longo): Sulfato de Magnésio 2 g IV\n• FA + WPW: Procainamida",
       "audioText": "Guia definitivo do ACLS. Na PCR chocável em FV ou TV sem pulso: choque imediato, adrenalina após o segundo choque e amiodarona após o terceiro choque. Na PCR não chocável em assistolia ou AESP: RCP e adrenalina imediata sem choque. Na bradicardia instável: atropina um miligrama até três miligramas, depois marca-passo transcutâneo ou dopamina ou adrenalina. Nas taquiarritmias instáveis: cardioversão elétrica sincronizada. Se estável: TSV usa adenosina, FA controla com betabloqueador ou diltiazem, TV estável usa amiodarona, Torsades usa sulfato de magnésio e FA com WPW usa procainamida."
+    },
+    {
+      "id": 2030,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "5Hs e 5Ts na PCR: Como Reverter Cada Um (ACLS - FGV)",
+      "col1Title": "Os 5 Hs (Causas e Reversão)",
+      "col1": "• Hipovolemia → Cristaloide IV rápido (+ sangue se hemorragia)\n• Hipóxia → O2 100% + via aérea pérvia\n• H+ (Acidose grave) → Ventilação + Bicarbonato IV (se grave/K+/tricíclico)\n• Hipo/Hipercalemia:\n• • HiperK+: Gluconato de cálcio 10% + Insulina/Glicose + Bicarbonato\n• • HipoK+: KCl IV (+ Magnésio)\n• Hipotermia → Aquecimento ativo (só declara óbito aquecido)",
+      "col2Title": "Os 5 Ts (Causas e Reversão)",
+      "col2": "• Tensão (Pneumotórax hipertensivo) → Punção descompressiva imediata → dreno de tórax\n• Tamponamento cardíaco → Pericardiocentese imediata (cirurgia se trauma)\n• Toxinas → Naloxona (opioide), Bicarbonato (tricíclico), Glucagon (BB), Cálcio (BCC)\n• Trombose Coronariana (IAM) → CATE / Angioplastia\n• Trombose Pulmonar (TEP) → Trombolítico IV (Alteplase) na RCP",
+      "audioText": "Tabela dos cinco Hs e cinco Ts na parada cardiorrespiratória. Nos cinco Hs: hipovolemia com volume, hipóxia com oxigênio, acidose com ventilação ou bicarbonato, hipercalemia com gluconato de cálcio e insulina com glicose, hipotermia com aquecimento. Nos cinco Ts: pneumotórax hipertensivo com punção descompressiva, tamponamento com pericardiocentese, toxinas com antídoto específico, infarto com cateterismo e TEP com trombolítico."
     }
   ]
 }
