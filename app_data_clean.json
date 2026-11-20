@@ -3763,6 +3763,16 @@
       "front": "Homem de 60 anos, hígido, lúcido, com febre, rigidez de nuca e restante do exame neurológico normal. Deve fazer TC de crânio antes da punção lombar? Qual a sequência e o esquema antimicrobiano?",
       "back": "✅ Conduta: HEMOCULTURA → PUNÇÃO LOMBAR (SEM TC!) → CEFTRIAXONA + AMPICILINA + DEXAMETASONA!\n\n• Por que SEM TC de crânio?\n• • Idade >= 60 anos isolada NÃO indica TC! Só pede TC antes da PL se: imunodeprimido, doença prévia do SNC, convulsão recente, papiledema, rebaixamento da consciência ou déficit focal.\n\n• Por que AMPICILINA?\n• • Idade >= 50 anos (ou gestante / imunodeprimido) exige cobertura para Listeria monocytogenes → associar AMPICILINA ao Ceftriaxone (+ Dexametasona antes ou junto da 1ª dose do ATB)!\n\n⚠️ Pegadinha FGV: se tivesse indicação de TC antes da PL, NUNCA atrasar o antibiótico — faz hemocultura → Dexametasona + ATB → TC → PL!",
       "audioText": "Na meningite bacteriana aguda em paciente de sessenta anos, previamente hígido, lúcido e sem déficit neurológico focal, não há indicação de tomografia de crânio antes da punção lombar. A sequência correta é coletar hemocultura, realizar punção lombar e iniciar ceftriaxona associada à ampicilina para cobrir Listeria monocytogenes em maiores de cinquenta anos, além de dexametasona antes ou junto à primeira dose do antibiótico."
+    },
+    {
+      "id": 1049,
+      "area": "cirurgia",
+      "cat": "diverticulite",
+      "year": "FGV",
+      "name": "Apendagite Epiploica: TC Clássica e Tratamento Conservador",
+      "front": "Jovem de 32 anos com dor localizada em QIE há 2 dias, sem febre e sem peritonite. TC mostra massa paracólica oval de 2–3 cm com densidade de gordura, halo espessado e borramento perilesional. Qual o diagnóstico e o tratamento?",
+      "back": "✅ Diagnóstico: APENDAGITE EPIPLOICA (torção/trombose espontânea de apêndice epiploico do sigmoide).\n\n✅ Tratamento: CONSERVADOR — ANALGESIA / ANTI-INFLAMATÓRIO (AINE)! Doença autolimitada (reabsorve em 1–2 semanas).\n\n• Achado patognomônico na TC:\n• • Massa paracólica oval (1,5–3,5 cm) com DENSIDADE DE GORDURA + anel hiperdenso (peritônio espessado) + borramento da gordura adjacente.\n\n⚠️ Pegadinha FGV: por ser dor em QIE, imita diverticulite — mas NÃO tem febre, NÃO usa antibiótico (cipro/metronidazol) e NÃO opera (nada de videolaparoscopia)!",
+      "audioText": "Na apendagite epiploica cobrada pela FGV, paciente jovem com dor localizada em quadrante inferior esquerdo sem febre apresenta na tomografia massa paracólica oval de dois a três centímetros com densidade de gordura e halo peritoneal espessado. Trata-se de quadro autolimitado por torção ou trombose de apêndice epiploico, e o tratamento inicial é apenas conservador com anti-inflamatório e analgesia, sem antibióticos e sem cirurgia."
     }
   ],
   "fgv_tables": [
@@ -4317,6 +4327,18 @@
       "col2Title": "Antibiótico Empírico + Corticoide",
       "col2": "• < 50 anos hígido: Ceftriaxona 2 g IV 12/12h (+ Vancomicina nos EUA/resistência)\n• >= 50 anos, gestante ou imunodeprimido:\n• • Ceftriaxona + AMPICILINA (cobre Listeria!)\n• Corticoide: Dexametasona IV antes ou junto com a 1ª dose de ATB (reduz mortalidade/sequelas, sobretudo no pneumococo!)",
       "audioText": "Tabela de meningite bacteriana para a FGV. Só se pede tomografia antes da punção lombar se houver imunodepressão, doença prévia do sistema nervoso central, convulsão recente, papiledema, rebaixamento ou déficit focal. Idade de sessenta anos lúcido e sem déficit vai direto para hemocultura, punção lombar e tratamento. A partir dos cinquenta anos é obrigatório associar ampicilina à ceftriaxona para cobrir Listeria, além de dexametasona."
+    },
+    {
+      "id": 2047,
+      "area": "cirurgia",
+      "cat": "diverticulite",
+      "year": "FGV",
+      "name": "Dor em QIE: Apendagite Epiploica vs Diverticulite Aguda (FGV)",
+      "col1Title": "Apendagite Epiploica",
+      "col1": "• Perfil: adulto jovem (30–50 anos), muitas vezes obeso\n• Clínica: dor súbita bem localizada (geralmente QIE), SEM febre, SEM vômitos\n• TC patognomônica: massa oval paracólica (2–3 cm) com DENSIDADE DE GORDURA + anel hiperdenso\n• Tratamento: ANTI-INFLAMATÓRIO (AINE) / analgésico!\n• • SEM antibiótico e SEM cirurgia!",
+      "col2Title": "Diverticulite Aguda (Diferencial)",
+      "col2": "• Perfil: geralmente > 50 anos\n• Clínica: dor em QIE + FEBRE + alteração do hábito intestinal + leucocitose\n• TC: divertículos + espessamento da parede do sigmoide + borramento (ou abscesso/gás)\n• Tratamento: dieta + ATB (se indicado/abscesso) + drenagem se >= 4 cm\n• • Pegadinha FGV: não dar cipro/metronidazol nem operar apendagite!",
+      "audioText": "Diferencial de dor no quadrante inferior esquerdo para a FGV. Apendagite epiploica ocorre em adultos jovens, sem febre, com tomografia mostrando massa oval paracólica com densidade de gordura e halo espessado; o tratamento é apenas anti-inflamatório e analgesia, sem antibiótico e sem cirurgia. Diverticulite ocorre em pacientes mais velhos, com febre, leucocitose e espessamento da parede colônica com divertículos."
     }
   ]
 }
