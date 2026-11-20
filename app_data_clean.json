@@ -3813,6 +3813,16 @@
       "front": "Mulher de 40 anos com dor em FID, descompressão dolorosa DIFUSA e TC com apendicite, PNEUMOPERITÔNIO e abscesso de 2 cm. Qual a conduta correta: operar já, drenar por TC ou esperar 6 semanas?",
       "back": "✅ Conduta: ANTIBIOTICOTERAPIA IV + APENDICECTOMIA IMEDIATA!\n\n• Por quê? Há PERITONITE DIFUSA (descompressão dolorosa difusa) + PNEUMOPERITÔNIO (perfuração livre na cavidade)!\n• Esses dois achados exigem cirurgia imediata (apendicectomia + lavagem da cavidade + ATB IV).\n\n⚠️ Pegadinha FGV (Abscesso Bloqueado vs Perfuração Livre):\n• Só faz ATB + Drenagem por TC (+ apendicectomia tardia em 6–8 semanas se indicado) quando há PLASTRÃO ou ABSCESSO BLOQUEADO (>= 3–4 cm) SEM peritonite difusa e SEM pneumoperitônio livre!\n• Esperar 7 dias ou 6 semanas com pneumoperitônio + peritonite difusa leva à sepse fatal!",
       "audioText": "Na apendicite aguda complicada com descompressão dolorosa difusa e pneumoperitônio na tomografia, mesmo havendo pequeno abscesso de dois centímetros, a conduta é antibioticoterapia intravenosa e apendicectomia imediata. O tratamento conservador com antibiótico, drenagem guiada por tomografia e cirurgia após seis semanas fica reservado apenas para plastrão ou abscesso bloqueado sem peritonite difusa e sem pneumoperitônio livre."
+    },
+    {
+      "id": 1054,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "Coagulograma: TAP/INR vs TTPa (Quando Pedir e Como Interpretar)",
+      "front": "Como interpretar TAP (TP/INR) e TTPa: quais vias e fatores avaliam, quais anticoagulantes monitoram, quais doenças alteram e como funciona o Teste da Mistura (50:50)?",
+      "back": "✅ 1. TAP / TP / INR (Via EXTRÍNSECA + Comum → Fator VII + X, V, II, I):\n• Normal: TP 10–14s | Atividade >= 70% | INR ~1,0 (0,8–1,2).\n• Monitora: VARFARINA (alvo INR 2–3; prótese mecânica mitral 2,5–3,5).\n• Alarga em: Varfarina, deficiência de Vitamina K, insuficiência hepática (Fator VII tem menor meia-vida, cai 1º!).\n\n✅ 2. TTPa (Via INTRÍNSECA + Comum → Fatores XII, XI, IX, VIII + X, V, II, I):\n• Normal: ~25–35s (ou R = relação paciente/controle até 1,25).\n• Monitora: HEPARINA NÃO FRACIONADA — HNF (alvo 1,5–2,5x controle).\n• Alarga em: HNF, Hemofilia A (VIII) e B (IX), Doença de von Willebrand, SAF (anticoagulante lúpico!).\n\n✅ 3. Ambos alargados (TP + TTPa):\n• Deficiência da via comum (X, V, II, I), CIVD, hepatopatia grave ou overdose de anticoagulante.\n\n💡 Teste da Mistura (50% plasma normal): CORRIGIU = falta fator (ex.: Hemofilia) | NÃO CORRIGIU = tem inibidor (ex.: SAF / anticoagulante lúpico)!",
+      "audioText": "Interpretação de TAP, INR e TTPa. O TAP ou TP e o INR avaliam a via extrínseca pelo fator sete mais a via comum, tendo INR normal perto de um. Monitora a varfarina, cujo alvo é dois a três, e também alarga na deficiência de vitamina K e na hepatopatia, pois o fator sete cai primeiro. Já o TTPa avalia a via intrínseca pelos fatores doze, onze, nove e oito mais a via comum. Monitora a heparina não fracionada, com alvo de um vírgula cinco a duas vírgula cinco vezes o controle, e alarga nas hemofilias A e B, na doença de von Willebrand e na síndrome antifosfolípide. No teste da mistura, se corrigir o tempo falta fator; se não corrigir, há inibidor como na SAF."
     }
   ],
   "fgv_tables": [
@@ -4415,6 +4425,18 @@
       "col2Title": "Tratamento Conservador / Drenagem (Sem Peritonite)",
       "col2": "• Plastrão (massa palpável) ou Abscesso BLOQUEADO SEM peritonite difusa e SEM pneumoperitônio:\n• • Abscesso pequeno (< 3–4 cm): ATB IV\n• • Abscesso >= 3–4 cm: ATB IV + Drenagem por TC\n• • Após 6–8 semanas: apendicectomia de intervalo (se indicada) + colonoscopia se > 40 anos!",
       "audioText": "Conduta na apendicite complicada para a FGV. Se houver peritonite difusa, pneumoperitônio livre ou instabilidade, faz-se antibiótico intravenoso e apendicectomia imediata. Se houver apenas plastrão ou abscesso bloqueado sem peritonite difusa e sem pneumoperitônio, trata-se inicialmente com antibiótico e drenagem por tomografia se o abscesso for grande, deixando eventual apendicectomia de intervalo para seis a oito semanas."
+    },
+    {
+      "id": 2051,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "Coagulograma Completo: TAP/INR vs TTPa vs Sangramento (FGV)",
+      "col1Title": "TAP / TP / INR (Via Extrínseca)",
+      "col1": "• Avalia: Fator VII + Via Comum (X, V, II, I)\n• Normal: INR 0,8–1,2 (atividade >= 70%)\n• Monitora: VARFARINA (alvo 2–3; prótese mitral 2,5–3,5)\n• Causas de TAP/INR alto:\n• • Varfarina / deficiência de Vitamina K\n• • Hepatopatia (Fator VII tem meia-vida curta, cai 1º!)",
+      "col2Title": "TTPa (Via Intrínseca) e Teste da Mistura",
+      "col2": "• Avalia: Fatores XII, XI, IX, VIII + Via Comum\n• Normal: 25–35s (Relação <= 1,25)\n• Monitora: HNF IV (alvo 1,5–2,5x)\n• Causas de TTPa alto: HNF, Hemofilia A (VIII) / B (IX), vWB, SAF\n• Teste da Mistura (50:50): CORRIGIU = falta fator | NÃO CORRIGIU = inibidor (SAF)",
+      "audioText": "Tabela comparativa de coagulograma. TAP e INR avaliam via extrínseca pelo fator sete e monitoram varfarina, alterando também na falta de vitamina K e doença hepática. TTPa avalia via intrínseca e monitora heparina não fracionada, alterando nas hemofilias e na SAF. No teste da mistura, se corrigir é deficiência de fator; se não corrigir, é inibidor."
     }
   ]
 }
