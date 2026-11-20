@@ -3793,6 +3793,16 @@
       "front": "Quais as minúcias na TC que diferenciam Diverticulite com abscesso pericólico da Apendagite Epiploica, e quais os esquemas de antibiótico (VO ambulatorial vs IV internado)?",
       "back": "✅ Diferenças na TC e Clínica:\n• Apendagite Epiploica: sem febre, sem leucocitose importante; TC = lesão oval com DENSIDADE DE GORDURA + anel fino hiperdenso, parede colônica normal.\n• Diverticulite com Abscesso: febre, leucocitose, alteração intestinal; TC = divertículos + espessamento de parede + COLEÇÃO LÍQUIDA/PUS (com realce periférico e/ou gás), nunca gordura pura!\n\n✅ Antibióticos na Diverticulite (sempre Gram-negativos + anaeróbios):\n• VO (ambulatorial): Ciprofloxacina + Metronidazol | Amoxicilina-clavulanato | SMX-TMP + Metronidazol.\n• IV (internado / abscesso): Ceftriaxona + Metronidazol | Cipro + Metronidazol | Piperacilina-tazobactam (casos graves).\n\n⚠️ Lembrete: Abscesso < 4 cm = só ATB | Abscesso >= 4 cm = ATB + drenagem por TC!",
       "audioText": "Minúcias da diverticulite com abscesso pericólico versus apendagite epiploica. Na apendagite não há febre e a tomografia mostra massa oval com densidade de gordura e parede do cólon normal. Na diverticulite há febre, leucocitose e na tomografia há divertículos, espessamento da parede e coleção líquida ou purulenta. Os antibióticos cobrem Gram negativos e anaeróbios: via oral com ciprofloxacina mais metronidazol ou amoxicilina com clavulanato; e intravenoso com ceftriaxona mais metronidazol ou piperacilina-tazobactam."
+    },
+    {
+      "id": 1052,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "Mapa Completo dos Anticoagulantes: Parenterais, Varfarina e DOACs",
+      "front": "Quais são todas as classes de anticoagulantes (HNF, HBPM, Fondaparinux, Argatroban, Varfarina, Dabigatrana e -xabanas), seus alvos, antídotos e onde cada um é proibido?",
+      "back": "✅ 1. Parenterais:\n• HNF: inibe IIa + Xa | monitora TTPa | Antídoto: Protamina (100%) | Segura na DRC grave.\n• Enoxaparina (HBPM): inibe mais Xa que IIa | Antídoto: Protamina (parcial ~60%) | Ajustar/evitar se ClCr < 30.\n• Fondaparinux: inibe SÓ Xa | NÃO causa HIT (trata HIT!) | Evitar se ClCr < 30 | Sem antídoto.\n• Argatroban / Bivalirudina: inibidores diretos da IIa (IV) usados na HIT (Argatroban é hepático, ótimo na DRC!).\n\n✅ 2. Oral Clássico (Antagonista Vit. K):\n• Varfarina: inibe II, VII, IX, X (+ Prot. C e S) | monitora INR (2–3) | Antídoto: Vit. K + Complexo Protrombínico.\n• Obrigatória em: Prótese mecânica, Estenose mitral mod/grave e SAF!\n\n✅ 3. Orais Diretos (DOACs):\n• Dabigatrana (inibe IIa): Antídoto = IDARUCIZUMABE | Evitar se ClCr < 30.\n• Rivaroxabana, Apixabana, Edoxabana (inibem Xa): Antídoto = ANDEXANET ALFA (Apixabana é a mais segura na DRC).\n\n⚠️ DOACs são PROIBIDOS em: Prótese mecânica, Estenose mitral mod/grave, Gestação e SAF triplo positivo!",
+      "audioText": "Mapa completo dos anticoagulantes. Entre os parenterais: heparina não fracionada inibe dois A e dez A, monitora TTPa, reverte cem por cento com protamina e é segura na insuficiência renal grave. Enoxaparina inibe mais dez A e reverte parcialmente com protamina. Fondaparinux inibe seletivamente dez A e trata HIT. Argatroban e bivalirudina inibem diretamente a trombina por via venosa na HIT. Entre os orais: varfarina inibe dois, sete, nove e dez mais proteínas C e S, monitora INR, reverte com vitamina K e complexo protrombínico, sendo obrigatória em prótese mecânica, estenose mitral moderada a grave e SAF. Nos DOACs: dabigatrana inibe trombina e reverte com idarucizumabe; rivaroxabana, apixabana e edoxabana inibem dez A e revertem com andexanet alfa."
     }
   ],
   "fgv_tables": [
@@ -4371,6 +4381,18 @@
       "col2Title": "O Que É PROIBIDO na HIT (Pegadinhas)",
       "col2": "• Trocar enoxaparina por HNF → PROIBIDO (reação cruzada!)\n• Apenas suspender e observar → ERRADO (~50% fazem TVP/TEP/trombose arterial!)\n• Iniciar VARFARINA com plaquetopenia → PROIBIDO! (depleta Proteína C → necrose cutânea / gangrena venosa; só usar após plaquetas > 150 mil)\n• Transfundir plaquetas de rotina → EVITAR ('joga gasolina no fogo')",
       "audioText": "Conduta na trombocitopenia induzida por heparina para a FGV. A queda de plaquetas acima de cinquenta por cento entre cinco e dez dias de heparina gera alto risco de trombose. A conduta obrigatória é suspender toda heparina e iniciar fondaparinux, argatroban ou bivalirudina. É proibido trocar por heparina não fracionada, apenas observar sem anticoagular, ou iniciar varfarina na fase aguda pelo risco de necrose cutânea e gangrena venosa."
+    },
+    {
+      "id": 2049,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "Guia Definitivo de Anticoagulantes: Alvo, Antídoto e Restrições",
+      "col1Title": "Parenterais (IV / SC)",
+      "col1": "• HNF (IV/SC): IIa + Xa | Monitora: TTPa | Antídoto: Protamina (100%) | DRC grave: OK!\n• Enoxaparina (SC): Xa > IIa | Antídoto: Protamina (~60%) | ClCr < 30: ajustar/evitar\n• Fondaparinux (SC): Só Xa | Sem antídoto | NÃO causa HIT (trata HIT!) | ClCr < 30: proibido\n• Argatroban / Bivalirudina (IV): IIa direto | Usados na HIT (Argatroban é hepático = bom na DRC)",
+      "col2Title": "Orais (Varfarina vs DOACs)",
+      "col2": "• Varfarina: II, VII, IX, X (+ C e S) | Monitora: INR | Reverte: Vit K + CCP | Obrigatória em: Prótese mecânica, EM mod/grave, SAF!\n• Dabigatrana (DOAC): IIa direto | Antídoto: IDARUCIZUMABE | ClCr < 30: proibido\n• Rivaroxabana / Apixabana / Edoxabana: Xa direto | Antídoto: ANDEXANET ALFA (Apixabana melhor na DRC)\n• • Proibido DOAC: Prótese mecânica, EM mod/grave, Gestação!",
+      "audioText": "Guia definitivo de anticoagulantes. Parenterais: HNF monitora TTPa e reverte com protamina; enoxaparina reverte parcialmente com protamina; fondaparinux inibe fator dez A e trata HIT; argatroban inibe trombina na HIT. Orais: varfarina monitora INR, reverte com vitamina K e complexo protrombínico; dabigatrana reverte com idarucizumabe; rivaroxabana, apixabana e edoxabana revertem com andexanet alfa."
     }
   ]
 }
