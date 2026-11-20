@@ -2973,7 +2973,8 @@ html_content = """<!DOCTYPE html>
         'wernicke': 'Wernicke & Carências',
         'anafilaxia': 'Anafilaxia & Alergia',
         'intussuscepcao': 'Intussuscepção',
-        'diverticulite': 'Diverticulite'
+        'diverticulite': 'Diverticulite',
+        'dheg': 'Pré-eclâmpsia & DHEG'
       };
       return map[cat] || cat || 'Geral';
     }

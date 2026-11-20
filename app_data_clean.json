@@ -3513,6 +3513,16 @@
       "front": "Jovem de 35 anos após uso de cocaína chega com dor torácica anginosa, agitação, PA 180x114, FC 120 e ECG com taquicardia sinusal. Qual o esquema inicial e qual droga é PROIBIDA?",
       "back": "✅ Conduta correta: BENZODIAZEPÍNICO + NITROGLICERINA + AAS!\n\n• Benzodiazepínico (diazepam/lorazepam): 1ª medida — reduz descarga simpática central, agitação, PA e FC.\n• Nitroglicerina: reverte vasoespasmo coronariano e reduz PA.\n• AAS: previne trombose (cocaína aumenta agregação plaquetária).\n\n⚠️ PROIBIDO BETABLOQUEADOR (A, C, D e E na questão!):\n• Por quê? Bloquear beta-2 deixa o receptor ALFA-adrenérgico sem oposição → piora dramática do vasoespasmo coronariano e hipertensão paradoxal!\n\n💡 Se refratário: bloqueador de canal de cálcio (diltiazem/verapamil) ou fentolamina (alfa-bloqueador).",
       "audioText": "Na dor torácica associada ao uso de cocaína, a conduta inicial é benzodiazepínico para reduzir a descarga simpática, nitroglicerina para reverter o vasoespasmo coronariano e AAS para antiagregação plaquetária. É proibido usar betabloqueador na intoxicação aguda por cocaína, pois bloqueia o efeito vasodilatador beta dois e deixa o estímulo alfa sem oposição, agravando o vasoespasmo coronariano."
+    },
+    {
+      "id": 1024,
+      "area": "go",
+      "cat": "dheg",
+      "year": "FGV",
+      "name": "Crise Hipertensiva na Gestação: Nifedipina VO",
+      "front": "Gestante com 36 semanas apresenta cefaleia persistente e PA 164x110 mmHg confirmada. Enquanto não se obtém acesso IV (para hidralazina/MgSO4), qual anti-hipertensivo ORAL deve ser usado?",
+      "back": "✅ Anti-hipertensivo ORAL de escolha na crise hipertensiva grave (PA >= 160x110): NIFEDIPINA VO (10 mg de liberação imediata — NUNCA sublingual!).\n\n• Se houver acesso IV: Hidralazina IV (5 mg bolus, repetir a cada 20 min) ou Labetalol IV.\n• Cefaleia = sinal de IMINÊNCIA DE ECLÂMPSIA → associar Sulfato de Magnésio (MgSO4) assim que possível!\n\n⚠️ Pegadinha FGV:\n• IECA (captopril) e BRA (losartana) são PROIBIDOS na gestação (disgenesia renal fetal, oligoidrâmnio, hipoplasia pulmonar)!\n• Metildopa serve para MANUTENÇÃO ambulatorial, NÃO para crise hipertensiva aguda (início lento)!",
+      "audioText": "Na crise hipertensiva grave da gestação, com pressão maior ou igual a cento e sessenta por cento e dez, enquanto não há acesso venoso para hidralazina intravenosa, o anti-hipertensivo oral de escolha é a nifedipina dez miligramas por via oral, nunca sublingual. Lembre que captopril e losartana são proibidos na gravidez, e como há cefaleia caracterizando iminência de eclâmpsia, deve-se associar sulfato de magnésio."
     }
   ],
   "fgv_tables": [
@@ -3791,6 +3801,18 @@
       "col2Title": "Proibições e Pegadinhas FGV",
       "col2": "• PROIBIDO Betabloqueador (mesmo seletivo / labetalol na maioria das provas):\n• • Risco de estimulação ALFA sem oposição → vasoespasmo coronariano grave + pico hipertensivo paradoxal\n• Evitar Nitroprussiato (risco de roubo coronariano; preferir nitroglicerina)\n• • Pegadinha: na questão FGV, 4 das 5 alternativas tinham betabloqueador!",
       "audioText": "Conduta na dor torácica por cocaína para a FGV. Fazer benzodiazepínico intravenoso, nitroglicerina e AAS. É proibido usar betabloqueador pelo risco de estímulo alfa sem oposição e piora do vasoespasmo coronariano. Também se evita nitroprussiato pelo risco de roubo coronariano."
+    },
+    {
+      "id": 2024,
+      "area": "go",
+      "cat": "dheg",
+      "year": "FGV",
+      "name": "Hipertensão na Gestação: Crise Aguda vs Manutenção (FGV)",
+      "col1Title": "Crise Hipertensiva (PA >= 160 x 110)",
+      "col1": "• Via IV (1ª linha): Hidralazina IV (ou Labetalol IV)\n• Via ORAL (sem acesso IV): NIFEDIPINA 10 mg VO (nunca sublingual — risco de hipotensão abrupta e sofrimento fetal!)\n• Alvo pressórico: baixar ~15–25% (não normalizar bruscamente!)\n• • Se cefaleia/escotomas/epigastralgia → Sulfato de Magnésio (prevenção de eclâmpsia)",
+      "col2Title": "Manutenção e Proibidos na Gestação",
+      "col2": "• Manutenção VO (PA < 160x110): Metildopa (1ª linha), Nifedipina retard, Pindolol\n• PROIBIDOS na gravidez:\n• • IECA (captopril/enalapril) e BRA (losartana) — teratogênicos/fetotóxicos!\n• • Espironolactona (antiandrogênica) e Diuréticos de rotina na pré-eclâmpsia\n• • Atenolol / Propranolol (CIUR, bradicardia e hipoglicemia neonatal)",
+      "audioText": "Manejo da hipertensão na gestação para a FGV. Na crise hipertensiva grave, acima de cento e sessenta por cento e dez, usa-se hidralazina intravenosa ou nifedipina por via oral enquanto não há acesso venoso. Para manutenção ambulatorial, a primeira linha é metildopa. Captopril, losartana e espironolactona são contraindicados na gestação."
     }
   ]
 }
