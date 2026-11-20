@@ -3603,6 +3603,16 @@
       "front": "Quais são os 5 Ts da parada cardiorrespiratória e qual a conduta específica (ou antídoto) para reverter cada um?",
       "back": "✅ 1. Tensão no tórax (Pneumotórax hipertensivo):\n• Punção descompressiva imediata (4º/5º EIC LAA no adulto ou 2º EIC LHC) → depois dreno de tórax.\n\n✅ 2. Tamponamento cardíaco:\n• Pericardiocentese imediata na PCR (e drenagem cirúrgica definitiva se trauma).\n\n✅ 3. Toxinas (Intoxicações):\n• Opioide → Naloxona | Tricíclico → Bicarbonato IV | Betabloqueador → Glucagon | BCC → Cálcio IV.\n\n✅ 4. Trombose Coronariana (IAM):\n• CATE / Angioplastia primária (ou trombólise).\n\n✅ 5. Trombose Pulmonar (TEP maciço):\n• Trombolítico IV (Alteplase) durante a RCP!",
       "audioText": "Os cinco Ts reversíveis na parada cardiorrespiratória. Primeiro: tensão no tórax por pneumotórax hipertensivo, tratado com punção descompressiva imediata seguida de drenagem torácica. Segundo: tamponamento cardíaco, tratado com pericardiocentese imediata. Terceiro: toxinas com antídotos específicos, como naloxona para opioide, bicarbonato para tricíclico, glucagon para betabloqueador e cálcio para bloqueador de canal de cálcio. Quarto: trombose coronariana com cateterismo. Quinto: trombose pulmonar por TEP maciço com trombolítico durante a RCP."
+    },
+    {
+      "id": 1033,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS: Regras da Desfibrilação na FV / TV Sem Pulso",
+      "front": "Paciente em PCR por Fibrilação Ventricular (FV): qual a energia inicial do desfibrilador bifásico vs monofásico, o que fazer logo após o choque, e quando entram adrenalina e amiodarona?",
+      "back": "✅ Logo após o choque:\n• RETOMAR A RCP IMEDIATAMENTE por 2 minutos, SEM verificar pulso nem ritmo!\n\n• Energia inicial:\n• • BIFÁSICO (preferido — maior eficácia com menor energia): 120 a 200 J (se desconhecido, usar máxima).\n• • MONOFÁSICO: 360 J.\n\n• Ordem das drogas na FV/TVSP:\n• • 1º Choque → 2 min RCP → 2º Choque → Adrenalina 1 mg → 3º Choque → Amiodarona 300 mg (ou Lidocaína).\n\n⚠️ Pegadinha FGV: nunca checar pulso logo após o choque e nunca atrasar o 1º choque para fazer adrenalina ou amiodarona!",
+      "audioText": "Regras da desfibrilação na fibrilação ventricular segundo o ACLS para a FGV. Logo após aplicar o choque, deve-se retomar a RCP imediatamente por dois minutos, sem parar para verificar pulso ou ritmo. O desfibrilador bifásico é preferido por maior eficácia em energias menores, usando cento e vinte a duzentos joules; o monofásico usa trezentos e sessenta joules. Adrenalina entra após o segundo choque e amiodarona após o terceiro."
     }
   ],
   "fgv_tables": [
@@ -3965,6 +3975,18 @@
       "col2Title": "Os 5 Ts (Causas e Reversão)",
       "col2": "• Tensão (Pneumotórax hipertensivo) → Punção descompressiva imediata → dreno de tórax\n• Tamponamento cardíaco → Pericardiocentese imediata (cirurgia se trauma)\n• Toxinas → Naloxona (opioide), Bicarbonato (tricíclico), Glucagon (BB), Cálcio (BCC)\n• Trombose Coronariana (IAM) → CATE / Angioplastia\n• Trombose Pulmonar (TEP) → Trombolítico IV (Alteplase) na RCP",
       "audioText": "Tabela dos cinco Hs e cinco Ts na parada cardiorrespiratória. Nos cinco Hs: hipovolemia com volume, hipóxia com oxigênio, acidose com ventilação ou bicarbonato, hipercalemia com gluconato de cálcio e insulina com glicose, hipotermia com aquecimento. Nos cinco Ts: pneumotórax hipertensivo com punção descompressiva, tamponamento com pericardiocentese, toxinas com antídoto específico, infarto com cateterismo e TEP com trombolítico."
+    },
+    {
+      "id": 2031,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Desfibrilação no ACLS: Bifásico vs Monofásico e Sequência (FGV)",
+      "col1Title": "Energia e Conduta Pós-Choque",
+      "col1": "• Desfibrilador BIFÁSICO (preferido): 120–200 J inicial (máxima se desconhecer modelo)\n• Desfibrilador MONOFÁSICO: 360 J sempre\n• Imediatamente após o choque:\n• • RCP por 2 minutos SEM checar pulso!\n• • Só checa ritmo/pulso ao final dos 2 min (e minimiza pausas < 10s)",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• NÃO é monofásico que é mais eficaz em baixa energia — é o BIFÁSICO!\n• 120–200 J é dose de BIFÁSICO (monofásico = 360 J)\n• Adrenalina NÃO vem antes do 1º choque (entra após o 2º choque)\n• Amiodarona/Lidocaína NÃO vêm antes do choque (entram após o 3º choque)",
+      "audioText": "Desfibrilação no ACLS para a FGV. O aparelho bifásico é mais eficaz em menor energia, iniciando com cento e vinte a duzentos joules, enquanto o monofásico usa trezentos e sessenta joules. Após o choque, retoma-se imediatamente a RCP por dois minutos sem checar pulso. Adrenalina vem só após o segundo choque, e amiodarona ou lidocaína após o terceiro choque."
     }
   ]
 }
