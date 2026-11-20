@@ -3733,6 +3733,16 @@
       "front": "Jovem de 25 anos com episódios de perda de consciência há 5 anos em locais quentes/cheios, precedidos por visão escurecida, náuseas e palidez, com recuperação rápida, exame físico e ECG normais. Qual o diagnóstico e os sinais de alerta da síncope cardíaca?",
       "back": "✅ Diagnóstico: SÍNCOPE VASOVAGAL (neurocardiogênica / reflexa).\n\n• Pistas da Vasovagal:\n• • Pródromos autonômicos: escurecimento visual, náuseas, sudorese fria, palidez.\n• • Gatilhos: lugares quentes/cheios, ficar muito tempo em pé, dor, medo.\n• • Recuperação rápida ao deitar; exame físico e ECG normais.\n\n⚠️ Sinais de alerta (Síncope Cardíaca — alto risco!):\n• Súbita SEM pródromos ('desliga a chave') ou durante ESFORÇO FÍSICO / deitado.\n• História familiar de MORTE SÚBITA em jovens (canalopatias: QT longo, Brugada, CMH).\n• ECG alterado (BAV, WPW, Brugada, QT longo, sobrecarga) ou cardiopatia estrutural.",
       "audioText": "Na avaliação da síncope para a FGV, paciente jovem com perda de consciência precedida por pródromos autonômicos como escurecimento visual, náuseas e palidez, desencadeada por locais quentes ou cheios, com recuperação rápida e ECG normal, apresenta síncope vasovagal. Já a síncope cardíaca é súbita sem pródromos, ocorre durante esforço ou em decúbito, e associa-se a alterações no ECG ou história familiar de morte súbita."
+    },
+    {
+      "id": 1046,
+      "area": "neurologia",
+      "cat": "cefaleias",
+      "year": "FGV",
+      "name": "Cefaleia em Salvas: Clínica, Abortivo (O2) e Profilaxia (Verapamil)",
+      "front": "Homem de 30 anos com cefaleia unilateral temporal/periorbitária muito intensa durando ~1h, com ptose, lacrimejamento e agitação psicomotora (andando sem parar). Qual o diagnóstico, o tratamento abortivo inicial e a profilaxia?",
+      "back": "✅ Diagnóstico: CEFALEIA EM SALVAS (Cluster Headache).\n• Perfil clássico: homem jovem, dor unilateral excruciante (15–180 min), sinais autonômicos ipsilaterais (ptose/miose = Horner, lacrimejamento, hiperemia conjuntival, congestão nasal) + AGITAÇÃO (não consegue ficar quieto!).\n\n✅ Tratamento ABORTIVO (crise aguda):\n• OXIGÊNIO a 100% (12–15 L/min em máscara não reinalante por 15–20 min) OU Sumatriptano SC / intranasal!\n\n✅ Tratamento PROFILÁTICO:\n• VERAPAMIL (manutenção) + Prednisona (ponte nos primeiros dias).\n\n⚠️ Pegadinhas FGV (Erradas):\n• Indometacina → trata Hemicrania Paroxística / Contínua (NÃO salvas!).\n• Amitriptilina / Propranolol → tensional / enxaqueca.\n• Morfina → NÃO usar opioides em cefaleias primárias.",
+      "audioText": "Na cefaleia em salvas cobrada pela FGV, homem jovem apresenta dor unilateral intensa periorbitária ou temporal durando cerca de uma hora, acompanhada de sinais autonômicos ipsilaterais como ptose e lacrimejamento, além de intensa agitação psicomotora. O tratamento abortivo inicial de escolha é oxigênio a cem por cento em máscara não reinalante, doze a quinze litros por minuto, ou sumatriptano subcutâneo. A profilaxia de manutenção é feita com verapamil. Não confundir com hemicrania paroxística, que responde à indometacina."
     }
   ],
   "fgv_tables": [
@@ -4251,6 +4261,18 @@
       "col2Title": "Cardíaca vs Crise Epiléptica",
       "col2": "• Síncope Cardíaca (Alto Risco):\n• • Súbita SEM pródromos, durante esforço ou deitado\n• • História familiar POSITIVA de morte súbita (canalopatias: Brugada, QT longo)\n• • ECG alterado ou cardiopatia estrutural\n• Crise Epiléptica:\n• • Confusão pós-ictal prolongada, mordedura lateral de língua, liberação esfincteriana",
       "audioText": "Diagnóstico diferencial da síncope para a FGV. Síncope vasovagal tem gatilho em locais quentes ou cheios, pródromos de visão escurecida e náuseas, recuperação rápida e ECG normal. Síncope cardíaca é súbita sem pródromos, ocorre no esforço e tem história familiar de morte súbita ou ECG alterado. Crise epiléptica cursa com confusão pós-ictal prolongada e mordedura de língua."
+    },
+    {
+      "id": 2044,
+      "area": "neurologia",
+      "cat": "cefaleias",
+      "year": "FGV",
+      "name": "Cefaleias Trigêmino-Autonômicas e Primárias (FGV)",
+      "col1Title": "Cefaleia em Salvas vs Hemicrania Paroxística",
+      "col1": "• Cefaleia em Salvas:\n• • Homem jovem, dor 15–180 min, 1–8x/dia, AGITAÇÃO (anda sem parar)\n• • Abortivo: O2 100% (12–15 L/min) ou Sumatriptano SC\n• • Profilaxia: Verapamil (+ corticoide de ponte)\n• Hemicrania Paroxística:\n• • Mais comum em mulher, crises mais curtas (2–30 min) e mais frequentes (>5x/dia)\n• • Resposta dramática à INDOMETACINA!",
+      "col2Title": "Enxaqueca e Tensional (Pegadinhas)",
+      "col2": "• Enxaqueca (Migrânea): 4–72h, pulsátil, náusea, foto/fonofobia, quer quarto escuro e quieto (contrário da salvas!)\n• • Abortivo: triptanos / AINE; Profilaxia: Propranolol, Topiramato, Amitriptilina, Valproato\n• Cefaleia Tensional: bilateral em aperto, leve/moderada, sem náusea\n• • Profilaxia: Amitriptilina\n• • Morfina/opioides: evitar em cefaleias primárias!",
+      "audioText": "Comparativo das cefaleias primárias para a FGV. Cefaleia em salvas predomina em homens, dura quinze a cento e oitenta minutos, causa agitação e sinais autonômicos, tratando-se a crise com oxigênio a cem por cento ou sumatriptano subcutâneo e a profilaxia com verapamil. Já a hemicrania paroxística tem crises mais curtas e responde especificamente à indometacina. Na enxaqueca o paciente prefere repouso no escuro e a profilaxia usa propranolol, topiramato ou amitriptilina."
     }
   ]
 }

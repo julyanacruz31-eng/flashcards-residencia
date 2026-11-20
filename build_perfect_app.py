@@ -2973,6 +2973,7 @@ html_content = """<!DOCTYPE html>
         'nefrolitiase': 'Nefrolitíase',
         'ira_dialise': 'IRA & Diálise',
         'wernicke': 'Wernicke & Carências',
+        'cefaleias': 'Cefaleias',
         'anafilaxia': 'Anafilaxia & Alergia',
         'intussuscepcao': 'Intussuscepção',
         'diverticulite': 'Diverticulite',
