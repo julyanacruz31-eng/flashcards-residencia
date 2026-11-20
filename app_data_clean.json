@@ -3743,6 +3743,16 @@
       "front": "Homem de 30 anos com cefaleia unilateral temporal/periorbitária muito intensa durando ~1h, com ptose, lacrimejamento e agitação psicomotora (andando sem parar). Qual o diagnóstico, o tratamento abortivo inicial e a profilaxia?",
       "back": "✅ Diagnóstico: CEFALEIA EM SALVAS (Cluster Headache).\n• Perfil clássico: homem jovem, dor unilateral excruciante (15–180 min), sinais autonômicos ipsilaterais (ptose/miose = Horner, lacrimejamento, hiperemia conjuntival, congestão nasal) + AGITAÇÃO (não consegue ficar quieto!).\n\n✅ Tratamento ABORTIVO (crise aguda):\n• OXIGÊNIO a 100% (12–15 L/min em máscara não reinalante por 15–20 min) OU Sumatriptano SC / intranasal!\n\n✅ Tratamento PROFILÁTICO:\n• VERAPAMIL (manutenção) + Prednisona (ponte nos primeiros dias).\n\n⚠️ Pegadinhas FGV (Erradas):\n• Indometacina → trata Hemicrania Paroxística / Contínua (NÃO salvas!).\n• Amitriptilina / Propranolol → tensional / enxaqueca.\n• Morfina → NÃO usar opioides em cefaleias primárias.",
       "audioText": "Na cefaleia em salvas cobrada pela FGV, homem jovem apresenta dor unilateral intensa periorbitária ou temporal durando cerca de uma hora, acompanhada de sinais autonômicos ipsilaterais como ptose e lacrimejamento, além de intensa agitação psicomotora. O tratamento abortivo inicial de escolha é oxigênio a cem por cento em máscara não reinalante, doze a quinze litros por minuto, ou sumatriptano subcutâneo. A profilaxia de manutenção é feita com verapamil. Não confundir com hemicrania paroxística, que responde à indometacina."
+    },
+    {
+      "id": 1047,
+      "area": "neurologia",
+      "cat": "cefaleias",
+      "year": "FGV",
+      "name": "Neuralgia do Trigêmeo vs Salvas vs Hemicrania vs Enxaqueca vs Tensional",
+      "front": "Como diferenciar Neuralgia do Trigêmeo, Cefaleia em Salvas, Hemicrania Paroxística, Enxaqueca e Tensional (clínica + tratamento)?",
+      "back": "✅ 1. Neuralgia do Trigêmeo (V par — V2/V3):\n• Dor em CHOQUE ELÉTRICO unilateral na face, segundinhos (< 2 min), gatilho ao tocar/escovar dentes/falar/mastigar.\n• Tratamento: CARBAMAZEPINA (1ª escolha — ou Oxcarbazepina)! Analgésico comum NÃO funciona.\n\n✅ 2. Cefaleia em Salvas:\n• Homem jovem, dor unilateral periorbitária 15–180 min + olho vermelho/ptose/lacrimejamento + AGITAÇÃO.\n• Abortivo: O2 100% ou Sumatriptano SC | Profilaxia: VERAPAMIL.\n\n✅ 3. Hemicrania Paroxística:\n• Mulher, igual à salvas mas crises mais curtas (2–30 min) e >5x/dia.\n• Tratamento específico: INDOMETACINA (resposta absoluta!).\n\n✅ 4. Enxaqueca:\n• 4–72h, pulsátil, náusea, foto/fonofobia, quer quarto escuro.\n• Abortivo: Triptanos / AINE | Profilaxia: Propranolol, Topiramato, Amitriptilina, Valproato.\n\n✅ 5. Tensional:\n• Bilateral em aperto/faixa, leve/moderada, sem náusea.\n• Abortivo: analgésico/AINE | Profilaxia: Amitriptilina.",
+      "audioText": "Diferenciação das principais cefaleias e neuralgias para a FGV. Na neuralgia do trigêmeo, a dor é em choque elétrico na face durando segundos, desencadeada por toque ou mastigação, e o tratamento de escolha é carbamazepina. Na cefaleia em salvas, homem jovem com dor unilateral intensa, sinais autonômicos e agitação, tratando a crise com oxigênio cem por cento e a profilaxia com verapamil. Na hemicrania paroxística, crises mais curtas e frequentes em mulheres, tratada com indometacina. Na enxaqueca, dor pulsátil com náusea e fotofobia, abortada com triptano e prevenida com propranolol, topiramato ou amitriptilina. Na tensional, dor bilateral em aperto sem náusea, prevenida com amitriptilina."
     }
   ],
   "fgv_tables": [
@@ -4273,6 +4283,18 @@
       "col2Title": "Enxaqueca e Tensional (Pegadinhas)",
       "col2": "• Enxaqueca (Migrânea): 4–72h, pulsátil, náusea, foto/fonofobia, quer quarto escuro e quieto (contrário da salvas!)\n• • Abortivo: triptanos / AINE; Profilaxia: Propranolol, Topiramato, Amitriptilina, Valproato\n• Cefaleia Tensional: bilateral em aperto, leve/moderada, sem náusea\n• • Profilaxia: Amitriptilina\n• • Morfina/opioides: evitar em cefaleias primárias!",
       "audioText": "Comparativo das cefaleias primárias para a FGV. Cefaleia em salvas predomina em homens, dura quinze a cento e oitenta minutos, causa agitação e sinais autonômicos, tratando-se a crise com oxigênio a cem por cento ou sumatriptano subcutâneo e a profilaxia com verapamil. Já a hemicrania paroxística tem crises mais curtas e responde especificamente à indometacina. Na enxaqueca o paciente prefere repouso no escuro e a profilaxia usa propranolol, topiramato ou amitriptilina."
+    },
+    {
+      "id": 2045,
+      "area": "neurologia",
+      "cat": "cefaleias",
+      "year": "FGV",
+      "name": "Mapa Completo das Cefaleias + Neuralgia do Trigêmeo (FGV)",
+      "col1Title": "Clínica e Duração",
+      "col1": "• Neuralgia do Trigêmeo: CHOQUE elétrico em V2/V3, segundos (< 2 min), gatilho tátil/mastigar (sem sinais autonômicos!)\n• Salvas: homem, 15–180 min, dor ocular + ptose/lacrimejamento + AGITAÇÃO\n• Hemicrania Paroxística: mulher, 2–30 min, >5x/dia + autonômicos\n• Enxaqueca: 4–72h, pulsátil, náusea, foto/fonofobia (quer repouso no escuro)\n• Tensional: 30 min–7d, bilateral em aperto, sem náusea/vômito",
+      "col2Title": "Tratamento (Abortivo e Profilaxia)",
+      "col2": "• Trigêmeo: CARBAMAZEPINA (1ª escolha) ou Oxcarbazepina (descompressão/cirurgia se refratário)\n• Salvas: Abortivo = O2 100% / Sumatriptano SC | Profilaxia = VERAPAMIL\n• Hemicrania Paroxística: INDOMETACINA (100% responsiva!)\n• Enxaqueca: Abortivo = Triptanos/AINE | Profilaxia = Propranolol, Topiramato, Amitriptilina, Valproato\n• Tensional: Analgésico/AINE | Profilaxia = Amitriptilina",
+      "audioText": "Tabela completa de cefaleias e neuralgia do trigêmeo para a FGV. Trigêmeo: choque elétrico por segundos em V2 e V3, trata com carbamazepina. Salvas: quinze a cento e oitenta minutos com agitação e sinais autonômicos, aborta com oxigênio e previne com verapamil. Hemicrania paroxística: crises curtas em mulheres, trata com indometacina. Enxaqueca: quatro a setenta e duas horas com náusea e fotofobia, aborta com triptano e previne com propranolol, topiramato ou amitriptilina. Tensional: bilateral em aperto, previne com amitriptilina."
     }
   ]
 }
