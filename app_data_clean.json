@@ -3533,6 +3533,16 @@
       "front": "Vítima de trauma automobilístico com Tríade de Beck (PA 80x44, TJP 90°, bulhas hipofonéticas), pulso paradoxal (>10 mmHg) e baixa voltagem no ECG. Qual o tratamento DEFINITIVO de escolha?",
       "back": "✅ Tratamento DEFINITIVO: REPOSIÇÃO DE VOLUME + DRENAGEM PERICÁRDICA CIRÚRGICA (janela pericárdica / toracotomia / esternotomia).\n\n• Reposição de volume (cristaloide): aumenta a pré-carga para vencer a pressão pericárdica enquanto vai para o centro cirúrgico.\n• Drenagem cirúrgica: remove coágulos (que entopem a agulha!) e permite reparar a lesão cardíaca.\n\n⚠️ Pegadinha clássica FGV / ATLS: PERICARDIOCENTESE (punção de Marfan) é medida TEMPORÁRIA/de ponte se não houver cirurgião disponível — NÃO é o tratamento definitivo! E NÃO se usa dobutamina!\n\n💡 Bônus: no trauma, a Tríade de Beck + ausculta pulmonar normal diferencia tamponamento cardíaco de pneumotórax hipertensivo (onde o murmúrio está abolido + hipertimpanismo).",
       "audioText": "No tamponamento cardíaco pós-trauma, caracterizado pela tríade de Beck com hipotensão, turgência jugular e bulhas hipofonéticas, além de pulso paradoxal e baixa voltagem no ECG, o tratamento definitivo de escolha é reposição volêmica associada à drenagem pericárdica cirúrgica. Atenção à pegadinha do ATLS cobrada pela FGV: a pericardiocentese é apenas medida temporária, não o tratamento definitivo, e não se usa dobutamina."
+    },
+    {
+      "id": 1026,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS: Vias Aéreas, Capnografia e Oxigênio Pós-PCR",
+      "front": "Quais são as recomendações do ACLS sobre confirmação do tubo traqueal, relação compressão/ventilação, volume com bolsa-válvula-máscara, pressão cricoide e alvo de O2 após retorno da circulação?",
+      "back": "✅ Recomendações ACLS:\n• Tubo traqueal: CAPNOGRAFIA CONTÍNUA em forma de onda (padrão-ouro para confirmar e monitorar posição, qualidade da RCP e detectar RCE).\n• Sem via aérea avançada: 30:2 (com IOT/supraglótico: compressões contínuas + 1 vent a cada 6s = 10/min).\n• Bolsa-válvula-máscara: apertar só até ELEVAÇÃO VISÍVEL DO TÓRAX (~500–600 mL), nunca apertar tudo!\n• Pós-RCE (ROSC): titular O2 para SatO2 92%–98% (NÃO deixar 100% sem necessidade!).\n\n⚠️ Pegadinha FGV: Pressão cricoide (manobra de Sellick) NÃO é recomendada de rotina durante a intubação na PCR!",
+      "audioText": "Recomendações do ACLS sobre vias aéreas e ventilação para a FGV. A capnografia contínua em forma de onda é o padrão-ouro para confirmar e monitorar a posição do tubo traqueal. Sem via aérea avançada a relação é trinta para dois; com tubo, compressões contínuas e uma ventilação a cada seis segundos. Após o retorno da circulação espontânea, titular oxigênio para saturação entre noventa e dois e noventa e oito por cento. A pressão cricoide não é recomendada de rotina."
     }
   ],
   "fgv_tables": [
@@ -3835,6 +3845,18 @@
       "col2Title": "Conduta e Pegadinhas FGV",
       "col2": "• Medida inicial de suporte: Reposição volêmica cautelosa (melhora pré-carga) — NÃO usar dobutamina!\n• Ponte / se sem cirurgião no local: Pericardiocentese (temporária!)\n• Tratamento DEFINITIVO: DRENAGEM PERICÁRDICA CIRÚRGICA (janela pericárdica subxifoideana ou toracotomia/esternotomia)\n• • Motivo: sangue traumático coagula e obstrui a agulha, além de precisar reparar a câmara cardíaca",
       "audioText": "Tamponamento cardíaco no trauma para a FGV. Diagnóstico pela tríade de Beck com hipotensão, turgência jugular e bulhas hipofonéticas, pulso paradoxal e ausculta pulmonar normal. Conduta inicial com reposição de volume, sem dobutamina. A pericardiocentese é apenas temporária, sendo a drenagem pericárdica cirúrgica o tratamento definitivo."
+    },
+    {
+      "id": 2026,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "ACLS: Manejo de Vias Aéreas e Ventilação na PCR (FGV)",
+      "col1Title": "Recomendações Corretas (AHA / ACLS)",
+      "col1": "• Confirmação do tubo (IOT): Capnografia quantitativa contínua em forma de onda (1ª escolha)\n• Relação sem via aérea avançada (adulto): 30 compressões : 2 ventilações\n• Com via aérea avançada: compressões contínuas (100–120/min) + 1 ventilação a cada 6s (10/min)\n• Volume BVM: apenas o suficiente para elevação visível do tórax (~1s)",
+      "col2Title": "O Que NÃO Fazer (Pegadinhas FGV)",
+      "col2": "• Pós-RCE: NÃO manter FiO2 100% se SatO2 >= 92% (alvo: 92–98%, evita hiperóxia)\n• Pressão cricoide (Sellick): NÃO recomendada de rotina na PCR\n• BVM: NÃO apertar a bolsa inteira (causa hiperventilação, barotrauma e queda do retorno venoso)\n• • Relação NÃO é 30:1 — é 30:2!",
+      "audioText": "Tabela do ACLS sobre vias aéreas e ventilação na parada cardiorrespiratória para a FGV. Correto: capnografia contínua para confirmar o tubo, relação trinta para dois sem via aérea avançada, dez ventilações por minuto com via aérea avançada, e apertar a bolsa apenas até elevar o tórax. Errado: manter cem por cento de oxigênio após retorno da circulação, fazer pressão cricoide de rotina ou apertar a bolsa inteira."
     }
   ]
 }
