@@ -3683,6 +3683,16 @@
       "front": "Qual é a conduta completa na SCA sem supra de ST (IAMSSST / Angina Instável): medicações obrigatórias, o que é PROIBIDO e qual o prazo para o cateterismo (CATE)?",
       "back": "✅ 1. Terapia Antitrombótica (IMEDIATA):\n• DAPT: AAS (300 mg ataque) + P2Y12 (Clopidogrel 300–600 mg ou Ticagrelor 180 mg).\n• Anticoagulação plena: Enoxaparina (1 mg/kg SC 12/12h), HNF ou Fondaparinux.\n\n✅ 2. Anti-isquêmicos / Protetores:\n• Estatina de alta potência + Betabloqueador VO (até 24h se estável) + IECA/BRA (até 24h).\n• Nitrato (só se dor e SEM tadalafila/sildenafila, IAM de VD ou hipotensão).\n\n✅ 3. Tempo do CATE (Estratificação de Risco):\n• Imediato (< 2h): choque, dor refratária, IC aguda, TV/FV.\n• Precoce (< 24h): troponina elevada (IAMSSST), alteração dinâmica de ST-T, GRACE > 140.\n• Retardado (< 72h): risco intermediário (DM, DRC, FEVE < 40%).\n\n⚠️ PROIBIDO no IAM sem supra: TROMBOLÍTICO (só piora sangramento sem benefício) e PRASUGREL antes de conhecer a coronária no CATE!",
       "audioText": "Conduta completa na síndrome coronariana aguda sem supra de ST. Terapia antitrombótica imediata com dupla antiagregação usando AAS mais clopidogrel ou ticagrelor, associada a anticoagulação plena com enoxaparina, heparina não fracionada ou fondaparinux. Acrescentar estatina de alta potência, betabloqueador oral e IECA em até vinte e quatro horas. Atenção: nunca fazer trombolítico no infarto sem supra, e nunca dar prasugrel antes do cateterismo. O cateterismo é imediato em menos de duas horas se instabilidade ou dor refratária, e em menos de vinte e quatro horas se troponina positiva ou GRACE alto."
+    },
+    {
+      "id": 1041,
+      "area": "clinica",
+      "cat": "anafilaxia",
+      "year": "FGV",
+      "name": "As Grandes Contraindicações de Prova (Pares Proibidos)",
+      "front": "Quais são os principais pares 'Situação Clínica → Medicação PROIBIDA' cobrados em emergências pela FGV?",
+      "back": "🚫 Pares PROIBIDOS clássicos:\n• Cocaína + dor torácica → SEM Betabloqueador (vasoespasmo alfa sem oposição).\n• Tadalafila (48h) / Sildenafila (24h) → SEM Nitrato (hipotensão fatal).\n• IAM de VD (supra V4R) → SEM Nitrato, Morfina, Diurético ou BB.\n• IAM Sem Supra (IAMSSST) → SEM Trombolítico; e SEM Prasugrel antes do CATE.\n• FA + WPW (pré-excitada) → SEM Adenosina, BB, BCC ou Digoxina (usar Procainamida).\n• Intoxicação alcoólica aguda → SEM Benzodiazepínico (risco de PCR).\n• Etilista / desnutrido → SEM Glicose antes da Tiamina (B1).\n• CAD com K+ < 3,3 mEq/L → SEM Insulina antes de repor K+.\n• Gestação → SEM IECA, BRA, Espironolactona, Estatina, Varfarina (1º tri) ou Metotrexato.\n• Diarreia com febre / disenteria → SEM Loperamida.\n• HDA varicosa aguda → SUSPENDER Betabloqueador e Diurético.\n• Cólica nefrética com DRC → SEM AINE (cetorolaco).",
+      "audioText": "Principais contraindicações clássicas de emergência cobradas pela FGV. Cocaína com dor torácica: proibido betabloqueador. Uso de tadalafila ou sildenafila: proibido nitrato. Infarto de ventrículo direito: proibido nitrato, morfina e diurético. Infarto sem supra: proibido trombolítico e prasugrel antes do cateterismo. Fibrilação atrial com Wolff-Parkinson-White: proibido adenosina, betabloqueador, bloqueador de canal de cálcio e digoxina. Intoxicação alcoólica aguda: proibido benzodiazepínico. Etilista: proibido glicose antes da tiamina. Cetoacidose com potássio menor que três vírgula três: proibido insulina. Gestante: proibido IECA, BRA e espironolactona. Diarreia febril: proibido loperamida. Cólica renal com insuficiência renal: proibido anti-inflamatório."
     }
   ],
   "fgv_tables": [
@@ -4141,6 +4151,18 @@
       "col2Title": "Quando Fazer CATE (Estratificação)",
       "col2": "• < 2 horas (Imediato): instabilidade hemodinâmica/choque, dor refratária, arritmia maligna, IC aguda\n• < 24 horas (Alto risco): troponina positiva, alteração dinâmica ST-T, GRACE > 140\n• < 72 horas (Intermediário): DM, DRC, FEVE < 40%, GRACE 109–140\n• Baixo risco: curva de troponina negativa → teste isquêmico não invasivo",
       "audioText": "Conduta do infarto sem supra de ST para a FGV. Dupla antiagregação com AAS mais clopidogrel ou ticagrelor, anticoagulação com enoxaparina, estatina de alta potência, betabloqueador e IECA. Trombolítico é proibido no infarto sem supra, e prasugrel só após o cateterismo. Cateterismo imediato em até duas horas na instabilidade ou dor refratária; até vinte e quatro horas na troponina positiva ou GRACE maior que cento e quarenta; até setenta e duas horas no risco intermediário."
+    },
+    {
+      "id": 2039,
+      "area": "clinica",
+      "cat": "anafilaxia",
+      "year": "FGV",
+      "name": "Guia de Ouro: Pares Proibidos na Emergência e Clínica (FGV)",
+      "col1Title": "Cardiologia e Emergência",
+      "col1": "• Cocaína + dor torácica → PROIBIDO Betabloqueador (usar BZD + nitrato + AAS)\n• Tadalafila (48h) / Sildenafila (24h) → PROIBIDO Nitrato\n• IAM de VD (V4R) → PROIBIDO Nitrato, Morfina, Diurético, BB\n• IAM Sem Supra → PROIBIDO Trombolítico e Prasugrel pré-CATE\n• FA + WPW → PROIBIDO Adenosina, BB, BCC, Digoxina (usar Procainamida)\n• Torsades (QT longo) → PROIBIDO Amiodarona (usar Sulfato de Mg)",
+      "col2Title": "Clínica, GO e Trauma",
+      "col2": "• CAD com K+ < 3,3 → PROIBIDO Insulina antes de repor K+\n• Etilista / Wernicke → PROIBIDO Glicose antes da Tiamina (B1)\n• Intoxicação alcoólica aguda → PROIBIDO Benzodiazepínico\n• Diarreia com febre/sangue → PROIBIDO Loperamida\n• HDA varicosa aguda → SUSPENDER BB e Espironolactona\n• Cólica renal + DRC → PROIBIDO AINE / Cetorolaco (usar opiáceo)\n• Gestação → PROIBIDO IECA, BRA, Espironolactona, Estatina",
+      "audioText": "Guia de ouro dos pares proibidos cobrados pela FGV. Em cardiologia: cocaína proíbe betabloqueador, tadalafila proíbe nitrato, infarto de VD proíbe nitrato e morfina, infarto sem supra proíbe trombolítico, FA com WPW proíbe adenosina e betabloqueador, Torsades proíbe amiodarona. Em clínica e obstetrícia: CAD com potássio abaixo de três vírgula três proíbe insulina, etilista proíbe glicose antes de B1, intoxicação alcoólica proíbe benzodiazepínico, diarreia febril proíbe loperamida, cólica renal na DRC proíbe AINE e gestação proíbe IECA e BRA."
     }
   ]
 }
