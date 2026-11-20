@@ -3803,6 +3803,16 @@
       "front": "Quais são todas as classes de anticoagulantes (HNF, HBPM, Fondaparinux, Argatroban, Varfarina, Dabigatrana e -xabanas), seus alvos, antídotos e onde cada um é proibido?",
       "back": "✅ 1. Parenterais:\n• HNF: inibe IIa + Xa | monitora TTPa | Antídoto: Protamina (100%) | Segura na DRC grave.\n• Enoxaparina (HBPM): inibe mais Xa que IIa | Antídoto: Protamina (parcial ~60%) | Ajustar/evitar se ClCr < 30.\n• Fondaparinux: inibe SÓ Xa | NÃO causa HIT (trata HIT!) | Evitar se ClCr < 30 | Sem antídoto.\n• Argatroban / Bivalirudina: inibidores diretos da IIa (IV) usados na HIT (Argatroban é hepático, ótimo na DRC!).\n\n✅ 2. Oral Clássico (Antagonista Vit. K):\n• Varfarina: inibe II, VII, IX, X (+ Prot. C e S) | monitora INR (2–3) | Antídoto: Vit. K + Complexo Protrombínico.\n• Obrigatória em: Prótese mecânica, Estenose mitral mod/grave e SAF!\n\n✅ 3. Orais Diretos (DOACs):\n• Dabigatrana (inibe IIa): Antídoto = IDARUCIZUMABE | Evitar se ClCr < 30.\n• Rivaroxabana, Apixabana, Edoxabana (inibem Xa): Antídoto = ANDEXANET ALFA (Apixabana é a mais segura na DRC).\n\n⚠️ DOACs são PROIBIDOS em: Prótese mecânica, Estenose mitral mod/grave, Gestação e SAF triplo positivo!",
       "audioText": "Mapa completo dos anticoagulantes. Entre os parenterais: heparina não fracionada inibe dois A e dez A, monitora TTPa, reverte cem por cento com protamina e é segura na insuficiência renal grave. Enoxaparina inibe mais dez A e reverte parcialmente com protamina. Fondaparinux inibe seletivamente dez A e trata HIT. Argatroban e bivalirudina inibem diretamente a trombina por via venosa na HIT. Entre os orais: varfarina inibe dois, sete, nove e dez mais proteínas C e S, monitora INR, reverte com vitamina K e complexo protrombínico, sendo obrigatória em prótese mecânica, estenose mitral moderada a grave e SAF. Nos DOACs: dabigatrana inibe trombina e reverte com idarucizumabe; rivaroxabana, apixabana e edoxabana inibem dez A e revertem com andexanet alfa."
+    },
+    {
+      "id": 1053,
+      "area": "cirurgia",
+      "cat": "apendicite",
+      "year": "FGV",
+      "name": "Apendicite Complicada: Pneumoperitônio / Peritonite Difusa vs Abscesso Bloqueado",
+      "front": "Mulher de 40 anos com dor em FID, descompressão dolorosa DIFUSA e TC com apendicite, PNEUMOPERITÔNIO e abscesso de 2 cm. Qual a conduta correta: operar já, drenar por TC ou esperar 6 semanas?",
+      "back": "✅ Conduta: ANTIBIOTICOTERAPIA IV + APENDICECTOMIA IMEDIATA!\n\n• Por quê? Há PERITONITE DIFUSA (descompressão dolorosa difusa) + PNEUMOPERITÔNIO (perfuração livre na cavidade)!\n• Esses dois achados exigem cirurgia imediata (apendicectomia + lavagem da cavidade + ATB IV).\n\n⚠️ Pegadinha FGV (Abscesso Bloqueado vs Perfuração Livre):\n• Só faz ATB + Drenagem por TC (+ apendicectomia tardia em 6–8 semanas se indicado) quando há PLASTRÃO ou ABSCESSO BLOQUEADO (>= 3–4 cm) SEM peritonite difusa e SEM pneumoperitônio livre!\n• Esperar 7 dias ou 6 semanas com pneumoperitônio + peritonite difusa leva à sepse fatal!",
+      "audioText": "Na apendicite aguda complicada com descompressão dolorosa difusa e pneumoperitônio na tomografia, mesmo havendo pequeno abscesso de dois centímetros, a conduta é antibioticoterapia intravenosa e apendicectomia imediata. O tratamento conservador com antibiótico, drenagem guiada por tomografia e cirurgia após seis semanas fica reservado apenas para plastrão ou abscesso bloqueado sem peritonite difusa e sem pneumoperitônio livre."
     }
   ],
   "fgv_tables": [
@@ -4393,6 +4403,18 @@
       "col2Title": "Orais (Varfarina vs DOACs)",
       "col2": "• Varfarina: II, VII, IX, X (+ C e S) | Monitora: INR | Reverte: Vit K + CCP | Obrigatória em: Prótese mecânica, EM mod/grave, SAF!\n• Dabigatrana (DOAC): IIa direto | Antídoto: IDARUCIZUMABE | ClCr < 30: proibido\n• Rivaroxabana / Apixabana / Edoxabana: Xa direto | Antídoto: ANDEXANET ALFA (Apixabana melhor na DRC)\n• • Proibido DOAC: Prótese mecânica, EM mod/grave, Gestação!",
       "audioText": "Guia definitivo de anticoagulantes. Parenterais: HNF monitora TTPa e reverte com protamina; enoxaparina reverte parcialmente com protamina; fondaparinux inibe fator dez A e trata HIT; argatroban inibe trombina na HIT. Orais: varfarina monitora INR, reverte com vitamina K e complexo protrombínico; dabigatrana reverte com idarucizumabe; rivaroxabana, apixabana e edoxabana revertem com andexanet alfa."
+    },
+    {
+      "id": 2050,
+      "area": "cirurgia",
+      "cat": "apendicite",
+      "year": "FGV",
+      "name": "Apendicite Complicada: Quando Operar Já vs Tratar Conservador (FGV)",
+      "col1Title": "Operar Imediatamente (ATB IV + Apendicectomia)",
+      "col1": "• Apendicite não complicada (fase inicial)\n• Peritonite DIFUSA (descompressão dolorosa difusa)\n• PNEUMOPERITÔNIO livre (perfuração não bloqueada)\n• Instabilidade hemodinâmica / sepse\n• Falha do tratamento conservador / abscesso inacessível com piora",
+      "col2Title": "Tratamento Conservador / Drenagem (Sem Peritonite)",
+      "col2": "• Plastrão (massa palpável) ou Abscesso BLOQUEADO SEM peritonite difusa e SEM pneumoperitônio:\n• • Abscesso pequeno (< 3–4 cm): ATB IV\n• • Abscesso >= 3–4 cm: ATB IV + Drenagem por TC\n• • Após 6–8 semanas: apendicectomia de intervalo (se indicada) + colonoscopia se > 40 anos!",
+      "audioText": "Conduta na apendicite complicada para a FGV. Se houver peritonite difusa, pneumoperitônio livre ou instabilidade, faz-se antibiótico intravenoso e apendicectomia imediata. Se houver apenas plastrão ou abscesso bloqueado sem peritonite difusa e sem pneumoperitônio, trata-se inicialmente com antibiótico e drenagem por tomografia se o abscesso for grande, deixando eventual apendicectomia de intervalo para seis a oito semanas."
     }
   ]
 }

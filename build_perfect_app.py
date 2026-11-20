@@ -2977,6 +2977,7 @@ html_content = """<!DOCTYPE html>
         'anafilaxia': 'Anafilaxia & Alergia',
         'intussuscepcao': 'Intussuscepção',
         'diverticulite': 'Diverticulite',
+        'apendicite': 'Apendicite',
         'dheg': 'Pré-eclâmpsia & DHEG',
         'trauma': 'Trauma / ATLS',
         'suicidio': 'Risco de Suicídio',
