@@ -3783,6 +3783,16 @@
       "front": "Paciente no 7º dia de enoxaparina apresenta queda das plaquetas de 200.000 para 60.000/mm³ com suspeita de HIT. Qual a conduta imediata e por que NÃO se pode dar HNF, aguardar ou iniciar varfarina?",
       "back": "✅ Conduta imediata: SUSPENDER enoxaparina (toda heparina!) e INICIAR anticoagulante NÃO-heparínico (FONDAPARINUX, argatroban ou bivalirudina).\n\n• Por que anticoagular se as plaquetas estão baixas?\n• • Na HIT (anticorpo anti-PF4/heparina, D5–D10, queda >= 50%), o risco é TROMBOSE (venosa/arterial), NÃO sangramento!\n\n⚠️ Pegadinhas FGV (Erradas):\n• Trocar por HNF → PROIBIDO (reação cruzada; HNF causa ainda mais HIT que HBPM!).\n• Só suspender e aguardar → ERRADO (~50% evoluem com trombose!).\n• Iniciar Varfarina na fase aguda → PROIBIDO! Cai Proteína C rápido → necrose cutânea e gangrena venosa! (Só iniciar varfarina após plaquetas > 150.000).",
       "audioText": "Na trombocitopenia induzida por heparina, a HIT, com queda de plaquetas maior que cinquenta por cento entre o quinto e o décimo dia de enoxaparina, a conduta imediata é suspender toda heparina e iniciar um anticoagulante não heparínico, como fondaparinux ou argatroban. Nunca trocar para heparina não fracionada por reação cruzada, nunca apenas suspender e aguardar pelo altíssimo risco de trombose, e nunca iniciar varfarina na fase aguda pelo risco de queda da proteína C e necrose cutânea."
+    },
+    {
+      "id": 1051,
+      "area": "cirurgia",
+      "cat": "diverticulite",
+      "year": "FGV",
+      "name": "Diverticulite: Minúcias na TC vs Apendagite e Esquemas de ATB (VO vs IV)",
+      "front": "Quais as minúcias na TC que diferenciam Diverticulite com abscesso pericólico da Apendagite Epiploica, e quais os esquemas de antibiótico (VO ambulatorial vs IV internado)?",
+      "back": "✅ Diferenças na TC e Clínica:\n• Apendagite Epiploica: sem febre, sem leucocitose importante; TC = lesão oval com DENSIDADE DE GORDURA + anel fino hiperdenso, parede colônica normal.\n• Diverticulite com Abscesso: febre, leucocitose, alteração intestinal; TC = divertículos + espessamento de parede + COLEÇÃO LÍQUIDA/PUS (com realce periférico e/ou gás), nunca gordura pura!\n\n✅ Antibióticos na Diverticulite (sempre Gram-negativos + anaeróbios):\n• VO (ambulatorial): Ciprofloxacina + Metronidazol | Amoxicilina-clavulanato | SMX-TMP + Metronidazol.\n• IV (internado / abscesso): Ceftriaxona + Metronidazol | Cipro + Metronidazol | Piperacilina-tazobactam (casos graves).\n\n⚠️ Lembrete: Abscesso < 4 cm = só ATB | Abscesso >= 4 cm = ATB + drenagem por TC!",
+      "audioText": "Minúcias da diverticulite com abscesso pericólico versus apendagite epiploica. Na apendagite não há febre e a tomografia mostra massa oval com densidade de gordura e parede do cólon normal. Na diverticulite há febre, leucocitose e na tomografia há divertículos, espessamento da parede e coleção líquida ou purulenta. Os antibióticos cobrem Gram negativos e anaeróbios: via oral com ciprofloxacina mais metronidazol ou amoxicilina com clavulanato; e intravenoso com ceftriaxona mais metronidazol ou piperacilina-tazobactam."
     }
   ],
   "fgv_tables": [
