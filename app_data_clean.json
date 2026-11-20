@@ -3653,6 +3653,16 @@
       "front": "Como diferenciar os bloqueios AV e bradiarritmias do IAM Inferior (CD) vs IAM Anterosseptal (DA) quanto à localização (supra vs infra-hissiana), tipo de BAV, gravidade e resposta à atropina?",
       "back": "✅ IAM INFERIOR (Coronária Direita — irriga o nó AV em 90%):\n• Arritmia mais comum: Bradicardia sinusal (até 40% nas primeiras 2h — reflexo vagal/Bezold-Jarisch).\n• BAV típico: BAV 1º grau ou 2º grau Mobitz I (Wenckebach).\n• Localização: PROXIMAL ao feixe de His (SUPRA-hissiano / nó AV) em 90%, QRS estreito, transitório e benigno.\n• Resposta à atropina: BOA (se sintomático).\n\n✅ IAM ANTERIOR / ANTEROSSEPTAL (Descendente Anterior):\n• Menos frequente, porém MUITO MAIS GRAVE (proporcional à extensão da necrose).\n• BAV típico: BAV 2º grau Mobitz II ou BAVT com QRS largo.\n• Localização: DISTAL ao feixe de His (INFRA-hissiano / sistema His-Purkinje).\n• Conduta: NÃO responde bem à atropina → marca-passo!\n\n⚠️ Pegadinha FGV: a banca inverte dizendo que o BAV do IAM inferior é 'distal ao feixe de His' — FALSO, ele é PROXIMAL (supra-hissiano)!",
       "audioText": "Distúrbios de condução no infarto agudo do miocárdio para a FGV. No infarto inferior, pela artéria coronária direita, a bradicardia sinusal ocorre em até quarenta por cento nas primeiras duas horas, e os bloqueios são supra-hissianos, proximais ao feixe de His em noventa por cento, geralmente Mobitz um ou Wenckebach, benignos e responsivos à atropina. Já no infarto anterosseptal, os bloqueios são menos frequentes, porém muito mais graves, infra-hissianos ou distais ao feixe de His, geralmente Mobitz dois ou BAV total com QRS largo, exigindo marca-passo."
+    },
+    {
+      "id": 1038,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "IAM Inferior + Hipotensão + TJP + Pulmões Limpos = IAM de VD",
+      "front": "Paciente com dor torácica há 3h, supra de ST em DII, DIII e aVF, hipotenso, com turgência jugular patológica (TJP), pulsos simétricos e ausculta cardíaca/pulmonar normais. Qual o diagnóstico, qual derivação pedir e o que é PROIBIDO?",
+      "back": "✅ Diagnóstico: INFARTO DE VENTRÍCULO DIREITO (VD)!\n\n• Tríade clássica: Hipotensão + Turgência jugular (TJP) + Pulmões limpos (sem congestão!) no IAM inferior (DII, DIII, aVF).\n• Derivações obrigatórias: V3R e V4R (supra em V4R confirma!).\n• Conduta: Expansão volêmica (SF 0,9%) + reperfusão imediata.\n\n⚠️ PROIBIDOS no IAM de VD: Nitratos, Morfina, Diuréticos e Betabloqueadores (derrubam a pré-carga e o paciente choca!).\n\n💡 Como diferenciar de rotura de cordoalha/papilar? Rotura dá SOPRO mitral + EDEMA AGUDO DE PULMÃO (estertores), nunca ausculta normal!",
+      "audioText": "No infarto agudo do miocárdio de parede inferior, com supra em D2, D3 e aVF, cursando com hipotensão, turgência jugular patológica e ausculta pulmonar normal, o diagnóstico clássico é infarto de ventrículo direito. Deve-se solicitar derivações direitas V3R e V4R e fazer expansão volêmica com soro fisiológico, sendo proibidos nitratos, morfina e diuréticos."
     }
   ],
   "fgv_tables": [
@@ -4075,6 +4085,18 @@
       "col2Title": "IAM Anterior (Descendente Anterior)",
       "col2": "• Menos frequente, porém MUITO MAIS GRAVE (necrose extensa do septo)\n• Local do bloqueio: DISTAL ao feixe de His (infra-hissiano / ramos)\n• Tipo clássico: BAV 2º grau Mobitz II e BAVT infra-hissiano\n• QRS largo + NÃO responde à Atropina → Marca-passo!\n• • Pegadinha FGV: não trocar proximal por distal no IAM inferior!",
       "audioText": "Tabela comparativa dos distúrbios de condução no IAM para a FGV. No IAM inferior: bradicardia sinusal é a arritmia mais comum, o bloqueio é proximal ao feixe de His em noventa por cento dos casos, típico Mobitz um com QRS estreito e boa resposta à atropina. No IAM anterior: menos comum porém grave, bloqueio distal ao feixe de His, típico Mobitz dois com QRS largo, precisando de marca-passo."
+    },
+    {
+      "id": 2036,
+      "area": "cardiologia",
+      "cat": "scas",
+      "year": "FGV",
+      "name": "IAM de Parede Inferior (DII, DIII, aVF): IAM de VD vs Outras Complicações (FGV)",
+      "col1Title": "IAM de Ventrículo Direito (VD)",
+      "col1": "• Tríade: Hipotensão + TJP + Pulmões LIMPOS\n• ECG: DII, DIII, aVF + pedir V3R e V4R (supra >= 1 mm em V4R)\n• Ausculta cardíaca normal; pulsos simétricos\n• Conduta: SF 0,9% em bolus + reperfusão\n• • PROIBIDOS: nitrato, morfina, diurético, BB",
+      "col2Title": "Diagnósticos Diferenciais (Pegadinhas)",
+      "col2": "• Rotura de músculo papilar / cordoalha: SOPRO mitral agudo + Edema Agudo de Pulmão (estertores!)\n• Dissecção de aorta: dor lancinante, assimetria de pulsos/PA, sopro de IAo\n• Aneurisma de VE: complicação TARDIA (semanas pós-IAM extenso, geralmente anterior)\n• Pericardite constritiva: quadro CRÔNICO, nunca agudo em 3h",
+      "audioText": "Diferenciais no infarto inferior para a FGV. O infarto de ventrículo direito cursa com hipotensão, turgência jugular e pulmões limpos, confirmado em V4R e tratado com volume, proibindo nitratos e diuréticos. Rotura de cordoalha dá sopro e edema agudo de pulmão. Dissecção de aorta dá assimetria de pulsos. Aneurisma de VE é complicação tardia, e pericardite constritiva é crônica."
     }
   ]
 }
