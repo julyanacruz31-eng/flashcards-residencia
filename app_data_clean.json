@@ -3713,6 +3713,16 @@
       "front": "Hipertenso com dor torácica intensa, assimetria de PA (94x65 MSD vs 70x40 MSE), alargamento de mediastino, B3, crepitações bibasais e sopro DIASTÓLICO em foco aórtico. Qual a complicação aguda, o tratamento e por que o BIA é proibido?",
       "back": "✅ Complicação aguda: INSUFICIÊNCIA AÓRTICA AGUDA (por dissecção de aorta Stanford A).\n✅ Tratamento: CIRURGIA DE EMERGÊNCIA (sem balão intra-aórtico!).\n\n⚠️ Pegadinha FGV (Balão Intra-Aórtico — BIA):\n• O BIA é DUPLAMENTE CONTRAINDICADO aqui (tanto na Insuficiência Aórtica quanto na Dissecção de Aorta)!\n• Por quê? O BIA insufla na DIÁSTOLE — na insuficiência aórtica, isso empurra mais sangue de volta para o VE, piorando o EAP e o choque; e na dissecção pode agravar o rasgo/rotura aórtica!\n\n💡 Sopro DIASTÓLICO aórtico = Insuficiência aórtica (Estenose aórtica dá sopro SISTÓLICO!).",
       "audioText": "Na dissecção aguda de aorta tipo Stanford A com assimetria de pressão entre os braços, alargamento de mediastino, edema pulmonar e sopro diastólico em foco aórtico, a complicação aguda é insuficiência aórtica aguda, cujo tratamento definitivo é cirurgia de emergência. Atenção à pegadinha da FGV: o balão intra-aórtico é absolutamente contraindicado tanto na insuficiência aórtica quanto na dissecção de aorta, pois insufla na diástole e piora a regurgitação para o ventrículo esquerdo."
+    },
+    {
+      "id": 1044,
+      "area": "infectologia",
+      "cat": "ists",
+      "year": "FGV",
+      "name": "Uretrite Aguda (Corrimento Uretral): Esquema Empírico Atual",
+      "front": "Homem sexualmente ativo com disúria e descarga uretral purulenta há 2 dias. Além de tratar parceiro(a)s e abstenção sexual por 7 dias, qual o tratamento empírico de escolha (CDC/PCDT)?",
+      "back": "✅ Tratamento empírico (cobre Gonococo + Clamídia):\n• Ceftriaxona 500 mg IM dose única (para Neisseria gonorrhoeae)\n• + Doxiciclina 100 mg VO 12/12h por 7 dias (1ª escolha para Chlamydia trachomatis).\n\n• Se gestante ou contraindicação à doxiciclina: substituir doxiciclina por Azitromicina 1 g VO dose única!\n\n⚠️ Pegadinhas FGV:\n• Ciprofloxacina está PROSCRITA para gonococo (altíssima resistência bacteriana!).\n• Azitromicina 500 mg por 7 dias é dose errada (para clamídia é 1 g dose única!).\n• Cefuroxima VO não substitui ceftriaxona IM!",
+      "audioText": "Na uretrite aguda com corrimento purulento cobrada pela FGV, deve-se cobrir empiricamente gonococo e clamídia com ceftriaxona quinhentos miligramas intramuscular em dose única, associada à doxiciclina cem miligramas via oral de doze em doze horas por sete dias, além de abstenção sexual por sete dias e tratamento dos parceiros. Ciprofloxacina não se usa mais por alta resistência do gonococo."
     }
   ],
   "fgv_tables": [
@@ -4207,6 +4217,18 @@
       "col2Title": "Contraindicações ao Balão Intra-Aórtico (BIA)",
       "col2": "• BIA é PROIBIDO em:\n• • Insuficiência Aórtica (moderada/grave — piora regurgitação na diástole!)\n• • Dissecção Aguda de Aorta (risco de ruptura/extensão da falsa luz!)\n• • Doença arterial periférica ilíaco-femoral grave / coagulopatia grave\n• • Pegadinha: sopro DIASTÓLICO = Insuficiência; SISTÓLICO = Estenose",
       "audioText": "Dissecção de aorta complicada com insuficiência aórtica para a FGV. Sopro diastólico em foco aórtico associado a assimetria de pressão e alargamento de mediastino indica insuficiência aórtica aguda por dissecção Stanford A, tratada com cirurgia de emergência. O balão intra-aórtico é formalmente contraindicado na insuficiência aórtica e na dissecção de aorta."
+    },
+    {
+      "id": 2042,
+      "area": "infectologia",
+      "cat": "ists",
+      "year": "FGV",
+      "name": "Uretrite Aguda / Corrimento Uretral: Esquema Atual vs Obsoletos (FGV)",
+      "col1Title": "Esquema Atual (Gonococo + Clamídia)",
+      "col1": "• Gonococo (Neisseria gonorrhoeae):\n• • Ceftriaxona 500 mg IM dose única\n• Clamídia (Chlamydia trachomatis):\n• • Doxiciclina 100 mg VO 12/12h por 7 dias (1ª escolha atual!)\n• • Alternativa (gestante): Azitromicina 1 g VO dose única\n• • Orientar abstenção sexual por 7 dias + tratar parceiro(a)s + testar HIV/sífilis/hep B e C",
+      "col2Title": "Pegadinhas e Esquemas Errados",
+      "col2": "• Ciprofloxacina VO → NÃO usar (alta resistência do gonococo!)\n• Azitromicina 500 mg por 7 dias → DOSE ERRADA (o certo seria 1 g dose única)\n• Cefuroxima VO → eficácia inferior à ceftriaxona IM\n• • Na doença inflamatória pélvica (DIP) leve: Ceftriaxona 500 mg IM DU + Doxi 100 mg 12/12h 14d + Metronidazol 500 mg 12/12h 14d!",
+      "audioText": "Tratamento da uretrite aguda para a FGV. Associar ceftriaxona quinhentos miligramas intramuscular em dose única para gonococo com doxiciclina cem miligramas de doze em doze horas por sete dias para clamídia. Em gestantes troca-se doxiciclina por azitromicina um grama dose única. Ciprofloxacina não deve ser usada pela resistência do gonococo."
     }
   ]
 }
