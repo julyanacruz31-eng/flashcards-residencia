@@ -2980,7 +2980,8 @@ html_content = """<!DOCTYPE html>
         'dheg': 'Pré-eclâmpsia & DHEG',
         'trauma': 'Trauma / ATLS',
         'suicidio': 'Risco de Suicídio',
-        'ists': 'ISTs & Uretrites'
+        'ists': 'ISTs & Uretrites',
+        'meningite': 'Meningite'
       };
       return map[cat] || cat || 'Geral';
     }

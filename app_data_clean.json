@@ -3753,6 +3753,16 @@
       "front": "Como diferenciar Neuralgia do Trigêmeo, Cefaleia em Salvas, Hemicrania Paroxística, Enxaqueca e Tensional (clínica + tratamento)?",
       "back": "✅ 1. Neuralgia do Trigêmeo (V par — V2/V3):\n• Dor em CHOQUE ELÉTRICO unilateral na face, segundinhos (< 2 min), gatilho ao tocar/escovar dentes/falar/mastigar.\n• Tratamento: CARBAMAZEPINA (1ª escolha — ou Oxcarbazepina)! Analgésico comum NÃO funciona.\n\n✅ 2. Cefaleia em Salvas:\n• Homem jovem, dor unilateral periorbitária 15–180 min + olho vermelho/ptose/lacrimejamento + AGITAÇÃO.\n• Abortivo: O2 100% ou Sumatriptano SC | Profilaxia: VERAPAMIL.\n\n✅ 3. Hemicrania Paroxística:\n• Mulher, igual à salvas mas crises mais curtas (2–30 min) e >5x/dia.\n• Tratamento específico: INDOMETACINA (resposta absoluta!).\n\n✅ 4. Enxaqueca:\n• 4–72h, pulsátil, náusea, foto/fonofobia, quer quarto escuro.\n• Abortivo: Triptanos / AINE | Profilaxia: Propranolol, Topiramato, Amitriptilina, Valproato.\n\n✅ 5. Tensional:\n• Bilateral em aperto/faixa, leve/moderada, sem náusea.\n• Abortivo: analgésico/AINE | Profilaxia: Amitriptilina.",
       "audioText": "Diferenciação das principais cefaleias e neuralgias para a FGV. Na neuralgia do trigêmeo, a dor é em choque elétrico na face durando segundos, desencadeada por toque ou mastigação, e o tratamento de escolha é carbamazepina. Na cefaleia em salvas, homem jovem com dor unilateral intensa, sinais autonômicos e agitação, tratando a crise com oxigênio cem por cento e a profilaxia com verapamil. Na hemicrania paroxística, crises mais curtas e frequentes em mulheres, tratada com indometacina. Na enxaqueca, dor pulsátil com náusea e fotofobia, abortada com triptano e prevenida com propranolol, topiramato ou amitriptilina. Na tensional, dor bilateral em aperto sem náusea, prevenida com amitriptilina."
+    },
+    {
+      "id": 1048,
+      "area": "infectologia",
+      "cat": "meningite",
+      "year": "FGV",
+      "name": "Meningite Bacteriana em >= 50 anos: Quando Pedir TC e Ampicilina",
+      "front": "Homem de 60 anos, hígido, lúcido, com febre, rigidez de nuca e restante do exame neurológico normal. Deve fazer TC de crânio antes da punção lombar? Qual a sequência e o esquema antimicrobiano?",
+      "back": "✅ Conduta: HEMOCULTURA → PUNÇÃO LOMBAR (SEM TC!) → CEFTRIAXONA + AMPICILINA + DEXAMETASONA!\n\n• Por que SEM TC de crânio?\n• • Idade >= 60 anos isolada NÃO indica TC! Só pede TC antes da PL se: imunodeprimido, doença prévia do SNC, convulsão recente, papiledema, rebaixamento da consciência ou déficit focal.\n\n• Por que AMPICILINA?\n• • Idade >= 50 anos (ou gestante / imunodeprimido) exige cobertura para Listeria monocytogenes → associar AMPICILINA ao Ceftriaxone (+ Dexametasona antes ou junto da 1ª dose do ATB)!\n\n⚠️ Pegadinha FGV: se tivesse indicação de TC antes da PL, NUNCA atrasar o antibiótico — faz hemocultura → Dexametasona + ATB → TC → PL!",
+      "audioText": "Na meningite bacteriana aguda em paciente de sessenta anos, previamente hígido, lúcido e sem déficit neurológico focal, não há indicação de tomografia de crânio antes da punção lombar. A sequência correta é coletar hemocultura, realizar punção lombar e iniciar ceftriaxona associada à ampicilina para cobrir Listeria monocytogenes em maiores de cinquenta anos, além de dexametasona antes ou junto à primeira dose do antibiótico."
     }
   ],
   "fgv_tables": [
@@ -4295,6 +4305,18 @@
       "col2Title": "Tratamento (Abortivo e Profilaxia)",
       "col2": "• Trigêmeo: CARBAMAZEPINA (1ª escolha) ou Oxcarbazepina (descompressão/cirurgia se refratário)\n• Salvas: Abortivo = O2 100% / Sumatriptano SC | Profilaxia = VERAPAMIL\n• Hemicrania Paroxística: INDOMETACINA (100% responsiva!)\n• Enxaqueca: Abortivo = Triptanos/AINE | Profilaxia = Propranolol, Topiramato, Amitriptilina, Valproato\n• Tensional: Analgésico/AINE | Profilaxia = Amitriptilina",
       "audioText": "Tabela completa de cefaleias e neuralgia do trigêmeo para a FGV. Trigêmeo: choque elétrico por segundos em V2 e V3, trata com carbamazepina. Salvas: quinze a cento e oitenta minutos com agitação e sinais autonômicos, aborta com oxigênio e previne com verapamil. Hemicrania paroxística: crises curtas em mulheres, trata com indometacina. Enxaqueca: quatro a setenta e duas horas com náusea e fotofobia, aborta com triptano e previne com propranolol, topiramato ou amitriptilina. Tensional: bilateral em aperto, previne com amitriptilina."
+    },
+    {
+      "id": 2046,
+      "area": "infectologia",
+      "cat": "meningite",
+      "year": "FGV",
+      "name": "Meningite Bacteriana: Indicação de TC Pré-PL e Esquema Empírico (FGV)",
+      "col1Title": "Quando Pedir TC Antes da PL?",
+      "col1": "• Só se >= 1 critério de alerta:\n• • Imunodepressão (HIV, transplante)\n• • Doença prévia do SNC (tumor, AVC)\n• • Convulsão recente (<= 1 semana)\n• • Papiledema\n• • Rebaixamento do nível de consciência\n• • Déficit neurológico focal\n• • Se precisar de TC: Hemocultura → ATB + Dexa → TC → PL!",
+      "col2Title": "Antibiótico Empírico + Corticoide",
+      "col2": "• < 50 anos hígido: Ceftriaxona 2 g IV 12/12h (+ Vancomicina nos EUA/resistência)\n• >= 50 anos, gestante ou imunodeprimido:\n• • Ceftriaxona + AMPICILINA (cobre Listeria!)\n• Corticoide: Dexametasona IV antes ou junto com a 1ª dose de ATB (reduz mortalidade/sequelas, sobretudo no pneumococo!)",
+      "audioText": "Tabela de meningite bacteriana para a FGV. Só se pede tomografia antes da punção lombar se houver imunodepressão, doença prévia do sistema nervoso central, convulsão recente, papiledema, rebaixamento ou déficit focal. Idade de sessenta anos lúcido e sem déficit vai direto para hemocultura, punção lombar e tratamento. A partir dos cinquenta anos é obrigatório associar ampicilina à ceftriaxona para cobrir Listeria, além de dexametasona."
     }
   ]
 }
