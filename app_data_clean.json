@@ -3863,6 +3863,16 @@
       "front": "Diabético tipo 2 chega com cetoacidose diabética (acidose metabólica com ânion gap elevado + cetonas), porém com glicemia normal (< 200–250 mg/dL). Qual classe de droga causa esse quadro e como tratar?",
       "back": "✅ Classe causadora: INIBIDORES DO SGLT2 (dapagliflozina, empagliflozina, canagliflozina)!\n\n• Por que fica 'euglicêmica'?\n• • O iSGLT2 joga glicose fora na urina (glicosúria intensa), mantendo a glicemia < 200–250 mg/dL mesmo havendo insulinopenia relativa, aumento de glucagon, lipólise e cetogênese!\n• • Gatilhos: cirurgia, jejum, infecção, redução brusca de insulina.\n\n✅ Tratamento:\n• Suspender o iSGLT2 + Hidratação + Insulina IV + JÁ INICIAR SORO GLICOSADO desde o começo (para não causar hipoglicemia enquanto desliga a cetogênese!).\n\n⚠️ Pegadinha FGV: Metformina (biguanida) causa ACIDOSE LÁCTICA (não cetoacidose!); Sulfonilureia causa HIPOGLICEMIA!",
       "audioText": "Na cetoacidose diabética euglicêmica cobrada pela FGV, a classe medicamentosa responsável são os inibidores do SGLT2, como dapagliflozina e empagliflozina. Eles mantêm a glicemia baixa ou normal pela glicosúria intensa, mascarando a cetoacidose com acidose metabólica de ânion gap alto e cetonas. O tratamento exige suspender o iSGLT2, hidratar, iniciar insulina venosa e já associar soro glicosado desde o início. Não confundir com metformina, que causa acidose láctica."
+    },
+    {
+      "id": 1059,
+      "area": "infectologia",
+      "cat": "sepse",
+      "year": "FGV",
+      "name": "Sepse (Hour-1 Bundle): Culturas Primeiro + ATB em Até 1 Hora",
+      "front": "Idosa de 80 anos com disúria e febre evolui com sonolência, taquipneia e taquicardia (sepse de foco urinário). Qual a ordem e o prazo correto para colher culturas e iniciar antibiótico?",
+      "back": "✅ Conduta correta (Pacote da 1ª Hora — Surviving Sepsis):\n• Colher HEMOCULTURA e URINOCULTURA PRIMEIRO (antes do antibiótico, sem atrasar!).\n• Iniciar ANTIBIÓTICO empírico IV de amplo espectro em ATÉ 1 HORA da admissão!\n\n• Pacote completo da 1ª hora na sepse:\n• 1. Dosar lactato sérico (repetir se > 2 mmol/L).\n• 2. Colher culturas (2 pares de hemocultura + foco) ANTES do ATB.\n• 3. Antibiótico IV de amplo espectro em <= 1 hora.\n• 4. Cristaloide 30 mL/kg se hipotensão ou lactato >= 4 mmol/L.\n• 5. Noradrenalina se hipotensão refratária ao volume (alvo PAM >= 65 mmHg).\n\n⚠️ Pegadinha FGV: NÃO dar ATB antes de colher cultura (negativiza o exame) e NÃO esperar 2h, 4h ou 6h para começar o ATB!",
+      "audioText": "Na sepse cobrada pela FGV, como idosa com foco urinário apresentando sonolência, taquipneia e taquicardia, segue-se o pacote da primeira hora da Surviving Sepsis. A conduta correta é colher hemocultura e urinocultura primeiro, antes do antibiótico, e iniciar antibioticoterapia empírica intravenosa de amplo espectro em até uma hora da admissão. Não se deve colher culturas horas depois do antibiótico, nem atrasar o antibiótico para duas, quatro ou seis horas."
     }
   ],
   "fgv_tables": [
@@ -4525,6 +4535,18 @@
       "col2Title": "Demais Classes (Pegadinhas)",
       "col2": "• Sulfonilureias (glibenclamida, gliclazida): HIPOGLICEMIA e ganho de peso\n• Análogos de GLP-1 (semaglutida, liraglutida): náuseas, retardo de esvaziamento gástrico, evitar se Ca medular de tireoide / MEN2\n• Inibidores de DPP-4 (sitagliptina, linagliptina): neutros no peso, raramente pancreatite/artralgia",
       "audioText": "Complicações clássicas dos antidiabéticos para a FGV. Inibidores de SGLT2 causam cetoacidose diabética euglicêmica e infecções genitais, devendo ser suspensos antes de cirurgias. Biguanida como metformina causa acidose láctica e deficiência de B12. Sulfonilureias causam hipoglicemia. Análogos de GLP-1 causam náuseas e retardo gástrico."
+    },
+    {
+      "id": 2056,
+      "area": "infectologia",
+      "cat": "sepse",
+      "year": "FGV",
+      "name": "Pacote da 1ª Hora da Sepse (Surviving Sepsis Campaign - FGV)",
+      "col1Title": "Os 5 Passos da 1ª Hora (Hour-1 Bundle)",
+      "col1": "• 1. Dosar LACTATO (repetir em 2–4h se > 2 mmol/L)\n• 2. Colher CULTURAS ANTES do ATB (2 pares hemocultura + foco, ex.: urinocultura)\n• 3. ANTIBIÓTICO IV amplo espectro em ATÉ 1 HORA\n• 4. Cristaloide 30 mL/kg IV (se hipotensão ou lactato >= 4)\n• 5. Vasopressor (Noradrenalina 1ª linha) se choque → alvo PAM >= 65 mmHg",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Ordem errada (ATB antes e cultura 2–4h depois)? ERRADO! (esteriliza culturas)\n• Prazo de ATB em 4h ou 6h na sepse? ERRADO! (o alvo clássico é <= 1 hora!)\n• • Apenas na sepse SEM choque e dúvida diagnóstica (SSC 2021) pode-se investigar rápido até 3h — mas com disfunção clara/sonolência em idosa na prova clássica é <= 1 hora!",
+      "audioText": "Pacote da primeira hora da sepse para a FGV. Primeiro: dosar lactato. Segundo: colher hemocultura e cultura do foco antes do antibiótico. Terceiro: iniciar antibiótico intravenoso em até uma hora. Quarto: trinta mililitros por quilo de cristaloide se hipotensão ou lactato maior ou igual a quatro. Quinto: noradrenalina para pressão arterial média maior ou igual a sessenta e cinco."
     }
   ]
 }

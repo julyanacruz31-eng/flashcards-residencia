@@ -2983,7 +2983,8 @@ html_content = """<!DOCTYPE html>
         'trauma': 'Trauma / ATLS',
         'suicidio': 'Risco de Suicídio',
         'ists': 'ISTs & Uretrites',
-        'meningite': 'Meningite'
+        'meningite': 'Meningite',
+        'sepse': 'Sepse & UTI'
       };
       return map[cat] || cat || 'Geral';
     }
