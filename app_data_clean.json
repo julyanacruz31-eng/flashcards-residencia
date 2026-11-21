@@ -3883,6 +3883,16 @@
       "front": "Qual é o papel exato do D-dímero no diagnóstico de TEP (em qual probabilidade pré-teste ele entra, o que exclui e o que nunca faz)?",
       "back": "✅ Papel do D-dímero:\n• Níveis NORMAIS em paciente com probabilidade PRÉ-TESTE BAIXA (ou não alta / Wells <= 4) EXCLUEM o diagnóstico de TEP!\n\n• Por quê?\n• • ALTA sensibilidade e alto Valor Preditivo Negativo (VPN).\n• • BAIXA especificidade (sobe em infecção, pós-operatório, câncer, trauma, gestação, idoso).\n\n⚠️ Pegadinhas FGV (Erradas):\n• D-dímero ELEVADO NUNCA confirma TEP (exige AngioTC de tórax!).\n• Probabilidade ALTA (Wells > 4 ou > 6): NÃO pedir D-dímero! Mesmo normal, não exclui com segurança → ir direto para AngioTC de tórax!",
       "audioText": "Papel do D-dímero no tromboembolismo pulmonar para a FGV. O D-dímero tem altíssima sensibilidade e alto valor preditivo negativo, porém baixa especificidade. Por isso, níveis normais de D-dímero em pacientes com probabilidade pré-teste baixa excluem o diagnóstico de TEP. Atenção às pegadinhas: D-dímero elevado nunca confirma TEP, e em probabilidade alta não se pede D-dímero, devendo-se ir direto para angiotomografia de tórax."
+    },
+    {
+      "id": 1061,
+      "area": "infectologia",
+      "cat": "ists",
+      "year": "FGV",
+      "name": "Sífilis: Latente de Duração Ignorada vs Recente vs Neurossífilis",
+      "front": "Homem assintomático em rotina de PrEP apresenta VDRL 1/64 e desconhece quando foi infectado por sífilis. Qual a classificação e o tratamento? E por que NÃO usar Penicilina Benzatina IV?",
+      "back": "✅ Classificação: SÍFILIS LATENTE DE DURAÇÃO IGNORADA (trata como TARDIA!).\n✅ Tratamento: Penicilina G BENZATINA 2,4 milhões UI IM, 1x/semana por 3 SEMANAS (total = 7,2 milhões UI).\n\n• Resumo dos 3 esquemas (PCDT):\n• • Sífilis Recente (primária, secundária ou latente < 1 ano): Benzatina 2,4 milhões UI IM DOSE ÚNICA.\n• • Sífilis Tardia (> 1 ano, duração ignorada ou terciária): Benzatina 2,4 milhões UI IM 1x/semana por 3 semanas.\n• • Neurossífilis: Penicilina G CRISTALINA 18–24 milhões UI/dia IV (3–4M 4/4h) por 10–14 dias.\n\n⚠️ Pegadinha FGV: Penicilina BENZATINA é EXCLUSIVA IM (NUNCA IV — é suspensão oleosa/cristalina de depósito, fatal na veia!). Na veia é só Penicilina CRISTALINA!",
+      "audioText": "Na sífilis assintomática em que o paciente desconhece quando foi infectado, classificamos como sífilis latente de duração ignorada e tratamos como tardia, com penicilina G benzatina dois vírgula quatro milhões de unidades intramuscular uma vez por semana por três semanas, totalizando sete vírgula dois milhões. Já na sífilis recente, com menos de um ano, é dose única. E atenção à pegadinha da FGV: penicilina benzatina nunca pode ser feita na veia; tratamento intravenoso para neurossífilis é sempre com penicilina G cristalina."
     }
   ],
   "fgv_tables": [
@@ -4569,6 +4579,18 @@
       "col2Title": "Probabilidade Alta (Wells > 4) e Pegadinhas",
       "col2": "• Probabilidade ALTA → NÃO pedir D-dímero!\n• • Ir DIRETO para AngioTC de tórax (ou cintilografia V/Q se alergia grave/IRA)\n• • D-dímero alto sozinho NUNCA confirma TEP (sobe em infecção, cirurgia, neoplasia, gravidez)\n• • Instável (choque): Eco beira-leito (sobrecarga de VD) + considerar trombólise!",
       "audioText": "Algoritmo diagnóstico do TEP para a FGV. Na probabilidade baixa ou intermediária pelo escore de Wells, pede-se D-dímero: se normal, exclui TEP; se elevado, não confirma e exige angiotomografia de tórax. Na probabilidade alta, não se pede D-dímero, indo direto para angiotomografia."
+    },
+    {
+      "id": 2058,
+      "area": "infectologia",
+      "cat": "ists",
+      "year": "FGV",
+      "name": "Tratamento da Sífilis: Recente vs Tardia vs Neurossífilis (PCDT - FGV)",
+      "col1Title": "Sífilis Recente vs Tardia / Ignorada",
+      "col1": "• Sífilis Recente (< 1 ano: primária, secundária, latente recente):\n• • Penicilina G Benzatina 2,4 milhões UI IM DOSE ÚNICA\n• Sífilis Tardia (> 1 ano, DURAÇÃO IGNORADA ou terciária):\n• • Penicilina G Benzatina 2,4 milhões UI IM 1x/sem por 3 SEMANAS (7,2M total)\n• • Dica: em gestante, atraso > 9 dias (MS) reinicia o esquema!",
+      "col2Title": "Neurossífilis e Pegadinhas FGV",
+      "col2": "• Neurossífilis (ou ocular/otológica): Penicilina G CRISTALINA 18–24 milhões UI/dia IV (3–4M IV 4/4h ou contínua) por 10–14 dias\n• PROIBIDO Penicilina BENZATINA IV! (Apenas IM!)\n• Alergia à penicilina (não gestante): Doxiciclina 100 mg 12/12h (14d recente / 28d tardia)\n• • Gestante alérgica: DESSENSIBILIZAR e dar Penicilina!",
+      "audioText": "Tabela de tratamento da sífilis para a FGV. Sífilis recente menor que um ano: penicilina benzatina dois vírgula quatro milhões intramuscular dose única. Sífilis tardia, terciária ou de duração ignorada: penicilina benzatina dois vírgula quatro milhões uma vez por semana por três semanas. Neurossífilis: penicilina cristalina intravenosa dezoito a vinte e quatro milhões por dia por dez a quatorze dias. Nunca aplicar penicilina benzatina intravenosa."
     }
   ]
 }
