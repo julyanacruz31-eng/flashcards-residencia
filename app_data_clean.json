@@ -3843,6 +3843,16 @@
       "front": "Jovem de 25 anos com vômitos após libação alcoólica, hematêmese pequena e EDA com lacerações longitudinais no esôfago distal. Qual o diagnóstico e como diferenciar de Boerhaave, Dieulafoy e Cameron?",
       "back": "✅ Diagnóstico: SÍNDROME DE MALLORY-WEISS!\n• Laceração longitudinal NÃO transmural (mucosa/submucosa) na JEG após vômitos/ânsia (álcool, gravidez); sangramento geralmente autolimitado (~90% para sozinho; IBP + endoscopia se ativo).\n\n⚠️ Diferenciais clássicos de prova:\n• Síndrome de Boerhaave: ruptura TRANSMURAL do esôfago pós-vômitos → dor torácica forte + enfisema subcutâneo + pneumomediastino + derrame pleural E.\n• Lesão de Dieulafoy: artéria calibrosa aberrante na submucosa gástrica proximal → sangramento arterial maciço sem úlcera.\n• Lesão de Cameron: erosões lineares dentro de grande hérnia de hiato → anemia ferropriva crônica.\n• Angiodisplasia: ectasia vascular em idoso (cólon D / estenose aórtica = Síndrome de Heyde).",
       "audioText": "Na síndrome de Mallory-Weiss cobrada pela FGV, paciente jovem após vômitos intensos, como em libação alcoólica, apresenta hematêmese geralmente em pequena quantidade, e a endoscopia mostra lacerações longitudinais na junção esofagogástrica. Diferencie de Boerhaave, que é ruptura transmural com pneumomediastino; de lesão de Dieulafoy, que é artéria submucosa aberrante gástrica com sangramento maciço; e de lesão de Cameron, associada a hérnia de hiato e anemia crônica."
+    },
+    {
+      "id": 1057,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "IRA Pós-CATE: NTA por Contraste vs Ateroembolismo por Colesterol",
+      "front": "Idosa 2 dias após cateterismo cardíaco apresenta aumento de creatinina com diurese mantida e cilindros epiteliais na urina (sem livedo nem eosinofilia). Qual a causa da IRA e como diferenciar do ateroembolismo?",
+      "back": "✅ Causa: NECROSE TUBULAR AGUDA (NTA) POR CONTRASTE!\n\n• Pistas da NTA por contraste:\n• • Início precoce: 24–72h (aqui: 2 dias), pico 3–5d, recupera em 7–10d.\n• • Diurese geralmente mantida (não oligúrica).\n• • Urina I: cilindros epiteliais e granulosos pigmentados ('marrom-lamacentos').\n• • Prevenção: SF 0,9% IV antes/depois (única medida unânime!).\n\n⚠️ Diferencial clássico FGV — Ateroembolismo por Colesterol (pós-CATE):\n• Mais tardio (semanas após CATE) e evolução arrastada/irreversível.\n• Tríade de pele/lab: LIVEDO RETICULAR + DEDO AZUL (isquemia digital) + EOSINOFILIA + queda de complemento (C3/C4) + placas de Hollenhorst no fundo de olho.",
+      "audioText": "Na injúria renal aguda após cateterismo cardíaco cobrada pela FGV, devemos diferenciar necrose tubular aguda por contraste de ateroembolismo por colesterol. Quando a creatinina sobe em dois dias, com débito urinário mantido e cilindros epiteliais na sedimentoscopia, sem lesões de pele, o diagnóstico é necrose tubular aguda por contraste. Já o ateroembolismo aparece mais tardiamente, semanas depois, acompanhado de livedo reticular, dedo azul, eosinofilia e queda de complemento."
     }
   ],
   "fgv_tables": [
@@ -4481,6 +4491,18 @@
       "col2Title": "Lesões Vasculares / Mecânicas (Diferenciais)",
       "col2": "• Lesão de Dieulafoy: artéria submucosa calibrosa aberrante (estômago proximal) → sangramento arterial maciço sem úlcera\n• Lesão de Cameron: erosões lineares no colo de grande hérnia de hiato → anemia ferropriva crônica\n• Angiodisplasia: malformação AV (cólon D / delgado) em idosos; associada a estenose aórtica (Síndrome de Heyde)",
       "audioText": "Tabela diferencial de causas especiais de hemorragia digestiva para a FGV. Síndrome de Mallory-Weiss: laceração longitudinal não transmural após vômitos com hematêmese leve. Boerhaave: ruptura transmural com pneumomediastino e enfisema subcutâneo. Dieulafoy: artéria aberrante submucosa no estômago proximal com sangramento maciço. Cameron: erosões em hérnia de hiato causando anemia crônica. Angiodisplasia: ectasia vascular em cólon direito associada à estenose aórtica."
+    },
+    {
+      "id": 2054,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "IRA Pós-Cateterismo: Contraste (NTA) vs Ateroembolismo vs NIA (FGV)",
+      "col1Title": "NTA por Contraste",
+      "col1": "• Tempo: 24–72h pós-contraste (pico 3–5d; resolve em 7–10d)\n• Diurese: geralmente MANTIDA (não oligúrica)\n• Urina I: cilindros epiteliais e granulosos pigmentados\n• Sem manifestações cutâneas, sem eosinofilia\n• • Prevenção: hidratação com SF 0,9% IV",
+      "col2Title": "Ateroembolismo vs NIA vs Vasculite/Rabdo",
+      "col2": "• Ateroembolismo (Colesterol): dias a SEMANAS pós-CATE; livedo reticular, dedo azul, eosinofilia, consumo de C3/C4, placas de Hollenhorst\n• Nefrite Intersticial Aguda (NIA): febre + rash + eosinofilia + eosinofilúria (alergia a droga)\n• Vasculite renal: hematúria dismórfica / cilindros hemáticos\n• Rabdomiólise: trauma/esforço, CPK muito alta, heme + sem hemácias",
+      "audioText": "Tabela diferencial de insuficiência renal aguda pós-cateterismo para a FGV. NTA por contraste surge em vinte e quatro a setenta e duas horas, com diurese mantida e cilindros epiteliais. Ateroembolismo surge mais tardiamente, com livedo reticular, dedo azul, eosinofilia e consumo de complemento. Nefrite intersticial aguda cursa com febre, rash e eosinofilúria. Vasculite dá cilindros hemáticos, e rabdomiólise cursa com CPK elevada."
     }
   ]
 }
