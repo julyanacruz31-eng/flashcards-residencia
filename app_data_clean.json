@@ -3853,6 +3853,16 @@
       "front": "Idosa 2 dias após cateterismo cardíaco apresenta aumento de creatinina com diurese mantida e cilindros epiteliais na urina (sem livedo nem eosinofilia). Qual a causa da IRA e como diferenciar do ateroembolismo?",
       "back": "✅ Causa: NECROSE TUBULAR AGUDA (NTA) POR CONTRASTE!\n\n• Pistas da NTA por contraste:\n• • Início precoce: 24–72h (aqui: 2 dias), pico 3–5d, recupera em 7–10d.\n• • Diurese geralmente mantida (não oligúrica).\n• • Urina I: cilindros epiteliais e granulosos pigmentados ('marrom-lamacentos').\n• • Prevenção: SF 0,9% IV antes/depois (única medida unânime!).\n\n⚠️ Diferencial clássico FGV — Ateroembolismo por Colesterol (pós-CATE):\n• Mais tardio (semanas após CATE) e evolução arrastada/irreversível.\n• Tríade de pele/lab: LIVEDO RETICULAR + DEDO AZUL (isquemia digital) + EOSINOFILIA + queda de complemento (C3/C4) + placas de Hollenhorst no fundo de olho.",
       "audioText": "Na injúria renal aguda após cateterismo cardíaco cobrada pela FGV, devemos diferenciar necrose tubular aguda por contraste de ateroembolismo por colesterol. Quando a creatinina sobe em dois dias, com débito urinário mantido e cilindros epiteliais na sedimentoscopia, sem lesões de pele, o diagnóstico é necrose tubular aguda por contraste. Já o ateroembolismo aparece mais tardiamente, semanas depois, acompanhado de livedo reticular, dedo azul, eosinofilia e queda de complemento."
+    },
+    {
+      "id": 1058,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "CAD Euglicêmica: Inibidores do SGLT2 (Dapa / Empagliflozina)",
+      "front": "Diabético tipo 2 chega com cetoacidose diabética (acidose metabólica com ânion gap elevado + cetonas), porém com glicemia normal (< 200–250 mg/dL). Qual classe de droga causa esse quadro e como tratar?",
+      "back": "✅ Classe causadora: INIBIDORES DO SGLT2 (dapagliflozina, empagliflozina, canagliflozina)!\n\n• Por que fica 'euglicêmica'?\n• • O iSGLT2 joga glicose fora na urina (glicosúria intensa), mantendo a glicemia < 200–250 mg/dL mesmo havendo insulinopenia relativa, aumento de glucagon, lipólise e cetogênese!\n• • Gatilhos: cirurgia, jejum, infecção, redução brusca de insulina.\n\n✅ Tratamento:\n• Suspender o iSGLT2 + Hidratação + Insulina IV + JÁ INICIAR SORO GLICOSADO desde o começo (para não causar hipoglicemia enquanto desliga a cetogênese!).\n\n⚠️ Pegadinha FGV: Metformina (biguanida) causa ACIDOSE LÁCTICA (não cetoacidose!); Sulfonilureia causa HIPOGLICEMIA!",
+      "audioText": "Na cetoacidose diabética euglicêmica cobrada pela FGV, a classe medicamentosa responsável são os inibidores do SGLT2, como dapagliflozina e empagliflozina. Eles mantêm a glicemia baixa ou normal pela glicosúria intensa, mascarando a cetoacidose com acidose metabólica de ânion gap alto e cetonas. O tratamento exige suspender o iSGLT2, hidratar, iniciar insulina venosa e já associar soro glicosado desde o início. Não confundir com metformina, que causa acidose láctica."
     }
   ],
   "fgv_tables": [
@@ -4503,6 +4513,18 @@
       "col2Title": "Ateroembolismo vs NIA vs Vasculite/Rabdo",
       "col2": "• Ateroembolismo (Colesterol): dias a SEMANAS pós-CATE; livedo reticular, dedo azul, eosinofilia, consumo de C3/C4, placas de Hollenhorst\n• Nefrite Intersticial Aguda (NIA): febre + rash + eosinofilia + eosinofilúria (alergia a droga)\n• Vasculite renal: hematúria dismórfica / cilindros hemáticos\n• Rabdomiólise: trauma/esforço, CPK muito alta, heme + sem hemácias",
       "audioText": "Tabela diferencial de insuficiência renal aguda pós-cateterismo para a FGV. NTA por contraste surge em vinte e quatro a setenta e duas horas, com diurese mantida e cilindros epiteliais. Ateroembolismo surge mais tardiamente, com livedo reticular, dedo azul, eosinofilia e consumo de complemento. Nefrite intersticial aguda cursa com febre, rash e eosinofilúria. Vasculite dá cilindros hemáticos, e rabdomiólise cursa com CPK elevada."
+    },
+    {
+      "id": 2055,
+      "area": "endocrinologia",
+      "cat": "emergencias_dm",
+      "year": "FGV",
+      "name": "Antidiabéticos e Suas Complicações Clássicas de Prova (FGV)",
+      "col1Title": "iSGLT2 vs Metformina (Acidose!)",
+      "col1": "• Inibidores de SGLT2 (dapagliflozina, empagliflozina):\n• • CAD EUGLICÊMICA (glicemia < 200–250 + cetonas + AG alto)\n• • ITU / candidíase genital; suspender antes de cirurgias!\n• Biguanidas (Metformina):\n• • ACIDOSE LÁCTICA (sem cetonas — risco se TFG < 30, sepse, choque)\n• • Deficiência de vitamina B12 e intolerância GI",
+      "col2Title": "Demais Classes (Pegadinhas)",
+      "col2": "• Sulfonilureias (glibenclamida, gliclazida): HIPOGLICEMIA e ganho de peso\n• Análogos de GLP-1 (semaglutida, liraglutida): náuseas, retardo de esvaziamento gástrico, evitar se Ca medular de tireoide / MEN2\n• Inibidores de DPP-4 (sitagliptina, linagliptina): neutros no peso, raramente pancreatite/artralgia",
+      "audioText": "Complicações clássicas dos antidiabéticos para a FGV. Inibidores de SGLT2 causam cetoacidose diabética euglicêmica e infecções genitais, devendo ser suspensos antes de cirurgias. Biguanida como metformina causa acidose láctica e deficiência de B12. Sulfonilureias causam hipoglicemia. Análogos de GLP-1 causam náuseas e retardo gástrico."
     }
   ]
 }
