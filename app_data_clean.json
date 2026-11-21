@@ -3873,6 +3873,16 @@
       "front": "Idosa de 80 anos com disúria e febre evolui com sonolência, taquipneia e taquicardia (sepse de foco urinário). Qual a ordem e o prazo correto para colher culturas e iniciar antibiótico?",
       "back": "✅ Conduta correta (Pacote da 1ª Hora — Surviving Sepsis):\n• Colher HEMOCULTURA e URINOCULTURA PRIMEIRO (antes do antibiótico, sem atrasar!).\n• Iniciar ANTIBIÓTICO empírico IV de amplo espectro em ATÉ 1 HORA da admissão!\n\n• Pacote completo da 1ª hora na sepse:\n• 1. Dosar lactato sérico (repetir se > 2 mmol/L).\n• 2. Colher culturas (2 pares de hemocultura + foco) ANTES do ATB.\n• 3. Antibiótico IV de amplo espectro em <= 1 hora.\n• 4. Cristaloide 30 mL/kg se hipotensão ou lactato >= 4 mmol/L.\n• 5. Noradrenalina se hipotensão refratária ao volume (alvo PAM >= 65 mmHg).\n\n⚠️ Pegadinha FGV: NÃO dar ATB antes de colher cultura (negativiza o exame) e NÃO esperar 2h, 4h ou 6h para começar o ATB!",
       "audioText": "Na sepse cobrada pela FGV, como idosa com foco urinário apresentando sonolência, taquipneia e taquicardia, segue-se o pacote da primeira hora da Surviving Sepsis. A conduta correta é colher hemocultura e urinocultura primeiro, antes do antibiótico, e iniciar antibioticoterapia empírica intravenosa de amplo espectro em até uma hora da admissão. Não se deve colher culturas horas depois do antibiótico, nem atrasar o antibiótico para duas, quatro ou seis horas."
+    },
+    {
+      "id": 1060,
+      "area": "pneumologia",
+      "cat": "tep",
+      "year": "FGV",
+      "name": "TEP: Papel Exato do D-Dímero (Sensibilidade vs Especificidade)",
+      "front": "Qual é o papel exato do D-dímero no diagnóstico de TEP (em qual probabilidade pré-teste ele entra, o que exclui e o que nunca faz)?",
+      "back": "✅ Papel do D-dímero:\n• Níveis NORMAIS em paciente com probabilidade PRÉ-TESTE BAIXA (ou não alta / Wells <= 4) EXCLUEM o diagnóstico de TEP!\n\n• Por quê?\n• • ALTA sensibilidade e alto Valor Preditivo Negativo (VPN).\n• • BAIXA especificidade (sobe em infecção, pós-operatório, câncer, trauma, gestação, idoso).\n\n⚠️ Pegadinhas FGV (Erradas):\n• D-dímero ELEVADO NUNCA confirma TEP (exige AngioTC de tórax!).\n• Probabilidade ALTA (Wells > 4 ou > 6): NÃO pedir D-dímero! Mesmo normal, não exclui com segurança → ir direto para AngioTC de tórax!",
+      "audioText": "Papel do D-dímero no tromboembolismo pulmonar para a FGV. O D-dímero tem altíssima sensibilidade e alto valor preditivo negativo, porém baixa especificidade. Por isso, níveis normais de D-dímero em pacientes com probabilidade pré-teste baixa excluem o diagnóstico de TEP. Atenção às pegadinhas: D-dímero elevado nunca confirma TEP, e em probabilidade alta não se pede D-dímero, devendo-se ir direto para angiotomografia de tórax."
     }
   ],
   "fgv_tables": [
@@ -4547,6 +4557,18 @@
       "col2Title": "Pegadinhas Clássicas da FGV",
       "col2": "• Ordem errada (ATB antes e cultura 2–4h depois)? ERRADO! (esteriliza culturas)\n• Prazo de ATB em 4h ou 6h na sepse? ERRADO! (o alvo clássico é <= 1 hora!)\n• • Apenas na sepse SEM choque e dúvida diagnóstica (SSC 2021) pode-se investigar rápido até 3h — mas com disfunção clara/sonolência em idosa na prova clássica é <= 1 hora!",
       "audioText": "Pacote da primeira hora da sepse para a FGV. Primeiro: dosar lactato. Segundo: colher hemocultura e cultura do foco antes do antibiótico. Terceiro: iniciar antibiótico intravenoso em até uma hora. Quarto: trinta mililitros por quilo de cristaloide se hipotensão ou lactato maior ou igual a quatro. Quinto: noradrenalina para pressão arterial média maior ou igual a sessenta e cinco."
+    },
+    {
+      "id": 2057,
+      "area": "pneumologia",
+      "cat": "tep",
+      "year": "FGV",
+      "name": "Algoritmo Diagnóstico do TEP: Wells e D-Dímero (FGV)",
+      "col1Title": "Probabilidade Baixa / Não Alta (Wells <= 4)",
+      "col1": "• 1º Passo: pedir D-dímero\n• • D-dímero NORMAL (< 500 ou ajustado pela idade: idade x 10 se > 50a) → EXCLUI TEP!\n• • D-dímero ELEVADO → NÃO confirma TEP → fazer AngioTC de tórax!",
+      "col2Title": "Probabilidade Alta (Wells > 4) e Pegadinhas",
+      "col2": "• Probabilidade ALTA → NÃO pedir D-dímero!\n• • Ir DIRETO para AngioTC de tórax (ou cintilografia V/Q se alergia grave/IRA)\n• • D-dímero alto sozinho NUNCA confirma TEP (sobe em infecção, cirurgia, neoplasia, gravidez)\n• • Instável (choque): Eco beira-leito (sobrecarga de VD) + considerar trombólise!",
+      "audioText": "Algoritmo diagnóstico do TEP para a FGV. Na probabilidade baixa ou intermediária pelo escore de Wells, pede-se D-dímero: se normal, exclui TEP; se elevado, não confirma e exige angiotomografia de tórax. Na probabilidade alta, não se pede D-dímero, indo direto para angiotomografia."
     }
   ]
 }
