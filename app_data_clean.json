@@ -3823,6 +3823,16 @@
       "front": "Como interpretar TAP (TP/INR) e TTPa: quais vias e fatores avaliam, quais anticoagulantes monitoram, quais doenças alteram e como funciona o Teste da Mistura (50:50)?",
       "back": "✅ 1. TAP / TP / INR (Via EXTRÍNSECA + Comum → Fator VII + X, V, II, I):\n• Normal: TP 10–14s | Atividade >= 70% | INR ~1,0 (0,8–1,2).\n• Monitora: VARFARINA (alvo INR 2–3; prótese mecânica mitral 2,5–3,5).\n• Alarga em: Varfarina, deficiência de Vitamina K, insuficiência hepática (Fator VII tem menor meia-vida, cai 1º!).\n\n✅ 2. TTPa (Via INTRÍNSECA + Comum → Fatores XII, XI, IX, VIII + X, V, II, I):\n• Normal: ~25–35s (ou R = relação paciente/controle até 1,25).\n• Monitora: HEPARINA NÃO FRACIONADA — HNF (alvo 1,5–2,5x controle).\n• Alarga em: HNF, Hemofilia A (VIII) e B (IX), Doença de von Willebrand, SAF (anticoagulante lúpico!).\n\n✅ 3. Ambos alargados (TP + TTPa):\n• Deficiência da via comum (X, V, II, I), CIVD, hepatopatia grave ou overdose de anticoagulante.\n\n💡 Teste da Mistura (50% plasma normal): CORRIGIU = falta fator (ex.: Hemofilia) | NÃO CORRIGIU = tem inibidor (ex.: SAF / anticoagulante lúpico)!",
       "audioText": "Interpretação de TAP, INR e TTPa. O TAP ou TP e o INR avaliam a via extrínseca pelo fator sete mais a via comum, tendo INR normal perto de um. Monitora a varfarina, cujo alvo é dois a três, e também alarga na deficiência de vitamina K e na hepatopatia, pois o fator sete cai primeiro. Já o TTPa avalia a via intrínseca pelos fatores doze, onze, nove e oito mais a via comum. Monitora a heparina não fracionada, com alvo de um vírgula cinco a duas vírgula cinco vezes o controle, e alarga nas hemofilias A e B, na doença de von Willebrand e na síndrome antifosfolípide. No teste da mistura, se corrigir o tempo falta fator; se não corrigir, há inibidor como na SAF."
+    },
+    {
+      "id": 1055,
+      "area": "pediatria",
+      "cat": "shu",
+      "year": "FGV",
+      "name": "SHU (Síndrome Hemolítico-Urêmica): Tríade, Conduta e Proibições",
+      "front": "Criança de 4 anos após diarreia sanguinolenta afebril evolui com anúria (Cr 4,0, U 120), plaquetas 70.000 e Hb 7,0 com Coombs negativo + esquizócitos. Qual o diagnóstico, o tratamento e o que é PROIBIDO?",
+      "back": "✅ Diagnóstico: SÍNDROME HEMOLÍTICO-URÊMICA (SHU) típica (E. coli STEC O157:H7).\n• Tríade clássica: Anemia hemolítica microangiopática (esquizócitos, Coombs negativo) + Trombocitopenia + Injúria Renal Aguda.\n\n✅ Conduta: SUPORTE CLÍNICO — expansão volêmica IV cuidadosa (se desidratada; avaliar diálise se anúria/sobrecarga refratária) e controle pressórico.\n\n⚠️ PROIBIÇÕES CLÁSSICAS FGV:\n• PROIBIDO ANTIBIÓTICO (cipro/metro) → lisa a bactéria, libera mais toxina Shiga e piora a SHU!\n• PROIBIDO AINE (anti-inflamatório) → agrava a IRA e o risco de sangramento.\n• PROIBIDO OPIÁCEO / LOPERAMIDA → reduz motilidade, retém a toxina no intestino e piora o quadro!",
+      "audioText": "Na síndrome hemolítico-urêmica típica da pediatria, desencadeada após diarreia sanguinolenta geralmente afebril por Escherichia coli produtora de toxina Shiga, ocorre a tríade de anemia hemolítica microangiopática com esquizócitos e Coombs negativo, trombocitopenia e injúria renal aguda. O tratamento é apenas de suporte com expansão volêmica intravenosa se desidratada e suporte renal quando necessário. É proibido usar antibióticos como ciprofloxacina ou metronidazol pois liberam mais toxina Shiga, assim como são proibidos anti-inflamatórios e opiáceos."
     }
   ],
   "fgv_tables": [
@@ -4437,6 +4447,18 @@
       "col2Title": "TTPa (Via Intrínseca) e Teste da Mistura",
       "col2": "• Avalia: Fatores XII, XI, IX, VIII + Via Comum\n• Normal: 25–35s (Relação <= 1,25)\n• Monitora: HNF IV (alvo 1,5–2,5x)\n• Causas de TTPa alto: HNF, Hemofilia A (VIII) / B (IX), vWB, SAF\n• Teste da Mistura (50:50): CORRIGIU = falta fator | NÃO CORRIGIU = inibidor (SAF)",
       "audioText": "Tabela comparativa de coagulograma. TAP e INR avaliam via extrínseca pelo fator sete e monitoram varfarina, alterando também na falta de vitamina K e doença hepática. TTPa avalia via intrínseca e monitora heparina não fracionada, alterando nas hemofilias e na SAF. No teste da mistura, se corrigir é deficiência de fator; se não corrigir, é inibidor."
+    },
+    {
+      "id": 2052,
+      "area": "pediatria",
+      "cat": "shu",
+      "year": "FGV",
+      "name": "Síndrome Hemolítico-Urêmica (SHU): Diagnóstico e Proibições (FGV)",
+      "col1Title": "Tríade e Etiologia",
+      "col1": "• Agente clássico: E. coli entero-hemorrágica / STEC (O157:H7) — toxina Shiga (ou Shigella dysenteriae)\n• Pródromo: diarreia sanguinolenta geralmente AFEBRIL (carne malpassada/leite não pasteurizado)\n• Tríade da SHU:\n• • 1. Anemia hemolítica microangiopática (esquizócitos, Coombs -, LDH alto)\n• • 2. Plaquetopenia (petéquias)\n• • 3. Injúria renal aguda (oligúria/anúria, Cr alta, HAS)",
+      "col2Title": "Tratamento e O Que É Proibido",
+      "col2": "• Tratamento: SUPORTE! (expansão volêmica se desidratação; diálise se anúria/refratário; concentrado de hemácias se anemia sintomática)\n• PROIBIDO:\n• • Antibióticos (cipro, metronidazol) → aumentam liberação de toxina Shiga!\n• • AINEs → nefrotoxicidade + sangramento\n• • Opiáceos / Loperamida → retêm toxina no intestino\n• • Transfusão de plaquetas de rotina → evitar salvo sangramento ativo grave",
+      "audioText": "Tabela da síndrome hemolítico-urêmica para a FGV. Causada pela toxina Shiga da E. coli O157:H7 após diarreia sanguinolenta afebril. Tríade: anemia hemolítica microangiopática com esquizócitos, plaquetopenia e injúria renal aguda. Tratamento apenas de suporte com hidratação e diálise se preciso. São proibidos antibióticos, anti-inflamatórios, opiáceos e loperamida."
     }
   ]
 }
