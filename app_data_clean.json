@@ -3833,6 +3833,16 @@
       "front": "Criança de 4 anos após diarreia sanguinolenta afebril evolui com anúria (Cr 4,0, U 120), plaquetas 70.000 e Hb 7,0 com Coombs negativo + esquizócitos. Qual o diagnóstico, o tratamento e o que é PROIBIDO?",
       "back": "✅ Diagnóstico: SÍNDROME HEMOLÍTICO-URÊMICA (SHU) típica (E. coli STEC O157:H7).\n• Tríade clássica: Anemia hemolítica microangiopática (esquizócitos, Coombs negativo) + Trombocitopenia + Injúria Renal Aguda.\n\n✅ Conduta: SUPORTE CLÍNICO — expansão volêmica IV cuidadosa (se desidratada; avaliar diálise se anúria/sobrecarga refratária) e controle pressórico.\n\n⚠️ PROIBIÇÕES CLÁSSICAS FGV:\n• PROIBIDO ANTIBIÓTICO (cipro/metro) → lisa a bactéria, libera mais toxina Shiga e piora a SHU!\n• PROIBIDO AINE (anti-inflamatório) → agrava a IRA e o risco de sangramento.\n• PROIBIDO OPIÁCEO / LOPERAMIDA → reduz motilidade, retém a toxina no intestino e piora o quadro!",
       "audioText": "Na síndrome hemolítico-urêmica típica da pediatria, desencadeada após diarreia sanguinolenta geralmente afebril por Escherichia coli produtora de toxina Shiga, ocorre a tríade de anemia hemolítica microangiopática com esquizócitos e Coombs negativo, trombocitopenia e injúria renal aguda. O tratamento é apenas de suporte com expansão volêmica intravenosa se desidratada e suporte renal quando necessário. É proibido usar antibióticos como ciprofloxacina ou metronidazol pois liberam mais toxina Shiga, assim como são proibidos anti-inflamatórios e opiáceos."
+    },
+    {
+      "id": 1056,
+      "area": "gastroenterologia",
+      "cat": "hda",
+      "year": "FGV",
+      "name": "HDA: Síndrome de Mallory-Weiss vs Boerhaave, Dieulafoy e Cameron",
+      "front": "Jovem de 25 anos com vômitos após libação alcoólica, hematêmese pequena e EDA com lacerações longitudinais no esôfago distal. Qual o diagnóstico e como diferenciar de Boerhaave, Dieulafoy e Cameron?",
+      "back": "✅ Diagnóstico: SÍNDROME DE MALLORY-WEISS!\n• Laceração longitudinal NÃO transmural (mucosa/submucosa) na JEG após vômitos/ânsia (álcool, gravidez); sangramento geralmente autolimitado (~90% para sozinho; IBP + endoscopia se ativo).\n\n⚠️ Diferenciais clássicos de prova:\n• Síndrome de Boerhaave: ruptura TRANSMURAL do esôfago pós-vômitos → dor torácica forte + enfisema subcutâneo + pneumomediastino + derrame pleural E.\n• Lesão de Dieulafoy: artéria calibrosa aberrante na submucosa gástrica proximal → sangramento arterial maciço sem úlcera.\n• Lesão de Cameron: erosões lineares dentro de grande hérnia de hiato → anemia ferropriva crônica.\n• Angiodisplasia: ectasia vascular em idoso (cólon D / estenose aórtica = Síndrome de Heyde).",
+      "audioText": "Na síndrome de Mallory-Weiss cobrada pela FGV, paciente jovem após vômitos intensos, como em libação alcoólica, apresenta hematêmese geralmente em pequena quantidade, e a endoscopia mostra lacerações longitudinais na junção esofagogástrica. Diferencie de Boerhaave, que é ruptura transmural com pneumomediastino; de lesão de Dieulafoy, que é artéria submucosa aberrante gástrica com sangramento maciço; e de lesão de Cameron, associada a hérnia de hiato e anemia crônica."
     }
   ],
   "fgv_tables": [
@@ -4459,6 +4469,18 @@
       "col2Title": "Tratamento e O Que É Proibido",
       "col2": "• Tratamento: SUPORTE! (expansão volêmica se desidratação; diálise se anúria/refratário; concentrado de hemácias se anemia sintomática)\n• PROIBIDO:\n• • Antibióticos (cipro, metronidazol) → aumentam liberação de toxina Shiga!\n• • AINEs → nefrotoxicidade + sangramento\n• • Opiáceos / Loperamida → retêm toxina no intestino\n• • Transfusão de plaquetas de rotina → evitar salvo sangramento ativo grave",
       "audioText": "Tabela da síndrome hemolítico-urêmica para a FGV. Causada pela toxina Shiga da E. coli O157:H7 após diarreia sanguinolenta afebril. Tríade: anemia hemolítica microangiopática com esquizócitos, plaquetopenia e injúria renal aguda. Tratamento apenas de suporte com hidratação e diálise se preciso. São proibidos antibióticos, anti-inflamatórios, opiáceos e loperamida."
+    },
+    {
+      "id": 2053,
+      "area": "gastroenterologia",
+      "cat": "hda",
+      "year": "FGV",
+      "name": "Causas Especiais de HDA: Mallory-Weiss, Dieulafoy, Cameron e Angiodisplasia (FGV)",
+      "col1Title": "Pós-Vômitos (Mallory-Weiss vs Boerhaave)",
+      "col1": "• Síndrome de Mallory-Weiss:\n• • Laceração longitudinal mucosa/submucosa (NÃO transmural) na JEG\n• • Hematêmese leve/autolimitada (90% para só; IBP / terapia endoscópica se ativo)\n• Síndrome de Boerhaave:\n• • Ruptura TRANSMURAL do esôfago → dor torácica, enfisema subcutâneo, pneumomediastino, derrame pleural E",
+      "col2Title": "Lesões Vasculares / Mecânicas (Diferenciais)",
+      "col2": "• Lesão de Dieulafoy: artéria submucosa calibrosa aberrante (estômago proximal) → sangramento arterial maciço sem úlcera\n• Lesão de Cameron: erosões lineares no colo de grande hérnia de hiato → anemia ferropriva crônica\n• Angiodisplasia: malformação AV (cólon D / delgado) em idosos; associada a estenose aórtica (Síndrome de Heyde)",
+      "audioText": "Tabela diferencial de causas especiais de hemorragia digestiva para a FGV. Síndrome de Mallory-Weiss: laceração longitudinal não transmural após vômitos com hematêmese leve. Boerhaave: ruptura transmural com pneumomediastino e enfisema subcutâneo. Dieulafoy: artéria aberrante submucosa no estômago proximal com sangramento maciço. Cameron: erosões em hérnia de hiato causando anemia crônica. Angiodisplasia: ectasia vascular em cólon direito associada à estenose aórtica."
     }
   ]
 }
