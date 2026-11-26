@@ -3935,6 +3935,16 @@
       "front": "Mulher hígida de 35 anos com disúria e polaciúria há 3 dias, afebril e alérgica a sulfa. Deve-se pedir urinocultura? Qual o tratamento de escolha e o tempo correto?",
       "back": "✅ Conduta: NÃO pedir urinocultura! Tratar empiricamente com FOSFOMICINA 3 g VO em DOSE ÚNICA (ou Nitrofurantoína por 5 dias).\n\n• 1ª Linha na Cistite Não Complicada:\n• • Fosfomicina trometamol 3 g VO DOSE ÚNICA\n• • Nitrofurantoína 100 mg VO por 5 DIAS (não 14d!)\n• • SMX-TMP por 3 dias (se sem alergia e resistência local < 20%)\n\n⚠️ Pegadinhas FGV (Erradas):\n• Urinocultura de rotina na cistite não complicada → NÃO pedir! (Só pedir em: gestante, homem, pielonefrite, falha terapêutica ou ITU recorrente/atípica).\n• Ciprofloxacina → poupar para pielonefrite!\n• Amoxicilina-clavulanato → 2ª linha e dura 5–7 dias (nunca 3d!).",
       "audioText": "Na cistite aguda não complicada em mulher jovem hígida e afebril, não se solicita urinocultura de rotina, partindo-se direto para tratamento empírico. As opções de primeira linha são fosfomicina três gramas em dose única ou nitrofurantoína por cinco dias, já que aqui a paciente é alérgica a sulfa. Atenção às pegadinhas: nitrofurantoína não é por quatorze dias, amoxicilina com clavulanato é segunda linha por cinco a sete dias, e fluoroquinolonas ficam reservadas para pielonefrite."
+    },
+    {
+      "id": 1066,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "TVP Proximal + AVE Hemorrágico Recente: Filtro de Veia Cava Inferior",
+      "front": "Paciente com AVE hemorrágico há 1 semana desenvolve TVP em veia ilíaca esquerda. Qual o tratamento inicial e quais as indicações clássicas do Filtro de Veia Cava Inferior (VCI)?",
+      "back": "✅ Conduta inicial: FILTRO DE VEIA CAVA INFERIOR (preferencialmente removível)!\n\n• Por quê? AVE hemorrágico recente (1 semana) é CONTRAINDICAÇÃO ABSOLUTA à anticoagulação (proibido apixabana, enoxaparina, HNF ou fondaparinux)!\n\n✅ Indicações clássicas de Filtro de VCI:\n• 1. TVP proximal (ilíaca/femoral/poplítea) ou TEP com CONTRAINDICAÇÃO à anticoagulação (sangramento ativo, AVEh recente, neurocirurgia recente).\n• 2. Recorrência de TEP mesmo em anticoagulação plena adequada.\n• 3. Complicação hemorrágica grave durante a anticoagulação.\n\n⚠️ Pegadinha: o filtro de VCI NÃO trata o trombo da perna (previne apenas TEP fatal!). Assim que o risco hemorrágico passar, inicia-se anticoagulação e retira-se o filtro!",
+      "audioText": "Na trombose venosa profunda proximal em paciente com AVE hemorrágico há uma semana, a anticoagulação é absolutamente contraindicada pelo risco de ressangramento intracraniano. Portanto, está proibido usar apixabana, enoxaparina ou fondaparinux, e o tratamento inicial indicado pela FGV é o implante de filtro de veia cava inferior, preferencialmente removível, para prevenir embolia pulmonar fatal."
     }
   ],
   "fgv_tables": [
@@ -4681,6 +4691,18 @@
       "col2Title": "Pielonefrite e Pegadinhas FGV",
       "col2": "• Pielonefrite: febre + calafrios + dor lombar (Giordano +) + náuseas\n• • SEMPRE colher urinocultura!\n• • Nitrofurantoína e Fosfomicina NÃO servem para pielonefrite (não atingem parênquima renal)!\n• • Pielonefrite leve: Cipro/Levo VO ou Ceftriaxona\n• • Pegadinha: Nitrofurantoína na cistite = 5 dias (não 14d!); Amoxi-clav = 5–7 dias",
       "audioText": "Tabela comparativa de infecção urinária para a FGV. Na cistite não complicada, sem febre, não se pede urinocultura e trata-se com fosfomicina dose única ou nitrofurantoína por cinco dias. Já na pielonefrite, com febre e dor lombar, sempre colher urinocultura e nunca usar nitrofurantoína ou fosfomicina, pois não atingem boa concentração no parênquima renal."
+    },
+    {
+      "id": 2063,
+      "area": "hematologia",
+      "cat": "hemostasia",
+      "year": "FGV",
+      "name": "Filtro de Veia Cava Inferior (VCI): Indicações na TVP / TEP (FGV)",
+      "col1Title": "Quando Indicar Filtro de VCI",
+      "col1": "• TVP proximal ou TEP + CONTRAINDICAÇÃO à anticoagulação:\n• • AVE hemorrágico recente / sangramento ativo grave\n• • Neurocirurgia / cirurgia ocular recente / plaquetopenia extrema\n• TEP recorrente apesar de anticoagulação plena adequada\n• Sangramento grave na vigência de anticoagulação",
+      "col2Title": "Cuidados e Pegadinhas FGV",
+      "col2": "• Anticoagulantes (apixabana, enoxaparina, fondaparinux) → PROIBIDOS no AVEh recente!\n• Trombectomia cirúrgica → só em isquemia grave ameaçando o membro (flegmasia cerúlea dolens)\n• Preferir filtro REMOVÍVEL (retirar assim que puder anticoagular!)\n• • Filtro previne TEP, mas aumenta risco de TVP recorrente a longo prazo se ficar definitivo",
+      "audioText": "Indicações do filtro de veia cava inferior para a FGV. Indicar quando há TVP proximal ou TEP com contraindicação absoluta à anticoagulação, como AVE hemorrágico recente ou sangramento ativo, ou quando há recorrência de TEP apesar de anticoagulação adequada. Anticoagulantes como apixabana, enoxaparina e fondaparinux são proibidos no AVE hemorrágico recente."
     }
   ]
 }
