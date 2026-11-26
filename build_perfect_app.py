@@ -2984,7 +2984,8 @@ html_content = """<!DOCTYPE html>
         'suicidio': 'Risco de Suicídio',
         'ists': 'ISTs & Uretrites',
         'meningite': 'Meningite',
-        'sepse': 'Sepse & UTI'
+        'sepse': 'Sepse & UTI',
+        'vacinas': 'Vacinas & Preventiva'
       };
       return map[cat] || cat || 'Geral';
     }

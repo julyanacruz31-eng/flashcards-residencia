@@ -3893,6 +3893,16 @@
       "front": "Homem assintomático em rotina de PrEP apresenta VDRL 1/64 e desconhece quando foi infectado por sífilis. Qual a classificação e o tratamento? E por que NÃO usar Penicilina Benzatina IV?",
       "back": "✅ Classificação: SÍFILIS LATENTE DE DURAÇÃO IGNORADA (trata como TARDIA!).\n✅ Tratamento: Penicilina G BENZATINA 2,4 milhões UI IM, 1x/semana por 3 SEMANAS (total = 7,2 milhões UI).\n\n• Resumo dos 3 esquemas (PCDT):\n• • Sífilis Recente (primária, secundária ou latente < 1 ano): Benzatina 2,4 milhões UI IM DOSE ÚNICA.\n• • Sífilis Tardia (> 1 ano, duração ignorada ou terciária): Benzatina 2,4 milhões UI IM 1x/semana por 3 semanas.\n• • Neurossífilis: Penicilina G CRISTALINA 18–24 milhões UI/dia IV (3–4M 4/4h) por 10–14 dias.\n\n⚠️ Pegadinha FGV: Penicilina BENZATINA é EXCLUSIVA IM (NUNCA IV — é suspensão oleosa/cristalina de depósito, fatal na veia!). Na veia é só Penicilina CRISTALINA!",
       "audioText": "Na sífilis assintomática em que o paciente desconhece quando foi infectado, classificamos como sífilis latente de duração ignorada e tratamos como tardia, com penicilina G benzatina dois vírgula quatro milhões de unidades intramuscular uma vez por semana por três semanas, totalizando sete vírgula dois milhões. Já na sífilis recente, com menos de um ano, é dose única. E atenção à pegadinha da FGV: penicilina benzatina nunca pode ser feita na veia; tratamento intravenoso para neurossífilis é sempre com penicilina G cristalina."
+    },
+    {
+      "id": 1062,
+      "area": "preventiva",
+      "cat": "vacinas",
+      "year": "FGV",
+      "name": "Vacina do HPV: Faixa Etária, Rastreio e Pegadinhas (ACIP / PNI)",
+      "front": "Sobre a vacina do HPV: qual a faixa etária de rotina (ACIP/FGV e PNI), quando aplicar em relação à vida sexual, se elimina infecção prévia, se dispensa Papanicolau e se é contraindicada >= 27 anos?",
+      "back": "✅ Regra ACIP/UpToDate (FGV):\n• Vacinação de rotina / catch-up recomendada para indivíduos <= 26 anos (idealmente 11–12 anos, antes da vida sexual).\n• PNI/SUS (Brasil): 9–14 anos em DOSE ÚNICA (imunossuprimidos/vítimas de violência: 3 doses até 45 anos).\n\n⚠️ Pegadinhas FGV (O que é FALSO):\n• Aplicar depois da vida sexual? FALSO — aplicar ANTES do início da vida sexual.\n• Dispensa rastreio (Papanicolau)? FALSO — vacinadas CONTINUAM fazendo rastreio normalmente!\n• Elimina infecção já existente? FALSO — é profilática, não terapêutica.\n• Contraindicada >= 27 anos? FALSO — entre 27 e 45 anos pode fazer por decisão compartilhada.",
+      "audioText": "Sobre a vacina do HPV cobrada pela FGV. Pelas diretrizes americanas do ACIP usadas na questão, a vacinação de rotina é recomendada para indivíduos com até vinte e seis anos de idade, preferencialmente antes do início da vida sexual. No Brasil pelo PNI, faz-se dose única dos nove aos catorze anos. Atenção às pegadinhas: a vacina não elimina infecção já existente, não dispensa o rastreio do câncer de colo de útero e não é contraindicada a partir dos vinte e sete anos, podendo ser feita até quarenta e cinco anos em decisão compartilhada."
     }
   ],
   "fgv_tables": [
@@ -4591,6 +4601,18 @@
       "col2Title": "Neurossífilis e Pegadinhas FGV",
       "col2": "• Neurossífilis (ou ocular/otológica): Penicilina G CRISTALINA 18–24 milhões UI/dia IV (3–4M IV 4/4h ou contínua) por 10–14 dias\n• PROIBIDO Penicilina BENZATINA IV! (Apenas IM!)\n• Alergia à penicilina (não gestante): Doxiciclina 100 mg 12/12h (14d recente / 28d tardia)\n• • Gestante alérgica: DESSENSIBILIZAR e dar Penicilina!",
       "audioText": "Tabela de tratamento da sífilis para a FGV. Sífilis recente menor que um ano: penicilina benzatina dois vírgula quatro milhões intramuscular dose única. Sífilis tardia, terciária ou de duração ignorada: penicilina benzatina dois vírgula quatro milhões uma vez por semana por três semanas. Neurossífilis: penicilina cristalina intravenosa dezoito a vinte e quatro milhões por dia por dez a quatorze dias. Nunca aplicar penicilina benzatina intravenosa."
+    },
+    {
+      "id": 2059,
+      "area": "preventiva",
+      "cat": "vacinas",
+      "year": "FGV",
+      "name": "Vacina contra o HPV: Regras de Ouro e Pegadinhas (FGV)",
+      "col1Title": "Indicações (ACIP/FGV e PNI)",
+      "col1": "• ACIP/UpToDate (FGV): rotina 11–12 anos (desde 9a) + catch-up até <= 26 anos\n• 27–45 anos: NÃO é rotina, mas NÃO é contraindicada (decisão compartilhada)\n• PNI Brasil (2024+): 9–14 anos (ambos os sexos) em DOSE ÚNICA\n• Imunossuprimidos (HIV, Tx, onco) e violência sexual: 3 doses (até 45 anos)",
+      "col2Title": "Pegadinhas Clássicas da FGV",
+      "col2": "• Aplicar antes ou depois da vida sexual? SEMPRE ANTES!\n• Vacinada precisa de Papanicolau/rastreio? SIM, mantém rastreio igual!\n• Cura/elimina HPV já instalado? NÃO (é preventiva, não terapêutica!)\n• Contraindicada em gestantes: adiar para pós-parto (não é teratogênica se aplicada sem saber)",
+      "audioText": "Tabela da vacina contra o HPV para a FGV. Pelo ACIP, rotina até vinte e seis anos; entre vinte e sete e quarenta e cinco anos por decisão compartilhada. Pelo PNI no Brasil, nove a catorze anos em dose única. Sempre aplicar antes da vida sexual, manter o rastreio do colo uterino nas vacinadas e lembrar que a vacina não elimina infecção prévia."
     }
   ]
 }
