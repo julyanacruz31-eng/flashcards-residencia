@@ -2985,7 +2985,8 @@ html_content = """<!DOCTYPE html>
         'ists': 'ISTs & Uretrites',
         'meningite': 'Meningite',
         'sepse': 'Sepse & UTI',
-        'vacinas': 'Vacinas & Preventiva'
+        'vacinas': 'Vacinas & Preventiva',
+        'itu': 'ITU & Pielonefrite'
       };
       return map[cat] || cat || 'Geral';
     }

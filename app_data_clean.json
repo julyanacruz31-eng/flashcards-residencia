@@ -3925,6 +3925,16 @@
       "front": "Paciente com IRA e K+ 6,5 mEq/L + onda T apiculada no ECG recebe terapia que reduz o K+ sérico jogando-o para o meio INTRACELULAR. Qual é essa terapia e quais os outros 2 pilares?",
       "back": "✅ Terapia que desloca K+ para o INTRACELULAR: GLICOINSULINOTERAPIA (Insulina regular + Glicose)! (Também fazem shift intracelular: Beta-2 agonista inalatório e Bicarbonato se acidose.)\n\n✅ Os 3 Pilares da Hipercalemia com ECG alterado:\n• 1. ESTABILIZAR membrana cardíaca (não baixa K+): Gluconato de cálcio 10% IV.\n• 2. SHIFT INTRACELULAR (efeito rápido, temporário): Glicoinsulinoterapia, Beta-2 agonista (salbutamol), NaHCO3 (se acidose).\n• 3. ELIMINAR K+ do corpo (definitivo): Diurético de alça (furosemida), Resina de troca (GI) e Hemodiálise!",
       "audioText": "Na hiperpotassemia grave com alteração eletrocardiográfica como onda T apiculada, o tratamento divide-se em três pilares. Primeiro: estabilizar a membrana cardíaca com gluconato de cálcio intravenoso, sem alterar o potássio sérico. Segundo: deslocar o potássio para o meio intracelular usando glicoinsulinoterapia, beta-dois agonista ou bicarbonato na acidose. Terceiro: eliminar potássio do organismo com diurético de alça, resina de troca ou hemodiálise."
+    },
+    {
+      "id": 1065,
+      "area": "infectologia",
+      "cat": "itu",
+      "year": "FGV",
+      "name": "Cistite Aguda Não Complicada: Urinocultura e Esquemas de 1ª Linha",
+      "front": "Mulher hígida de 35 anos com disúria e polaciúria há 3 dias, afebril e alérgica a sulfa. Deve-se pedir urinocultura? Qual o tratamento de escolha e o tempo correto?",
+      "back": "✅ Conduta: NÃO pedir urinocultura! Tratar empiricamente com FOSFOMICINA 3 g VO em DOSE ÚNICA (ou Nitrofurantoína por 5 dias).\n\n• 1ª Linha na Cistite Não Complicada:\n• • Fosfomicina trometamol 3 g VO DOSE ÚNICA\n• • Nitrofurantoína 100 mg VO por 5 DIAS (não 14d!)\n• • SMX-TMP por 3 dias (se sem alergia e resistência local < 20%)\n\n⚠️ Pegadinhas FGV (Erradas):\n• Urinocultura de rotina na cistite não complicada → NÃO pedir! (Só pedir em: gestante, homem, pielonefrite, falha terapêutica ou ITU recorrente/atípica).\n• Ciprofloxacina → poupar para pielonefrite!\n• Amoxicilina-clavulanato → 2ª linha e dura 5–7 dias (nunca 3d!).",
+      "audioText": "Na cistite aguda não complicada em mulher jovem hígida e afebril, não se solicita urinocultura de rotina, partindo-se direto para tratamento empírico. As opções de primeira linha são fosfomicina três gramas em dose única ou nitrofurantoína por cinco dias, já que aqui a paciente é alérgica a sulfa. Atenção às pegadinhas: nitrofurantoína não é por quatorze dias, amoxicilina com clavulanato é segunda linha por cinco a sete dias, e fluoroquinolonas ficam reservadas para pielonefrite."
     }
   ],
   "fgv_tables": [
@@ -4659,6 +4669,18 @@
       "col2Title": "Eliminação Real do K+ do Corpo",
       "col2": "• Diurético de alça (Furosemida): elimina K+ na URINA (precisa ter função renal/diurese)\n• Resina de troca (Sorcal / Patiromer / Ciclossilicato): elimina K+ nas FEZES (ação lenta)\n• Hemodiálise: remoção mais rápida e definitiva na IRA anúrica ou refratária",
       "audioText": "Mecanismo de ação de cada terapia na hipercalemia para a FGV. Gluconato de cálcio estabiliza a membrana sem reduzir o potássio sérico. Glicoinsulinoterapia e beta-dois agonista deslocam o potássio para o meio intracelular. Furosemida elimina pela urina, resina de troca elimina pelas fezes e hemodiálise remove diretamente do sangue."
+    },
+    {
+      "id": 2062,
+      "area": "infectologia",
+      "cat": "itu",
+      "year": "FGV",
+      "name": "ITU: Cistite Não Complicada vs Pielonefrite (FGV)",
+      "col1Title": "Cistite Não Complicada",
+      "col1": "• Clínica: disúria, polaciúria, urgência, SEM febre / SEM dor lombar\n• Urinocultura: NÃO pedir de rotina! (só em gestante, homem, falha, recorrência)\n• 1ª Linha:\n• • Fosfomicina 3 g VO DOSE ÚNICA\n• • Nitrofurantoína 100 mg VO por 5 DIAS\n• • SMX-TMP por 3 dias (se não alérgica)",
+      "col2Title": "Pielonefrite e Pegadinhas FGV",
+      "col2": "• Pielonefrite: febre + calafrios + dor lombar (Giordano +) + náuseas\n• • SEMPRE colher urinocultura!\n• • Nitrofurantoína e Fosfomicina NÃO servem para pielonefrite (não atingem parênquima renal)!\n• • Pielonefrite leve: Cipro/Levo VO ou Ceftriaxona\n• • Pegadinha: Nitrofurantoína na cistite = 5 dias (não 14d!); Amoxi-clav = 5–7 dias",
+      "audioText": "Tabela comparativa de infecção urinária para a FGV. Na cistite não complicada, sem febre, não se pede urinocultura e trata-se com fosfomicina dose única ou nitrofurantoína por cinco dias. Já na pielonefrite, com febre e dor lombar, sempre colher urinocultura e nunca usar nitrofurantoína ou fosfomicina, pois não atingem boa concentração no parênquima renal."
     }
   ]
 }
