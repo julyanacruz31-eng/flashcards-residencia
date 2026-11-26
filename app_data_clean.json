@@ -3903,6 +3903,26 @@
       "front": "Sobre a vacina do HPV: qual a faixa etária de rotina (ACIP/FGV e PNI), quando aplicar em relação à vida sexual, se elimina infecção prévia, se dispensa Papanicolau e se é contraindicada >= 27 anos?",
       "back": "✅ Regra ACIP/UpToDate (FGV):\n• Vacinação de rotina / catch-up recomendada para indivíduos <= 26 anos (idealmente 11–12 anos, antes da vida sexual).\n• PNI/SUS (Brasil): 9–14 anos em DOSE ÚNICA (imunossuprimidos/vítimas de violência: 3 doses até 45 anos).\n\n⚠️ Pegadinhas FGV (O que é FALSO):\n• Aplicar depois da vida sexual? FALSO — aplicar ANTES do início da vida sexual.\n• Dispensa rastreio (Papanicolau)? FALSO — vacinadas CONTINUAM fazendo rastreio normalmente!\n• Elimina infecção já existente? FALSO — é profilática, não terapêutica.\n• Contraindicada >= 27 anos? FALSO — entre 27 e 45 anos pode fazer por decisão compartilhada.",
       "audioText": "Sobre a vacina do HPV cobrada pela FGV. Pelas diretrizes americanas do ACIP usadas na questão, a vacinação de rotina é recomendada para indivíduos com até vinte e seis anos de idade, preferencialmente antes do início da vida sexual. No Brasil pelo PNI, faz-se dose única dos nove aos catorze anos. Atenção às pegadinhas: a vacina não elimina infecção já existente, não dispensa o rastreio do câncer de colo de útero e não é contraindicada a partir dos vinte e sete anos, podendo ser feita até quarenta e cinco anos em decisão compartilhada."
+    },
+    {
+      "id": 1063,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "BAV 2º Grau Mobitz II Instável: Marca-Passo vs Atropina",
+      "front": "Paciente bradicárdico (FC 36) e instável (PA 70x34, SatO2 84%) com ECG mostrando BAV de 2º grau Mobitz tipo II. Qual o tratamento inicial e por que NÃO confiar na atropina?",
+      "back": "✅ Tratamento de escolha: MARCA-PASSO (transcutâneo imediato na emergência → transvenoso/definitivo)!\n\n• Por que Marca-Passo e não Atropina no Mobitz II?\n• • O BAV 2º grau Mobitz II (assim como o BAVT com QRS largo) é um bloqueio INFRA-HISSIANO (abaixo do nó AV), onde o nervo vago praticamente NÃO atua.\n• • A atropina age bloqueando o vago no nó AV: no Mobitz II ela é INEFICAZ (e pode até piorar o bloqueio ao acelerar o nó sinusal!).\n\n⚠️ Pegadinha FGV: na bradicardia sinusal ou Mobitz I (nó AV), tenta-se Atropina 1 mg IV primeiro; no Mobitz II ou BAVT instável, vai direto para MARCA-PASSO! Amiodarona, lidocaína e quinidina são PROIBIDAS na bradicardia!",
+      "audioText": "No bloqueio atrioventricular de segundo grau Mobitz tipo dois com instabilidade hemodinâmica, o tratamento inicial indicado pela FGV é o marca-passo, iniciando com marca-passo transcutâneo na emergência. Isso ocorre porque o Mobitz dois é um bloqueio infra-hissiano, abaixo do nó atrioventricular, onde a atropina não funciona e pode até agravar o bloqueio. Antiarrítmicos como amiodarona, lidocaína e quinidina são proibidos."
+    },
+    {
+      "id": 1064,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "Hipercalemia Grave (Onda T Apiculada): Os 3 Pilares e Mecanismos",
+      "front": "Paciente com IRA e K+ 6,5 mEq/L + onda T apiculada no ECG recebe terapia que reduz o K+ sérico jogando-o para o meio INTRACELULAR. Qual é essa terapia e quais os outros 2 pilares?",
+      "back": "✅ Terapia que desloca K+ para o INTRACELULAR: GLICOINSULINOTERAPIA (Insulina regular + Glicose)! (Também fazem shift intracelular: Beta-2 agonista inalatório e Bicarbonato se acidose.)\n\n✅ Os 3 Pilares da Hipercalemia com ECG alterado:\n• 1. ESTABILIZAR membrana cardíaca (não baixa K+): Gluconato de cálcio 10% IV.\n• 2. SHIFT INTRACELULAR (efeito rápido, temporário): Glicoinsulinoterapia, Beta-2 agonista (salbutamol), NaHCO3 (se acidose).\n• 3. ELIMINAR K+ do corpo (definitivo): Diurético de alça (furosemida), Resina de troca (GI) e Hemodiálise!",
+      "audioText": "Na hiperpotassemia grave com alteração eletrocardiográfica como onda T apiculada, o tratamento divide-se em três pilares. Primeiro: estabilizar a membrana cardíaca com gluconato de cálcio intravenoso, sem alterar o potássio sérico. Segundo: deslocar o potássio para o meio intracelular usando glicoinsulinoterapia, beta-dois agonista ou bicarbonato na acidose. Terceiro: eliminar potássio do organismo com diurético de alça, resina de troca ou hemodiálise."
     }
   ],
   "fgv_tables": [
@@ -4613,6 +4633,30 @@
       "col2Title": "Pegadinhas Clássicas da FGV",
       "col2": "• Aplicar antes ou depois da vida sexual? SEMPRE ANTES!\n• Vacinada precisa de Papanicolau/rastreio? SIM, mantém rastreio igual!\n• Cura/elimina HPV já instalado? NÃO (é preventiva, não terapêutica!)\n• Contraindicada em gestantes: adiar para pós-parto (não é teratogênica se aplicada sem saber)",
       "audioText": "Tabela da vacina contra o HPV para a FGV. Pelo ACIP, rotina até vinte e seis anos; entre vinte e sete e quarenta e cinco anos por decisão compartilhada. Pelo PNI no Brasil, nove a catorze anos em dose única. Sempre aplicar antes da vida sexual, manter o rastreio do colo uterino nas vacinadas e lembrar que a vacina não elimina infecção prévia."
+    },
+    {
+      "id": 2060,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Bradicardias e BAVs no ACLS: Quando Atropina vs Marca-Passo (FGV)",
+      "col1Title": "Respondem Bem à Atropina (Supra-hissiano)",
+      "col1": "• Bradicardia sinusal sintomática\n• BAV 1º grau e BAV 2º grau Mobitz I (Wenckebach)\n• Local: Nó AV (influência vagal forte)\n• Conduta: Atropina 1 mg IV (máx 3 mg) → se falhar: MPTC ou Dopamina/Adrenalina",
+      "col2Title": "NÃO Respondem à Atropina (Infra-hissiano)",
+      "col2": "• BAV 2º grau Mobitz II\n• BAV 3º grau (BAV Total) com QRS largo\n• Conduta na FGV: MARCA-PASSO imediato (transcutâneo → transvenoso/definitivo)!\n• • PROIBIDOS na bradicardia: Amiodarona, Lidocaína, Quinidina!",
+      "audioText": "Tabela de bradicardias para a FGV. Bradicardia sinusal e BAV de segundo grau Mobitz um são supra-hissianos e respondem à atropina. Já o BAV de segundo grau Mobitz dois e o BAV total com QRS largo são infra-hissianos, não respondem à atropina e exigem marca-passo imediato."
+    },
+    {
+      "id": 2061,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "Hipercalemia Grave: Mecanismo de Ação de Cada Droga (FGV)",
+      "col1Title": "Estabilização e Shift Intracelular",
+      "col1": "• Gluconato de Cálcio 10% IV: ESTABILIZA membrana cardíaca (age em 1–3 min, NÃO reduz K+ sérico!)\n• Glicoinsulinoterapia (10 UI regular + Glicose 50%): SHIFT para o INTRACELULAR (age em 15–30 min)\n• Beta-2 agonista (Salbutamol inalatório): SHIFT para o INTRACELULAR\n• NaHCO3 IV: SHIFT intracelular (só se acidose metabólica!)",
+      "col2Title": "Eliminação Real do K+ do Corpo",
+      "col2": "• Diurético de alça (Furosemida): elimina K+ na URINA (precisa ter função renal/diurese)\n• Resina de troca (Sorcal / Patiromer / Ciclossilicato): elimina K+ nas FEZES (ação lenta)\n• Hemodiálise: remoção mais rápida e definitiva na IRA anúrica ou refratária",
+      "audioText": "Mecanismo de ação de cada terapia na hipercalemia para a FGV. Gluconato de cálcio estabiliza a membrana sem reduzir o potássio sérico. Glicoinsulinoterapia e beta-dois agonista deslocam o potássio para o meio intracelular. Furosemida elimina pela urina, resina de troca elimina pelas fezes e hemodiálise remove diretamente do sangue."
     }
   ]
 }
