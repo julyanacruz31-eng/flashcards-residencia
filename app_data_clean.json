@@ -4015,6 +4015,56 @@
       "front": "O que é amiloidose, quais órgãos mais acomete e qual o achado clássico da biópsia?",
       "back": "✅ Conceito: Deposição extracelular de proteínas fibrilares mal dobradas (amiloide) nos órgãos — não tem relação com pneumoconiose!\n\n• Órgãos-alvo clássicos:\n  - Rim: Proteinúria nefrótica / Síndrome nefrótica (rins aumentados ou normais).\n  - Coração: Miocardiopatia restritiva (baixa voltagem no ECG + hipertrofia no eco!).\n  - Outros: Macroglossia (língua gigante), hepatoesplenomegalia, neuropatia periférica/autonômica, púrpura periorbitária ('olhos de guaxinim').\n• Principais tipos: AL (cadeia leve — mieloma múltiplo) e AA (secundária a inflamação crônica, ex: AR, osteomielite, TB).\n• Diagnóstico de prova: Biópsia (gordura abdominal/retal/órgão) corada com VERMELHO CONGO → birrefringência VERDE-MAÇÃ sob luz polarizada!",
       "audioText": "A amiloidose é o depósito extracelular de proteínas mal dobradas nos tecidos. Os alvos clássicos são rim com síndrome nefrótica, coração com miocardiopatia restritiva e macroglossia. O diagnóstico padrão na prova é biópsia corada com Vermelho Congo mostrando birrefringência verde-maçã na luz polarizada."
+    },
+    {
+      "id": 1074,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Achados no Pulmão: Silicose",
+      "front": "O que você encontra no pulmão (RX/TC) na SILICOSE?",
+      "back": "🫁 Local preferencial: LOBOS SUPERIORES!\n\n• Pequenos nódulos bem definidos (1–10 mm) nos campos superiores (podem coalescer → fibrose maciça progressiva).\n• LINFONODOS HILARES CALCIFICADOS NA PERIFERIA ('CASCA DE OVO' / eggshell).\n• Atenção: cavitação em lobo superior em silicótico → pensar em TUBERCULOSE associada!",
+      "audioText": "Na silicose, os achados pulmonares ficam principalmente nos lobos superiores, com pequenos nódulos bem definidos que podem coalescer, além de linfonodos hilares calcificados na periferia em casca de ovo. Cavitação nos lobos superiores obriga a pensar em tuberculose associada."
+    },
+    {
+      "id": 1075,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Achados no Pulmão: Asbesto (Amianto)",
+      "front": "O que você encontra no pulmão e na pleura (RX/TC) nas DOENÇAS DO ASBESTO?",
+      "back": "🫁 Local preferencial: PLEURA + LOBOS INFERIORES (BASES)!\n\n• PLACAS PLEURAIS (espessamentos circunscritos na pleura parietal, frequentemente calcificadas, diafragma e parede posterolateral) → achado MAIS comum!\n• Espessamento pleural difuso e derrame pleural benigno.\n• ATELECTASIA REDONDA (massa subpleural com vasos/brônquios curvados = 'cauda de cometa').\n• Asbestose: fibrose intersticial reticular nas BASES pulmonares.\n• Tumores: Massa pulmonar (CA de pulmão) ou espessamento pleural nodular circunferencial (Mesotelioma).",
+      "audioText": "Nas doenças relacionadas ao asbesto, o acometimento é na pleura e nos lobos inferiores. Os achados clássicos são placas pleurais frequentemente calcificadas, espessamento pleural difuso, derrame pleural, atelectasia redonda com sinal da cauda de cometa e fibrose intersticial nas bases, além do risco de câncer de pulmão e mesotelioma."
+    },
+    {
+      "id": 1076,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Achados no Pulmão: Carvoeiro (Antracose)",
+      "front": "O que você encontra no pulmão (RX/TC) na PNEUMOCONIOSE DOS CARVOEIROS?",
+      "back": "🫁 Local preferencial: LOBOS SUPERIORES!\n\n• Máculas e pequenos nódulos de carvão nos campos superiores (parecidos com silicose, porém SEM calcificação em 'casca de ovo' típica).\n• Pode evoluir para Fibrose Maciça Progressiva (massas fibróticas grandes).\n• Síndrome de CAPLAN: Nódulos pulmonares grandes e múltiplos em trabalhador de carvão (ou sílica) com ARTRITE REUMATOIDE!",
+      "audioText": "Na pneumoconiose dos trabalhadores de carvão, os achados também predominam nos lobos superiores, com máculas e nódulos de carvão que podem evoluir para fibrose maciça progressiva, sem placas pleurais. Quando associada a artrite reumatoide com múltiplos nódulos pulmonares grandes, chama-se síndrome de Caplan."
+    },
+    {
+      "id": 1077,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Achados no Pulmão: Sarcoidose (e Beriliose)",
+      "front": "O que você encontra no pulmão (RX/TC) na SARCOIDOSE (e na BERILIOSE)?",
+      "back": "🫁 Achado #1 mais clássico: ADENOPATIA HILAR BILATERAL SIMÉTRICA (+ linfonodo paratraqueal direito)!\n\n• Parênquima: Infiltrado reticular/micronodular perilinfático (predomínio em campos médios e superiores).\n• Estágios no RX (Scadding): I = só adenopatia hilar bilateral; II = adenopatia + infiltrado; III = só infiltrado; IV = fibrose.\n• Pegadinha: A BERILIOSE tem exatamente os mesmos achados pulmonares (granulomas não caseosos + adenopatia hilar) — só diferencia pela história de exposição ao berílio!",
+      "audioText": "Na sarcoidose, o achado pulmonar mais clássico é a adenopatia hilar bilateral simétrica, podendo haver infiltrado reticular ou micronodular perilinfático nos campos médios e superiores e fibrose nos estágios avançados. A beriliose produz exatamente o mesmo padrão pulmonar e histológico."
+    },
+    {
+      "id": 1078,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Achados no Pulmão: Amiloidose Pulmonar",
+      "front": "O que você encontra no pulmão na AMILOIDOSE?",
+      "back": "🫁 3 padrões possíveis (mais raros que rim/coração, mas caem!):\n\n• 1. Nodular parenquimatoso ('Amiloidomas'): Nódulos únicos ou múltiplos periféricos/subpleurais, às vezes calcificados.\n• 2. Intersticial difuso (alveolar-septal): Infiltrado reticular difuso por depósito nos septos alveolares (pior prognóstico, ligado à amiloidose sistêmica AL).\n• 3. Traqueobrônquico: Placas/nódulos submucosos na traqueia e brônquios causando estenose, atelectasia ou sibilância.",
+      "audioText": "Na amiloidose pulmonar existem três padrões principais: nódulos parenquimatosos chamados amiloidomas que podem calcificar, infiltrado intersticial difuso por depósito nos septos alveolares na forma sistêmica, e placas na árvore traqueobrônquica causando estenose ou atelectasia."
     }
   ],
   "fgv_tables": [
@@ -4821,6 +4871,18 @@
       "col2Title": "Amiloidose (Depósito) vs TB (Infecciosa)",
       "col2": "• AMILOIDOSE: Depósito de proteína amiloide (AL no mieloma; AA em inflamação crônica)\n  - Alvos: Rim (síndrome nefrótica), Coração (restritiva), Macroglossia\n  - Biópsia: VERMELHO CONGO (birrefringência verde-maçã)\n\n• TUBERCULOSE: Granuloma COM necrose CASEOSA + BAAR+ (Ziehl-Neelsen)\n  - Associação clássica: Silicose aumenta muito o risco de TB!",
       "audioText": "Tabela diferenciando sarcoidose, amiloidose e tuberculose. Sarcoidose é inflamatória com granuloma não caseoso, adenopatia hilar bilateral, eritema nodoso, uveíte e hipercalcemia. Amiloidose é depósito proteico com síndrome nefrótica, cardiopatia restritiva e biópsia com Vermelho Congo verde-maçã. Tuberculose tem granuloma com necrose caseosa."
+    },
+    {
+      "id": 2068,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Mapa do Pulmão (RX/TC): Onde e O Que Achar em Cada Doença",
+      "col1Title": "Lobos Superiores vs Pleura/Bases",
+      "col1": "• SILICOSE → Lobos SUPERIORES + nódulos + linfonodo 'CASCA DE OVO' (+ TB!)\n• CARVOEIRO → Lobos SUPERIORES + máculas/nódulos (+ AR = Caplan)\n• ASBESTO → PLEURA (placas calcificadas, derrame, atelectasia redonda) + Lobos INFERIORES (fibrose basal) + Mesotelioma/CA pulmão",
+      "col2Title": "Hilo Bilateral vs Depósito",
+      "col2": "• SARCOIDOSE → ADENOPATIA HILAR BILATERAL simétrica + infiltrado perilinfático (granuloma NÃO caseoso)\n• BERILIOSE → Imita a SARCOIDOSE no pulmão (adenopatia hilar + granuloma não caseoso + história de berílio)\n• AMILOIDOSE → Nódulos ('amiloidomas'), infiltrado intersticial septal difuso ou placas traqueobrônquicas (Vermelho Congo+)",
+      "audioText": "Mapa comparativo de achados pulmonares. Silicose e carvoeiro predominam nos lobos superiores, sendo que a silicose tem calcificação em casca de ovo e risco de tuberculose. Asbesto predomina na pleura com placas calcificadas e atelectasia redonda e nas bases pulmonares. Sarcoidose e beriliose fazem adenopatia hilar bilateral simétrica e infiltrado perilinfático. Amiloidose faz nódulos chamados amiloidomas, infiltrado septal ou placas traqueobrônquicas."
     }
   ]
 }
