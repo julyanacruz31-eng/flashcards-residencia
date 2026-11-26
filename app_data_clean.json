@@ -3909,10 +3909,12 @@
       "area": "cardiologia",
       "cat": "arritmias",
       "year": "FGV",
-      "name": "BAV 2º Grau Mobitz II Instável: Marca-Passo vs Atropina",
+      "name": "Bradicardia Instável (Mobitz II): Atropina Inicial (ACLS / FGV)",
       "front": "Paciente bradicárdico (FC 36) e instável (PA 70x34, SatO2 84%) com ECG mostrando BAV de 2º grau Mobitz tipo II. Qual o tratamento inicial e por que NÃO confiar na atropina?",
-      "back": "✅ Tratamento de escolha: MARCA-PASSO (transcutâneo imediato na emergência → transvenoso/definitivo)!\n\n• Por que Marca-Passo e não Atropina no Mobitz II?\n• • O BAV 2º grau Mobitz II (assim como o BAVT com QRS largo) é um bloqueio INFRA-HISSIANO (abaixo do nó AV), onde o nervo vago praticamente NÃO atua.\n• • A atropina age bloqueando o vago no nó AV: no Mobitz II ela é INEFICAZ (e pode até piorar o bloqueio ao acelerar o nó sinusal!).\n\n⚠️ Pegadinha FGV: na bradicardia sinusal ou Mobitz I (nó AV), tenta-se Atropina 1 mg IV primeiro; no Mobitz II ou BAVT instável, vai direto para MARCA-PASSO! Amiodarona, lidocaína e quinidina são PROIBIDAS na bradicardia!",
-      "audioText": "No bloqueio atrioventricular de segundo grau Mobitz tipo dois com instabilidade hemodinâmica, o tratamento inicial indicado pela FGV é o marca-passo, iniciando com marca-passo transcutâneo na emergência. Isso ocorre porque o Mobitz dois é um bloqueio infra-hissiano, abaixo do nó atrioventricular, onde a atropina não funciona e pode até agravar o bloqueio. Antiarrítmicos como amiodarona, lidocaína e quinidina são proibidos."
+      "back": [
+        "✅ Gabarito oficial FGV (fluxograma literal do ACLS): ATROPINA 1 mg IV como tratamento INICIAL (repetir 3–5 min, máx 3 mg), ENQUANTO prepara o Marca-Passo Transcutâneo!\n\n• Se a atropina NÃO funcionar (comum no Mobitz II / BAVT por serem infra-hissianos):\n• • Marca-passo transcutâneo (MPTC) OU Dopamina IV OU Adrenalina IV!\n\n⚠️ Pegadinha FGV: quando a banca perguntar 'tratamento INICIAL' na bradicardia instável pelo ACLS, marque ATROPINA (1ª caixa do algoritmo AHA), mesmo sendo Mobitz II — e deixe o marca-passo preparado para a 2ª etapa! Amiodarona, lidocaína e quinidina são PROIBIDAS!"
+      ],
+      "audioText": "Na bradicardia instável com BAV de segundo grau Mobitz dois, o gabarito oficial da FGV seguindo literalmente a primeira etapa do algoritmo do ACLS é iniciar com atropina um miligrama intravenoso, enquanto já se prepara o marca-passo transcutâneo caso seja ineficaz."
     },
     {
       "id": 1064,
@@ -4639,12 +4641,12 @@
       "area": "cardiologia",
       "cat": "arritmias",
       "year": "FGV",
-      "name": "Bradicardias e BAVs no ACLS: Quando Atropina vs Marca-Passo (FGV)",
-      "col1Title": "Respondem Bem à Atropina (Supra-hissiano)",
-      "col1": "• Bradicardia sinusal sintomática\n• BAV 1º grau e BAV 2º grau Mobitz I (Wenckebach)\n• Local: Nó AV (influência vagal forte)\n• Conduta: Atropina 1 mg IV (máx 3 mg) → se falhar: MPTC ou Dopamina/Adrenalina",
-      "col2Title": "NÃO Respondem à Atropina (Infra-hissiano)",
-      "col2": "• BAV 2º grau Mobitz II\n• BAV 3º grau (BAV Total) com QRS largo\n• Conduta na FGV: MARCA-PASSO imediato (transcutâneo → transvenoso/definitivo)!\n• • PROIBIDOS na bradicardia: Amiodarona, Lidocaína, Quinidina!",
-      "audioText": "Tabela de bradicardias para a FGV. Bradicardia sinusal e BAV de segundo grau Mobitz um são supra-hissianos e respondem à atropina. Já o BAV de segundo grau Mobitz dois e o BAV total com QRS largo são infra-hissianos, não respondem à atropina e exigem marca-passo imediato."
+      "name": "Bradicardia Instável no ACLS: Fluxograma Literal (FGV)",
+      "col1Title": "1ª Etapa (Tratamento INICIAL - ACLS)",
+      "col1": "• Qualquer bradicardia sintomática/instável (FC < 50 bpm):\n• • 1ª droga INICIAL: ATROPINA 1 mg IV (a cada 3–5 min, máx 3 mg)\n• • Já ir preparando o marca-passo transcutâneo em paralelo!",
+      "col2Title": "2ª Etapa (Se Atropina Ineficaz)",
+      "col2": "• Comum falhar em Mobitz II e BAVT (infra-hissianos):\n• • Marca-passo transcutâneo (MPTC) OU\n• • Dopamina IV (5–20 mcg/kg/min) OU Adrenalina IV (2–10 mcg/min)\n• • PROIBIDOS na bradicardia: Amiodarona, Lidocaína, Quinidina!",
+      "audioText": "Fluxograma literal do ACLS para bradicardia instável na FGV. Primeira etapa inicial: atropina um miligrama intravenoso até três miligramas, mesmo no Mobitz dois, enquanto prepara o marca-passo. Segunda etapa se ineficaz: marca-passo transcutâneo, dopamina ou adrenalina."
     },
     {
       "id": 2061,
