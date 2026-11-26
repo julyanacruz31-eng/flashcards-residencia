@@ -3955,6 +3955,16 @@
       "front": "Jovem usando amoxicilina/clavulanato há 5 dias evolui com oligúria, Cr 2,0, rash maculopapular, eosinofilia, leucocitúria, eosinofilúria e proteinúria 500 mg/24h. Qual o diagnóstico e a conduta?",
       "back": "✅ Diagnóstico: NEFRITE INTERSTICIAL AGUDA (NIA) medicamentosa (reação de hipersensibilidade tipo IV)!\n\n• Tríade clássica: Febre + Rash cutâneo + Eosinofilia (presente completa em apenas ~10–30%).\n• Urina típica: Leucocitúria estéril + cilindros leucocitários + EOSINOFILÚRIA + proteinúria subnefrótica (< 1 g/24h).\n• Principais drogas culpadas: Beta-lactâmicos (amoxi-clav, penicilinas, cefalosporinas), AINEs, IBPs (omeprazol), Sulfa, Rifampicina, Alopurinol.\n\n✅ Conduta:\n• 1º SUSPENDER a droga causadora imediatamente!\n• Se não recuperar em poucos dias / IRA grave: Corticoide (prednisona).\n\n⚠️ Pegadinha: proteinúria de 500 mg/24h (< 3,5 g) exclui síndrome nefrótica (como membranosa)!",
       "audioText": "Na nefrite intersticial aguda medicamentosa cobrada pela FGV, paciente em uso recente de beta-lactâmico como amoxicilina com clavulanato evolui com injúria renal aguda, rash maculopapular, eosinofilia, leucocitúria, eosinofilúria e proteinúria subnefrótica. A tríade clássica é febre, rash e eosinofilia, e as principais drogas culpadas são beta-lactâmicos, AINEs e inibidores de bomba de prótons. A conduta inicial é suspender a droga ofensora, reservando corticoide para casos refratários."
+    },
+    {
+      "id": 1068,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Flutter Atrial: Ondas F, Bloqueio 2:1 e Tratamento",
+      "front": "Despolarizações atriais regulares a ~300 bpm com ondas F em 'dente de serra' e FC ventricular regular de ~150 bpm. Qual o diagnóstico, como diferenciar da TPSV na adenosina e qual o tratamento?",
+      "back": "✅ Diagnóstico: FLUTTER ATRIAL (condução AV 2:1)!\n\n• Mecanismo: Macro-reentrada no átrio direito (istmo cavotricuspídeo) girando sem pausa a ~300 bpm → gera ondas F maiúsculas em 'dente de serra' (melhores em DII, DIII, aVF e V1), sem linha isoelétrica plana.\n• Condução 2:1: O nó AV ('porteiro') bloqueia metade dos estímulos → 300 ÷ 2 = ~150 bpm regular (2 ondas F para cada QRS).\n• Flutter vs TPSV na Adenosina: TPSV (nó AV faz parte do circuito) REVERTE para sinusal! Flutter (circuito está no átrio) NÃO reverte — apenas aumenta o bloqueio (ex: 4:1) e desmascara as ondas F!\n\n✅ Tratamento:\n• Instável: Cardioversão elétrica sincronizada (50–100 J).\n• Estável: 3 pilares iguais aos da FA:\n  1) Anticoagulação (mesmo CHA₂DS₂-VASc e regra das 48h da FA).\n  2) Controle de FC (BB ou BCC não-DHP; atenção: nunca dar propafenona sozinha sem bloquear nó AV pelo risco de condução 1:1 a 300 bpm!).\n  3) Cura definitiva: Ablação por cateter do istmo cavotricuspídeo (> 90% de sucesso).",
+      "audioText": "No flutter atrial, uma macro-reentrada no átrio direito gira continuamente a cerca de trezentos batimentos por minuto, formando ondas F em dente de serra sem linha isoelétrica. Na condução dois para um, o nó AV deixa passar metade dos estímulos, resultando em frequência ventricular regular de cento e cinquenta batimentos por minuto. Diferente da TPSV, a adenosina não reverte o flutter, apenas freia o nó AV e desmascara as ondas em dente de serra. O tratamento envolve cardioversão elétrica de cinquenta a cem joules se instável, ou anticoagulação pelo CHA2DS2-VASc, controle de frequência e ablação do istmo cavotricuspídeo como cura definitiva."
     }
   ],
   "fgv_tables": [
@@ -4725,6 +4735,18 @@
       "col2Title": "Diferenciais (Erradas da Questão)",
       "col2": "• Microangiopatia trombótica (SHU/PTT): esquizócitos + plaquetopenia + Coombs -\n• Nefropatia por urato: lise tumoral (pós-QT em linfoma/leucemia, ácido úrico muito alto)\n• Trombose de veia renal: complicação da síndrome nefrótica (dor em flanco + hematúria)\n• GN Membranosa: síndrome nefrótica (> 3,5 g/24h), não 500 mg/24h em 5 dias!",
       "audioText": "Tabela de nefrite intersticial aguda e diferenciais para a FGV. Na NIA: uso de beta-lactâmicos, AINEs ou IBP, rash, eosinofilia, leucocitúria estéril, eosinofilúria e proteinúria baixa. Tratar suspendendo a droga. Não confundir com lise tumoral da nefropatia por urato, nem com síndrome nefrótica da glomerulonefrite membranosa."
+    },
+    {
+      "id": 2065,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "Flutter Atrial vs TPSV vs Fibrilação Atrial (FGV)",
+      "col1Title": "Flutter Atrial (Macro-reentrada Atrial)",
+      "col1": "• ECG: Ondas F em 'dente de serra' (DII, DIII, aVF, V1), sem linha isoelétrica\n• Frequência: Atrial ~300 bpm | Ventricular ~150 bpm regular (se 2:1; 3:1 = 100; 4:1 = 75)\n• Adenosina / Vagal: NÃO reverte — só freia o nó AV e mostra melhor as ondas F\n• Anticoagulação: SIM (mesmos critérios CHA₂DS₂-VASc da FA!)\n• Conduta: CVE (50–100 J) se instável | Controle FC (BB/BCC) | Ablação istmo cavotricuspídeo (cura > 90%)",
+      "col2Title": "TPSV (TRN/TRAV) vs Fibrilação Atrial",
+      "col2": "• TPSV (TRN/TRAV): Micro-reentrada envolvendo o nó AV; QRS estreito regular (150–250 bpm), sem onda P visível; Adenosina REVERTE; sem anticoagulação crônica.\n• Fibrilação Atrial (FA): Atividade atrial caótica (350–600 bpm, ondas f minúsculas), ritmo ventricular IRREGULARMENTE irregular (RR variável), sem onda P; anticoagulação pelo CHA₂DS₂-VASc.\n• Regra de ouro: Taqui QRS estreito REGULAR a ~150 bpm = sempre pensar em Flutter 2:1!",
+      "audioText": "Tabela comparativa de Flutter Atrial, TPSV e Fibrilação Atrial para a FGV. No flutter: ondas F em dente de serra a trezentos por minuto, ventrículo a cento e cinquenta regular no bloqueio dois para um, adenosina não reverte mas desmascara as ondas F, exige anticoagulação igual à FA e cura com ablação do istmo cavotricuspídeo. Na TPSV: reentrada nodal ou por via acessória, adenosina reverte. Na FA: ritmo irregularmente irregular."
     }
   ]
 }
