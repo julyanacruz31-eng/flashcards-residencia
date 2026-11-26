@@ -3945,6 +3945,16 @@
       "front": "Paciente com AVE hemorrágico há 1 semana desenvolve TVP em veia ilíaca esquerda. Qual o tratamento inicial e quais as indicações clássicas do Filtro de Veia Cava Inferior (VCI)?",
       "back": "✅ Conduta inicial: FILTRO DE VEIA CAVA INFERIOR (preferencialmente removível)!\n\n• Por quê? AVE hemorrágico recente (1 semana) é CONTRAINDICAÇÃO ABSOLUTA à anticoagulação (proibido apixabana, enoxaparina, HNF ou fondaparinux)!\n\n✅ Indicações clássicas de Filtro de VCI:\n• 1. TVP proximal (ilíaca/femoral/poplítea) ou TEP com CONTRAINDICAÇÃO à anticoagulação (sangramento ativo, AVEh recente, neurocirurgia recente).\n• 2. Recorrência de TEP mesmo em anticoagulação plena adequada.\n• 3. Complicação hemorrágica grave durante a anticoagulação.\n\n⚠️ Pegadinha: o filtro de VCI NÃO trata o trombo da perna (previne apenas TEP fatal!). Assim que o risco hemorrágico passar, inicia-se anticoagulação e retira-se o filtro!",
       "audioText": "Na trombose venosa profunda proximal em paciente com AVE hemorrágico há uma semana, a anticoagulação é absolutamente contraindicada pelo risco de ressangramento intracraniano. Portanto, está proibido usar apixabana, enoxaparina ou fondaparinux, e o tratamento inicial indicado pela FGV é o implante de filtro de veia cava inferior, preferencialmente removível, para prevenir embolia pulmonar fatal."
+    },
+    {
+      "id": 1067,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "Nefrite Intersticial Aguda (NIA): Tríade, Drogas e Conduta",
+      "front": "Jovem usando amoxicilina/clavulanato há 5 dias evolui com oligúria, Cr 2,0, rash maculopapular, eosinofilia, leucocitúria, eosinofilúria e proteinúria 500 mg/24h. Qual o diagnóstico e a conduta?",
+      "back": "✅ Diagnóstico: NEFRITE INTERSTICIAL AGUDA (NIA) medicamentosa (reação de hipersensibilidade tipo IV)!\n\n• Tríade clássica: Febre + Rash cutâneo + Eosinofilia (presente completa em apenas ~10–30%).\n• Urina típica: Leucocitúria estéril + cilindros leucocitários + EOSINOFILÚRIA + proteinúria subnefrótica (< 1 g/24h).\n• Principais drogas culpadas: Beta-lactâmicos (amoxi-clav, penicilinas, cefalosporinas), AINEs, IBPs (omeprazol), Sulfa, Rifampicina, Alopurinol.\n\n✅ Conduta:\n• 1º SUSPENDER a droga causadora imediatamente!\n• Se não recuperar em poucos dias / IRA grave: Corticoide (prednisona).\n\n⚠️ Pegadinha: proteinúria de 500 mg/24h (< 3,5 g) exclui síndrome nefrótica (como membranosa)!",
+      "audioText": "Na nefrite intersticial aguda medicamentosa cobrada pela FGV, paciente em uso recente de beta-lactâmico como amoxicilina com clavulanato evolui com injúria renal aguda, rash maculopapular, eosinofilia, leucocitúria, eosinofilúria e proteinúria subnefrótica. A tríade clássica é febre, rash e eosinofilia, e as principais drogas culpadas são beta-lactâmicos, AINEs e inibidores de bomba de prótons. A conduta inicial é suspender a droga ofensora, reservando corticoide para casos refratários."
     }
   ],
   "fgv_tables": [
@@ -4703,6 +4713,18 @@
       "col2Title": "Cuidados e Pegadinhas FGV",
       "col2": "• Anticoagulantes (apixabana, enoxaparina, fondaparinux) → PROIBIDOS no AVEh recente!\n• Trombectomia cirúrgica → só em isquemia grave ameaçando o membro (flegmasia cerúlea dolens)\n• Preferir filtro REMOVÍVEL (retirar assim que puder anticoagular!)\n• • Filtro previne TEP, mas aumenta risco de TVP recorrente a longo prazo se ficar definitivo",
       "audioText": "Indicações do filtro de veia cava inferior para a FGV. Indicar quando há TVP proximal ou TEP com contraindicação absoluta à anticoagulação, como AVE hemorrágico recente ou sangramento ativo, ou quando há recorrência de TEP apesar de anticoagulação adequada. Anticoagulantes como apixabana, enoxaparina e fondaparinux são proibidos no AVE hemorrágico recente."
+    },
+    {
+      "id": 2064,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "Nefrite Intersticial Aguda (NIA) vs Diferenciais na IRA (FGV)",
+      "col1Title": "Nefrite Intersticial Aguda (NIA)",
+      "col1": "• Causas: Drogas (beta-lactâmicos, AINEs, IBPs, sulfa, rifampicina), infecções, autoimune\n• Tríade clássica: Febre + Rash + Eosinofilia\n• Urina I: Leucocitúria estéril, cilindros leucocitários, EOSINOFILÚRIA, proteinúria < 1 g/24h\n• Tratamento: Suspender a droga! (Corticoide se não melhorar)",
+      "col2Title": "Diferenciais (Erradas da Questão)",
+      "col2": "• Microangiopatia trombótica (SHU/PTT): esquizócitos + plaquetopenia + Coombs -\n• Nefropatia por urato: lise tumoral (pós-QT em linfoma/leucemia, ácido úrico muito alto)\n• Trombose de veia renal: complicação da síndrome nefrótica (dor em flanco + hematúria)\n• GN Membranosa: síndrome nefrótica (> 3,5 g/24h), não 500 mg/24h em 5 dias!",
+      "audioText": "Tabela de nefrite intersticial aguda e diferenciais para a FGV. Na NIA: uso de beta-lactâmicos, AINEs ou IBP, rash, eosinofilia, leucocitúria estéril, eosinofilúria e proteinúria baixa. Tratar suspendendo a droga. Não confundir com lise tumoral da nefropatia por urato, nem com síndrome nefrótica da glomerulonefrite membranosa."
     }
   ]
 }
