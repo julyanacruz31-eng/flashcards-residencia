@@ -3965,6 +3965,56 @@
       "front": "Despolarizações atriais regulares a ~300 bpm com ondas F em 'dente de serra' e FC ventricular regular de ~150 bpm. Qual o diagnóstico, como diferenciar da TPSV na adenosina e qual o tratamento?",
       "back": "✅ Diagnóstico: FLUTTER ATRIAL (condução AV 2:1)!\n\n• Mecanismo: Macro-reentrada no átrio direito (istmo cavotricuspídeo) girando sem pausa a ~300 bpm → gera ondas F maiúsculas em 'dente de serra' (melhores em DII, DIII, aVF e V1), sem linha isoelétrica plana.\n• Condução 2:1: O nó AV ('porteiro') bloqueia metade dos estímulos → 300 ÷ 2 = ~150 bpm regular (2 ondas F para cada QRS).\n• Flutter vs TPSV na Adenosina: TPSV (nó AV faz parte do circuito) REVERTE para sinusal! Flutter (circuito está no átrio) NÃO reverte — apenas aumenta o bloqueio (ex: 4:1) e desmascara as ondas F!\n\n✅ Tratamento:\n• Instável: Cardioversão elétrica sincronizada (50–100 J).\n• Estável: 3 pilares iguais aos da FA:\n  1) Anticoagulação (mesmo CHA₂DS₂-VASc e regra das 48h da FA).\n  2) Controle de FC (BB ou BCC não-DHP; atenção: nunca dar propafenona sozinha sem bloquear nó AV pelo risco de condução 1:1 a 300 bpm!).\n  3) Cura definitiva: Ablação por cateter do istmo cavotricuspídeo (> 90% de sucesso).",
       "audioText": "No flutter atrial, uma macro-reentrada no átrio direito gira continuamente a cerca de trezentos batimentos por minuto, formando ondas F em dente de serra sem linha isoelétrica. Na condução dois para um, o nó AV deixa passar metade dos estímulos, resultando em frequência ventricular regular de cento e cinquenta batimentos por minuto. Diferente da TPSV, a adenosina não reverte o flutter, apenas freia o nó AV e desmascara as ondas em dente de serra. O tratamento envolve cardioversão elétrica de cinquenta a cem joules se instável, ou anticoagulação pelo CHA2DS2-VASc, controle de frequência e ablação do istmo cavotricuspídeo como cura definitiva."
+    },
+    {
+      "id": 1069,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Pneumoconioses: O que são e os 4 tipos clássicos",
+      "front": "O que é uma pneumoconiose e quais são os 4 tipos que mais caem em prova?",
+      "back": "✅ Pneumoconiose = doença pulmonar fibrótica causada pela inalação crônica de poeiras minerais/inorgânicas no trabalho (pneumo = pulmão, conio = poeira).\n\n• 1. SILICOSE (sílica/areia/pedreira): Lobos SUPERIORES + linfonodos em 'casca de ovo' + risco altíssimo de TUBERCULOSE.\n• 2. ASBESTOSE / Doenças do Asbesto (amianto/telha): PLEURA (placas pleurais calcificadas, atelectasia redonda) + lobos INFERIORES + CA de pulmão e Mesotelioma.\n• 3. CARVOEIRO (carvão): Lobos SUPERIORES + máculas de carvão (+ Artrite Reumatoide = Síndrome de Caplan).\n• 4. BERILIOSE (berílio/eletrônica/aeroespacial): Granulomas não caseosos — imita SARCOIDOSE!",
+      "audioText": "Pneumoconiose é a doença pulmonar causada por inalar poeiras minerais no trabalho. Os quatro tipos clássicos são: silicose nos lobos superiores com casca de ovo e tuberculose; asbestose na pleura e lobos inferiores com placas pleurais e mesotelioma; pneumoconiose do carvoeiro nos lobos superiores; e beriliose com granulomas não caseosos que imitam sarcoidose."
+    },
+    {
+      "id": 1070,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Silicose: Ocupações, RX e Associação Obrigatória",
+      "front": "Trabalhador de pedreira/jateamento de areia/cerâmica com fibrose em lobos superiores e linfonodos hilares calcificados em 'casca de ovo'. Qual o diagnóstico e qual doença investigar sempre?",
+      "back": "✅ Diagnóstico: SILICOSE (inalação de sílica livre — mais comum no Brasil!).\n\n• Ocupações típicas: Mineração, pedreira, jateamento de areia, cerâmica, vidro, corte de mármore/granito.\n• Achados clássicos: Nódulos em LOBOS SUPERIORES + calcificação periférica dos linfonodos hilares ('casca de ovo').\n• Associação obrigatória: TUBERCULOSE! (A sílica prejudica os macrófagos alveolares; todo paciente com silicose deve ter TB investigada/rastreio com PPD/IGRA!).",
+      "audioText": "Na silicose, típica de pedreiras, jateamento de areia e cerâmica, os achados clássicos são nódulos em lobos superiores e linfonodos calcificados em casca de ovo. A associação obrigatória de prova é com tuberculose, pois a sílica prejudica os macrófagos."
+    },
+    {
+      "id": 1071,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Asbesto (Amianto): Placas Pleurais, Atelectasia Redonda e Tumores",
+      "front": "Trabalhador da construção civil/telhas/freios com placas pleurais calcificadas, atelectasia redonda e fibrose em bases. Qual a exposição e quais tumores estão associados?",
+      "back": "✅ Exposição: ASBESTO (amianto) — pneumoconiose da PLEURA e das BASES (lobos inferiores)!\n\n• Marcador mais comum: PLACAS PLEURAIS circunscritas na pleura parietal (frequentemente calcificadas, diafragma e parede posterolateral).\n• Outros achados pleurais: Espessamento pleural difuso, derrame pleural benigno e ATELECTASIA REDONDA ('cauda de cometa').\n• Neoplasias associadas:\n  1) CÂNCER DE PULMÃO: tumor MAIS COMUM (risco sinérgico extremo com tabagismo!).\n  2) MESOTELIOMA MALIGNO de pleura: tumor MAIS ESPECÍFICO do asbesto!",
+      "audioText": "O asbesto ou amianto acomete principalmente a pleura e os lobos inferiores. O achado mais comum são as placas pleurais calcificadas, além de atelectasia redonda. Os tumores associados são o câncer de pulmão, mais frequente e potencializado pelo cigarro, e o mesotelioma maligno, mais específico."
+    },
+    {
+      "id": 1072,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Sarcoidose: Granuloma Não Caseoso e Clínica Clássica",
+      "front": "Mulher jovem com adenopatia hilar bilateral simétrica no RX, eritema nodoso nas pernas, uveíte e granuloma sem necrose na biópsia. Qual o diagnóstico?",
+      "back": "✅ Diagnóstico: SARCOIDOSE! (Não é pneumoconiose — é doença inflamatória imunológica sistêmica de causa desconhecida).\n\n• Patologia: GRANULOMAS NÃO CASEOSOS (sem necrose, diferente da TB que tem necrose caseosa!).\n• Pulmão/RX: ADENOPATIA HILAR BILATERAL simétrica (+ infiltrado intersticial).\n• Extrapulmonar clássico:\n  - Pele: Eritema nodoso (nódulos dolorosos pré-tibiais) / Lúpus pérnio.\n  - Olhos: Uveíte anterior.\n  - Lab: Hipercalcemia/hipercalciúria (macrófagos do granuloma produzem vitamina D ativa!) e ECA elevada.\n• Síndrome de Löfgren (bom prognóstico): Febre + Adenopatia hilar bilateral + Eritema nodoso + Artralgia!",
+      "audioText": "A sarcoidose é uma doença inflamatória sistêmica não relacionada a poeira, caracterizada por granulomas não caseosos. O quadro clássico envolve adenopatia hilar bilateral simétrica, eritema nodoso, uveíte anterior, hipercalcemia e ECA elevada."
+    },
+    {
+      "id": 1073,
+      "area": "clinica",
+      "cat": "reumatologia",
+      "year": "FGV",
+      "name": "Amiloidose: Depósito Proteico, Vermelho Congo e Órgãos-Alvo",
+      "front": "O que é amiloidose, quais órgãos mais acomete e qual o achado clássico da biópsia?",
+      "back": "✅ Conceito: Deposição extracelular de proteínas fibrilares mal dobradas (amiloide) nos órgãos — não tem relação com pneumoconiose!\n\n• Órgãos-alvo clássicos:\n  - Rim: Proteinúria nefrótica / Síndrome nefrótica (rins aumentados ou normais).\n  - Coração: Miocardiopatia restritiva (baixa voltagem no ECG + hipertrofia no eco!).\n  - Outros: Macroglossia (língua gigante), hepatoesplenomegalia, neuropatia periférica/autonômica, púrpura periorbitária ('olhos de guaxinim').\n• Principais tipos: AL (cadeia leve — mieloma múltiplo) e AA (secundária a inflamação crônica, ex: AR, osteomielite, TB).\n• Diagnóstico de prova: Biópsia (gordura abdominal/retal/órgão) corada com VERMELHO CONGO → birrefringência VERDE-MAÇÃ sob luz polarizada!",
+      "audioText": "A amiloidose é o depósito extracelular de proteínas mal dobradas nos tecidos. Os alvos clássicos são rim com síndrome nefrótica, coração com miocardiopatia restritiva e macroglossia. O diagnóstico padrão na prova é biópsia corada com Vermelho Congo mostrando birrefringência verde-maçã na luz polarizada."
     }
   ],
   "fgv_tables": [
@@ -4747,6 +4797,30 @@
       "col2Title": "TPSV (TRN/TRAV) vs Fibrilação Atrial",
       "col2": "• TPSV (TRN/TRAV): Micro-reentrada envolvendo o nó AV; QRS estreito regular (150–250 bpm), sem onda P visível; Adenosina REVERTE; sem anticoagulação crônica.\n• Fibrilação Atrial (FA): Atividade atrial caótica (350–600 bpm, ondas f minúsculas), ritmo ventricular IRREGULARMENTE irregular (RR variável), sem onda P; anticoagulação pelo CHA₂DS₂-VASc.\n• Regra de ouro: Taqui QRS estreito REGULAR a ~150 bpm = sempre pensar em Flutter 2:1!",
       "audioText": "Tabela comparativa de Flutter Atrial, TPSV e Fibrilação Atrial para a FGV. No flutter: ondas F em dente de serra a trezentos por minuto, ventrículo a cento e cinquenta regular no bloqueio dois para um, adenosina não reverte mas desmascara as ondas F, exige anticoagulação igual à FA e cura com ablação do istmo cavotricuspídeo. Na TPSV: reentrada nodal ou por via acessória, adenosina reverte. Na FA: ritmo irregularmente irregular."
+    },
+    {
+      "id": 2066,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Pneumoconioses Comparadas (Silicose vs Asbesto vs Carvão vs Berílio)",
+      "col1Title": "Silicose & Carvão (Lobos Superiores)",
+      "col1": "• SILICOSE (Sílica: pedreira, areia, cerâmica):\n  - Local: Lobos SUPERIORES\n  - RX: Pequenos nódulos + linfonodos em 'CASCA DE OVO'\n  - Risco clássico: TUBERCULOSE!\n\n• CARVOEIRO / Antracose (Mina de carvão):\n  - Local: Lobos SUPERIORES\n  - RX: Máculas/nódulos de carvão; Fibrose Maciça Progressiva\n  - Associação: Síndrome de CAPLAN (Carvão/Silicose + Artrite Reumatoide)",
+      "col2Title": "Asbesto & Beriliose (Pleura/Bases vs Granuloma)",
+      "col2": "• ASBESTO / Amianto (Telha, freio, construção):\n  - Local: PLEURA + Lobos INFERIORES (bases)\n  - RX: PLACAS PLEURAIS calcificadas, derrame pleural, atelectasia redonda\n  - Tumores: CA de pulmão (mais comum) e MESOTELIOMA (mais específico)\n\n• BERILIOSE (Indústria aeroespacial/eletrônica):\n  - Patologia: Granulomas NÃO caseosos\n  - Pegadinha: Imita perfeitamente a SARCOIDOSE!",
+      "audioText": "Tabela comparativa das quatro pneumoconioses. Silicose e carvão acometem lobos superiores: silicose dá casca de ovo e tuberculose; carvão dá máculas e síndrome de Caplan com artrite reumatoide. Asbesto acomete pleura e bases com placas pleurais, câncer de pulmão e mesotelioma. Beriliose faz granulomas não caseosos imitando sarcoidose."
+    },
+    {
+      "id": 2067,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Doenças Sistêmicas: Sarcoidose vs Amiloidose vs Tuberculose",
+      "col1Title": "Sarcoidose (Inflamatória Granulomatosa)",
+      "col1": "• O que é: Doença imunológica sistêmica (NÃO é poeira!)\n• Histologia: Granulomas NÃO CASEOSOS (sem necrose)\n• Pulmão: Adenopatia hilar BILATERAL simétrica\n• Clínica: Eritema nodoso, uveíte, lúpus pérnio, Síndrome de Löfgren\n• Lab: Hipercalcemia (vitamina D pelos macrófagos) + ECA alta\n• Diferencial ocupacional: Beriliose!",
+      "col2Title": "Amiloidose (Depósito) vs TB (Infecciosa)",
+      "col2": "• AMILOIDOSE: Depósito de proteína amiloide (AL no mieloma; AA em inflamação crônica)\n  - Alvos: Rim (síndrome nefrótica), Coração (restritiva), Macroglossia\n  - Biópsia: VERMELHO CONGO (birrefringência verde-maçã)\n\n• TUBERCULOSE: Granuloma COM necrose CASEOSA + BAAR+ (Ziehl-Neelsen)\n  - Associação clássica: Silicose aumenta muito o risco de TB!",
+      "audioText": "Tabela diferenciando sarcoidose, amiloidose e tuberculose. Sarcoidose é inflamatória com granuloma não caseoso, adenopatia hilar bilateral, eritema nodoso, uveíte e hipercalcemia. Amiloidose é depósito proteico com síndrome nefrótica, cardiopatia restritiva e biópsia com Vermelho Congo verde-maçã. Tuberculose tem granuloma com necrose caseosa."
     }
   ]
 }
