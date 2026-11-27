@@ -4237,6 +4237,16 @@
       "front": "Mulher de 36 anos com Hb = 9,4 g/dL e VCM = 68 fL há 3 meses. Qual a conduta correta, quando transfundir, como diferenciar de talassemia e por quanto tempo repor ferro?",
       "back": "✅ Conduta: Pesquisar PERDA CRÔNICA DE SANGUE (ex.: hipermenorreia em idade fértil; TGI em homens/pós-menopausa) + repor SULFATO FERROSO oral!\n\n🔬 Cinética do Ferro & Diferencial:\n• Ferropriva: Ferritina BAIXA (< 30), ferro baixo, TIBC ALTO, Sat. transferrina baixa e RDW AUMENTADO.\n• Traço talassêmico: microcitose com RDW NORMAL (e Mentzer VCM/Hm < 13).\n• B12/Folato = anemia MACROCÍTICA (VCM > 100), NÃO microcítica!\n\n💊 Reposição & Seguimento:\n• Reticulócitos sobem em 7–10 dias; Hb sobe 1–2 g/dL em 3–4 semanas.\n• Manter ferro por 3–6 meses APÓS normalizar a Hb (para repor estoques!).\n\n⚠️ Pegadinha FGV: Hb 9,4 crônica e estável NÃO indica transfusão (gatilho geral < 7 g/dL)!",
       "audioText": "Em mulher de trinta e seis anos com hemoglobina de nove vírgula quatro e VCM de sessenta e oito, a anemia microcítica aponta para anemia ferropriva: deve-se pesquisar perda crônica de sangue e repor sulfato ferroso. Não se transfunde com hemoglobina de nove vírgula quatro estável, pois o gatilho geral é abaixo de sete, e vitamina B12 causaria anemia macrocítica. Na ferropriva há ferritina baixa, TIBC alto e RDW aumentado, devendo manter o ferro por três a seis meses após normalizar a hemoglobina."
+    },
+    {
+      "id": 1096,
+      "area": "reumatologia",
+      "cat": "les",
+      "year": "FGV",
+      "name": "LES com Citopenias Autoimunes (Síndrome de Evans) vs PTI",
+      "front": "Mulher de 28 anos com artrite de punhos há 6 meses, rash facial, petéquias, Hb 9,0 (Coombs direto IgG+), leucócitos 3.500 e plaquetas 20.000. Qual o diagnóstico e como diferenciar de PTI primária?",
+      "back": "✅ Diagnóstico: LÚPUS ERITEMATOSO SISTÊMICO (LES) com citopenias autoimunes!\n• Critérios presentes: rash malar + artrite + anemia hemolítica autoimune (Coombs+ IgG) + leucopenia (< 4.000) + trombocitopenia (< 100.000).\n• AHAI (Coombs+) + PTI juntas = SÍNDROME DE EVANS (classicamente secundária ao LES em mulher jovem!).\n\n⚠️ Por que NÃO é PTI primária nem fármaco (AINE)?\n• PTI primária: diagnóstico de exclusão com PLAQUETOPENIA ISOLADA (sem AHAI, leucopenia, artrite ou rash).\n• AINE: estava sendo usado apenas para a artralgia crônica — não explica rash malar, artrite nem Coombs+.",
+      "audioText": "Mulher jovem com artrite de punhos há seis meses, rash facial e pancitopenia autoimune com anemia hemolítica Coombs positivo, leucopenia e plaquetopenia fecha diagnóstico de lúpus eritematoso sistêmico, com síndrome de Evans associada. Não é PTI primária porque a PTI primária cursa com plaquetopenia isolada sem outros achados sistêmicos."
     }
   ],
   "fgv_tables": [
