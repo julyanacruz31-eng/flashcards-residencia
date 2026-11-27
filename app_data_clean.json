@@ -4085,6 +4085,16 @@
       "front": "Idoso > 65 anos com marcha magnética (pés 'colados no chão'), incontinência urinária e demência progressiva. Qual o diagnóstico, como confirmar e qual o tratamento?",
       "back": "✅ Diagnóstico: Hidrocefalia de Pressão Normal (Síndrome de Hakim-Adams) — causa clássica de demência potencialmente reversível.\n\n🧠 Tríade clássica (por compressão periventricular):\n• Marcha magnética (1º a surgir e o que MAIS melhora): fibras das pernas passam coladas aos ventrículos laterais.\n• Incontinência urinária: perda do freio frontal sobre o detrusor.\n• Demência subcortical: lentificação, apatia e disfunção executiva.\n\n🔬 Diagnóstico e Tratamento:\n• TC/RM: ventriculomegalia desproporcional (Índice de Evans > 0,3).\n• Tap Test: PL retirando 30–50 mL (pressão normal) → melhora da marcha.\n• Conduta definitiva: Derivação Ventriculoperitoneal (DVP).\n\n⚠️ Pegadinha FGV: Vômitos e diplopia (VI par) são de HIC aguda (pressão ALTA), não de HPN!",
       "audioText": "A hidrocefalia de pressão normal, ou síndrome de Hakim-Adams, acomete idosos e é causa clássica de demência potencialmente reversível. A tríade clássica é marcha magnética, que surge primeiro e mais melhora, incontinência urinária por hiperatividade detrusora e demência subcortical. Na imagem há ventriculomegalia desproporcional com índice de Evans maior que zero vírgula três. Confirma-se com Tap Test retirando trinta a cinquenta mililitros de líquor com pressão normal e o tratamento definitivo é derivação ventriculoperitoneal."
+    },
+    {
+      "id": 1081,
+      "area": "psiquiatria",
+      "cat": "delirium",
+      "year": "FGV",
+      "name": "Delirium: Distúrbio Primário vs Demência",
+      "front": "O delirium é um distúrbio primário de qual função psíquica? Como diferenciá-lo da demência e qual a conduta inicial?",
+      "back": "✅ Distúrbio primário: CONSCIÊNCIA e ATENÇÃO (início agudo + curso flutuante, piora à noite / sundowning).\n\n🧠 Por que NÃO são primários os outros achados?\n• Desorientação, pensamento desorganizado e alucinações (sobretudo visuais) são SECUNDÁRIOS à alteração da consciência/atenção.\n• Prejuízo primário de memória (com consciência preservada) = DEMÊNCIA.\n\n🩺 Conduta:\n• 1º: Tratar a causa base (infecção, DHE, fármacos) + medidas não farmacológicas.\n• Haloperidol dose baixa SÓ se agitação grave com risco.\n\n⚠️ Pegadinha FGV: Evitar benzodiazepínicos (só usar em abstinência alcoólica ou de BZD). Subtipo hipoativo é o mais comum em idosos!",
+      "audioText": "O delirium é um distúrbio primário da consciência e da atenção, com início agudo e curso flutuante. Desorientação, pensamento desorganizado e alucinações visuais são secundários. Já na demência o início é insidioso, a consciência está preservada e o foco inicial costuma ser a memória. A conduta principal é tratar a causa base e fazer medidas não farmacológicas, reservando haloperidol em dose baixa apenas para agitação grave e evitando benzodiazepínicos fora de abstinência."
     }
   ],
   "fgv_tables": [
@@ -4915,6 +4925,18 @@
       "col2Title": "Diagnóstico, Conduta & Pegadinhas",
       "col2": "• TC/RM de crânio: ventriculomegalia desproporcional à atrofia cortical + Índice de Evans > 0,3 + sulcos apertados no topo e fissuras sylvianas alargadas (DESH)\n• Tap Test: PL com pressão normal retirando 30–50 mL de líquor → avalia melhora da marcha antes e depois\n• Tratamento definitivo: Derivação Ventriculoperitoneal (DVP)\n• Ordem de melhora: Marcha > Incontinência > Demência\n• Pegadinha: vômitos/diplopia (VI par) = HIC aguda; sinais extrapiramidais = parkinsonismo",
       "audioText": "Resumo de hidrocefalia de pressão normal. Acomete idosos, metade idiopática e metade secundária a hemorragia subaracnoidea, meningite ou trauma. É uma hidrocefalia comunicante crônica com pressão liquórica normal que comprime fibras periventriculares, gerando marcha magnética, incontinência urinária e demência subcortical. Na imagem há índice de Evans maior que zero vírgula três. O diagnóstico funcional usa o Tap Test retirando trinta a cinquenta mililitros de líquor e o tratamento definitivo é derivação ventriculoperitoneal."
+    },
+    {
+      "id": 2070,
+      "area": "psiquiatria",
+      "cat": "delirium",
+      "year": "FGV",
+      "name": "Delirium vs Demência · Critérios CAM & Conduta",
+      "col1Title": "Delirium vs Demência",
+      "col1": "• DELIRIUM: início AGUDO (horas–dias), curso FLUTUANTE (sundowning), distúrbio primário de CONSCIÊNCIA e ATENÇÃO\n• DEMÊNCIA: início INSIDIOSO (meses–anos), curso PROGRESSIVO, consciência PRESERVADA, distúrbio primário de MEMÓRIA/cognição\n• Alucinações no delirium: classicamente VISUAIS (secundárias)\n• Subtipo HIPOATIVO: mais comum em idosos, mais subdiagnosticado e pior prognóstico",
+      "col2Title": "Critérios CAM & Tratamento",
+      "col2": "• CAM (obrigatórios 1 + 2, mais 3 OU 4):\n• • 1) Início agudo e curso flutuante + 2) Déficit de atenção\n• • 3) Pensamento desorganizado OU 4) Alteração do nível de consciência\n• Tratamento: 1º tratar CAUSA BASE (ITU, PNM, DHE, anticolinérgicos, dor) + medidas não farmacológicas\n• Haloperidol dose baixa: SÓ se agitação grave com risco\n• Benzodiazepínicos: EVITAR (exceto abstinência alcoólica/BZD)",
+      "audioText": "Tabela comparativa de delirium e demência. O delirium tem início agudo, curso flutuante e distúrbio primário de consciência e atenção, enquanto a demência tem início insidioso, consciência preservada e distúrbio primário de memória. Pelo CAM exige-se início agudo flutuante e desatenção, somados a pensamento desorganizado ou nível de consciência alterado. Trate sempre a causa base e evite benzodiazepínicos exceto em abstinência."
     }
   ]
 }

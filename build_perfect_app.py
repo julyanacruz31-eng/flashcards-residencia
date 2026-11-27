@@ -3193,6 +3193,7 @@ html_content = """<!DOCTYPE html>
         'dheg': 'Pré-eclâmpsia & DHEG',
         'trauma': 'Trauma / ATLS',
         'suicidio': 'Risco de Suicídio',
+        'delirium': 'Delirium & Confusão',
         'ists': 'ISTs & Uretrites',
         'meningite': 'Meningite',
         'sepse': 'Sepse & UTI',
