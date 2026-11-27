@@ -5089,6 +5089,18 @@
       "col2Title": "Outras Demências (Diferenciais FGV)",
       "col2": "• Demência Vascular: extensa gliose/leucoaraiose por microangiopatia (Fazekas alto) + infartos lacunares/estratégicos\n• Demência Frontotemporal (DFT): atrofia focal em córtex PRÉ-FRONTAL e/ou temporal anterior\n• Corpos de Lewy / Parkinson: baixa captação de DOPAMINA no estriado (DAT-SCAN / TRODAT-1) + FDG-PET com hipometabolismo OCCIPITAL (preserva cíngulo posterior = 'cingulate island sign')\n• HPN: ventriculomegalia desproporcional (Índice de Evans > 0,3)",
       "audioText": "Tabela de neuroimagem das demências na FGV. No Alzheimer há hipometabolismo em cíngulo posterior, pré-cúneo e temporoparietal no PET-FDG, e escala MTA maior ou igual a dois ou três na ressonância, sendo MTA um normal. Na vascular há extensa gliose por microangiopatia. Na frontotemporal há atrofia pré-frontal. Em corpos de Lewy há baixa captação de dopamina no estriado e hipometabolismo occipital. Na hidrocefalia de pressão normal há índice de Evans maior que zero vírgula três."
+    },
+    {
+      "id": 2076,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Comprometimento Cognitivo Leve (CCL): 4 Subtipos de Petersen",
+      "col1Title": "Critério Geral & Subtipos Amnésicos",
+      "col1": "• Regra de ouro do CCL: declínio cognitivo OBJETIVO + INDEPENDÊNCIA PRESERVADA nas AVDs (≠ demência!)\n• CCL Amnésico de ÚNICO domínio: altera APENAS memória episódica (ex.: evocação no MoCA / 3 palavras)\n• CCL Amnésico de MÚLTIPLOS domínios: altera MEMÓRIA + ≥ 1 outro domínio (ex.: Linguagem no Teste de Nomeação de Boston, função executiva ou visuoespacial)\n• Os subtipos AMNÉSICOS têm maior risco de evoluir para Doença de Alzheimer",
+      "col2Title": "Subtipos Não Amnésicos & Conduta",
+      "col2": "• CCL NÃO Amnésico de único domínio: memória normal; altera 1 outro domínio (ex.: linguagem ou função executiva)\n• CCL NÃO Amnésico de múltiplos domínios: memória normal; altera ≥ 2 outros domínios (mais associado a DFT, Lewy ou Vascular)\n• Conduta no CCL: investigar causas reversíveis (B12, TSH, VDRL, RM) + neuropsicológico + controle vascular + exercício físico\n• NÃO prescrever anticolinesterásicos (donepezila) nem memantina no CCL!",
+      "audioText": "Classificação de Petersen do comprometimento cognitivo leve. Exige declínio cognitivo objetivo com independência preservada nas atividades da vida diária. Divide-se em amnésico de único domínio, quando só a memória falha, amnésico de múltiplos domínios, quando memória e outro domínio como linguagem no teste de Boston falham, e não amnésico de único ou múltiplos domínios. Os amnésicos tendem mais ao Alzheimer, e em nenhum subtipo de CCL se prescreve anticolinesterásico."
     }
   ]
 }
