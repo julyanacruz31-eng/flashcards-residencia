@@ -4117,6 +4117,16 @@
       "front": "Quais são as 2 grandes formas clínicas da Demência Frontotemporal (DFT), qual sua posição nas demências pré-senis e qual o papel da genética e do tratamento?",
       "back": "🧠 2 Grandes Apresentações Clínicas:\n• Variante Comportamental (mais comum): desinibição, perda de empatia, apatia, hiperoralidade e estereotipias (memória poupada no início).\n• Comprometimento preferencial de LINGUAGEM (Afasias Progressivas Primárias): variante semântica (fluente, perde significado) e não fluente/agramática (fala esforçada/travada).\n\n📊 Epidemiologia & Genética:\n• 2ª causa de demência PRÉ-SENIL (< 65 anos), atrás apenas do Alzheimer (pico 45–65 anos).\n• Forte carga genética/mutações (~30–50% história familiar): C9orf72 (associada à ELA!), MAPT (tau) e GRN (progranulina).\n\n⚠️ Pegadinha FGV (Tratamento): Inibidores da colinesterase (donepezila) NÃO têm benefício e podem piorar agitação! Para sintomas comportamentais: ISRS (ex.: sertralina) ou trazodona.",
       "audioText": "A demência frontotemporal é a segunda causa de demência pré-senil abaixo dos sessenta e cinco anos, atrás apenas do Alzheimer. Pode se apresentar na variante comportamental, com desinibição, apatia e perda de empatia, ou com comprometimento preferencial de linguagem nas afasias progressivas primárias, semântica ou não fluente. Tem forte componente genético, frequentemente com mutações em C9orf72, MAPT e GRN. Inibidores da colinesterase não ajudam e podem piorar agitação; usa-se ISRS ou trazodona."
+    },
+    {
+      "id": 1084,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Diagnóstico Diferencial das Demências (Lewy, Vascular, Huntington)",
+      "front": "Quais são os achados clássicos de prova para diferenciar Demência por Corpos de Lewy, Demência Vascular e Doença de Huntington?",
+      "back": "🎯 Palavras-chave FGV:\n• Corpos de Lewy: FLUTUAÇÃO cognitiva + ALUCINAÇÕES VISUAIS precoces bem formadas + PARKINSONISMO + distúrbio do sono REM.\n• Demência Vascular: evolução EM DEGRAUS (piora súbita após AVCs/AITs) + fatores de risco cardiovasculares + sinais focais.\n• Doença de Huntington: autossômica dominante (expansão CAG, cr. 4, antecipação) + COREIA + sintomas psiquiátricos + demência + atrofia do núcleo CAUDADO.\n\n⚠️ Pegadinha FGV (Lewy): HIPERSENSIBILIDADE GRAVE A ANTIPSICÓTICOS (especialmente típicos como haloperidol) — evitar!",
+      "audioText": "Para diferenciar as principais demências na FGV: corpos de Lewy tem flutuação cognitiva, alucinações visuais precoces, parkinsonismo, transtorno do sono REM e hipersensibilidade grave a antipsicóticos. A demência vascular tem evolução em degraus ligada a fatores cardiovasculares e sinais focais. A doença de Huntington é autossômica dominante por expansão CAG no cromossomo quatro, cursando com coreia, sintomas psiquiátricos, demência e atrofia do núcleo caudado."
     }
   ],
   "fgv_tables": [
@@ -4983,6 +4993,18 @@
       "col2Title": "Genética, Imagem & Tratamento",
       "col2": "• Forte componente genético (30–50% história familiar; frequentes mutações nas formas pré-senis):\n• • C9orf72 (mais comum — pode associar-se a ELA!)\n• • MAPT (proteína tau) e GRN (progranulina)\n• RM de crânio: atrofia focal frontal e/ou temporal anterior ('em lâmina de faca')\n• Tratamento: NÃO usar donepezila/rivastigmina (podem piorar agitação!)\n• • Sintomas comportamentais: ISRS (sertralina, citalopram) ou trazodona",
       "audioText": "Resumo de demência frontotemporal. É a segunda causa de demência pré-senil após Alzheimer. Apresenta-se como variante comportamental ou com comprometimento preferencial de linguagem nas afasias progressivas primárias semântica e não fluente. Frequentemente há mutações genéticas em C9orf72, MAPT e GRN. A ressonância mostra atrofia frontal ou temporal anterior e o tratamento sintomático usa ISRS ou trazodona, evitando inibidores da colinesterase."
+    },
+    {
+      "id": 2073,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Mapa das 5 Demências na FGV (Palavras-Chave)",
+      "col1Title": "Reversível & Neurodegenerativas",
+      "col1": "• HPN (Hakim-Adams — REVERSÍVEL): marcha magnética + incontinência urinária + demência (Evans > 0,3; Tap Test → DVP)\n• Alzheimer: 1ª causa geral; memória recente precoce + insidiosa + progressiva (idade = risco; baixa escolaridade = risco independente)\n• Frontotemporal (DFT): 2ª causa pré-senil (< 65a); comportamento (desinibição/apatia) ou linguagem (APP); genética forte (C9orf72/MAPT/GRN)",
+      "col2Title": "Lewy, Vascular & Huntington",
+      "col2": "• Corpos de Lewy: flutuação cognitiva + alucinações VISUAIS precoces + parkinsonismo + sono REM + hipersensibilidade a ANTIPSICÓTICOS\n• Demência Vascular: evolução EM DEGRAUS + HAS/DM/FA + déficits focais\n• Huntington: autossômica dominante (expansão CAG, cr. 4, antecipação) + COREIA + psiquiátrico + demência + atrofia do CAUDADO",
+      "audioText": "Mapa comparativo das demências na FGV. Hidrocefalia de pressão normal é reversível com marcha magnética, incontinência e demência. Alzheimer começa com memória recente. Frontotemporal é a segunda causa pré-senil com comportamento ou linguagem. Corpos de Lewy tem flutuação, alucinações visuais, parkinsonismo e hipersensibilidade a antipsicóticos. Vascular evolui em degraus. Huntington é autossômica dominante por expansão CAG com coreia e atrofia do caudado."
     }
   ]
 }
