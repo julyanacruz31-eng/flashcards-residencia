@@ -4095,6 +4095,16 @@
       "front": "O delirium é um distúrbio primário de qual função psíquica? Como diferenciá-lo da demência e qual a conduta inicial?",
       "back": "✅ Distúrbio primário: CONSCIÊNCIA e ATENÇÃO (início agudo + curso flutuante, piora à noite / sundowning).\n\n🧠 Por que NÃO são primários os outros achados?\n• Desorientação, pensamento desorganizado e alucinações (sobretudo visuais) são SECUNDÁRIOS à alteração da consciência/atenção.\n• Prejuízo primário de memória (com consciência preservada) = DEMÊNCIA.\n\n🩺 Conduta:\n• 1º: Tratar a causa base (infecção, DHE, fármacos) + medidas não farmacológicas.\n• Haloperidol dose baixa SÓ se agitação grave com risco.\n\n⚠️ Pegadinha FGV: Evitar benzodiazepínicos (só usar em abstinência alcoólica ou de BZD). Subtipo hipoativo é o mais comum em idosos!",
       "audioText": "O delirium é um distúrbio primário da consciência e da atenção, com início agudo e curso flutuante. Desorientação, pensamento desorganizado e alucinações visuais são secundários. Já na demência o início é insidioso, a consciência está preservada e o foco inicial costuma ser a memória. A conduta principal é tratar a causa base e fazer medidas não farmacológicas, reservando haloperidol em dose baixa apenas para agitação grave e evitando benzodiazepínicos fora de abstinência."
+    },
+    {
+      "id": 1082,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Doença de Alzheimer: Epidemiologia & Fatores de Risco",
+      "front": "Na epidemiologia da Doença de Alzheimer (FGV): qual sexo predomina, qual o papel da idade/genética e o que acontece com a incidência nos países desenvolvidos?",
+      "back": "📊 Pontos-chave de Epidemiologia (FGV):\n• Sexo: ~2/3 dos casos ocorrem no sexo FEMININO (maior longevidade).\n• Idade: é o principal FATOR DE RISCO, mas NÃO é causa por si só (envelhecimento normal ≠ Alzheimer).\n• Histórico familiar / Genética: risco MUITO significativo (parente 1º grau aumenta 2–4x; esporádica tardia = APOE ε4; familiar precoce = APP, PSEN1, PSEN2).\n• Países desenvolvidos: tendência recente à QUEDA da incidência ajustada por idade (melhor controle cardiovascular + maior escolaridade), embora a prevalência total siga subindo pelo envelhecimento.\n• Escolaridade: baixa escolaridade reduz a reserva cognitiva (fator de risco modificável clássico).\n\n⚠️ Pegadinha FGV: Não confundir INCIDÊNCIA por idade (em queda nos países desenvolvidos) com PREVALÊNCIA absoluta (em alta no mundo)!",
+      "audioText": "Na epidemiologia da doença de Alzheimer, cerca de dois terços dos casos ocorrem no sexo feminino. A idade avançada é o principal fator de risco, mas não é causa por si só. O histórico familiar é significativo, com destaque para o alelo APOE épsilon quatro na forma tardia e mutações APP, PSEN um e PSEN dois na forma precoce. Nos países desenvolvidos há tendência recente de queda na incidência ajustada por idade pelo melhor controle cardiovascular e maior escolaridade, embora a prevalência global continue crescendo."
     }
   ],
   "fgv_tables": [
@@ -4937,6 +4947,18 @@
       "col2Title": "Critérios CAM & Tratamento",
       "col2": "• CAM (obrigatórios 1 + 2, mais 3 OU 4):\n• • 1) Início agudo e curso flutuante + 2) Déficit de atenção\n• • 3) Pensamento desorganizado OU 4) Alteração do nível de consciência\n• Tratamento: 1º tratar CAUSA BASE (ITU, PNM, DHE, anticolinérgicos, dor) + medidas não farmacológicas\n• Haloperidol dose baixa: SÓ se agitação grave com risco\n• Benzodiazepínicos: EVITAR (exceto abstinência alcoólica/BZD)",
       "audioText": "Tabela comparativa de delirium e demência. O delirium tem início agudo, curso flutuante e distúrbio primário de consciência e atenção, enquanto a demência tem início insidioso, consciência preservada e distúrbio primário de memória. Pelo CAM exige-se início agudo flutuante e desatenção, somados a pensamento desorganizado ou nível de consciência alterado. Trate sempre a causa base e evite benzodiazepínicos exceto em abstinência."
+    },
+    {
+      "id": 2071,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Doença de Alzheimer: Epidemiologia & Pegadinhas FGV",
+      "col1Title": "Fatores de Risco & Genética",
+      "col1": "• Idade avançada: principal FATOR DE RISCO (NÃO é causa isolada)\n• Sexo: ~2/3 no sexo FEMININO (pegadinha: dizer masculino)\n• História familiar: fator de risco significativo (2–4x maior em parente de 1º grau)\n• Forma esporádica tardia (> 65 anos): alelo APOE ε4 (fator de suscetibilidade)\n• Forma familiar precoce (< 65 anos, autossômica dominante): APP, PSEN1 (mais comum), PSEN2",
+      "col2Title": "Tendência Mundial & Reserva Cognitiva",
+      "col2": "• Incidência ajustada por idade em países desenvolvidos: tendência recente à DIMINUIÇÃO (estudos Framingham/Rotterdam)\n• • Motivo: melhor controle cardiovascular (HAS, DM, tabagismo) + aumento da escolaridade\n• Prevalência global absoluta: segue AUMENTANDO pelo envelhecimento populacional\n• Baixa escolaridade: reduz a reserva cognitiva (fator de risco modificável clássico; alguns textos debatem se é totalmente independente de fatores socioeconômicos)",
+      "audioText": "Tabela de epidemiologia da doença de Alzheimer. A idade é o maior fator de risco, mas não causa isolada. Dois terços dos casos ocorrem em mulheres. A história familiar é significativa, envolvendo APOE épsilon quatro na forma tardia e APP, PSEN um e PSEN dois na forma precoce. Nos países desenvolvidos a incidência ajustada por idade tem tendência recente de queda, enquanto a prevalência total sobe pelo envelhecimento."
     }
   ]
 }
