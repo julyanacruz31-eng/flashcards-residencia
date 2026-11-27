@@ -4065,6 +4065,16 @@
       "front": "O que você encontra no pulmão na AMILOIDOSE?",
       "back": "🫁 3 padrões possíveis (mais raros que rim/coração, mas caem!):\n\n• 1. Nodular parenquimatoso ('Amiloidomas'): Nódulos únicos ou múltiplos periféricos/subpleurais, às vezes calcificados.\n• 2. Intersticial difuso (alveolar-septal): Infiltrado reticular difuso por depósito nos septos alveolares (pior prognóstico, ligado à amiloidose sistêmica AL).\n• 3. Traqueobrônquico: Placas/nódulos submucosos na traqueia e brônquios causando estenose, atelectasia ou sibilância.",
       "audioText": "Na amiloidose pulmonar existem três padrões principais: nódulos parenquimatosos chamados amiloidomas que podem calcificar, infiltrado intersticial difuso por depósito nos septos alveolares na forma sistêmica, e placas na árvore traqueobrônquica causando estenose ou atelectasia."
+    },
+    {
+      "id": 1079,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Achados no Pulmão: Siderose (Não Fibrogênica)",
+      "front": "Soldador/trabalhador de siderúrgica com lesão macular peribronquiolar no pulmão, depósito de partículas fagocitadas e AUSÊNCIA de fibrose ou desarranjo estrutural. Qual o diagnóstico?",
+      "back": "✅ Diagnóstico: SIDEROSE (inalação de poeira de FERRO — pneumoconiose NÃO fibrogênica / benigna)!\n\n• Patologia: Máculas peribronquiolares com partículas de ferro nos macrófagos, SEM fibrose significativa e SEM desarranjo da arquitetura alveolar.\n• Clínica e RX: O ferro é muito radiopaco → RX mostra muitos micronódulos densos, mas o paciente costuma ser assintomático e com função pulmonar normal!\n• Outras não fibrogênicas irmãs: Estanhose (estanho) e Baritose (bário).",
+      "audioText": "Na siderose, causada por inalar poeira de ferro em soldadores e siderúrgicas, a pneumoconiose é não fibrogênica. A biópsia mostra máculas peribronquiolares com partículas fagocitadas e ausência ou mínima fibrose, sem desarranjo estrutural. O raio-X tem micronódulos densos, mas a função pulmonar costuma ser normal."
     }
   ],
   "fgv_tables": [
