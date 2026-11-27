@@ -4197,6 +4197,16 @@
       "front": "Quais são os 3 critérios cardinais da Hanseníase, a ordem de perda sensitiva, o esquema atual no SUS (PQT-U) e o tratamento das reações tipo 1 e tipo 2?",
       "back": "✅ Critérios Cardinais (basta 1 para diagnóstico clínico):\n• Lesão de pele com alteração de sensibilidade (ordem: TÉRMICA → DOLOROSA → TÁTIL).\n• Espessamento de nervo periférico (ex.: ULNAR, fibular comum, tibial posterior) + déficit sensitivo/motor.\n• Baciloscopia (BAAR) positiva.\n\n💊 Tratamento SUS (PQT-U: Rifampicina + Dapsona + Clofazimina):\n• Paucibacilar (≤ 5 lesões): 6 doses (até 9 meses).\n• Multibacilar (> 5 lesões ou BAAR+): 12 doses (até 18 meses).\n\n⚡ Reações Hansênicas (NUNCA suspender PQT!):\n• Tipo 1 (Reversa / neurite): PREDNISONA.\n• Tipo 2 (Eritema Nodoso Hansênico): TALIDOMIDA (contraindicada em gestantes → Prednisona).",
       "audioText": "O diagnóstico clínico da hanseníase exige um de três critérios cardinais: lesão cutânea com perda de sensibilidade na ordem térmica, dolorosa e tátil; espessamento de nervo periférico como o ulnar; ou baciloscopia positiva. O tratamento no SUS usa a poliquimioterapia única com rifampicina, dapsona e clofazimina por seis doses no paucibacilar e doze doses no multibacilar. Nas reações hansênicas não se suspende a PQT: tipo um trata com prednisona e tipo dois com talidomida, evitando em gestantes."
+    },
+    {
+      "id": 1092,
+      "area": "clinica",
+      "cat": "anafilaxia",
+      "year": "FGV",
+      "name": "Dermatoses Clássicas: Atópica vs Herpetiforme vs Psoríase vs LED",
+      "front": "Como diferenciar nas descrições clássicas de prova: Dermatite Atópica, Dermatite Herpetiforme, Psoríase e Lúpus Eritematoso Discoide (LED)?",
+      "back": "🎯 Descrição clássica de cada uma (FGV):\n• Dermatite Atópica: ECZEMA localizado recorrente (face/extensoras em lactentes; flexuras em crianças/adultos) + prurido intenso com FLUTUAÇÕES SAZONAIS.\n• Dermatite Herpetiforme (Doença Celíaca): erupção crônica PAPULOVESICULAR e pruriginosa em extensoras (cotovelos/joelhos/nádegas) + IgA granular na IFD.\n• Psoríase: placas eritematosas bem delimitadas recobertas por ESCAMAS PRATEADAS (Auspitz + vela).\n• Lúpus Discoide (LED): placas eritematosas em áreas FOTOEXPOSTAS que evoluem para CICATRIZES ATRÓFICAS (e alopecia cicatricial).",
+      "audioText": "Para diferenciar as quatro dermatoses clássicas na FGV: dermatite atópica é um eczema localizado recorrente com prurido de flutuações sazonais. Dermatite herpetiforme, ligada à doença celíaca, é uma erupção crônica papulovesicular e pruriginosa em superfícies extensoras com depósito granular de IgA. Psoríase forma placas eritematosas bem delimitadas com escamas prateadas. Lúpus discoide forma placas em áreas fotoexpostas que evoluem para cicatrizes atróficas."
     }
   ],
   "fgv_tables": [
