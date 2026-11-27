@@ -4167,6 +4167,16 @@
       "front": "Idoso com piora objetiva da memória recente, mas que segue trabalhando e gerenciando finanças com ajuda de lembretes/alarmes. Qual o diagnóstico e qual a conduta farmacológica?",
       "back": "✅ Diagnóstico: COMPROMETIMENTO COGNITIVO LEVE (CCL / Transtorno Neurocognitivo Leve).\n• Chave: há declínio cognitivo, mas a FUNCIONALIDADE / INDEPENDÊNCIA nas AVDs está PRESERVADA (mesmo usando estratégias compensatórias como agenda/alarmes).\n\n🚫 Conduta Farmacológica:\n• NÃO indicar anticolinesterásicos (donepezila, rivastigmina, galantamina) NEM memantina! Não previnem a evolução para Alzheimer.\n\n🩺 O que FAZER no CCL:\n• Investigar causas reversíveis (labs + avaliação neuropsicológica + imagem).\n• Controlar fatores vasculares (cessar tabagismo, HAS), atividade física, treino cognitivo e seguimento periódico (~10–15%/ano evoluem para demência).",
       "audioText": "No comprometimento cognitivo leve, ou transtorno neurocognitivo leve, existe declínio de memória mas a independência nas atividades da vida diária está preservada, mesmo com uso de lembretes ou alarmes. A conduta é investigar causas reversíveis, fazer avaliação neuropsicológica e imagem, controlar fatores cardiovasculares e estimular atividade física, mas NÃO está indicado prescrever anticolinesterásicos nem memantina nesse momento."
+    },
+    {
+      "id": 1089,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Neuroimagem no Alzheimer: FDG-PET & Escala MTA",
+      "front": "Qual o achado clássico de neuroimagem funcional (FDG-PET) na Doença de Alzheimer e qual a pegadinha da Escala MTA (atrofia temporal medial)?",
+      "back": "✅ FDG-PET na Doença de Alzheimer:\n• HIPOMETABOLISMO bilateral em CÍNGULO POSTERIOR, PRÉ-CÚNEO e córtex TEMPOROPARIETAL.\n\n⚠️ Pegadinha FGV — Escala MTA (Scheltens, 0 a 4):\n• MTA 0 ou 1 = NORMAL para a idade (NÃO sugere Alzheimer!).\n• Anormal (sugestivo de Alzheimer): MTA ≥ 2 (< 75 anos) ou MTA ≥ 3 (≥ 75 anos).\n\n🧠 Diferenciais clássicos de imagem:\n• Microangiopatia / gliose extensa → Demência Vascular.\n• Atrofia pré-frontal focal → Demência Frontotemporal (DFT).\n• Baixa captação de dopamina (DAT-SCAN/TRODAT) + hipometabolismo OCCIPITAL → Corpos de Lewy.",
+      "audioText": "Na neuroimagem da doença de Alzheimer, o achado clássico no PET-FDG é o hipometabolismo bilateral em cíngulo posterior, pré-cúneo e córtex temporoparietal. Atenção à pegadinha da escala MTA na ressonância: MTA zero ou um é normal para a idade; sugestivo de Alzheimer é MTA maior ou igual a dois abaixo de setenta e cinco anos, ou maior ou igual a três acima de setenta e cinco. Microangiopatia sugere demência vascular, atrofia pré-frontal sugere frontotemporal, e baixa captação de dopamina sugere corpos de Lewy ou Parkinson."
     }
   ],
   "fgv_tables": [
@@ -5057,6 +5067,18 @@
       "col2Title": "Memantina (Antagonista NMDA)",
       "col2": "• Indicação clássica: Alzheimer MODERADO a GRAVE (estágios avançados!)\n• Mecanismo: antagonista não competitivo dos receptores NMDA do glutamato (reduz excitotoxicidade)\n• Pode ser usada em monoterapia ou ASSOCIADA a um iAChE\n• NÃO indicada na fase leve\n• Atenção: nenhuma droga sintomática tradicional cura ou bloqueia a progressão; efeito é sintomático/estabilização temporária",
       "audioText": "Tabela de tratamento da doença de Alzheimer. Os inibidores da acetilcolinesterase, donepezila, rivastigmina e galantamina, são usados principalmente na fase leve a moderada, podendo causar efeitos gastrointestinais e bradicardia; a tacrina está em desuso por hepatotoxicidade. A memantina é antagonista NMDA do glutamato indicada nos estágios moderados a graves, isolada ou associada."
+    },
+    {
+      "id": 2075,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Neuroimagem das Demências na FGV (RM, PET-FDG & DAT-SCAN)",
+      "col1Title": "Doença de Alzheimer",
+      "col1": "• FDG-PET: HIPOMETABOLISMO em CÍNGULO POSTERIOR, pré-cúneo e temporoparietal bilateral\n• RM (Escala MTA de Scheltens, 0–4): atrofia de lobo temporal medial / hipocampo\n• • MTA 0–1 = NORMAL! Anormal = MTA ≥ 2 (< 75a) ou ≥ 3 (≥ 75a)\n• PET-Amiloide: captação cortical difusa de β-amiloide",
+      "col2Title": "Outras Demências (Diferenciais FGV)",
+      "col2": "• Demência Vascular: extensa gliose/leucoaraiose por microangiopatia (Fazekas alto) + infartos lacunares/estratégicos\n• Demência Frontotemporal (DFT): atrofia focal em córtex PRÉ-FRONTAL e/ou temporal anterior\n• Corpos de Lewy / Parkinson: baixa captação de DOPAMINA no estriado (DAT-SCAN / TRODAT-1) + FDG-PET com hipometabolismo OCCIPITAL (preserva cíngulo posterior = 'cingulate island sign')\n• HPN: ventriculomegalia desproporcional (Índice de Evans > 0,3)",
+      "audioText": "Tabela de neuroimagem das demências na FGV. No Alzheimer há hipometabolismo em cíngulo posterior, pré-cúneo e temporoparietal no PET-FDG, e escala MTA maior ou igual a dois ou três na ressonância, sendo MTA um normal. Na vascular há extensa gliose por microangiopatia. Na frontotemporal há atrofia pré-frontal. Em corpos de Lewy há baixa captação de dopamina no estriado e hipometabolismo occipital. Na hidrocefalia de pressão normal há índice de Evans maior que zero vírgula três."
     }
   ]
 }
