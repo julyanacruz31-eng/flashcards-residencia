@@ -4207,6 +4207,16 @@
       "front": "Como diferenciar nas descrições clássicas de prova: Dermatite Atópica, Dermatite Herpetiforme, Psoríase e Lúpus Eritematoso Discoide (LED)?",
       "back": "🎯 Descrição clássica de cada uma (FGV):\n• Dermatite Atópica: ECZEMA localizado recorrente (face/extensoras em lactentes; flexuras em crianças/adultos) + prurido intenso com FLUTUAÇÕES SAZONAIS.\n• Dermatite Herpetiforme (Doença Celíaca): erupção crônica PAPULOVESICULAR e pruriginosa em extensoras (cotovelos/joelhos/nádegas) + IgA granular na IFD.\n• Psoríase: placas eritematosas bem delimitadas recobertas por ESCAMAS PRATEADAS (Auspitz + vela).\n• Lúpus Discoide (LED): placas eritematosas em áreas FOTOEXPOSTAS que evoluem para CICATRIZES ATRÓFICAS (e alopecia cicatricial).",
       "audioText": "Para diferenciar as quatro dermatoses clássicas na FGV: dermatite atópica é um eczema localizado recorrente com prurido de flutuações sazonais. Dermatite herpetiforme, ligada à doença celíaca, é uma erupção crônica papulovesicular e pruriginosa em superfícies extensoras com depósito granular de IgA. Psoríase forma placas eritematosas bem delimitadas com escamas prateadas. Lúpus discoide forma placas em áreas fotoexpostas que evoluem para cicatrizes atróficas."
+    },
+    {
+      "id": 1093,
+      "area": "infectologia",
+      "cat": "hanseniase",
+      "year": "FGV",
+      "name": "Reações Hansênicas: Tipo 1 (Reversa) vs Tipo 2 (ENH)",
+      "front": "Como diferenciar Reação Hansênica Tipo 1 (Reversa) de Tipo 2 (Eritema Nodoso Hansênico) quanto ao mecanismo, clínica, tratamento e conduta com a PQT?",
+      "back": "🚨 Regra de Ouro:\n• NUNCA suspender a PQT durante reação hansênica!\n\n🔥 Reação Tipo 1 (Reversa — imunidade CELULAR / Tipo IV):\n• Quem tem: formas dimorfas/borderline.\n• Clínica: exacerbação aguda das LESÕES ANTIGAS (eritema/edema) + NEURITE (dor/perda funcional).\n• Tratamento: PREDNISONA 1 mg/kg/dia (desmame lento).\n\n🔴 Reação Tipo 2 (ENH — IMUNOCOMPLEXOS / Tipo III):\n• Quem tem: MULTIBACILARES (virchowiana / dimorfa-virchowiana).\n• Clínica: NÓDULOS eritematosos dolorosos em pele sã + febre, artralgia, orquite, uveíte.\n• Tratamento: TALIDOMIDA (associar prednisona se neurite/orquite/uveíte).\n\n⚠️ Pegadinha FGV: Talidomida é TERATOGÊNICA (proibida na gestação/mulher em idade fértil sem rigorosa anticoncepção → usar PREDNISONA)!",
+      "audioText": "Nas reações hansênicas nunca se suspende a poliquimioterapia. A reação tipo um, ou reversa, é mediada por imunidade celular em pacientes dimorfos, com piora das lesões pré-existentes e neurite, sendo tratada com prednisona um miligrama por quilo ao dia. A reação tipo dois, ou eritema nodoso hansênico, é mediada por imunocomplexos em multibacilares, com nódulos subcutâneos dolorosos, febre, orquite e uveíte, sendo tratada com talidomida, lembrando que é teratogênica e contraindicada em gestantes, quando se usa prednisona."
     }
   ],
   "fgv_tables": [
