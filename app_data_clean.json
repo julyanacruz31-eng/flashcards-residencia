@@ -4177,6 +4177,16 @@
       "front": "Qual o achado clássico de neuroimagem funcional (FDG-PET) na Doença de Alzheimer e qual a pegadinha da Escala MTA (atrofia temporal medial)?",
       "back": "✅ FDG-PET na Doença de Alzheimer:\n• HIPOMETABOLISMO bilateral em CÍNGULO POSTERIOR, PRÉ-CÚNEO e córtex TEMPOROPARIETAL.\n\n⚠️ Pegadinha FGV — Escala MTA (Scheltens, 0 a 4):\n• MTA 0 ou 1 = NORMAL para a idade (NÃO sugere Alzheimer!).\n• Anormal (sugestivo de Alzheimer): MTA ≥ 2 (< 75 anos) ou MTA ≥ 3 (≥ 75 anos).\n\n🧠 Diferenciais clássicos de imagem:\n• Microangiopatia / gliose extensa → Demência Vascular.\n• Atrofia pré-frontal focal → Demência Frontotemporal (DFT).\n• Baixa captação de dopamina (DAT-SCAN/TRODAT) + hipometabolismo OCCIPITAL → Corpos de Lewy.",
       "audioText": "Na neuroimagem da doença de Alzheimer, o achado clássico no PET-FDG é o hipometabolismo bilateral em cíngulo posterior, pré-cúneo e córtex temporoparietal. Atenção à pegadinha da escala MTA na ressonância: MTA zero ou um é normal para a idade; sugestivo de Alzheimer é MTA maior ou igual a dois abaixo de setenta e cinco anos, ou maior ou igual a três acima de setenta e cinco. Microangiopatia sugere demência vascular, atrofia pré-frontal sugere frontotemporal, e baixa captação de dopamina sugere corpos de Lewy ou Parkinson."
+    },
+    {
+      "id": 1090,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Alzheimer com Psicose Precoce: Líquor (Tau ↑ / β-Amiloide ↓) + APOE ε4",
+      "front": "Mulher de 63 anos com delírios persecutórios, alucinações auditivas, prejuízo nas AVDs, SEM distúrbio da consciência e RM normal. Líquor: p-Tau AUMENTADA e β-amiloide DIMINUÍDA; APOE ε4/ε4. Qual o diagnóstico?",
+      "back": "✅ Diagnóstico: DOENÇA DE ALZHEIMER (apresentação com psicose precoce)!\n\n🔬 Assinatura Biológica Definitiva:\n• Líquor: β-amiloide BAIXA (retida nas placas cerebrais) + p-Tau ALTA (lesão/degeneração neuronal) = perfil clássico de Alzheimer, mesmo com RM normal!\n• Genética: APOE ε4/ε4 = maior fator de risco genético para Alzheimer esporádico.\n\n⚠️ Pegadinha FGV (por que NÃO é Lewy nem Esquizofrenia?):\n• Corpos de Lewy teria alucinações VISUAIS + flutuação da consciência (aqui não há distúrbio da consciência!).\n• Sintomas extrapiramidais após olanzapina são distrator — o líquor + APOE ε4/ε4 cravam Alzheimer!",
+      "audioText": "Mulher de sessenta e três anos com psicose de início tardio, prejuízo funcional, sem distúrbio da consciência, ressonância normal, líquor com proteína tau fosforilada aumentada e beta-amiloide diminuída, e genótipo APOE épsilon quatro homozigoto fecha o diagnóstico de doença de Alzheimer. Não é corpos de Lewy porque não há flutuação da consciência nem alucinações visuais clássicas."
     }
   ],
   "fgv_tables": [
