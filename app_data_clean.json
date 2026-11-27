@@ -4247,6 +4247,16 @@
       "front": "Mulher de 28 anos com artrite de punhos há 6 meses, rash facial, petéquias, Hb 9,0 (Coombs direto IgG+), leucócitos 3.500 e plaquetas 20.000. Qual o diagnóstico e como diferenciar de PTI primária?",
       "back": "✅ Diagnóstico: LÚPUS ERITEMATOSO SISTÊMICO (LES) com citopenias autoimunes!\n• Critérios presentes: rash malar + artrite + anemia hemolítica autoimune (Coombs+ IgG) + leucopenia (< 4.000) + trombocitopenia (< 100.000).\n• AHAI (Coombs+) + PTI juntas = SÍNDROME DE EVANS (classicamente secundária ao LES em mulher jovem!).\n\n⚠️ Por que NÃO é PTI primária nem fármaco (AINE)?\n• PTI primária: diagnóstico de exclusão com PLAQUETOPENIA ISOLADA (sem AHAI, leucopenia, artrite ou rash).\n• AINE: estava sendo usado apenas para a artralgia crônica — não explica rash malar, artrite nem Coombs+.",
       "audioText": "Mulher jovem com artrite de punhos há seis meses, rash facial e pancitopenia autoimune com anemia hemolítica Coombs positivo, leucopenia e plaquetopenia fecha diagnóstico de lúpus eritematoso sistêmico, com síndrome de Evans associada. Não é PTI primária porque a PTI primária cursa com plaquetopenia isolada sem outros achados sistêmicos."
+    },
+    {
+      "id": 1097,
+      "area": "reumatologia",
+      "cat": "ar",
+      "year": "FGV",
+      "name": "Osteoartrite vs Artrite Reumatoide: Clínica, Mãos e Raio-X",
+      "front": "Quais as articulações típicas, o padrão de dor/rigidez e os 4 achados clássicos do RX na Osteoartrite (OA) em comparação à Artrite Reumatoide (AR)?",
+      "back": "✅ Osteoartrite (OA — degenerativa / mecânica):\n• Articulações típicas: grandes articulações de carga (JOELHO e QUADRIL), coluna, 1ª CMC (rizartrose) e IFD (nódulos de HEBERDEN) ± IFP (Bouchard); poupa punhos e MCF.\n• Dor MECÂNICA (piora no uso, melhora no repouso) + rigidez matinal CURTA (< 30 min) + SEM febre.\n• Quarteto do RX: redução ASSIMÉTRICA do espaço articular + OSTEÓFITOS + esclerose subcondral + cistos subcondrais.\n\n🔥 Diferenciais clássicos (FGV):\n• Artrite Reumatoide: IFP, MCF e punhos (poupa IFD!), rigidez > 1h, EROSÕES ósseas marginais.\n• HLA-B27: Espondiloartrites soronegativas (espondilite anquilosante, reativa).",
+      "audioText": "A osteoartrite é degenerativa, crônica e sem febre, acometendo grandes articulações de carga como joelho e quadril, coluna, base do polegar e interfalangeanas distais com nódulos de Heberden. Tem dor mecânica e rigidez matinal menor que trinta minutos. O raio-X mostra redução assimétrica do espaço articular, osteófitos, esclerose subcondral e cistos subcondrais, sem erosões marginais, que pertencem à artrite reumatoide."
     }
   ],
   "fgv_tables": [
