@@ -4075,6 +4075,16 @@
       "front": "Soldador/trabalhador de siderúrgica com lesão macular peribronquiolar no pulmão, depósito de partículas fagocitadas e AUSÊNCIA de fibrose ou desarranjo estrutural. Qual o diagnóstico?",
       "back": "✅ Diagnóstico: SIDEROSE (inalação de poeira de FERRO — pneumoconiose NÃO fibrogênica / benigna)!\n\n• Patologia: Máculas peribronquiolares com partículas de ferro nos macrófagos, SEM fibrose significativa e SEM desarranjo da arquitetura alveolar.\n• Clínica e RX: O ferro é muito radiopaco → RX mostra muitos micronódulos densos, mas o paciente costuma ser assintomático e com função pulmonar normal!\n• Outras não fibrogênicas irmãs: Estanhose (estanho) e Baritose (bário).",
       "audioText": "Na siderose, causada por inalar poeira de ferro em soldadores e siderúrgicas, a pneumoconiose é não fibrogênica. A biópsia mostra máculas peribronquiolares com partículas fagocitadas e ausência ou mínima fibrose, sem desarranjo estrutural. O raio-X tem micronódulos densos, mas a função pulmonar costuma ser normal."
+    },
+    {
+      "id": 1080,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Hidrocefalia de Pressão Normal (Hakim-Adams)",
+      "front": "Idoso > 65 anos com marcha magnética (pés 'colados no chão'), incontinência urinária e demência progressiva. Qual o diagnóstico, como confirmar e qual o tratamento?",
+      "back": "✅ Diagnóstico: Hidrocefalia de Pressão Normal (Síndrome de Hakim-Adams) — causa clássica de demência potencialmente reversível.\n\n🧠 Tríade clássica (por compressão periventricular):\n• Marcha magnética (1º a surgir e o que MAIS melhora): fibras das pernas passam coladas aos ventrículos laterais.\n• Incontinência urinária: perda do freio frontal sobre o detrusor.\n• Demência subcortical: lentificação, apatia e disfunção executiva.\n\n🔬 Diagnóstico e Tratamento:\n• TC/RM: ventriculomegalia desproporcional (Índice de Evans > 0,3).\n• Tap Test: PL retirando 30–50 mL (pressão normal) → melhora da marcha.\n• Conduta definitiva: Derivação Ventriculoperitoneal (DVP).\n\n⚠️ Pegadinha FGV: Vômitos e diplopia (VI par) são de HIC aguda (pressão ALTA), não de HPN!",
+      "audioText": "A hidrocefalia de pressão normal, ou síndrome de Hakim-Adams, acomete idosos e é causa clássica de demência potencialmente reversível. A tríade clássica é marcha magnética, que surge primeiro e mais melhora, incontinência urinária por hiperatividade detrusora e demência subcortical. Na imagem há ventriculomegalia desproporcional com índice de Evans maior que zero vírgula três. Confirma-se com Tap Test retirando trinta a cinquenta mililitros de líquor com pressão normal e o tratamento definitivo é derivação ventriculoperitoneal."
     }
   ],
   "fgv_tables": [
@@ -4893,6 +4903,18 @@
       "col2Title": "Hilo Bilateral vs Depósito",
       "col2": "• SARCOIDOSE → ADENOPATIA HILAR BILATERAL simétrica + infiltrado perilinfático (granuloma NÃO caseoso)\n• BERILIOSE → Imita a SARCOIDOSE no pulmão (adenopatia hilar + granuloma não caseoso + história de berílio)\n• AMILOIDOSE → Nódulos ('amiloidomas'), infiltrado intersticial septal difuso ou placas traqueobrônquicas (Vermelho Congo+)",
       "audioText": "Mapa comparativo de achados pulmonares. Silicose e carvoeiro predominam nos lobos superiores, sendo que a silicose tem calcificação em casca de ovo e risco de tuberculose. Asbesto predomina na pleura com placas calcificadas e atelectasia redonda e nas bases pulmonares. Sarcoidose e beriliose fazem adenopatia hilar bilateral simétrica e infiltrado perilinfático. Amiloidose faz nódulos chamados amiloidomas, infiltrado septal ou placas traqueobrônquicas."
+    },
+    {
+      "id": 2069,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Hidrocefalia de Pressão Normal (Síndrome de Hakim-Adams)",
+      "col1Title": "Epidemiologia, Fisiopatologia & Tríade",
+      "col1": "• Idosos > 60–65 anos; ~50% idiopática, ~50% secundária (HSA, meningite, TCE)\n• Hidrocefalia comunicante crônica: déficit de reabsorção nas granulações aracnoides → ventrículos dilatam lentamente com pressão de abertura NORMAL na PL\n• Marcha magnética (apraxia): fibras dos MMII passam rente aos ventrículos laterais (1º sintoma e o que MAIS melhora)\n• Incontinência urinária: compressão das fibras frontais que freiam a bexiga (hiperatividade detrusora)\n• Demência subcortical: lentificação, apatia e disfunção executiva (menos reversível se tardia)",
+      "col2Title": "Diagnóstico, Conduta & Pegadinhas",
+      "col2": "• TC/RM de crânio: ventriculomegalia desproporcional à atrofia cortical + Índice de Evans > 0,3 + sulcos apertados no topo e fissuras sylvianas alargadas (DESH)\n• Tap Test: PL com pressão normal retirando 30–50 mL de líquor → avalia melhora da marcha antes e depois\n• Tratamento definitivo: Derivação Ventriculoperitoneal (DVP)\n• Ordem de melhora: Marcha > Incontinência > Demência\n• Pegadinha: vômitos/diplopia (VI par) = HIC aguda; sinais extrapiramidais = parkinsonismo",
+      "audioText": "Resumo de hidrocefalia de pressão normal. Acomete idosos, metade idiopática e metade secundária a hemorragia subaracnoidea, meningite ou trauma. É uma hidrocefalia comunicante crônica com pressão liquórica normal que comprime fibras periventriculares, gerando marcha magnética, incontinência urinária e demência subcortical. Na imagem há índice de Evans maior que zero vírgula três. O diagnóstico funcional usa o Tap Test retirando trinta a cinquenta mililitros de líquor e o tratamento definitivo é derivação ventriculoperitoneal."
     }
   ]
 }

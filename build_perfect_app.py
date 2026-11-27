@@ -3184,6 +3184,7 @@ html_content = """<!DOCTYPE html>
         'ira_dialise': 'IRA & Diálise',
         'wernicke': 'Wernicke & Carências',
         'cefaleias': 'Cefaleias',
+        'demencias': 'Demências & HPN',
         'shu': 'SHU & Diarreia',
         'anafilaxia': 'Anafilaxia & Alergia',
         'intussuscepcao': 'Intussuscepção',
