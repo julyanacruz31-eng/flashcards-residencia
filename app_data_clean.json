@@ -4217,6 +4217,16 @@
       "front": "Como diferenciar Reação Hansênica Tipo 1 (Reversa) de Tipo 2 (Eritema Nodoso Hansênico) quanto ao mecanismo, clínica, tratamento e conduta com a PQT?",
       "back": "🚨 Regra de Ouro:\n• NUNCA suspender a PQT durante reação hansênica!\n\n🔥 Reação Tipo 1 (Reversa — imunidade CELULAR / Tipo IV):\n• Quem tem: formas dimorfas/borderline.\n• Clínica: exacerbação aguda das LESÕES ANTIGAS (eritema/edema) + NEURITE (dor/perda funcional).\n• Tratamento: PREDNISONA 1 mg/kg/dia (desmame lento).\n\n🔴 Reação Tipo 2 (ENH — IMUNOCOMPLEXOS / Tipo III):\n• Quem tem: MULTIBACILARES (virchowiana / dimorfa-virchowiana).\n• Clínica: NÓDULOS eritematosos dolorosos em pele sã + febre, artralgia, orquite, uveíte.\n• Tratamento: TALIDOMIDA (associar prednisona se neurite/orquite/uveíte).\n\n⚠️ Pegadinha FGV: Talidomida é TERATOGÊNICA (proibida na gestação/mulher em idade fértil sem rigorosa anticoncepção → usar PREDNISONA)!",
       "audioText": "Nas reações hansênicas nunca se suspende a poliquimioterapia. A reação tipo um, ou reversa, é mediada por imunidade celular em pacientes dimorfos, com piora das lesões pré-existentes e neurite, sendo tratada com prednisona um miligrama por quilo ao dia. A reação tipo dois, ou eritema nodoso hansênico, é mediada por imunocomplexos em multibacilares, com nódulos subcutâneos dolorosos, febre, orquite e uveíte, sendo tratada com talidomida, lembrando que é teratogênica e contraindicada em gestantes, quando se usa prednisona."
+    },
+    {
+      "id": 1094,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Doença de Parkinson + Quedas: Hipotensão Ortostática",
+      "front": "Idoso com Doença de Parkinson há 10 anos encontrado caído no chão (queda não testemunhada). Qual o exame/procedimento com maior probabilidade de esclarecer a CAUSA da queda e qual seu critério diagnóstico?",
+      "back": "✅ Procedimento: VERIFICAÇÃO DE HIPOTENSÃO ORTOSTÁTICA (PA deitado → em pé em 1–3 min)!\n• Por quê? No Parkinson avançado, a DISAUTONOMIA + uso de levodopa/agonistas dopaminérgicos tornam a hipotensão ortostática extremamente prevalente (30–50%) e grande causa de quedas/síncopes.\n\n📏 Critério Diagnóstico de Hipotensão Ortostática:\n• Queda da PAS ≥ 20 mmHg OU queda da PAD ≥ 10 mmHg em até 3 minutos após assumir o ortostatismo.\n\n⚠️ Pegadinha FGV: TC de crânio avalia a CONSEQUÊNCIA da queda (ex.: hematoma subdural), NÃO a causa da queda!",
+      "audioText": "Em idoso com doença de Parkinson avançada encontrado caído no chão, o procedimento com maior probabilidade de esclarecer a causa da queda é a verificação de hipotensão ortostática, muito frequente pela disautonomia do Parkinson somada à levodopa. O critério diagnóstico é queda da pressão sistólica maior ou igual a vinte ou diastólica maior ou igual a dez milímetros de mercúrio em até três minutos em pé. A tomografia de crânio avalia consequência da queda, não a causa."
     }
   ],
   "fgv_tables": [
