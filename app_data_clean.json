@@ -4107,6 +4107,16 @@
         "✅ Baixo nível educacional = FATOR DE RISCO INDEPENDENTE (Gabarito FGV):\n• Aumenta o risco por si só, mesmo controlando idade, sexo e fatores cardiovasculares.\n• Mecanismo: menor RESERVA COGNITIVA (menos redes sinápticas alternativas para compensar placas beta-amiloide e proteína tau).\n\n📊 Outros pontos clássicos (que a FGV inverte):\n• Sexo: ~2/3 no sexo FEMININO (NÃO masculino).\n• Idade: principal FATOR DE RISCO, mas NÃO é causa por si só.\n• História familiar: fator de risco MUITO significativo (parente 1º grau 2–4x; APOE ε4 na tardia; APP/PSEN1/PSEN2 na precoce).\n\n⚠️ Pegadinha FGV: Fator de risco independente = efeito próprio, mantido mesmo após ajustar confundidores!"
       ],
       "audioText": "Na epidemiologia da doença de Alzheimer para a FGV, o baixo nível educacional é fator de risco independente porque reduz a reserva cognitiva, deixando menos conexões sinápticas alternativas para compensar o dano das placas beta-amiloide e da proteína tau, independentemente da idade ou de fatores vasculares. Além disso, cerca de dois terços dos casos ocorrem em mulheres, a idade avançada é fator de risco mas não causa isolada, e o histórico familiar é muito significativo."
+    },
+    {
+      "id": 1083,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Demência Frontotemporal (DFT): Clínica, Genética e Epidemiologia",
+      "front": "Quais são as 2 grandes formas clínicas da Demência Frontotemporal (DFT), qual sua posição nas demências pré-senis e qual o papel da genética e do tratamento?",
+      "back": "🧠 2 Grandes Apresentações Clínicas:\n• Variante Comportamental (mais comum): desinibição, perda de empatia, apatia, hiperoralidade e estereotipias (memória poupada no início).\n• Comprometimento preferencial de LINGUAGEM (Afasias Progressivas Primárias): variante semântica (fluente, perde significado) e não fluente/agramática (fala esforçada/travada).\n\n📊 Epidemiologia & Genética:\n• 2ª causa de demência PRÉ-SENIL (< 65 anos), atrás apenas do Alzheimer (pico 45–65 anos).\n• Forte carga genética/mutações (~30–50% história familiar): C9orf72 (associada à ELA!), MAPT (tau) e GRN (progranulina).\n\n⚠️ Pegadinha FGV (Tratamento): Inibidores da colinesterase (donepezila) NÃO têm benefício e podem piorar agitação! Para sintomas comportamentais: ISRS (ex.: sertralina) ou trazodona.",
+      "audioText": "A demência frontotemporal é a segunda causa de demência pré-senil abaixo dos sessenta e cinco anos, atrás apenas do Alzheimer. Pode se apresentar na variante comportamental, com desinibição, apatia e perda de empatia, ou com comprometimento preferencial de linguagem nas afasias progressivas primárias, semântica ou não fluente. Tem forte componente genético, frequentemente com mutações em C9orf72, MAPT e GRN. Inibidores da colinesterase não ajudam e podem piorar agitação; usa-se ISRS ou trazodona."
     }
   ],
   "fgv_tables": [
@@ -4961,6 +4971,18 @@
       "col2Title": "Genética & Conceito Epidemiológico",
       "col2": "• O que é 'fator de risco independente'?\n• • Aumenta o risco da doença por conta própria, mesmo ajustando idade, sexo, HAS, DM e renda\n• Forma esporádica tardia (> 65 anos): alelo APOE ε4 (suscetibilidade)\n• Forma familiar precoce (< 65 anos, AD): APP, PSEN1 (mais comum), PSEN2\n• Pegadinha FGV: não marcar idade como 'causa por si só' nem 2/3 no sexo masculino",
       "audioText": "Resumo de epidemiologia da doença de Alzheimer para a FGV. O baixo nível educacional é fator de risco independente por reduzir a reserva cognitiva, mantendo efeito próprio mesmo após ajustar idade e fatores cardiovasculares. Dois terços dos casos ocorrem em mulheres, a idade é o principal fator de risco mas não causa isolada, e o histórico familiar é significativo com APOE épsilon quatro na forma tardia e APP, PSEN um e PSEN dois na forma precoce."
+    },
+    {
+      "id": 2072,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Demência Frontotemporal (DFT): Subtipos, Genética & Conduta",
+      "col1Title": "Epidemiologia & Apresentações",
+      "col1": "• 2ª causa de demência PRÉ-SENIL (< 65 anos), após Alzheimer (início típico 45–65 anos)\n• Variante Comportamental (vcDFT — mais comum): desinibição social, apatia, perda de empatia, compulsões, hiperoralidade; memória e visuoespacial preservadas no início\n• Afasias Progressivas Primárias (comprometimento preferencial de LINGUAGEM):\n• • Variante Semântica: fala fluente, perda do significado de palavras/objetos (atrofia temporal anterior)\n• • Variante Não Fluente/Agramática: fala esforçada, agramatismo, apraxia de fala (atrofia frontal inferior E)",
+      "col2Title": "Genética, Imagem & Tratamento",
+      "col2": "• Forte componente genético (30–50% história familiar; frequentes mutações nas formas pré-senis):\n• • C9orf72 (mais comum — pode associar-se a ELA!)\n• • MAPT (proteína tau) e GRN (progranulina)\n• RM de crânio: atrofia focal frontal e/ou temporal anterior ('em lâmina de faca')\n• Tratamento: NÃO usar donepezila/rivastigmina (podem piorar agitação!)\n• • Sintomas comportamentais: ISRS (sertralina, citalopram) ou trazodona",
+      "audioText": "Resumo de demência frontotemporal. É a segunda causa de demência pré-senil após Alzheimer. Apresenta-se como variante comportamental ou com comprometimento preferencial de linguagem nas afasias progressivas primárias semântica e não fluente. Frequentemente há mutações genéticas em C9orf72, MAPT e GRN. A ressonância mostra atrofia frontal ou temporal anterior e o tratamento sintomático usa ISRS ou trazodona, evitando inibidores da colinesterase."
     }
   ]
 }
