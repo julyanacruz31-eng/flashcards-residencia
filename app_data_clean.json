@@ -4137,6 +4137,16 @@
       "front": "Paciente de 58 anos com desinibição social, gastos excessivos e memória preservada: qual demência pensar? E qual o quadro clássico da Doença de Creutzfeldt-Jakob (DCJ)?",
       "back": "✅ 58 anos + desinibição/gastos ('pseudomania') + memória preservada = Demência Frontotemporal (variante comportamental)!\n• Idade < 60 anos e memória preservada NÃO excluem demência (pegadinha clássica!).\n\n⚡ Doença de Creutzfeldt-Jakob (DCJ — doença priônica):\n• Demência RAPIDAMENTE PROGRESSIVA (semanas a poucos meses) + MIOCLONIAS + ATAXIA.\n• RM (DWI): hipersinal cortical ('cortical ribboning') e núcleos da base.\n• EEG: complexos trifásicos periódicos (1 Hz).\n• Líquor: RT-QuIC (mais específico) e proteína 14-3-3.\n\n💡 Regra prática: Primeiro episódio 'maníaco' ou mudança brusca de personalidade > 50 anos → sempre investigar causa orgânica (DFT, tumor frontal)!",
       "audioText": "Paciente de cinquenta e oito anos com desinibição social, gastos excessivos e memória preservada aponta para demência frontotemporal variante comportamental, que imita mania; idade abaixo de sessenta anos e memória normal não excluem demência. Já a doença de Creutzfeldt-Jakob é uma demência rapidamente progressiva em semanas a meses com mioclonias e ataxia, hipersinal em difusão na ressonância, complexos periódicos no eletroencefalograma e RT-QuIC ou proteína quatorze-três-três no líquor."
+    },
+    {
+      "id": 1086,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Tratamento do Alzheimer: iAChE vs Memantina",
+      "front": "Qual medicação é classicamente indicada nos estágios MODERADOS A GRAVES (avançados) da Doença de Alzheimer, qual seu mecanismo de ação e como difere das demais drogas?",
+      "back": "✅ MEMANTINA (estágios MODERADO a GRAVE / avançados):\n• Mecanismo: antagonista não competitivo dos receptores NMDA do glutamato (reduz excitotoxicidade).\n• Pode ser usada isolada ou associada a iAChE.\n• NÃO é indicada na fase leve!\n\n💊 Inibidores da Acetilcolinesterase (iAChE — fase LEVE a MODERADA):\n• Donepezila, Rivastigmina (tem adesivo transdérmico = menos efeito GI) e Galantamina.\n• Efeitos colaterais: náuseas/diarreia e BRADICARDIA / BAV / síncope.\n\n⚠️ Pegadinha FGV: Tacrina é iAChE em desuso por HEPATOTOXICIDADE grave!",
+      "audioText": "No tratamento da doença de Alzheimer, a memantina é um antagonista dos receptores NMDA do glutamato classicamente indicada para os estágios moderados a graves, não sendo indicada na fase leve. Já donepezila, rivastigmina e galantamina são inibidores da acetilcolinesterase usados na fase leve a moderada, podendo causar sintomas gastrointestinais e bradicardia ou bloqueio atrioventricular. A tacrina caiu em desuso por hepatotoxicidade grave."
     }
   ],
   "fgv_tables": [
@@ -5015,6 +5025,18 @@
       "col2Title": "Lewy, Vascular & Huntington",
       "col2": "• Corpos de Lewy: flutuação cognitiva + alucinações VISUAIS precoces + parkinsonismo + sono REM + hipersensibilidade a ANTIPSICÓTICOS\n• Demência Vascular: evolução EM DEGRAUS + HAS/DM/FA + déficits focais\n• Huntington: autossômica dominante (expansão CAG, cr. 4, antecipação) + COREIA + psiquiátrico + demência + atrofia do CAUDADO",
       "audioText": "Mapa comparativo das demências na FGV. Hidrocefalia de pressão normal é reversível com marcha magnética, incontinência e demência. Alzheimer começa com memória recente. Frontotemporal é a segunda causa pré-senil com comportamento ou linguagem. Corpos de Lewy tem flutuação, alucinações visuais, parkinsonismo e hipersensibilidade a antipsicóticos. Vascular evolui em degraus. Huntington é autossômica dominante por expansão CAG com coreia e atrofia do caudado."
+    },
+    {
+      "id": 2074,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Tratamento da Doença de Alzheimer: iAChE vs Memantina",
+      "col1Title": "Inibidores da Acetilcolinesterase (iAChE)",
+      "col1": "• Drogas: Donepezila, Rivastigmina, Galantamina (Tacrina = desuso por HEPATOTOXICIDADE!)\n• Indicação clássica: Alzheimer LEVE a MODERADO (donepezila/rivastigmina adesivo também aprovadas em grave)\n• Mecanismo: aumentam acetilcolina na fenda sináptica\n• Efeitos adversos: GI (náuseas, diarreia, perda de peso) + CARDÍACOS (bradicardia, BAV, síncope)\n• Dica: Rivastigmina em adesivo transdérmico reduz efeitos GI",
+      "col2Title": "Memantina (Antagonista NMDA)",
+      "col2": "• Indicação clássica: Alzheimer MODERADO a GRAVE (estágios avançados!)\n• Mecanismo: antagonista não competitivo dos receptores NMDA do glutamato (reduz excitotoxicidade)\n• Pode ser usada em monoterapia ou ASSOCIADA a um iAChE\n• NÃO indicada na fase leve\n• Atenção: nenhuma droga sintomática tradicional cura ou bloqueia a progressão; efeito é sintomático/estabilização temporária",
+      "audioText": "Tabela de tratamento da doença de Alzheimer. Os inibidores da acetilcolinesterase, donepezila, rivastigmina e galantamina, são usados principalmente na fase leve a moderada, podendo causar efeitos gastrointestinais e bradicardia; a tacrina está em desuso por hepatotoxicidade. A memantina é antagonista NMDA do glutamato indicada nos estágios moderados a graves, isolada ou associada."
     }
   ]
 }
