@@ -4267,6 +4267,16 @@
       "front": "Qual a recomendação atual (EULAR/SBR) para o início do tratamento de um paciente recém-diagnosticado com Artrite Reumatoide?",
       "back": "✅ 1ª Linha Inicial (EULAR / SBR):\n• METOTREXATO (MTX — 1x/semana, sempre com ÁCIDO FÓLICO para reduzir toxicidade) + CORTICOIDE EM DOSES BAIXAS por curto prazo ('terapia ponte' / bridging therapy)!\n\n💡 Por que usar corticoide em dose baixa no início?\n• O MTX demora 6–12 semanas para atingir efeito pleno.\n• A prednisona em dose baixa (≤ 7,5–10 mg/dia) controla rapidamente a inflamação e é desmamada assim que possível (~3 meses).\n\n⚠️ Pegadinhas FGV:\n• Corticoide em ALTAS doses só em manifestações extra-articulares graves (ex.: vasculite reumatoide).\n• AINE não substitui corticoide dose baixa como terapia ponte (e tem risco GI/renal/interação com MTX).\n• Hidroxicloroquina NÃO substitui MTX como droga âncora.",
       "audioText": "A recomendação atual para o início do tratamento da artrite reumatoide é metotrexato semanal associado a ácido fólico, somado a corticoide em doses baixas por curto prazo como terapia ponte, já que o metotrexato leva seis a doze semanas para agir. Não se usa corticoide em altas doses na doença articular comum, nem se substitui o metotrexato por hidroxicloroquina."
+    },
+    {
+      "id": 1099,
+      "area": "reumatologia",
+      "cat": "vasculites",
+      "year": "FGV",
+      "name": "VHS vs PCR na Reumatologia (Arterite Temporal, PMR e LES)",
+      "front": "Em quais doenças reumatológicas o VHS é o marcador clássico que dispara (mesmo com PCR normal no caso do LES), e qual a diferença fisiológica entre VHS e PCR?",
+      "back": "🎯 Os 2 Grandes Clássicos do VHS nas Provas:\n• 1. Arterite de Células Gigantes (Temporal) & Polimialgia Reumática: idoso > 50 anos com cefaleia temporal / claudicação de mandíbula / dor em cinturas → VHS muito elevado (> 50–100 mm/h, critério clássico!).\n• 2. Lúpus Eritematoso Sistêmico (LES) em atividade: VHS SOBE, mas PCR costuma ficar NORMAL (interferon tipo I inibe produção hepática de PCR).\n\n⚠️ Pegadinha Clássica no LES:\n• Paciente com LES + PCR muito elevado → pensar em INFECÇÃO (ou serosite grave), e não apenas atividade lúpica!\n\n💡 Diferença fisiológica:\n• VHS: sobe por fibrinogênio E imunoglobulinas; sobe/cai lentamente (dias–semanas).\n• PCR: proteína hepática via IL-6; sobe/cai rápido (horas), mais sensível para infecção bacteriana aguda.",
+      "audioText": "Na reumatologia existem dois grandes clássicos do VHS. Primeiro, arterite temporal e polimialgia reumática, em que o VHS costuma passar de cinquenta a cem. Segundo, atividade do lúpus eritematoso sistêmico, em que o VHS sobe mas o PCR costuma ficar normal; se o PCR estiver muito alto no lúpus, pense em infecção. O VHS sobe por fibrinogênio e imunoglobulinas de forma mais lenta, enquanto o PCR sobe e cai rápido via interleucina seis."
     }
   ],
   "fgv_tables": [
