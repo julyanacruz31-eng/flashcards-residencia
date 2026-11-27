@@ -4227,6 +4227,16 @@
       "front": "Idoso com Doença de Parkinson há 10 anos encontrado caído no chão (queda não testemunhada). Qual o exame/procedimento com maior probabilidade de esclarecer a CAUSA da queda e qual seu critério diagnóstico?",
       "back": "✅ Procedimento: VERIFICAÇÃO DE HIPOTENSÃO ORTOSTÁTICA (PA deitado → em pé em 1–3 min)!\n• Por quê? No Parkinson avançado, a DISAUTONOMIA + uso de levodopa/agonistas dopaminérgicos tornam a hipotensão ortostática extremamente prevalente (30–50%) e grande causa de quedas/síncopes.\n\n📏 Critério Diagnóstico de Hipotensão Ortostática:\n• Queda da PAS ≥ 20 mmHg OU queda da PAD ≥ 10 mmHg em até 3 minutos após assumir o ortostatismo.\n\n⚠️ Pegadinha FGV: TC de crânio avalia a CONSEQUÊNCIA da queda (ex.: hematoma subdural), NÃO a causa da queda!",
       "audioText": "Em idoso com doença de Parkinson avançada encontrado caído no chão, o procedimento com maior probabilidade de esclarecer a causa da queda é a verificação de hipotensão ortostática, muito frequente pela disautonomia do Parkinson somada à levodopa. O critério diagnóstico é queda da pressão sistólica maior ou igual a vinte ou diastólica maior ou igual a dez milímetros de mercúrio em até três minutos em pé. A tomografia de crânio avalia consequência da queda, não a causa."
+    },
+    {
+      "id": 1095,
+      "area": "hematologia",
+      "cat": "anemias",
+      "year": "FGV",
+      "name": "Anemia Ferropriva: Diagnóstico, Transfusão e Reposição",
+      "front": "Mulher de 36 anos com Hb = 9,4 g/dL e VCM = 68 fL há 3 meses. Qual a conduta correta, quando transfundir, como diferenciar de talassemia e por quanto tempo repor ferro?",
+      "back": "✅ Conduta: Pesquisar PERDA CRÔNICA DE SANGUE (ex.: hipermenorreia em idade fértil; TGI em homens/pós-menopausa) + repor SULFATO FERROSO oral!\n\n🔬 Cinética do Ferro & Diferencial:\n• Ferropriva: Ferritina BAIXA (< 30), ferro baixo, TIBC ALTO, Sat. transferrina baixa e RDW AUMENTADO.\n• Traço talassêmico: microcitose com RDW NORMAL (e Mentzer VCM/Hm < 13).\n• B12/Folato = anemia MACROCÍTICA (VCM > 100), NÃO microcítica!\n\n💊 Reposição & Seguimento:\n• Reticulócitos sobem em 7–10 dias; Hb sobe 1–2 g/dL em 3–4 semanas.\n• Manter ferro por 3–6 meses APÓS normalizar a Hb (para repor estoques!).\n\n⚠️ Pegadinha FGV: Hb 9,4 crônica e estável NÃO indica transfusão (gatilho geral < 7 g/dL)!",
+      "audioText": "Em mulher de trinta e seis anos com hemoglobina de nove vírgula quatro e VCM de sessenta e oito, a anemia microcítica aponta para anemia ferropriva: deve-se pesquisar perda crônica de sangue e repor sulfato ferroso. Não se transfunde com hemoglobina de nove vírgula quatro estável, pois o gatilho geral é abaixo de sete, e vitamina B12 causaria anemia macrocítica. Na ferropriva há ferritina baixa, TIBC alto e RDW aumentado, devendo manter o ferro por três a seis meses após normalizar a hemoglobina."
     }
   ],
   "fgv_tables": [
