@@ -925,8 +925,13 @@
     var fcDraftAnswers = {};
     var clozeMode = false;
     var fcStudyMode = 'schedule'; // 'schedule' | 'mixed' | 'sequential' | 'hard'
+    var fcQueueFilter = 'today'; // 'today' | 'due' | 'new'
+    var fgvQueueFilter = 'today'; // 'today' | 'due' | 'new'
     var shuffleSeed = Date.now();
     var trailPinnedId = null; // card aberto pela Trilha, exibido mesmo se agendado para depois
+    var fgvPinnedId = null;   // card FGV aberto pela Agenda, exibido mesmo se agendado para depois
+    var lastRatingNotice = '';
+    var trailModalSource = 'fc';
     var fcSpecialty = 'todas';
     var fcSubtopic = 'todos';
     var showProgress = false; // números e previsão de 7 dias recolhidos
@@ -1010,8 +1015,8 @@
           srsStats.newToday = 0;
           srsStats.lastReviewDate = today;
         }
-        if (!srsStats.examDate) {
-          srsStats.examDate = getStartOfDay(37);
+        if (!srsStats.examDate || (!srsStats.examSetAt && srsStats.examDate < getStartOfDay(14))) {
+          srsStats.examDate = getStartOfDay(60);
           saveSRS();
         }
       } catch (e) {
@@ -1427,10 +1432,72 @@
     }
 
     function clampIntervalToExam(days) {
+      if (!srsStats.examSetAt) return days;
       var rem = getDaysRemaining();
       if (rem <= 3) return 1;
       var maxAllowed = Math.max(1, rem - 2);
       return Math.min(days, maxAllowed);
+    }
+
+    function isClinicalSpecialty(area) {
+      return area === 'clinica' || area === 'cardiologia' || area === 'pneumologia' ||
+        area === 'gastroenterologia' || area === 'endocrinologia' || area === 'reumatologia' ||
+        area === 'hematologia' || area === 'nefrologia' || area === 'neurologia' ||
+        area === 'infectologia' || area === 'psiquiatria';
+    }
+
+    function isCardNew(s) {
+      return !s || s.state === 'new' || !s.lastReview;
+    }
+
+    function getCardBucket(s, now, endOfToday) {
+      if (isCardNew(s)) return 'new';
+      if (s.due <= now) return 'due';
+      if (s.due <= endOfToday) return 'relearn';
+      return 'scheduled';
+    }
+
+    function formatShortDate(ts) {
+      if (!ts) return '';
+      var d = new Date(ts);
+      return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0');
+    }
+
+    function getDaysUntilDue(s) {
+      if (!s || !s.due) return 0;
+      var todayStart = getStartOfDay(0);
+      var dueStart = new Date(s.due);
+      dueStart.setHours(0, 0, 0, 0);
+      return Math.max(0, Math.round((dueStart.getTime() - todayStart) / (24 * 60 * 60 * 1000)));
+    }
+
+    function formatScheduleNotice(cardId, quality, s) {
+      if (quality === 0) {
+        return 'Card #' + cardId + ' marcado como Errei — volta em 5 min (e reaparece amanhã).';
+      }
+      var days = Math.max(1, s.interval || getDaysUntilDue(s));
+      var dateStr = formatShortDate(s.due);
+      return 'Card #' + cardId + ' agendado para daqui a ' + days + (days === 1 ? ' dia' : ' dias') + (dateStr ? ' (' + dateStr + ')' : '') + ' — não aparece antes disso.';
+    }
+
+    function getSRSCounts(cards) {
+      var now = Date.now();
+      var endOfToday = getStartOfDay(1) - 1;
+      var counts = { due: 0, relearn: 0, newCount: 0, scheduled: 0, hard: 0, learning: 0, mastered: 0, total: cards.length };
+      for (var i = 0; i < cards.length; i++) {
+        var s = getCardSRS(cards[i].id);
+        if (s.lapses > 0) counts.hard++;
+        var b = getCardBucket(s, now, endOfToday);
+        if (b === 'new') counts.newCount++;
+        else if (b === 'due') counts.due++;
+        else if (b === 'relearn') counts.relearn++;
+        else counts.scheduled++;
+        if (b !== 'new') {
+          if (s.interval >= 7) counts.mastered++;
+          else counts.learning++;
+        }
+      }
+      return counts;
     }
 
     function adjustExamDays() {
@@ -1484,7 +1551,7 @@
         var matchTop = true;
         if (activeArea !== 'todas') {
           if (activeArea === 'clinica') {
-            matchTop = (fc.area === 'clinica' || fc.area === 'cardiologia' || fc.area === 'pneumologia' || fc.area === 'gastroenterologia' || fc.area === 'endocrinologia' || fc.area === 'reumatologia' || fc.area === 'hematologia');
+            matchTop = isClinicalSpecialty(fc.area);
           } else {
             matchTop = fc.area === activeArea;
           }
@@ -1553,12 +1620,16 @@
       var now = Date.now();
       var endOfToday = getStartOfDay(1) - 1;
 
-      // Card já avaliado e agendado para um dia futuro (ex.: Fácil -> 3 dias) não aparece
-      // em nenhum modo até a data dele. Exceção: o card aberto pela Trilha (trailPinnedId).
+      // Card já avaliado e agendado para um dia futuro (due > endOfToday) NUNCA aparece
+      // em nenhum modo até a data dele. Exceção: o card aberto manualmente pela Agenda/Índice (trailPinnedId).
       var base = allBase.filter(function(fc) {
         if (fc.id === trailPinnedId) return true;
         var s = getCardSRS(fc.id);
-        return s.state === 'new' || s.due <= endOfToday;
+        var b = getCardBucket(s, now, endOfToday);
+        if (b === 'scheduled') return false;
+        if (fcQueueFilter === 'due') return b === 'due' || b === 'relearn';
+        if (fcQueueFilter === 'new') return b === 'new';
+        return true;
       });
 
       if (fcStudyMode === 'mixed') {
@@ -1576,18 +1647,22 @@
         });
       }
       // Modo 'schedule' (Cronograma de Hoje):
-      // 1) Vencidos prontos AGORA (due <= now) -> 2) Novos -> 3) Erros recentes aguardando intervalo (now < due <= endOfToday)
+      // 1) Revisões vencidas prontas AGORA (due <= now) -> 2) Novos -> 3) Erros recentes aguardando 5 min
       var readyDueList = [];
       var waitingRelearnList = [];
       var newList = [];
+      var pinnedScheduledList = [];
       for (var i = 0; i < base.length; i++) {
         var fc = base[i];
         var s = getCardSRS(fc.id);
-        if (s.state === 'new') {
+        var b = getCardBucket(s, now, endOfToday);
+        if (fc.id === trailPinnedId && b === 'scheduled') {
+          pinnedScheduledList.push(fc);
+        } else if (b === 'new') {
           newList.push(fc);
-        } else if (s.due <= now) {
+        } else if (b === 'due') {
           readyDueList.push(fc);
-        } else if (s.due <= endOfToday) {
+        } else if (b === 'relearn') {
           waitingRelearnList.push(fc);
         }
       }
@@ -1597,7 +1672,8 @@
       waitingRelearnList.sort(function(a, b) {
         return getCardSRS(a.id).due - getCardSRS(b.id).due;
       });
-      return interleaveBySpecialty(readyDueList)
+      return pinnedScheduledList
+        .concat(interleaveBySpecialty(readyDueList))
         .concat(interleaveBySpecialty(newList))
         .concat(waitingRelearnList);
     }
@@ -1670,6 +1746,16 @@
           '</div>'
         : '';
 
+      var counts = getSRSCounts(baseCards);
+      var dueToday = counts.due + counts.relearn;
+      var newCount = counts.newCount;
+      var scheduledCount = counts.scheduled;
+
+      function qPill(filterId, label, num) {
+        var isAct = (fcQueueFilter === filterId);
+        return '<button type="button" onclick="setFCQueueFilter(\'' + filterId + '\')" class="filter-pill ' + (isAct ? 'active' : 'inactive') + '">' + label + ' (' + num + ')</button>';
+      }
+
       dash.innerHTML =
         '<div class="summary">' +
           '<div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3">' +
@@ -1677,11 +1763,19 @@
               '<span class="figure figure--accent text-3xl leading-none">' + daysLeft + '</span>' +
               '<span class="text-sm text-ink2">' + (daysLeft === 1 ? 'dia até a prova' : 'dias até a prova') + '</span>' +
             '</div>' +
-            '<div class="text-sm text-ink2 flex-1 min-w-[180px]">Meta de hoje: <b class="text-ink">' + (dueToday + dailyNewGoal) + ' cards</b></div>' +
+            '<div class="text-sm text-ink2 flex-1 min-w-[200px]">' +
+              'Para revisar hoje: <b class="text-ink">' + dueToday + '</b> · Novos: <b class="text-ink">' + newCount + '</b> · Em dia: <b class="text-ink">' + scheduledCount + '</b>' +
+            '</div>' +
             '<div class="flex items-center gap-3">' +
               '<button type="button" onclick="toggleProgress()" class="text-btn" aria-expanded="' + (showProgress ? 'true' : 'false') + '">' + (showProgress ? 'Esconder progresso' : 'Ver progresso') + '</button>' +
               '<button type="button" onclick="adjustExamDays()" class="text-btn">Mudar data</button>' +
             '</div>' +
+          '</div>' +
+          '<div class="px-4 pb-3 flex flex-wrap items-center gap-2 border-t border-rule pt-2.5">' +
+            '<span class="font-display text-xs text-muted mr-1">Mostrar agora:</span>' +
+            qPill('today', 'Hoje (Revisões + Novos)', dueToday + newCount) +
+            qPill('due', 'Só Revisões do Dia', dueToday) +
+            qPill('new', 'Só Novos', newCount) +
           '</div>' +
           progressHtml +
         '</div>';
@@ -1781,6 +1875,25 @@
       renderFlashcards();
     }
 
+    function setFCQueueFilter(filter) {
+      fcQueueFilter = filter;
+      lastRatedSnapshot = null;
+      trailPinnedId = null;
+      currentFlashcardIndex = 0;
+      isFlipped = false;
+      showHint = false;
+      renderFlashcards();
+    }
+
+    function setFGVQueueFilter(filter) {
+      fgvQueueFilter = filter;
+      fgvPinnedId = null;
+      fgvCardIndex = 0;
+      fgvFlipped = false;
+      fgvShowHint = false;
+      renderFGV();
+    }
+
     function setFCSpecialty(spec) {
       fcSpecialty = spec;
       fcSubtopic = 'todos';
@@ -1874,7 +1987,8 @@
         var undoBanner = lastRatedSnapshot
           ? '<div class="pt-1"><button type="button" onclick="undoLastRating()" class="text-btn">Desfazer última avaliação</button></div>'
           : '';
-        section.innerHTML = '<div class="glass-card p-6 space-y-4">' +
+        section.innerHTML = (lastRatingNotice ? '<div class="mb-3 bg-paper2 border border-rule px-3 py-2 text-xs text-ink flex items-center justify-between gap-2"><span>' + escapeText(lastRatingNotice) + '</span><button type="button" onclick="lastRatingNotice=\'\'; renderCurrentTab();" class="text-muted hover:text-ink px-1" aria-label="Fechar aviso">✕</button></div>' : '') +
+          '<div class="glass-card p-6 space-y-4">' +
           '<h3 class="text-lg text-ink">' + emptyTitle + '</h3>' +
           '<p class="text-sm text-ink2">' + emptyDesc + '</p>' +
           '<div class="flex flex-wrap items-center gap-3">' + emptyAction + undoBanner + '</div>' +
@@ -1887,11 +2001,26 @@
       var srs = getCardSRS(current.id);
       if (counter) counter.innerText = "Card " + (currentFlashcardIndex + 1) + " de " + filtered.length + " (#" + current.id + ")";
 
+      var now = Date.now();
+      var endOfToday = getStartOfDay(1) - 1;
+      var bucket = getCardBucket(srs, now, endOfToday);
       var statusBadge = '';
-      if (srs.state === 'new') statusBadge = '<span class="tag tag--new">Novo</span>';
-      else if (srs.lapses > 0 && srs.interval <= 1) statusBadge = '<span class="tag tag--due">Rever, ' + srs.lapses + (srs.lapses === 1 ? ' erro' : ' erros') + '</span>';
-      else if (srs.interval >= 7) statusBadge = '<span class="tag tag--done">' + srs.interval + ' dias</span>';
-      else statusBadge = '<span class="tag">' + srs.interval + (srs.interval === 1 ? ' dia' : ' dias') + '</span>';
+      if (bucket === 'new') {
+        statusBadge = '<span class="tag tag--new">Novo</span>';
+      } else if (bucket === 'scheduled') {
+        var daysWait = Math.max(1, getDaysUntilDue(srs));
+        statusBadge = '<span class="tag tag--done">Agendado · volta em ' + daysWait + (daysWait === 1 ? ' dia' : ' dias') + ' (' + formatShortDate(srs.due) + ')</span>';
+      } else {
+        var revExtra = (srs.lapses > 0 && srs.interval <= 1) ? (' · ' + srs.lapses + (srs.lapses === 1 ? ' erro' : ' erros')) : (' · último: ' + srs.interval + (srs.interval === 1 ? ' dia' : ' dias'));
+        statusBadge = '<span class="tag tag--due">Revisão de hoje' + revExtra + '</span>';
+      }
+
+      var noticeBanner = lastRatingNotice
+        ? '<div class="bg-paper2 border border-rule px-3 py-2 text-xs text-ink flex items-center justify-between gap-2">' +
+            '<span>' + escapeText(lastRatingNotice) + '</span>' +
+            '<button type="button" onclick="lastRatingNotice=\'\'; renderCurrentTab();" class="text-muted hover:text-ink px-1" aria-label="Fechar aviso">✕</button>' +
+          '</div>'
+        : '';
 
       var hintData = buildSmartHint(current);
       var hintBox = showHint
@@ -1904,6 +2033,7 @@
       var flippedClass = isFlipped ? " is-flipped" : "";
 
       var html = '<div class="space-y-3">' +
+        noticeBanner +
         '<!-- Cartão 3D Interativo -->' +
         '<div class="flashcard-wrapper' + (cardEnterDir ? ' card-enter-' + cardEnterDir : '') + '" onclick="flipFlashcard()">' +
           '<div id="flashcardInner" class="flashcard-inner' + flippedClass + '">' +
@@ -2084,6 +2214,7 @@
       if (wasNew) srsStats.newToday = (srsStats.newToday || 0) + 1;
       srsData[cardId] = s;
       srsStats.reviewedToday = (srsStats.reviewedToday || 0) + 1;
+      lastRatingNotice = formatScheduleNotice(cardId, quality, s);
       saveSRS();
 
       isFlipped = false;
@@ -2156,20 +2287,24 @@
       if (current) rateCard(current.id, correct ? 2 : 0);
     }
 
-    function openTrailModal() {
+    function openTrailModal(source) {
+      trailModalSource = (source === 'fgv') ? 'fgv' : 'fc';
       var listEl = document.getElementById('trailModalList');
       if (!listEl) return;
-      var base = getBaseFilteredFlashcards().slice().sort(function(a, b) { return a.id - b.id; });
+      var base = (trailModalSource === 'fgv' ? getBaseFGVCards() : getBaseFilteredFlashcards()).slice().sort(function(a, b) { return a.id - b.id; });
+      var now = Date.now();
       var endOfToday = getStartOfDay(1) - 1;
       var html = '';
       for (var i = 0; i < base.length; i++) {
         var c = base[i];
         var s = getCardSRS(c.id);
+        var b = getCardBucket(s, now, endOfToday);
         var badge = '<span class="tag tag--new">Novo</span>';
-        if (s.state !== 'new') {
-          if (s.due <= endOfToday) badge = '<span class="tag tag--due">Hoje</span>';
-          else if (s.interval >= 7) badge = '<span class="tag tag--done">' + s.interval + ' dias</span>';
-          else badge = '<span class="tag">' + s.interval + (s.interval === 1 ? ' dia' : ' dias') + '</span>';
+        if (b === 'due' || b === 'relearn') {
+          badge = '<span class="tag tag--due">Revisar hoje</span>';
+        } else if (b === 'scheduled') {
+          var daysWait = Math.max(1, getDaysUntilDue(s));
+          badge = '<span class="tag tag--done">Volta em ' + daysWait + (daysWait === 1 ? 'd' : 'd') + ' (' + formatShortDate(s.due) + ')</span>';
         }
         html += '<button type="button" onclick="jumpToTrailCard(' + i + ')" class="w-full text-left px-2 py-3 hover:bg-paper2 border-b border-rule flex items-center justify-between gap-3 transition-colors">' +
           '<span class="font-display text-xs text-muted w-10 shrink-0">' + c.id + '</span>' +
@@ -2185,9 +2320,24 @@
     }
 
     function jumpToTrailCard(seqIndex) {
+      if (trailModalSource === 'fgv') {
+        var fgvBase = getBaseFGVCards().slice().sort(function(a, b) { return a.id - b.id; });
+        var fgvTarget = fgvBase[seqIndex];
+        fgvPinnedId = fgvTarget ? fgvTarget.id : null;
+        fgvQueueFilter = 'today';
+        var fq = getFGVQueue();
+        fgvCardIndex = 0;
+        for (var fi = 0; fi < fq.length; fi++) { if (fgvTarget && fq[fi].id === fgvTarget.id) { fgvCardIndex = fi; break; } }
+        fgvFlipped = false;
+        fgvShowHint = false;
+        closeModal('trailModal');
+        renderFGV();
+        return;
+      }
       var trailList = getBaseFilteredFlashcards().slice().sort(function(a, b) { return a.id - b.id; });
       var target = trailList[seqIndex];
       fcStudyMode = 'sequential';
+      fcQueueFilter = 'today';
       trailPinnedId = target ? target.id : null;
       var sq = getStudyQueue();
       currentFlashcardIndex = 0;
@@ -2256,23 +2406,37 @@
       renderFGV();
     }
 
-    function getFGVQueue() {
-      var all = (appState.fgv_flashcards || []).filter(function(fc) {
-        return activeArea === 'todas' || fc.area === activeArea;
+    function getBaseFGVCards() {
+      return (appState.fgv_flashcards || []).filter(function(fc) {
+        if (activeArea === 'todas') return true;
+        if (activeArea === 'clinica') return isClinicalSpecialty(fc.area);
+        return fc.area === activeArea;
       });
+    }
+
+    function getFGVQueue() {
+      var all = getBaseFGVCards();
       var now = Date.now();
       var endOfToday = getStartOfDay(1) - 1;
-      var readyDue = [], newCards = [], waitingRelearn = [];
+      var pinnedScheduled = [], readyDue = [], newCards = [], waitingRelearn = [];
       for (var i = 0; i < all.length; i++) {
         var fc = all[i];
         var s = getCardSRS(fc.id);
-        if (s.state === 'new') newCards.push(fc);
-        else if (s.due <= now) readyDue.push(fc);
-        else if (s.due <= endOfToday) waitingRelearn.push(fc);
+        var b = getCardBucket(s, now, endOfToday);
+        if (fc.id === fgvPinnedId && b === 'scheduled') {
+          pinnedScheduled.push(fc);
+          continue;
+        }
+        if (b === 'scheduled') continue;
+        if (fgvQueueFilter === 'due' && b === 'new') continue;
+        if (fgvQueueFilter === 'new' && b !== 'new') continue;
+        if (b === 'new') newCards.push(fc);
+        else if (b === 'due') readyDue.push(fc);
+        else if (b === 'relearn') waitingRelearn.push(fc);
       }
       readyDue.sort(function(a, b) { return getCardSRS(a.id).due - getCardSRS(b.id).due; });
       waitingRelearn.sort(function(a, b) { return getCardSRS(a.id).due - getCardSRS(b.id).due; });
-      return readyDue.concat(newCards).concat(waitingRelearn);
+      return pinnedScheduled.concat(readyDue).concat(newCards).concat(waitingRelearn);
     }
 
     function flipFGVCard() {
@@ -2339,9 +2503,11 @@
       if (wasNew) srsStats.newToday = (srsStats.newToday || 0) + 1;
       srsData[cardId] = s;
       srsStats.reviewedToday = (srsStats.reviewedToday || 0) + 1;
+      lastRatingNotice = formatScheduleNotice(cardId, quality, s);
       saveSRS();
       fgvFlipped = false;
       fgvShowHint = false;
+      if (fgvPinnedId === cardId) fgvPinnedId = null;
       delete fcDraftAnswers[cardId];
       var q = getFGVQueue();
       if (fgvCardIndex >= q.length) fgvCardIndex = 0;
@@ -2427,6 +2593,31 @@
       }
 
       // Sub-aba: Cards FGV
+      var baseFgv = getBaseFGVCards();
+      var fgvCounts = getSRSCounts(baseFgv);
+      var fgvDue = fgvCounts.due + fgvCounts.relearn;
+      var fgvNew = fgvCounts.newCount;
+      var fgvSched = fgvCounts.scheduled;
+      function fgvPill(filterId, label, num) {
+        var isAct = (fgvQueueFilter === filterId);
+        return '<button type="button" onclick="setFGVQueueFilter(\'' + filterId + '\')" class="filter-pill ' + (isAct ? 'active' : 'inactive') + '">' + label + ' (' + num + ')</button>';
+      }
+      var fgvSummaryHtml =
+        '<div class="summary">' +
+          '<div class="flex flex-wrap items-center justify-between gap-3 px-4 py-3">' +
+            '<div class="text-sm text-ink2">' +
+              'Para revisar hoje: <b class="text-ink">' + fgvDue + '</b> · Novos: <b class="text-ink">' + fgvNew + '</b> · Em dia: <b class="text-ink">' + fgvSched + '</b>' +
+            '</div>' +
+            '<button type="button" onclick="openTrailModal(\'fgv\')" class="text-btn">Ver agenda (' + baseFgv.length + ')</button>' +
+          '</div>' +
+          '<div class="px-4 pb-3 flex flex-wrap items-center gap-2 border-t border-rule pt-2.5">' +
+            '<span class="font-display text-xs text-muted mr-1">Mostrar agora:</span>' +
+            fgvPill('today', 'Hoje (Revisões + Novos)', fgvDue + fgvNew) +
+            fgvPill('due', 'Só Revisões do Dia', fgvDue) +
+            fgvPill('new', 'Só Novos', fgvNew) +
+          '</div>' +
+        '</div>';
+
       var q = getFGVQueue();
       if (allCards.length === 0) {
         container.innerHTML = '<div class="glass-card p-6 space-y-2">' +
@@ -2436,9 +2627,12 @@
         return;
       }
       if (q.length === 0) {
-        container.innerHTML = '<div class="glass-card p-6 space-y-2">' +
-          '<h3 class="text-base text-ink">Tudo em dia na FGV</h3>' +
-          '<p class="text-sm text-muted">Todos os cards da FGV deste filtro já foram revisados hoje e voltam na data programada.</p>' +
+        container.innerHTML = fgvSummaryHtml +
+          (lastRatingNotice ? '<div class="bg-paper2 border border-rule px-3 py-2 text-xs text-ink flex items-center justify-between gap-2"><span>' + escapeText(lastRatingNotice) + '</span><button type="button" onclick="lastRatingNotice=\'\'; renderCurrentTab();" class="text-muted hover:text-ink px-1" aria-label="Fechar aviso">✕</button></div>' : '') +
+          '<div class="glass-card p-6 space-y-3">' +
+          '<h3 class="text-base text-ink">' + (fgvQueueFilter === 'due' ? 'Nenhuma revisão pendente hoje na FGV' : (fgvQueueFilter === 'new' ? 'Nenhum card novo pendente na FGV' : 'Tudo em dia na FGV')) + '</h3>' +
+          '<p class="text-sm text-ink2">Os cards já avaliados deste filtro estão agendados para os próximos dias e não reaparecem antes da data certa. Você pode conferir quando cada um volta na agenda.</p>' +
+          '<button type="button" onclick="openTrailModal(\'fgv\')" class="h-10 px-4 bg-accent text-accentink border-2 border-accent font-display text-xs font-extrabold hover:bg-ink hover:border-ink transition-colors">Ver agenda da FGV</button>' +
         '</div>';
         return;
       }
@@ -2446,11 +2640,26 @@
       if (fgvCardIndex >= q.length) fgvCardIndex = 0;
       var current = q[fgvCardIndex];
       var srs = getCardSRS(current.id);
+      var now = Date.now();
+      var endOfToday = getStartOfDay(1) - 1;
+      var bucket = getCardBucket(srs, now, endOfToday);
       var statusBadge = '';
-      if (srs.state === 'new') statusBadge = '<span class="tag tag--new">Novo</span>';
-      else if (srs.lapses > 0 && srs.interval <= 1) statusBadge = '<span class="tag tag--due">Rever, ' + srs.lapses + (srs.lapses === 1 ? ' erro' : ' erros') + '</span>';
-      else if (srs.interval >= 7) statusBadge = '<span class="tag tag--done">' + srs.interval + ' dias</span>';
-      else statusBadge = '<span class="tag">' + srs.interval + (srs.interval === 1 ? ' dia' : ' dias') + '</span>';
+      if (bucket === 'new') {
+        statusBadge = '<span class="tag tag--new">Novo</span>';
+      } else if (bucket === 'scheduled') {
+        var daysWait = Math.max(1, getDaysUntilDue(srs));
+        statusBadge = '<span class="tag tag--done">Agendado · volta em ' + daysWait + (daysWait === 1 ? ' dia' : ' dias') + ' (' + formatShortDate(srs.due) + ')</span>';
+      } else {
+        var revExtra = (srs.lapses > 0 && srs.interval <= 1) ? (' · ' + srs.lapses + (srs.lapses === 1 ? ' erro' : ' erros')) : (' · último: ' + srs.interval + (srs.interval === 1 ? ' dia' : ' dias'));
+        statusBadge = '<span class="tag tag--due">Revisão de hoje' + revExtra + '</span>';
+      }
+
+      var noticeBanner = lastRatingNotice
+        ? '<div class="bg-paper2 border border-rule px-3 py-2 text-xs text-ink flex items-center justify-between gap-2">' +
+            '<span>' + escapeText(lastRatingNotice) + '</span>' +
+            '<button type="button" onclick="lastRatingNotice=\'\'; renderCurrentTab();" class="text-muted hover:text-ink px-1" aria-label="Fechar aviso">✕</button>' +
+          '</div>'
+        : '';
 
       var hintData = buildSmartHint(current);
       var hintBox = fgvShowHint
@@ -2460,7 +2669,8 @@
           '</div>'
         : '';
 
-      var html = '<div class="space-y-3">' +
+      var html = fgvSummaryHtml + '<div class="space-y-3">' +
+        noticeBanner +
         '<div class="flex items-center justify-between text-xs font-display text-muted">' +
           '<span>Card ' + (fgvCardIndex + 1) + ' de ' + q.length + ' (#' + current.id + ')</span>' +
           (current.year ? '<span class="tag">' + escapeText(current.year) + '</span>' : '') +
@@ -3008,6 +3218,8 @@
     window.setAreaFilter = setAreaFilter;
     window.setCategoryFilter = setCategoryFilter;
     window.setFCStudyMode = setFCStudyMode;
+    window.setFCQueueFilter = setFCQueueFilter;
+    window.setFGVQueueFilter = setFGVQueueFilter;
     window.setFCSpecialty = setFCSpecialty;
     window.setFCSubtopic = setFCSubtopic;
     window.toggleHint = toggleHint;
