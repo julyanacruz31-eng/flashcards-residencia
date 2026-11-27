@@ -4147,6 +4147,16 @@
       "front": "Qual medicação é classicamente indicada nos estágios MODERADOS A GRAVES (avançados) da Doença de Alzheimer, qual seu mecanismo de ação e como difere das demais drogas?",
       "back": "✅ MEMANTINA (estágios MODERADO a GRAVE / avançados):\n• Mecanismo: antagonista não competitivo dos receptores NMDA do glutamato (reduz excitotoxicidade).\n• Pode ser usada isolada ou associada a iAChE.\n• NÃO é indicada na fase leve!\n\n💊 Inibidores da Acetilcolinesterase (iAChE — fase LEVE a MODERADA):\n• Donepezila, Rivastigmina (tem adesivo transdérmico = menos efeito GI) e Galantamina.\n• Efeitos colaterais: náuseas/diarreia e BRADICARDIA / BAV / síncope.\n\n⚠️ Pegadinha FGV: Tacrina é iAChE em desuso por HEPATOTOXICIDADE grave!",
       "audioText": "No tratamento da doença de Alzheimer, a memantina é um antagonista dos receptores NMDA do glutamato classicamente indicada para os estágios moderados a graves, não sendo indicada na fase leve. Já donepezila, rivastigmina e galantamina são inibidores da acetilcolinesterase usados na fase leve a moderada, podendo causar sintomas gastrointestinais e bradicardia ou bloqueio atrioventricular. A tacrina caiu em desuso por hepatotoxicidade grave."
+    },
+    {
+      "id": 1087,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Doença de Alzheimer: Fisiopatologia, Diagnóstico e Causas Reversíveis",
+      "front": "Na Doença de Alzheimer: quais os 2 achados histopatológicos, quais estruturas cerebrais atrofiam primeiro, quais exames pedir para excluir causas reversíveis e qual o padrão do líquor?",
+      "back": "🧬 Fisiopatologia & Estruturas:\n• Placas senis de β-amiloide (EXTRAcelulares) + emaranhados neurofibrilares de proteína Tau (INTRAcelulares).\n• Estruturas precoces: HIPOCAMPO e AMÍGDALA (lobo temporal medial → memória recente) + Núcleo Basal de Meynert (déficit de ACETILCOLINA).\n\n🔬 Diagnóstico (Clínico + Excluir Reversíveis!):\n• Labs obrigatórios: TSH, Vitamina B12, VDRL (sífilis), hemograma, função renal/hepática, cálcio/eletrólitos (± HIV).\n• TC/RM crânio: descarta HPN, tumor, hematoma subdural; mostra atrofia temporoparietal e de hipocampos.\n• Biomarcadores no líquor (casos atípicos): β-amiloide BAIXA (retida nas placas) + Tau ALTA (lesão neuronal).\n\n💡 Regra prática: Demência exige prejuízo FUNCIONAL (AVDs). Sem prejuízo funcional = Comprometimento Cognitivo Leve (não inicia iAChE de rotina).",
+      "audioText": "Na fisiopatologia do Alzheimer há placas extracelulares de beta-amiloide e emaranhados intracelulares de proteína tau, com atrofia precoce de hipocampo, amígdala e núcleo basal de Meynert, causando déficit de acetilcolina e perda de memória recente. O diagnóstico é clínico e exige excluir causas reversíveis com TSH, vitamina B12, VDRL, exames básicos e neuroimagem. Nos biomarcadores do líquor, a beta-amiloide vem baixa e a proteína tau vem alta."
     }
   ],
   "fgv_tables": [
