@@ -4157,6 +4157,16 @@
       "front": "Na Doença de Alzheimer: quais os 2 achados histopatológicos, quais estruturas cerebrais atrofiam primeiro, quais exames pedir para excluir causas reversíveis e qual o padrão do líquor?",
       "back": "🧬 Fisiopatologia & Estruturas:\n• Placas senis de β-amiloide (EXTRAcelulares) + emaranhados neurofibrilares de proteína Tau (INTRAcelulares).\n• Estruturas precoces: HIPOCAMPO e AMÍGDALA (lobo temporal medial → memória recente) + Núcleo Basal de Meynert (déficit de ACETILCOLINA).\n\n🔬 Diagnóstico (Clínico + Excluir Reversíveis!):\n• Labs obrigatórios: TSH, Vitamina B12, Homocisteína (marcador sensível de def. B12/folato!), VDRL (sífilis), hemograma, função renal/hepática, cálcio/eletrólitos (± HIV).\n• TC/RM crânio: descarta HPN, tumor, hematoma subdural; mostra atrofia temporoparietal e de hipocampos.\n• Biomarcadores no líquor (casos atípicos): β-amiloide BAIXA (retida nas placas) + Tau ALTA (lesão neuronal).\n\n⚠️ Pegadinha FGV: TRIGLICERÍDEOS NÃO entra no painel de causas reversíveis de demência (só entra em risco cardiovascular)!",
       "audioText": "Na fisiopatologia do Alzheimer há placas extracelulares de beta-amiloide e emaranhados intracelulares de proteína tau, com atrofia precoce de hipocampo, amígdala e núcleo basal de Meynert, causando déficit de acetilcolina e perda de memória recente. O diagnóstico é clínico e exige excluir causas reversíveis com TSH, vitamina B12, homocisteína, VDRL, exames básicos e neuroimagem. Pegadinha FGV: triglicerídeos não entram no painel de demências reversíveis."
+    },
+    {
+      "id": 1088,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "Comprometimento Cognitivo Leve (CCL): Diagnóstico e Conduta",
+      "front": "Idoso com piora objetiva da memória recente, mas que segue trabalhando e gerenciando finanças com ajuda de lembretes/alarmes. Qual o diagnóstico e qual a conduta farmacológica?",
+      "back": "✅ Diagnóstico: COMPROMETIMENTO COGNITIVO LEVE (CCL / Transtorno Neurocognitivo Leve).\n• Chave: há declínio cognitivo, mas a FUNCIONALIDADE / INDEPENDÊNCIA nas AVDs está PRESERVADA (mesmo usando estratégias compensatórias como agenda/alarmes).\n\n🚫 Conduta Farmacológica:\n• NÃO indicar anticolinesterásicos (donepezila, rivastigmina, galantamina) NEM memantina! Não previnem a evolução para Alzheimer.\n\n🩺 O que FAZER no CCL:\n• Investigar causas reversíveis (labs + avaliação neuropsicológica + imagem).\n• Controlar fatores vasculares (cessar tabagismo, HAS), atividade física, treino cognitivo e seguimento periódico (~10–15%/ano evoluem para demência).",
+      "audioText": "No comprometimento cognitivo leve, ou transtorno neurocognitivo leve, existe declínio de memória mas a independência nas atividades da vida diária está preservada, mesmo com uso de lembretes ou alarmes. A conduta é investigar causas reversíveis, fazer avaliação neuropsicológica e imagem, controlar fatores cardiovasculares e estimular atividade física, mas NÃO está indicado prescrever anticolinesterásicos nem memantina nesse momento."
     }
   ],
   "fgv_tables": [
