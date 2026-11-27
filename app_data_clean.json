@@ -4187,6 +4187,16 @@
       "front": "Mulher de 63 anos com delírios persecutórios, alucinações auditivas, prejuízo nas AVDs, SEM distúrbio da consciência e RM normal. Líquor: p-Tau AUMENTADA e β-amiloide DIMINUÍDA; APOE ε4/ε4. Qual o diagnóstico?",
       "back": "✅ Diagnóstico: DOENÇA DE ALZHEIMER (apresentação com psicose precoce)!\n\n🔬 Assinatura Biológica Definitiva:\n• Líquor: β-amiloide BAIXA (retida nas placas cerebrais) + p-Tau ALTA (lesão/degeneração neuronal) = perfil clássico de Alzheimer, mesmo com RM normal!\n• Genética: APOE ε4/ε4 = maior fator de risco genético para Alzheimer esporádico.\n\n⚠️ Pegadinha FGV (por que NÃO é Lewy nem Esquizofrenia?):\n• Corpos de Lewy teria alucinações VISUAIS + flutuação da consciência (aqui não há distúrbio da consciência!).\n• Sintomas extrapiramidais após olanzapina são distrator — o líquor + APOE ε4/ε4 cravam Alzheimer!",
       "audioText": "Mulher de sessenta e três anos com psicose de início tardio, prejuízo funcional, sem distúrbio da consciência, ressonância normal, líquor com proteína tau fosforilada aumentada e beta-amiloide diminuída, e genótipo APOE épsilon quatro homozigoto fecha o diagnóstico de doença de Alzheimer. Não é corpos de Lewy porque não há flutuação da consciência nem alucinações visuais clássicas."
+    },
+    {
+      "id": 1091,
+      "area": "infectologia",
+      "cat": "hanseniase",
+      "year": "FGV",
+      "name": "Hanseníase: Critérios Cardinais, PQT-U e Reações",
+      "front": "Quais são os 3 critérios cardinais da Hanseníase, a ordem de perda sensitiva, o esquema atual no SUS (PQT-U) e o tratamento das reações tipo 1 e tipo 2?",
+      "back": "✅ Critérios Cardinais (basta 1 para diagnóstico clínico):\n• Lesão de pele com alteração de sensibilidade (ordem: TÉRMICA → DOLOROSA → TÁTIL).\n• Espessamento de nervo periférico (ex.: ULNAR, fibular comum, tibial posterior) + déficit sensitivo/motor.\n• Baciloscopia (BAAR) positiva.\n\n💊 Tratamento SUS (PQT-U: Rifampicina + Dapsona + Clofazimina):\n• Paucibacilar (≤ 5 lesões): 6 doses (até 9 meses).\n• Multibacilar (> 5 lesões ou BAAR+): 12 doses (até 18 meses).\n\n⚡ Reações Hansênicas (NUNCA suspender PQT!):\n• Tipo 1 (Reversa / neurite): PREDNISONA.\n• Tipo 2 (Eritema Nodoso Hansênico): TALIDOMIDA (contraindicada em gestantes → Prednisona).",
+      "audioText": "O diagnóstico clínico da hanseníase exige um de três critérios cardinais: lesão cutânea com perda de sensibilidade na ordem térmica, dolorosa e tátil; espessamento de nervo periférico como o ulnar; ou baciloscopia positiva. O tratamento no SUS usa a poliquimioterapia única com rifampicina, dapsona e clofazimina por seis doses no paucibacilar e doze doses no multibacilar. Nas reações hansênicas não se suspende a PQT: tipo um trata com prednisona e tipo dois com talidomida, evitando em gestantes."
     }
   ],
   "fgv_tables": [
@@ -5101,6 +5111,18 @@
       "col2Title": "Subtipos Não Amnésicos & Conduta",
       "col2": "• CCL NÃO Amnésico de único domínio: memória normal; altera 1 outro domínio (ex.: linguagem ou função executiva)\n• CCL NÃO Amnésico de múltiplos domínios: memória normal; altera ≥ 2 outros domínios (mais associado a DFT, Lewy ou Vascular)\n• Conduta no CCL: investigar causas reversíveis (B12, TSH, VDRL, RM) + neuropsicológico + controle vascular + exercício físico\n• NÃO prescrever anticolinesterásicos (donepezila) nem memantina no CCL!",
       "audioText": "Classificação de Petersen do comprometimento cognitivo leve. Exige declínio cognitivo objetivo com independência preservada nas atividades da vida diária. Divide-se em amnésico de único domínio, quando só a memória falha, amnésico de múltiplos domínios, quando memória e outro domínio como linguagem no teste de Boston falham, e não amnésico de único ou múltiplos domínios. Os amnésicos tendem mais ao Alzheimer, e em nenhum subtipo de CCL se prescreve anticolinesterásico."
+    },
+    {
+      "id": 2077,
+      "area": "infectologia",
+      "cat": "hanseniase",
+      "year": "FGV",
+      "name": "Hanseníase (PCDT SUS): Diagnóstico, PQT-U & Reações",
+      "col1Title": "Diagnóstico & Classificação Operacional",
+      "col1": "• 3 Critérios Cardinais (basta 1): lesão cutânea com hipo/anestesia + espessamento neural (ulnar, fibular, tibial, auricular magno) + BAAR+\n• Ordem de perda sensitiva: TÉRMICA → DOLOROSA → TÁTIL\n• Paucibacilar (PB): ≤ 5 lesões de pele + BAAR negativo → PQT-U 6 doses\n• Multibacilar (MB): > 5 lesões OU BAAR+ (ou > 1 nervo) → PQT-U 12 doses\n• PQT-U (esquema único atual): Rifampicina + Dapsona + Clofazimina",
+      "col2Title": "Reações Hansênicas & Contatos",
+      "col2": "• Regra de ouro: NUNCA suspender a PQT durante reação hansênica!\n• Reação Tipo 1 (Reversa — celular): exacerbação de lesões antigas + NEURITE → Prednisona 1 mg/kg/dia\n• Reação Tipo 2 (ENH — imunocomplexos em MB): nódulos eritematosos dolorosos + febre/orquite/uveíte → Talidomida (teratogênica! Se mulher em idade fértil sem anticoncepção rigorosa → Prednisona)\n• Contatos intradomiciliares: exame dermatoneurológico + BCG (0 cicatriz → 1 dose; 1 cicatriz → 1 dose; 2 cicatrizes → não vacinar)",
+      "audioText": "Resumo de hanseníase pelo PCDT do SUS. Diagnóstico por lesão hipoestésica, espessamento neural como ulnar ou baciloscopia positiva. Perda sensitiva na ordem térmica, dolorosa e tátil. PQT única com rifampicina, dapsona e clofazimina por seis doses no paucibacilar e doze no multibacilar. Reação tipo um trata com prednisona e tipo dois com talidomida, sem suspender a PQT."
     }
   ]
 }
