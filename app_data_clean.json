@@ -4257,6 +4257,16 @@
       "front": "Quais as articulações típicas, o padrão de dor/rigidez e os 4 achados clássicos do RX na Osteoartrite (OA) em comparação à Artrite Reumatoide (AR)?",
       "back": "✅ Osteoartrite (OA — degenerativa / mecânica):\n• Articulações típicas: grandes articulações de carga (JOELHO e QUADRIL), coluna, 1ª CMC (rizartrose) e IFD (nódulos de HEBERDEN) ± IFP (Bouchard); poupa punhos e MCF.\n• Dor MECÂNICA (piora no uso, melhora no repouso) + rigidez matinal CURTA (< 30 min) + SEM febre.\n• Quarteto do RX: redução ASSIMÉTRICA do espaço articular + OSTEÓFITOS + esclerose subcondral + cistos subcondrais.\n\n🔥 Diferenciais clássicos (FGV):\n• Artrite Reumatoide: IFP, MCF e punhos (poupa IFD!), rigidez > 1h, EROSÕES ósseas marginais.\n• HLA-B27: Espondiloartrites soronegativas (espondilite anquilosante, reativa).",
       "audioText": "A osteoartrite é degenerativa, crônica e sem febre, acometendo grandes articulações de carga como joelho e quadril, coluna, base do polegar e interfalangeanas distais com nódulos de Heberden. Tem dor mecânica e rigidez matinal menor que trinta minutos. O raio-X mostra redução assimétrica do espaço articular, osteófitos, esclerose subcondral e cistos subcondrais, sem erosões marginais, que pertencem à artrite reumatoide."
+    },
+    {
+      "id": 1098,
+      "area": "reumatologia",
+      "cat": "ar",
+      "year": "FGV",
+      "name": "Artrite Reumatoide: Tratamento Inicial (MTX + Terapia Ponte)",
+      "front": "Qual a recomendação atual (EULAR/SBR) para o início do tratamento de um paciente recém-diagnosticado com Artrite Reumatoide?",
+      "back": "✅ 1ª Linha Inicial (EULAR / SBR):\n• METOTREXATO (MTX — 1x/semana, sempre com ÁCIDO FÓLICO para reduzir toxicidade) + CORTICOIDE EM DOSES BAIXAS por curto prazo ('terapia ponte' / bridging therapy)!\n\n💡 Por que usar corticoide em dose baixa no início?\n• O MTX demora 6–12 semanas para atingir efeito pleno.\n• A prednisona em dose baixa (≤ 7,5–10 mg/dia) controla rapidamente a inflamação e é desmamada assim que possível (~3 meses).\n\n⚠️ Pegadinhas FGV:\n• Corticoide em ALTAS doses só em manifestações extra-articulares graves (ex.: vasculite reumatoide).\n• AINE não substitui corticoide dose baixa como terapia ponte (e tem risco GI/renal/interação com MTX).\n• Hidroxicloroquina NÃO substitui MTX como droga âncora.",
+      "audioText": "A recomendação atual para o início do tratamento da artrite reumatoide é metotrexato semanal associado a ácido fólico, somado a corticoide em doses baixas por curto prazo como terapia ponte, já que o metotrexato leva seis a doze semanas para agir. Não se usa corticoide em altas doses na doença articular comum, nem se substitui o metotrexato por hidroxicloroquina."
     }
   ],
   "fgv_tables": [
