@@ -4127,6 +4127,16 @@
       "front": "Quais são os achados clássicos de prova para diferenciar Demência por Corpos de Lewy, Demência Vascular e Doença de Huntington?",
       "back": "🎯 Palavras-chave FGV:\n• Corpos de Lewy: FLUTUAÇÃO cognitiva + ALUCINAÇÕES VISUAIS precoces bem formadas + PARKINSONISMO + distúrbio do sono REM.\n• Demência Vascular: evolução EM DEGRAUS (piora súbita após AVCs/AITs) + fatores de risco cardiovasculares + sinais focais.\n• Doença de Huntington: autossômica dominante (expansão CAG, cr. 4, antecipação) + COREIA + sintomas psiquiátricos + demência + atrofia do núcleo CAUDADO.\n\n⚠️ Pegadinha FGV (Lewy): HIPERSENSIBILIDADE GRAVE A ANTIPSICÓTICOS (especialmente típicos como haloperidol) — evitar!",
       "audioText": "Para diferenciar as principais demências na FGV: corpos de Lewy tem flutuação cognitiva, alucinações visuais precoces, parkinsonismo, transtorno do sono REM e hipersensibilidade grave a antipsicóticos. A demência vascular tem evolução em degraus ligada a fatores cardiovasculares e sinais focais. A doença de Huntington é autossômica dominante por expansão CAG no cromossomo quatro, cursando com coreia, sintomas psiquiátricos, demência e atrofia do núcleo caudado."
+    },
+    {
+      "id": 1085,
+      "area": "neurologia",
+      "cat": "demencias",
+      "year": "FGV",
+      "name": "DFT Pseudomaníaca vs Doença de Creutzfeldt-Jakob (DCJ)",
+      "front": "Paciente de 58 anos com desinibição social, gastos excessivos e memória preservada: qual demência pensar? E qual o quadro clássico da Doença de Creutzfeldt-Jakob (DCJ)?",
+      "back": "✅ 58 anos + desinibição/gastos ('pseudomania') + memória preservada = Demência Frontotemporal (variante comportamental)!\n• Idade < 60 anos e memória preservada NÃO excluem demência (pegadinha clássica!).\n\n⚡ Doença de Creutzfeldt-Jakob (DCJ — doença priônica):\n• Demência RAPIDAMENTE PROGRESSIVA (semanas a poucos meses) + MIOCLONIAS + ATAXIA.\n• RM (DWI): hipersinal cortical ('cortical ribboning') e núcleos da base.\n• EEG: complexos trifásicos periódicos (1 Hz).\n• Líquor: RT-QuIC (mais específico) e proteína 14-3-3.\n\n💡 Regra prática: Primeiro episódio 'maníaco' ou mudança brusca de personalidade > 50 anos → sempre investigar causa orgânica (DFT, tumor frontal)!",
+      "audioText": "Paciente de cinquenta e oito anos com desinibição social, gastos excessivos e memória preservada aponta para demência frontotemporal variante comportamental, que imita mania; idade abaixo de sessenta anos e memória normal não excluem demência. Já a doença de Creutzfeldt-Jakob é uma demência rapidamente progressiva em semanas a meses com mioclonias e ataxia, hipersinal em difusão na ressonância, complexos periódicos no eletroencefalograma e RT-QuIC ou proteína quatorze-três-três no líquor."
     }
   ],
   "fgv_tables": [
