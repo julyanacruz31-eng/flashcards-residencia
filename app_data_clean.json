@@ -4327,6 +4327,16 @@
       "front": "Mulher de 45 anos com adenopatia hilar bilateral + infiltrado intersticial peri-hilar (suspeita de Sarcoidose). Qual enzima sérica auxilia no diagnóstico e o que mais os granulomas produzem?",
       "back": "✅ Enzima Sérica Clássica: ENZIMA CONVERSORA DA ANGIOTENSINA (ECA)!\n• Produzida diretamente pelos macrófagos epitelioides dos granulomas NÃO caseosos (elevada em ~60–75% dos casos ativos).\n\n🧬 O outro clássico produzido pelo granuloma na Sarcoidose:\n• 1-alfa-hidroxilase → converte 25(OH)-vitamina D em calcitriol ativo (1,25(OH)2D) → HIPERCALCEMIA e HIPERCALCIÚRIA (com PTH suprimido!).\n\n⚠️ Pegadinha FGV:\n• ADA (adenosino desaminase > 40 U/L no líquido pleural) = TUBERCULOSE pleural (NÃO sarcoidose!).\n• Diagnóstico definitivo: clínica/RX + biópsia com granuloma NÃO caseoso (excluindo TB, fungos e beriliose).",
       "audioText": "Na sarcoidose, os macrófagos dos granulomas não caseosos produzem diretamente a enzima conversora da angiotensina, a ECA, que auxilia no diagnóstico e acompanhamento, além da enzima um-alfa-hidroxilase que ativa vitamina D e causa hipercalcemia com PTH suprimido. Não confundir com adenosino desaminase, a ADA, que é marcador de tuberculose no líquido pleural."
+    },
+    {
+      "id": 1105,
+      "area": "pneumologia",
+      "cat": "obstrutivas",
+      "year": "FGV",
+      "name": "Crise Aguda de Asma na Emergência (GINA): Pilar & Pegadinhas",
+      "front": "Paciente em crise grave de asma na emergência (FR 31, FC 108, tiragem, sibilos). Qual o broncodilatador de 1ª linha, o que associar na crise grave e quais as 4 pegadinhas clássicas da FGV?",
+      "back": "✅ Pilar #1 (Broncodilatação Imediata): β2-agonista inalatório de CURTA ação (SABA — salbutamol 4–10 jatos c/ espaçador a cada 20 min na 1ª hora)!\n\n🚨 Conduta Completa na Crise Moderada/Grave (FR > 30, FC > 120, SatO2 < 90%):\n• O2 suplementar: alvo SatO2 93–95% (adultos).\n• Corticoide sistêmico precoce (1ª hora): prednisona/prednisolona 40–50 mg VO (ou IV se não tolerar VO).\n• Antimuscarínico de CURTA ação (SAMA = IPRATRÓPIO) associado ao SABA.\n• Sulfato de Magnésio IV (2 g em 20 min) se refratária na 1ª hora.\n\n⚠️ As 4 Pegadinhas FGV:\n• Corticoide = ANTI-INFLAMATÓRIO (NÃO é broncodilatador!).\n• Aminofilina IV = TÓXICA (arritmias/convulsões), NÃO é 1ª linha!\n• SABA é MAIS eficaz que antimuscarínico (ipratrópio é apenas adjuvante).\n• Na emergência usa-se SAMA (ipratrópio — ação CURTA), NÃO LAMA (ação longa)!",
+      "audioText": "Na crise aguda de asma na emergência, o broncodilatador de primeira linha é o beta-dois agonista inalatório de curta ação, o salbutamol. Em crises moderadas a graves associa-se oxigênio com alvo de noventa e três a noventa e cinco por cento, corticoide sistêmico precoce, ipratrópio de curta ação e sulfato de magnésio venoso se refratária. Corticoide não é broncodilatador, aminofilina é tóxica e não é recomendada, e não se usa antimuscarínico de longa ação na emergência."
     }
   ],
   "fgv_tables": [
