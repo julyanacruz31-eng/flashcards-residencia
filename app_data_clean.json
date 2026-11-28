@@ -4307,6 +4307,16 @@
       "front": "Homem de 65 anos com dispepsia há 6 semanas, resposta parcial ao IBP, Hb 12,8 e sorologia H. pylori positiva. Qual a próxima etapa na investigação e quando usar 'testar e tratar'?",
       "back": "✅ Próxima Etapa Obrigatória: ENDOSCOPIA DIGESTIVA ALTA (EDA)!\n\n🚨 Indicações Obrigatórias de EDA na Dispepsia (excluir câncer gástrico):\n• Idade ≥ 60 anos (ACG/EUA) ou ≥ 40–45 anos (Brasil).\n• QUALQUER sinal de alarme: anemia (homem < 13), perda ponderal, disfagia, vômitos persistentes, hemorragia digestiva, massa abdominal, história familiar de CA gástrico.\n• Dispepsia refratária / resposta parcial ao IBP.\n\n💊 Quando fazer 'Testar e Tratar' H. pylori ou IBP empírico?\n• APENAS em pacientes JOVENS (abaixo da idade de corte) E SEM sinais de alarme!\n\n⚠️ Pegadinha FGV: Sorologia positiva para H. pylori NÃO diferencia infecção ativa de cicatriz sorológica — e NUNCA substitui a EDA em > 60 anos!",
       "audioText": "Na dispepsia em paciente com sessenta anos ou mais, ou quarenta a quarenta e cinco anos no Brasil, ou com qualquer sinal de alarme como anemia, perda de peso ou disfagia, a próxima etapa obrigatória é a endoscopia digestiva alta para descartar câncer gástrico. A estratégia testar e tratar H. pylori só vale para jovens sem sinais de alarme, e aumentar o IBP sem endoscopia pode mascarar uma neoplasia."
+    },
+    {
+      "id": 1103,
+      "area": "gastroenterologia",
+      "cat": "dii",
+      "year": "FGV",
+      "name": "Doença de Crohn vs Retocolite Ulcerativa (RCU)",
+      "front": "Jovem de 19 anos com diarreia crônica há 6 meses, dor abdominal, perda de peso, PCR alta e FÍSTULA PERIANAL. Qual o diagnóstico e quais as 5 diferenças clássicas para a Retocolite Ulcerativa?",
+      "back": "✅ Diagnóstico: DOENÇA DE CROHN (fístula perianal = inflamação TRANSMURAL!).\n\n⚔️ Crohn vs Retocolite Ulcerativa (RCU):\n• Parede: Crohn = TRANSMURAL (fístulas, estenoses, abscessos, perianal) | RCU = MUCOSA/SUBMUCOSA (NÃO faz fístulas!).\n• Distribuição: Crohn = BOCA AO ÂNUS, salteada, poupa reto | RCU = CONTÍNUA e ascendente, SEMPRE pega o RETO.\n• Biópsia: Crohn = granuloma NÃO caseoso + pedras de calçamento | RCU = criptite/abscessos de cripta.\n• Anticorpo: Crohn = ASCA+ | RCU = p-ANCA+.\n• Tabagismo: PIORA Crohn | 'protege' RCU (e RCU associa-se à Colangite Esclerosante Primária!).",
+      "audioText": "Jovem com diarreia crônica, dor abdominal, emagrecimento, PCR elevada e fístula perianal fecha diagnóstico de doença de Crohn. O Crohn é transmural, acomete da boca ao ânus de forma salteada, poupa o reto, forma fístulas e granuloma não caseoso, tem ASCA positivo e piora com tabagismo. Já a retocolite ulcerativa é restrita à mucosa, não faz fístulas, sempre acomete o reto continuamente, tem p-ANCA positivo e se associa à colangite esclerosante primária."
     }
   ],
   "fgv_tables": [
