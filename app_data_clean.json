@@ -4357,6 +4357,16 @@
       "front": "Idoso com FA (ritmo irregular + discreta regurgitação mitral) e AVCi há 6h com múltiplas áreas hipodensas na TC. Qual a melhor conduta após estabilização e por que NÃO trombolisar nem dar varfarina imediata?",
       "back": "✅ Conduta após estabilização: ANTICOAGULANTE ORAL DIRETO — DOAC (ex.: rivaroxabana, apixabana, dabigatrana, edoxabana)!\n• Regurgitação mitral discreta NÃO é FA valvar (FA valvar = apenas ESTENOSE MITRAL moderada/grave ou PRÓTESE MECÂNICA → aí sim varfarina obrigatória!).\n• DOAC é 1ª escolha na FA não valvar (menor risco de hemorragia intracraniana que varfarina).\n\n🚫 Por que NÃO as outras (FGV)?\n• Trombólise (rtPA): já passou da janela de 4,5h (6h!) e TC já tem hipodensidade estabelecida.\n• Anticoagulação IMEDIATA: risco de transformação hemorrágica na fase aguda (aguardar estabilização: regra 1-3-6-12 dias conforme extensão).\n• AAS + dipiridamol: inferior à anticoagulação na FA.\n• Cardioversão sem anticoagulação prévia (FA > 48h): alto risco de novo AVC embólico!",
       "audioText": "Em idoso com fibrilação atrial não valvar e AVC isquêmico há seis horas com áreas hipodensas na tomografia, a melhor conduta após estabilização é iniciar anticoagulante oral direto como rivaroxabana. Regurgitação mitral discreta não configura FA valvar, que exige estenose mitral moderada a grave ou prótese mecânica. Não se faz trombólise porque já passou da janela de quatro horas e meia, nem anticoagulação imediata pelo risco de transformação hemorrágica."
+    },
+    {
+      "id": 1108,
+      "area": "neurologia",
+      "cat": "epilepsia",
+      "year": "FGV",
+      "name": "1ª Crise Convulsiva em Adulto: Investigação, PL e Anticonvulsivante",
+      "front": "Homem de 62 anos com 1ª crise convulsiva (mordedura de língua, liberação esfincteriana, pós-ictal de 15 min) e recuperação completa. Qual a investigação obrigatória, quando fazer PL e quando iniciar fármaco anticrise?",
+      "back": "✅ Investigação Obrigatória (além de labs metabólicos — glicemia, Na+, Ca2+, Mg2+):\n• NEUROIMAGEM (TC crânio na emergência / RM protocolo epilepsia → descartar tumor, AVC, lesão estrutural).\n• ELETROENCEFALOGRAMA (EEG → classifica a crise e estima risco de recorrência).\n\n🚫 Quando NÃO fazer Punção Lombar (PL)?\n• PL NÃO é de rotina em paciente afebril, imunocompetente, sem meningismo e com recuperação completa da consciência!\n• Fazer PL apenas se: febre/meningismo, imunossupressão, suspeita de HSA com TC normal ou rebaixamento persistente.\n\n💊 Quando iniciar anticonvulsivante após 1ª crise não provocada?\n• NÃO iniciar de rotina se neuroimagem e EEG forem normais!\n• Iniciar se alto risco de recorrência (> 60%): lesão estrutural epileptogênica na imagem OU atividade epileptiforme clara no EEG.",
+      "audioText": "Na primeira crise convulsiva em adulto, além de exames metabólicos como glicemia e eletrólitos, é obrigatório realizar neuroimagem do crânio e eletroencefalograma. Punção lombar não é de rotina em paciente afebril, imunocompetente e lúcido. Não se inicia anticonvulsivante de rotina após primeira crise se imagem e EEG forem normais, apenas se houver alto risco de recorrência como lesão estrutural ou atividade epileptiforme no EEG."
     }
   ],
   "fgv_tables": [

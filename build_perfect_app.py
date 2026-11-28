@@ -3185,6 +3185,7 @@ html_content = """<!DOCTYPE html>
         'wernicke': 'Wernicke & Carências',
         'cefaleias': 'Cefaleias',
         'demencias': 'Demências & HPN',
+        'epilepsia': 'Epilepsia & Crises',
         'shu': 'SHU & Diarreia',
         'anafilaxia': 'Anafilaxia & Alergia',
         'intussuscepcao': 'Intussuscepção',
