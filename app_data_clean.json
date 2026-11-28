@@ -4347,6 +4347,16 @@
       "front": "Quais são as 5 variáveis do escore CURB-65 na Pneumonia Adquirida na Comunidade (com seus pontos de corte) e qual a conduta conforme a pontuação?",
       "back": "🫁 CURB-65 (1 ponto cada, 0 a 5):\n• C: Confusão mental (nova).\n• U: Ureia > 50 mg/dL (ou > 43 mg/dL / BUN > 19).\n• R: Frequência Respiratória ≥ 30 irpm.\n• B: Blood pressure — PAS < 90 mmHg OU PAD ≤ 60 mmHg.\n• 65: Idade ≥ 65 anos.\n\n🏥 Conduta pelo Escore:\n• 0–1 ponto → Tratamento AMBULATORIAL.\n• 2 pontos → Considerar INTERNAÇÃO EM ENFERMARIA.\n• 3–5 pontos → INTERNAÇÃO; considerar UTI (especialmente 4–5).\n\n💡 Atenção Básica (sem lab): usar CRB-65 (retira a Ureia; 0 = ambulatorial, 1–2 = considerar internação, 3–4 = internação urgente).",
       "audioText": "O escore CURB-65 na pneumonia adquirida na comunidade soma um ponto para cada variável: confusão mental, ureia maior que cinquenta, frequência respiratória maior ou igual a trinta, pressão arterial sistólica menor que noventa ou diastólica menor ou igual a sessenta, e idade maior ou igual a sessenta e cinco anos. Zero a um ponto indica tratamento ambulatorial, dois pontos enfermaria e três a cinco pontos internação considerando UTI."
+    },
+    {
+      "id": 1107,
+      "area": "cardiologia",
+      "cat": "arritmias",
+      "year": "FGV",
+      "name": "AVCi Cardioembólico + FA Não Valvar: DOAC após Estabilização",
+      "front": "Idoso com FA (ritmo irregular + discreta regurgitação mitral) e AVCi há 6h com múltiplas áreas hipodensas na TC. Qual a melhor conduta após estabilização e por que NÃO trombolisar nem dar varfarina imediata?",
+      "back": "✅ Conduta após estabilização: ANTICOAGULANTE ORAL DIRETO — DOAC (ex.: rivaroxabana, apixabana, dabigatrana, edoxabana)!\n• Regurgitação mitral discreta NÃO é FA valvar (FA valvar = apenas ESTENOSE MITRAL moderada/grave ou PRÓTESE MECÂNICA → aí sim varfarina obrigatória!).\n• DOAC é 1ª escolha na FA não valvar (menor risco de hemorragia intracraniana que varfarina).\n\n🚫 Por que NÃO as outras (FGV)?\n• Trombólise (rtPA): já passou da janela de 4,5h (6h!) e TC já tem hipodensidade estabelecida.\n• Anticoagulação IMEDIATA: risco de transformação hemorrágica na fase aguda (aguardar estabilização: regra 1-3-6-12 dias conforme extensão).\n• AAS + dipiridamol: inferior à anticoagulação na FA.\n• Cardioversão sem anticoagulação prévia (FA > 48h): alto risco de novo AVC embólico!",
+      "audioText": "Em idoso com fibrilação atrial não valvar e AVC isquêmico há seis horas com áreas hipodensas na tomografia, a melhor conduta após estabilização é iniciar anticoagulante oral direto como rivaroxabana. Regurgitação mitral discreta não configura FA valvar, que exige estenose mitral moderada a grave ou prótese mecânica. Não se faz trombólise porque já passou da janela de quatro horas e meia, nem anticoagulação imediata pelo risco de transformação hemorrágica."
     }
   ],
   "fgv_tables": [
