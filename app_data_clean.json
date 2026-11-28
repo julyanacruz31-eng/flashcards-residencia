@@ -4367,6 +4367,16 @@
       "front": "Homem de 62 anos com 1ª crise convulsiva (mordedura de língua, liberação esfincteriana, pós-ictal de 15 min) e recuperação completa. Qual a investigação obrigatória, quando fazer PL e quando iniciar fármaco anticrise?",
       "back": "✅ Investigação Obrigatória (além de labs metabólicos — glicemia, Na+, Ca2+, Mg2+):\n• NEUROIMAGEM (TC crânio na emergência / RM protocolo epilepsia → descartar tumor, AVC, lesão estrutural).\n• ELETROENCEFALOGRAMA (EEG → classifica a crise e estima risco de recorrência).\n\n🚫 Quando NÃO fazer Punção Lombar (PL)?\n• PL NÃO é de rotina em paciente afebril, imunocompetente, sem meningismo e com recuperação completa da consciência!\n• Fazer PL apenas se: febre/meningismo, imunossupressão, suspeita de HSA com TC normal ou rebaixamento persistente.\n\n💊 Quando iniciar anticonvulsivante após 1ª crise não provocada?\n• NÃO iniciar de rotina se neuroimagem e EEG forem normais!\n• Iniciar se alto risco de recorrência (> 60%): lesão estrutural epileptogênica na imagem OU atividade epileptiforme clara no EEG.",
       "audioText": "Na primeira crise convulsiva em adulto, além de exames metabólicos como glicemia e eletrólitos, é obrigatório realizar neuroimagem do crânio e eletroencefalograma. Punção lombar não é de rotina em paciente afebril, imunocompetente e lúcido. Não se inicia anticonvulsivante de rotina após primeira crise se imagem e EEG forem normais, apenas se houver alto risco de recorrência como lesão estrutural ou atividade epileptiforme no EEG."
+    },
+    {
+      "id": 1109,
+      "area": "endocrinologia",
+      "cat": "tireoide",
+      "year": "FGV",
+      "name": "Hipotireoidismo: Sinal de Woltman & Achados Neurológicos",
+      "front": "Qual o achado clássico no exame dos reflexos tendíneos profundos no Hipotireoidismo (epônimo e fisiopatologia) e como se diferencia do Hipertireoidismo?",
+      "back": "✅ Achado Clássico: LENTIDÃO NO RELAXAMENTO DOS REFLEXOS TENDÍNEOS (Sinal de Woltman — clássico no reflexo aquileu)!\n• Fisiopatologia: falta de T3/T4 reduz a recaptação de cálcio (SERCA) no retículo sarcoplasmático → músculo relaxa 'em câmera lenta'.\n\n🧠 Outros achados neurológicos do Hipotireoidismo:\n• Síndrome do Túnel do Carpo (compressão do nervo mediano por mixedema).\n• Miopatia proximal com CPK elevada + Demência reversível.\n\n⚠️ Pegadinhas FGV (outras alternativas):\n• Hiperreflexia (exacerbação de reflexos) = HIPERtireoidismo ou 1º neurônio motor.\n• Redução da sensibilidade vibratória = B12 (cordão posterior), tabes dorsalis ou DM.\n• Cutâneo-abdominal abolido = 1º neurônio motor (trato piramidal).",
+      "audioText": "O achado neurológico clássico do hipotireoidismo é a lentidão na fase de relaxamento dos reflexos tendíneos profundos, chamado sinal de Woltman, bem visível no reflexo aquileu pela demora na recaptação de cálcio muscular. Outros achados são síndrome do túnel do carpo e miopatia com CPK alta. Já hiperreflexia pertence ao hipertireoidismo ou lesão do primeiro neurônio motor, e perda de sensibilidade vibratória à deficiência de B12 ou diabetes."
     }
   ],
   "fgv_tables": [
