@@ -4287,6 +4287,16 @@
       "front": "Qual o exame PADRÃO-OURO para diagnóstico de litíase renal na emergência, por que NÃO usar contraste, e qual a 1ª escolha em gestantes e crianças?",
       "back": "✅ Padrão-Ouro na Emergência: TOMOGRAFIA COMPUTADORIZADA (TC) DE ABDOME E PELVE SEM CONTRASTE!\n• Sensibilidade e especificidade > 95%.\n• Detecta praticamente TODOS os cálculos (inclusive ÁCIDO ÚRICO, que são radiotransparentes no RX! Exceção rara: indinavir).\n• Por que SEM contraste? O contraste na via urinária fica radiopaco e MASCARA o cálculo!\n\n🤰 Exceção Clássica (FGV):\n• GESTANTES e CRIANÇAS → 1ª escolha = ULTRASSONOGRAFIA (USG) de vias urinárias (evita radiação ionizante).\n\n⚠️ Por que NÃO RX, Urografia ou EAS?\n• RX simples: perde cálculos de ácido úrico e pequenos.\n• Urografia excretora: em desuso (lenta + contraste).\n• EAS: apenas apoia (hematúria) e descarta ITU associada (não localiza o cálculo).",
       "audioText": "O padrão-ouro para diagnóstico de litíase renal na emergência é a tomografia computadorizada de abdome e pelve sem contraste, com sensibilidade acima de noventa e cinco por cento, detectando inclusive cálculos de ácido úrico sem mascará-los com contraste. A exceção clássica são gestantes e crianças, em que a primeira escolha é a ultrassonografia de vias urinárias para evitar radiação."
+    },
+    {
+      "id": 1101,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "DM2 + HAS + Albuminúria: IECA ou BRA (Nunca Duplo Bloqueio!)",
+      "front": "Paciente com DM2, HAS (150/95), Cr 1,6 e RAC = 95 mg/g. Qual a 1ª linha anti-hipertensiva, qual seu mecanismo nefroprotetor, por que NÃO associar IECA + BRA e qual a regra dos 30% da creatinina?",
+      "back": "✅ 1ª Linha Absoluta: IECA OU BRA (um OU outro — NUNCA os dois juntos!).\n\n🫘 Mecanismo de Nefroproteção:\n• Dilatam preferencialmente a arteríola EFERENTE → reduzem pressão intraglomerular (hiperfiltração) → reduzem albuminúria e freiam progressão da DRC.\n\n🚫 Pegadinha FGV — Duplo Bloqueio (IECA + BRA):\n• CONTRAINDICADO! Aumenta hipercalemia, LRA e hipotensão SEM benefício adicional.\n\n📈 Seguimento (Regra dos 30%):\n• Repetir Cr e K+ em 1–2 semanas: aumento de até 30% na creatinina é ESPERADO e ACEITÁVEL (NÃO suspender!). Só suspender se subir > 30% ou hipercalemia refratária.",
+      "audioText": "Em paciente com diabetes tipo dois, hipertensão e albuminúria, a primeira linha é inibidor da ECA OU bloqueador do receptor de angiotensina, nunca os dois juntos, pois o duplo bloqueio causa hipercalemia e lesão renal aguda sem benefício. Eles dilatam a arteríola eferente e reduzem a pressão intraglomerular. No seguimento em uma a duas semanas, aumento de até trinta por cento na creatinina é esperado e não indica suspender a droga."
     }
   ],
   "fgv_tables": [
