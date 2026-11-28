@@ -4297,6 +4297,16 @@
       "front": "Paciente com DM2, HAS (150/95), Cr 1,6 e RAC = 95 mg/g. Qual a 1ª linha anti-hipertensiva, qual seu mecanismo nefroprotetor, por que NÃO associar IECA + BRA e qual a regra dos 30% da creatinina?",
       "back": "✅ 1ª Linha Absoluta: IECA OU BRA (um OU outro — NUNCA os dois juntos!).\n\n🫘 Mecanismo de Nefroproteção:\n• Dilatam preferencialmente a arteríola EFERENTE → reduzem pressão intraglomerular (hiperfiltração) → reduzem albuminúria e freiam progressão da DRC.\n\n🚫 Pegadinha FGV — Duplo Bloqueio (IECA + BRA):\n• CONTRAINDICADO! Aumenta hipercalemia, LRA e hipotensão SEM benefício adicional.\n\n📈 Seguimento (Regra dos 30%):\n• Repetir Cr e K+ em 1–2 semanas: aumento de até 30% na creatinina é ESPERADO e ACEITÁVEL (NÃO suspender!). Só suspender se subir > 30% ou hipercalemia refratária.",
       "audioText": "Em paciente com diabetes tipo dois, hipertensão e albuminúria, a primeira linha é inibidor da ECA OU bloqueador do receptor de angiotensina, nunca os dois juntos, pois o duplo bloqueio causa hipercalemia e lesão renal aguda sem benefício. Eles dilatam a arteríola eferente e reduzem a pressão intraglomerular. No seguimento em uma a duas semanas, aumento de até trinta por cento na creatinina é esperado e não indica suspender a droga."
+    },
+    {
+      "id": 1102,
+      "area": "gastroenterologia",
+      "cat": "hda",
+      "year": "FGV",
+      "name": "Dispepsia: Quando Indicar EDA vs Testar e Tratar H. pylori",
+      "front": "Homem de 65 anos com dispepsia há 6 semanas, resposta parcial ao IBP, Hb 12,8 e sorologia H. pylori positiva. Qual a próxima etapa na investigação e quando usar 'testar e tratar'?",
+      "back": "✅ Próxima Etapa Obrigatória: ENDOSCOPIA DIGESTIVA ALTA (EDA)!\n\n🚨 Indicações Obrigatórias de EDA na Dispepsia (excluir câncer gástrico):\n• Idade ≥ 60 anos (ACG/EUA) ou ≥ 40–45 anos (Brasil).\n• QUALQUER sinal de alarme: anemia (homem < 13), perda ponderal, disfagia, vômitos persistentes, hemorragia digestiva, massa abdominal, história familiar de CA gástrico.\n• Dispepsia refratária / resposta parcial ao IBP.\n\n💊 Quando fazer 'Testar e Tratar' H. pylori ou IBP empírico?\n• APENAS em pacientes JOVENS (abaixo da idade de corte) E SEM sinais de alarme!\n\n⚠️ Pegadinha FGV: Sorologia positiva para H. pylori NÃO diferencia infecção ativa de cicatriz sorológica — e NUNCA substitui a EDA em > 60 anos!",
+      "audioText": "Na dispepsia em paciente com sessenta anos ou mais, ou quarenta a quarenta e cinco anos no Brasil, ou com qualquer sinal de alarme como anemia, perda de peso ou disfagia, a próxima etapa obrigatória é a endoscopia digestiva alta para descartar câncer gástrico. A estratégia testar e tratar H. pylori só vale para jovens sem sinais de alarme, e aumentar o IBP sem endoscopia pode mascarar uma neoplasia."
     }
   ],
   "fgv_tables": [
