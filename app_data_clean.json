@@ -4277,6 +4277,16 @@
       "front": "Em quais doenças reumatológicas o VHS é o marcador clássico que dispara (mesmo com PCR normal no caso do LES), e qual a diferença fisiológica entre VHS e PCR?",
       "back": "🎯 Os 2 Grandes Clássicos do VHS nas Provas:\n• 1. Arterite de Células Gigantes (Temporal) & Polimialgia Reumática: idoso > 50 anos com cefaleia temporal / claudicação de mandíbula / dor em cinturas → VHS muito elevado (> 50–100 mm/h, critério clássico!).\n• 2. Lúpus Eritematoso Sistêmico (LES) em atividade: VHS SOBE, mas PCR costuma ficar NORMAL (interferon tipo I inibe produção hepática de PCR).\n\n⚠️ Pegadinha Clássica no LES:\n• Paciente com LES + PCR muito elevado → pensar em INFECÇÃO (ou serosite grave), e não apenas atividade lúpica!\n\n💡 Diferença fisiológica:\n• VHS: sobe por fibrinogênio E imunoglobulinas; sobe/cai lentamente (dias–semanas).\n• PCR: proteína hepática via IL-6; sobe/cai rápido (horas), mais sensível para infecção bacteriana aguda.",
       "audioText": "Na reumatologia existem dois grandes clássicos do VHS. Primeiro, arterite temporal e polimialgia reumática, em que o VHS costuma passar de cinquenta a cem. Segundo, atividade do lúpus eritematoso sistêmico, em que o VHS sobe mas o PCR costuma ficar normal; se o PCR estiver muito alto no lúpus, pense em infecção. O VHS sobe por fibrinogênio e imunoglobulinas de forma mais lenta, enquanto o PCR sobe e cai rápido via interleucina seis."
+    },
+    {
+      "id": 1100,
+      "area": "nefrologia",
+      "cat": "nefrolitiase",
+      "year": "FGV",
+      "name": "Litíase Renal na Emergência: Padrão-Ouro vs Gestante/Criança",
+      "front": "Qual o exame PADRÃO-OURO para diagnóstico de litíase renal na emergência, por que NÃO usar contraste, e qual a 1ª escolha em gestantes e crianças?",
+      "back": "✅ Padrão-Ouro na Emergência: TOMOGRAFIA COMPUTADORIZADA (TC) DE ABDOME E PELVE SEM CONTRASTE!\n• Sensibilidade e especificidade > 95%.\n• Detecta praticamente TODOS os cálculos (inclusive ÁCIDO ÚRICO, que são radiotransparentes no RX! Exceção rara: indinavir).\n• Por que SEM contraste? O contraste na via urinária fica radiopaco e MASCARA o cálculo!\n\n🤰 Exceção Clássica (FGV):\n• GESTANTES e CRIANÇAS → 1ª escolha = ULTRASSONOGRAFIA (USG) de vias urinárias (evita radiação ionizante).\n\n⚠️ Por que NÃO RX, Urografia ou EAS?\n• RX simples: perde cálculos de ácido úrico e pequenos.\n• Urografia excretora: em desuso (lenta + contraste).\n• EAS: apenas apoia (hematúria) e descarta ITU associada (não localiza o cálculo).",
+      "audioText": "O padrão-ouro para diagnóstico de litíase renal na emergência é a tomografia computadorizada de abdome e pelve sem contraste, com sensibilidade acima de noventa e cinco por cento, detectando inclusive cálculos de ácido úrico sem mascará-los com contraste. A exceção clássica são gestantes e crianças, em que a primeira escolha é a ultrassonografia de vias urinárias para evitar radiação."
     }
   ],
   "fgv_tables": [
