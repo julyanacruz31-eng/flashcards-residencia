@@ -4377,6 +4377,16 @@
       "front": "Qual o achado clássico no exame dos reflexos tendíneos profundos no Hipotireoidismo (epônimo e fisiopatologia) e como se diferencia do Hipertireoidismo?",
       "back": "✅ Achado Clássico: LENTIDÃO NO RELAXAMENTO DOS REFLEXOS TENDÍNEOS (Sinal de Woltman — clássico no reflexo aquileu)!\n• Fisiopatologia: falta de T3/T4 reduz a recaptação de cálcio (SERCA) no retículo sarcoplasmático → músculo relaxa 'em câmera lenta'.\n\n🧠 Outros achados neurológicos do Hipotireoidismo:\n• Síndrome do Túnel do Carpo (compressão do nervo mediano por mixedema).\n• Miopatia proximal com CPK elevada + Demência reversível.\n\n⚠️ Pegadinhas FGV (outras alternativas):\n• Hiperreflexia (exacerbação de reflexos) = HIPERtireoidismo ou 1º neurônio motor.\n• Redução da sensibilidade vibratória = B12 (cordão posterior), tabes dorsalis ou DM.\n• Cutâneo-abdominal abolido = 1º neurônio motor (trato piramidal).",
       "audioText": "O achado neurológico clássico do hipotireoidismo é a lentidão na fase de relaxamento dos reflexos tendíneos profundos, chamado sinal de Woltman, bem visível no reflexo aquileu pela demora na recaptação de cálcio muscular. Outros achados são síndrome do túnel do carpo e miopatia com CPK alta. Já hiperreflexia pertence ao hipertireoidismo ou lesão do primeiro neurônio motor, e perda de sensibilidade vibratória à deficiência de B12 ou diabetes."
+    },
+    {
+      "id": 1110,
+      "area": "nefrologia",
+      "cat": "ira_dialise",
+      "year": "FGV",
+      "name": "Albuminúria no Diabetes (KDIGO): Cortes 30 e 300 vs Nefrótica",
+      "front": "Diabético com exame 'microalbuminúria = 360 mg/24h' e creatinina normal. Como classificar esse valor pelos cortes do KDIGO e qual o corte para Síndrome Nefrótica?",
+      "back": "✅ Classificação: MACROALBUMINÚRIA (KDIGO A3 — gravemente aumentada), pois > 300 mg/24h!\n\n📏 Cortes Obrigatórios (mg/24h ou RAC mg/g):\n• A1 (Normal): < 30.\n• A2 (Moderadamente aumentada / antiga Microalbuminúria): 30 a 300.\n• A3 (Gravemente aumentada / antiga MACROALBUMINÚRIA): > 300.\n• Síndrome Nefrótica: proteinúria > 3,5 g/24h (= 3.500 mg/24h) + edema + hipoalbuminemia + hiperlipidemia!\n\n⚠️ Pegadinha FGV: Mesmo que o nome do exame venha escrito 'microalbuminúria', se o valor passar de 300 mg/24h já é MACROALBUMINÚRIA (e NÃO exige neuropatia para fechar doença renal diabética)!",
+      "audioText": "Na classificação da albuminúria pelo KDIGO, abaixo de trinta miligramas por vinte e quatro horas é normal, de trinta a trezentos é microalbuminúria ou A2, e acima de trezentos é macroalbuminúria ou A3. Portanto, trezentos e sessenta miligramas por vinte e quatro horas já é macroalbuminúria, mesmo que o exame venha nomeado como microalbuminúria. Não é síndrome nefrótica porque nefrótica exige mais de três vírgula cinco gramas em vinte e quatro horas."
     }
   ],
   "fgv_tables": [
