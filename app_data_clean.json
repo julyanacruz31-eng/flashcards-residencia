@@ -5293,6 +5293,18 @@
       "col2Title": "Reações Hansênicas & Contatos",
       "col2": "• Regra de ouro: NUNCA suspender a PQT durante reação hansênica!\n• Reação Tipo 1 (Reversa — celular): exacerbação de lesões antigas + NEURITE → Prednisona 1 mg/kg/dia\n• Reação Tipo 2 (ENH — imunocomplexos em MB): nódulos eritematosos dolorosos + febre/orquite/uveíte → Talidomida (teratogênica! Se mulher em idade fértil sem anticoncepção rigorosa → Prednisona)\n• Contatos intradomiciliares: exame dermatoneurológico + BCG (0 cicatriz → 1 dose; 1 cicatriz → 1 dose; 2 cicatrizes → não vacinar)",
       "audioText": "Resumo de hanseníase pelo PCDT do SUS. Diagnóstico por lesão hipoestésica, espessamento neural como ulnar ou baciloscopia positiva. Perda sensitiva na ordem térmica, dolorosa e tátil. PQT única com rifampicina, dapsona e clofazimina por seis doses no paucibacilar e doze no multibacilar. Reação tipo um trata com prednisona e tipo dois com talidomida, sem suspender a PQT."
+    },
+    {
+      "id": 2078,
+      "area": "neurologia",
+      "cat": "epilepsia",
+      "year": "FGV",
+      "name": "Epilepsia: Escolha do Anticonvulsivante & Achados na TC, RM e EEG",
+      "col1Title": "Qual Anticonvulsivante Escolher?",
+      "col1": "• Crises FOCAIS (maioria em adultos/idosos): Levetiracetam, Lamotrigina ou Carbamazepina (em idosos, preferir Levetiracetam/Lamotrigina por baixa interação!)\n• Crises GENERALIZADAS (TCG / mioclônicas): Valproato (homens), Levetiracetam ou Lamotrigina\n• MULHER EM IDADE FÉRTIL: EVITAR Valproato (teratogênico / tubo neural!) → preferir Lamotrigina ou Levetiracetam\n• Ausência (criança): Etossuximida (Carbamazepina e Fenitoína PIORAM ausência e mioclônicas!)\n• Atenção Dermato: Lamotrigina exige titulação lenta (risco de Stevens-Johnson!)\n• Emergência (crise ativa): 1º Benzodiazepínico (Diazepam IV / Midazolam IM) → 2º Fenitoína IV",
+      "col2Title": "Achados na TC, RM & EEG",
+      "col2": "• TC crânio (emergência): sangramentos (HSA/hematomas), AVC agudo ou gliose de AVC antigo (maior causa > 60a!), tumores/massa, calcificações (neurocisticercose)\n• RM crânio (padrão-ouro eletivo): esclerose mesial temporal (hipocampo), displasia cortical focal, cavernomas, tumores pequenos\n• EEG (atividade epileptiforme interictal): espículas (spikes), ondas agudas (sharp waves), complexos ponta-onda (ex.: 3 Hz na ausência) e lentificação focal\n• Pegadinha: EEG normal NÃO exclui epilepsia (sensibilidade de 1 exame ~50%)!",
+      "audioText": "Tabela de epilepsia. Para crises focais usa-se levetiracetam, lamotrigina ou carbamazepina; para generalizadas usa-se valproato em homens, evitando valproato em mulheres em idade fértil por teratogenicidade, preferindo lamotrigina ou levetiracetam; na ausência usa-se etossuximida. A TC exclui sangramento, AVC, tumor e neurocisticercose; a ressonância vê esclerose mesial do hipocampo e displasias; e o EEG busca espículas, ondas agudas e complexos ponta-onda, lembrando que EEG normal não exclui epilepsia."
     }
   ]
 }
