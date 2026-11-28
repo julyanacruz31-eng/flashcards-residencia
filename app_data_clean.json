@@ -4317,6 +4317,16 @@
       "front": "Jovem de 19 anos com diarreia crônica há 6 meses, dor abdominal, perda de peso, PCR alta e FÍSTULA PERIANAL. Qual o diagnóstico e quais as 5 diferenças clássicas para a Retocolite Ulcerativa?",
       "back": "✅ Diagnóstico: DOENÇA DE CROHN (fístula perianal = inflamação TRANSMURAL!).\n\n⚔️ Crohn vs Retocolite Ulcerativa (RCU):\n• Parede: Crohn = TRANSMURAL (fístulas, estenoses, abscessos, perianal) | RCU = MUCOSA/SUBMUCOSA (NÃO faz fístulas!).\n• Distribuição: Crohn = BOCA AO ÂNUS, salteada, poupa reto | RCU = CONTÍNUA e ascendente, SEMPRE pega o RETO.\n• Biópsia: Crohn = granuloma NÃO caseoso + pedras de calçamento | RCU = criptite/abscessos de cripta.\n• Anticorpo: Crohn = ASCA+ | RCU = p-ANCA+.\n• Tabagismo: PIORA Crohn | 'protege' RCU (e RCU associa-se à Colangite Esclerosante Primária!).",
       "audioText": "Jovem com diarreia crônica, dor abdominal, emagrecimento, PCR elevada e fístula perianal fecha diagnóstico de doença de Crohn. O Crohn é transmural, acomete da boca ao ânus de forma salteada, poupa o reto, forma fístulas e granuloma não caseoso, tem ASCA positivo e piora com tabagismo. Já a retocolite ulcerativa é restrita à mucosa, não faz fístulas, sempre acomete o reto continuamente, tem p-ANCA positivo e se associa à colangite esclerosante primária."
+    },
+    {
+      "id": 1104,
+      "area": "pneumologia",
+      "cat": "intersticiais",
+      "year": "FGV",
+      "name": "Sarcoidose: Enzima ECA, Hipercalcemia e Diagnóstico",
+      "front": "Mulher de 45 anos com adenopatia hilar bilateral + infiltrado intersticial peri-hilar (suspeita de Sarcoidose). Qual enzima sérica auxilia no diagnóstico e o que mais os granulomas produzem?",
+      "back": "✅ Enzima Sérica Clássica: ENZIMA CONVERSORA DA ANGIOTENSINA (ECA)!\n• Produzida diretamente pelos macrófagos epitelioides dos granulomas NÃO caseosos (elevada em ~60–75% dos casos ativos).\n\n🧬 O outro clássico produzido pelo granuloma na Sarcoidose:\n• 1-alfa-hidroxilase → converte 25(OH)-vitamina D em calcitriol ativo (1,25(OH)2D) → HIPERCALCEMIA e HIPERCALCIÚRIA (com PTH suprimido!).\n\n⚠️ Pegadinha FGV:\n• ADA (adenosino desaminase > 40 U/L no líquido pleural) = TUBERCULOSE pleural (NÃO sarcoidose!).\n• Diagnóstico definitivo: clínica/RX + biópsia com granuloma NÃO caseoso (excluindo TB, fungos e beriliose).",
+      "audioText": "Na sarcoidose, os macrófagos dos granulomas não caseosos produzem diretamente a enzima conversora da angiotensina, a ECA, que auxilia no diagnóstico e acompanhamento, além da enzima um-alfa-hidroxilase que ativa vitamina D e causa hipercalcemia com PTH suprimido. Não confundir com adenosino desaminase, a ADA, que é marcador de tuberculose no líquido pleural."
     }
   ],
   "fgv_tables": [
